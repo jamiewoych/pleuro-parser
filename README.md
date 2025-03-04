@@ -18,7 +18,7 @@ weight
 sex
 purpose
 experimentor
-complicatins
+complications
 
 Expected output: Interface for tracking animal usage by protocol, visualizing usage of space, and updating inventory when moving, using, or adding clutches to the rack space. 
 
