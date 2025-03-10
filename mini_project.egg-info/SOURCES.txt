@@ -1,0 +1,10 @@
+README.md
+setup.py
+mini_project/__init__.py
+mini_project/__main__.py
+mini_project/module.py
+mini_project.egg-info/PKG-INFO
+mini_project.egg-info/SOURCES.txt
+mini_project.egg-info/dependency_links.txt
+mini_project.egg-info/entry_points.txt
+mini_project.egg-info/top_level.txt

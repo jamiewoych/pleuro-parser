@@ -1,0 +1,13 @@
+Metadata-Version: 2.2
+Name: mini_project
+Version: 0.0.1
+Summary: A package for salamander inventory
+Author: Jamie Woych
+Author-email: jw3943@columbia.edu
+License: GPLv3
+Classifier: Programming Language :: Python :: 3
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: license
+Dynamic: summary

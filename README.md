@@ -24,7 +24,7 @@ Expected output: Interface for tracking animal usage by protocol, visualizing us
 
 ### Installation
 
-conda install [list dependencies here...] -c conda-forge
+conda install pandas numpy random matplotlib.pyplot seaborn datetime -c conda-forge
 
 git clone https://github.com/jamiewoych/mini-project
 cd ./mini-project
