@@ -36,21 +36,27 @@ class Rack:
             }
             self.inventory.append(animal)
         self.inventory = pd.DataFrame(self.inventory)
+        
+    def __repr__(self):
+        return f"<Rack with {len(self.inventory)} salamanders>"
+
+    def __str__(self):
+        return f"Rack with {len(self.inventory)} salamanders:\n{self.inventory.head()}"
 
     def move_salamander(self, animal_id, target_rack):
         """
         Move one or multiple salamanders from their current rack to a target rack.
     
         Parameters:
-        - animal_ids (str or list): Single animal ID or list of animal IDs to move.
+        - animal_id (str): Single animal ID or list of animal IDs to move.
         - target_rack (str): The rack to move the salamanders to.
         """
-        # Ensure animal_ids is a list
-        if isinstance(animal_ids, str):
-            animal_ids = [animal_ids]  # Convert single ID to list
+        # Trying for multiple animals to move - animal ids as list
+        #if isinstance(animal_id, str):
+            #animal_id = [animal_ids]  # Convert single ID to list
     
         # Loop through each animal ID and update their rack
-        for animal_id in animal_ids:
+        for animal_id in animal_id:
             # Find the animal in the inventory
             animal = self.inventory[self.inventory["Animal ID"] == animal_id]
     
@@ -74,6 +80,8 @@ class Rack:
         self.euthanasia_log.append(euth_entry)
 
         self.inventory = self.inventory[self.inventory["Animal ID"] != animal_id]  # Remove from inventory
+        #self.euthanasia_log = pd.DataFrame(self.euthanasia_log)
+
         print(f"Animal {animal_id} euthanized and removed from inventory.")
 
 
@@ -90,12 +98,12 @@ class Rack:
         plt.show()
 
     # Function to plot Species Distribution
-    def plot_species_distribution(self):
+    def plot_transgenic_distribution(self):
         plt.figure(figsize=(7, 5))
-        sns.countplot(y=self.inventory["Species"], order=self.inventory["Species"].value_counts().index)
-        plt.title("Salamander Species Distribution")
+        sns.countplot(y=self.inventory["Transgenic Status"], order=self.inventory["Transgenic Status"].value_counts().index)
+        plt.title("Salamander Transgenic Distribution")
         plt.xlabel("Count")
-        plt.ylabel("Species")
+        plt.ylabel("Animal Line")
         plt.show()
 
         
@@ -118,7 +126,7 @@ sex = ["None", "Male", "Female"]
 
 
 # Example usage
-#euthanize_animal("SAL_005", "2025-3-9", 10, "Male", "Tissue Collection", "AOG")
+#R.euthanize_animal("SAL_005", "2025-3-9", 10, "Male", "Tissue Collection", "AOG")
 
 
 if __name__ == "__main__":

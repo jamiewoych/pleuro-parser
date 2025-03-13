@@ -1,0 +1,50 @@
+Animal ID,Tank,Rack,DOB,Environmental Condition,Sex,Lineage,Transgenic Status,Experimental Holds,Species,Protocol Number,Experimental History
+SAL_001,5,Rack 2,2022-02-07,Reaqua,,Sweden,GCamP6s,False,Pleurodeles waltl,AABL,Viral injection
+SAL_002,2,Rack 3,2021-03-16,Reaqua,,YxO,GCamP6s,False,Ambystoma mexicanum,AABY,EdU
+SAL_004,6,Rack 3,2020-04-08,Reaqua,,Sweden,GCamP6s,True,Ambystoma mexicanum,AABF,Viral injection
+SAL_005,2,Rack 2,2022-01-30,Terrestrial,,YxO,Wildtype,True,Polypterus senegalus,AABY,Viral injection
+SAL_006,3,Rack 2,2024-08-12,Aquatic,,Sweden,hsyn-GFP,True,Ambystoma mexicanum,AABY,Regeneration
+SAL_007,5,Rack 3,2023-01-19,Reaqua,,Jungle Bobs,hsyn-GFP,True,Polypterus senegalus,AABF,EdU
+SAL_008,6,Rack 3,2020-01-11,Reaqua,,YxO,hsyn-GFP,True,Polypterus senegalus,AABY,Behavior Conditioning
+SAL_009,10,Rack 1,2022-12-06,Terrestrial,,Sweden,Wildtype,True,Polypterus senegalus,AABL,Viral injection
+SAL_010,1,Rack 1,2023-05-24,Aquatic,,Jungle Bobs,GCamP6s,True,Polypterus senegalus,AABL,Behavior Conditioning
+SAL_011,7,Rack 3,2020-09-23,Aquatic,,PxW,hsyn-GFP,False,Pleurodeles waltl,AABY,Viral injection
+SAL_012,1,Rack 1,2020-06-07,Terrestrial,,YxO,hsyn-GFP,True,Ambystoma mexicanum,AABY,EdU
+SAL_013,5,Rack 2,2020-07-16,Aquatic,,PxW,GCamP6s,False,Pleurodeles waltl,AABL,Regeneration
+SAL_014,9,Rack 3,2024-01-28,Terrestrial,,Jungle Bobs,Wildtype,True,Polypterus senegalus,AABY,Behavior Conditioning
+SAL_015,6,Rack 3,2020-08-01,Aquatic,,PxW,Wildtype,False,Polypterus senegalus,AABY,Behavior Conditioning
+SAL_016,8,Rack 1,2020-11-10,Aquatic,,Jungle Bobs,hsyn-GFP,False,Pleurodeles waltl,AABL,EdU
+SAL_017,3,Rack 2,2020-04-10,Terrestrial,,Sweden,Wildtype,False,Ambystoma mexicanum,AABF,EdU
+SAL_018,6,Rack 1,2023-10-31,Terrestrial,,Jungle Bobs,Wildtype,False,Polypterus senegalus,AABI,Viral injection
+SAL_019,4,Rack 1,2020-01-25,Reaqua,,Sweden,hsyn-GFP,False,Pleurodeles waltl,AABI,Viral injection
+SAL_020,2,Rack 2,2022-09-27,Aquatic,,Jungle Bobs,Wildtype,True,Pleurodeles waltl,AABY,Regeneration
+SAL_021,6,Rack 1,2024-01-31,Terrestrial,,Jungle Bobs,hsyn-GFP,True,Ambystoma mexicanum,AABL,Behavior Conditioning
+SAL_022,8,Rack 1,2022-08-09,Terrestrial,,Jungle Bobs,hsyn-GFP,False,Ambystoma mexicanum,AABF,Behavior Conditioning
+SAL_023,2,Rack 2,2020-07-22,Aquatic,,PxW,Wildtype,False,Pleurodeles waltl,AABI,Viral injection
+SAL_024,1,Rack 2,2020-08-24,Terrestrial,,YxO,GCamP6s,True,Ambystoma mexicanum,AABY,Viral injection
+SAL_025,1,Rack 1,2021-09-23,Terrestrial,,Sweden,GCamP6s,False,Ambystoma mexicanum,AABY,Behavior Conditioning
+SAL_026,6,Rack 3,2022-11-15,Reaqua,,YxO,GCamP6s,True,Polypterus senegalus,AABI,Behavior Conditioning
+SAL_027,6,Rack 3,2021-04-02,Aquatic,,PxW,hsyn-GFP,True,Pleurodeles waltl,AABF,Regeneration
+SAL_028,9,Rack 3,2022-05-26,Reaqua,,PxW,Wildtype,False,Ambystoma mexicanum,AABI,Viral injection
+SAL_029,6,Rack 1,2023-08-22,Aquatic,,Jungle Bobs,GCamP6s,True,Ambystoma mexicanum,AABI,EdU
+SAL_030,4,Rack 2,2022-05-10,Reaqua,,Jungle Bobs,hsyn-GFP,True,Polypterus senegalus,AABI,Behavior Conditioning
+SAL_031,10,Rack 1,2024-12-23,Terrestrial,,Jungle Bobs,hsyn-GFP,True,Ambystoma mexicanum,AABY,Behavior Conditioning
+SAL_032,10,Rack 3,2023-03-04,Reaqua,,PxW,GCamP6s,False,Polypterus senegalus,AABF,Viral injection
+SAL_033,9,Rack 3,2022-03-12,Aquatic,,YxO,hsyn-GFP,False,Pleurodeles waltl,AABF,EdU
+SAL_034,1,Rack 2,2024-04-02,Aquatic,,PxW,hsyn-GFP,False,Pleurodeles waltl,AABI,EdU
+SAL_035,4,Rack 2,2020-03-31,Reaqua,,PxW,GCamP6s,False,Polypterus senegalus,AABF,Behavior Conditioning
+SAL_036,9,Rack 1,2023-04-30,Aquatic,,PxW,GCamP6s,False,Polypterus senegalus,AABI,Behavior Conditioning
+SAL_037,9,Rack 2,2023-03-07,Reaqua,,Sweden,GCamP6s,False,Ambystoma mexicanum,AABF,Regeneration
+SAL_038,4,Rack 1,2021-06-17,Aquatic,,PxW,GCamP6s,True,Polypterus senegalus,AABF,Regeneration
+SAL_039,5,Rack 1,2022-01-16,Reaqua,,PxW,GCamP6s,False,Ambystoma mexicanum,AABF,Behavior Conditioning
+SAL_040,1,Rack 2,2024-08-16,Reaqua,,Sweden,hsyn-GFP,True,Ambystoma mexicanum,AABL,Regeneration
+SAL_041,6,Rack 1,2024-01-02,Reaqua,,YxO,Wildtype,False,Polypterus senegalus,AABI,Regeneration
+SAL_042,8,Rack 1,2021-12-16,Reaqua,,Jungle Bobs,Wildtype,True,Ambystoma mexicanum,AABI,Behavior Conditioning
+SAL_043,2,Rack 3,2024-04-02,Terrestrial,,Jungle Bobs,hsyn-GFP,True,Ambystoma mexicanum,AABI,Viral injection
+SAL_044,7,Rack 1,2021-07-07,Reaqua,,Jungle Bobs,Wildtype,False,Ambystoma mexicanum,AABL,Regeneration
+SAL_045,3,Rack 2,2024-12-08,Aquatic,,Sweden,hsyn-GFP,False,Ambystoma mexicanum,AABL,Viral injection
+SAL_046,5,Rack 3,2025-01-03,Terrestrial,,Jungle Bobs,GCamP6s,False,Ambystoma mexicanum,AABI,Regeneration
+SAL_047,7,Rack 3,2020-06-17,Terrestrial,,Sweden,GCamP6s,True,Pleurodeles waltl,AABI,Viral injection
+SAL_048,6,Rack 3,2022-08-05,Terrestrial,,Jungle Bobs,Wildtype,False,Pleurodeles waltl,AABY,Regeneration
+SAL_049,5,Rack 3,2020-04-25,Reaqua,,Sweden,GCamP6s,True,Polypterus senegalus,AABF,EdU
+SAL_050,7,Rack 2,2023-10-09,Reaqua,,YxO,Wildtype,True,Polypterus senegalus,AABL,Viral injection
