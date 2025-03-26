@@ -76,7 +76,7 @@ def main():
         euth_file = "euthanasia_file.csv"
         R.euthanize_animal(animal_id, dod, weight, sex, purpose, experimenter, complications)
         R.euthanasia_log
-        R.euthanasia_log = pd.DataFrame(self.euthanasia_log)
+        R.euthanasia_log = pd.DataFrame(R.euthanasia_log)
         R.euthanasia_log.to_csv(euth_file, index=False)
         print("Changes saved to 'salamander_inventory.csv' and 'euthanasia_log.csv'.")
 

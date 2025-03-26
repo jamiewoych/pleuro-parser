@@ -83,6 +83,7 @@ class Rack:
         #self.euthanasia_log = pd.DataFrame(self.euthanasia_log)
 
         print(f"Animal {animal_id} euthanized and removed from inventory.")
+        #animals that dont exist still works - do input validation &regulate values of metadata
 
 
 
@@ -96,6 +97,7 @@ class Rack:
         plt.xlabel("Tank Number")
         plt.ylabel("Rack Location")
         plt.show()
+        #empty racks arent shown
 
     # Function to plot Species Distribution
     def plot_transgenic_distribution(self):
@@ -124,7 +126,7 @@ exp = ["Viral injection", "EdU", "Behavior Conditioning", "Regeneration"]
 sex = ["None", "Male", "Female"]
 
 
-
+#store changes as text file with timestamp to track what people have done
 # Example usage
 #R.euthanize_animal("SAL_005", "2025-3-9", 10, "Male", "Tissue Collection", "AOG")
 

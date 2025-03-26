@@ -1,0 +1,12 @@
+Animal ID,Tank,Rack,DOB,Environmental Condition,Sex,Lineage,Transgenic Status,Experimental Holds,Species,Protocol Number,Experimental History
+SAL_001,5,Rack 2,2022-01-10,Aquatic,,Sweden,GCamP6s,True,Ambystoma mexicanum,AABI,Regeneration
+SAL_002,1,Rack 3,2020-09-07,Aquatic,,Jungle Bobs,hsyn-GFP,True,Ambystoma mexicanum,AABL,Regeneration
+SAL_003,8,Rack 2,2022-11-07,Terrestrial,,Sweden,GCamP6s,True,Polypterus senegalus,AABY,Viral injection
+SAL_005,7,Rack 2,2022-07-14,Terrestrial,,PxW,GCamP6s,True,Ambystoma mexicanum,AABL,Behavior Conditioning
+SAL_006,1,Rack 2,2023-09-05,Reaqua,,YxO,hsyn-GFP,True,Polypterus senegalus,AABI,EdU
+SAL_007,8,Rack 3,2020-01-14,Terrestrial,,Jungle Bobs,hsyn-GFP,True,Pleurodeles waltl,AABF,Viral injection
+SAL_008,3,Rack 1,2023-02-18,Aquatic,,Sweden,Wildtype,False,Ambystoma mexicanum,AABL,Viral injection
+SAL_009,6,Rack 1,2023-11-28,Aquatic,,Sweden,hsyn-GFP,False,Polypterus senegalus,AABI,Viral injection
+SAL_010,4,Rack 3,2021-06-26,Terrestrial,,Jungle Bobs,GCamP6s,False,Polypterus senegalus,AABY,EdU
+SAL_011,9,Rack 3,2024-08-20,Terrestrial,,Jungle Bobs,GCamP6s,False,Polypterus senegalus,AABF,EdU
+SAL_012,4,Rack 1,2022-09-30,Terrestrial,,YxO,hsyn-GFP,True,Pleurodeles waltl,AABF,EdU
