@@ -8,8 +8,8 @@ from setuptools import setup, find_packages
 
 # build command
 setup(
-    name="mini_project",
-    version="0.0.1",
+    name="pleuro_parser",
+    version="0.0.2",
     author="Jamie Woych",
     author_email="jw3943@columbia.edu",
     license="GPLv3",
@@ -17,7 +17,7 @@ setup(
     classifiers=["Programming Language :: Python :: 3"],
     packages=find_packages(),
     entry_points={
-        "console_scripts": ["mini_project = mini_project.__main__:main"]
+        "console_scripts": ["pleuro_parser = pleuro_parser.__main__:main"]
     },
 )
 
