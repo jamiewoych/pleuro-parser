@@ -16,6 +16,8 @@ class Rack:
     def __init__(self, inventory_file=None):
         self.inventory =[]
         self.euthanasia_log = []
+        self.filename = filename  # File to save the state
+        self.history = []  # Stack to store previous states for undo
 
         if inventory_file:
             try:
@@ -25,12 +27,33 @@ class Rack:
                 print(f"File {inventory_file} not found.")
                 
         self.inventory = pd.DataFrame(self.inventory)
+        self.save_state()  # Save initial state
         
     def __repr__(self):
         return f"<Inventory with {len(self.inventory)} salamanders>"
 
     def __str__(self):
         return f"Inventory with {len(self.inventory)} salamanders:\n{self.inventory.head()}"
+
+    def save_state(self):
+        """ Save the current state of the inventory and store in history. """
+        self.history.append(self.inventory.copy())  # Save deep copy to history
+        self.inventory.to_csv(self.filename, index=False)  # Save to CSV
+
+    def undo(self):
+        """ Revert to the last saved state if history exists. """
+        if len(self.history) > 1:
+            self.history.pop()  # Remove the latest state
+            self.inventory = self.history[-1].copy()  # Restore previous state
+            self.inventory.to_csv(self.filename, index=False)  # Save rollback
+            print("Undo successful: reverted to previous state.")
+        else:
+            print("No previous state to revert to.")
+
+    def log_change(self, action, details):
+        """ Log every change to a text file. """
+        with open("change_log.txt", "a") as f:
+            f.write(f"{pd.Timestamp.now()} - {action}: {details}\n")
 
     def add_salamanders(self, num_salamanders, dob, species, transgenic_line, lineage, protocol, rack, tank, env_condition, sex, experimental_holds, experimental_history):
         """
@@ -84,6 +107,9 @@ class Rack:
             }
     
             self.inventory = pd.concat([self.inventory, pd.DataFrame([animal])], ignore_index=True)
+                    # Save after adding
+        
+        self.save_inventory()
     
         print(f"{num_salamanders} new salamanders added to {rack}, tank {tank}, with DOB {dob}.")
 
@@ -165,7 +191,6 @@ class Rack:
         #self.euthanasia_log = pd.DataFrame(self.euthanasia_log)
 
         print(f"Animal {animal_id} euthanized and removed from inventory.")
-        #animals that dont exist still works - do input validation &regulate values of metadata
 
     def search_salamanders(self, **criteria):
         """
@@ -216,6 +241,15 @@ class Rack:
         plt.xlabel("Count")
         plt.ylabel("Animal Line")
         plt.show()
+
+    def save_inventory(self):
+        """Save the current inventory to a CSV file."""
+        if self.csv_file:
+            self.inventory.to_csv(self.csv_file, index=False)
+            print(f"Inventory saved to {self.csv_file}.")
+        else:
+            print("No CSV file specified. Inventory not saved.")
+
             
 species_list = ["Ambystoma mexicanum", "Pleurodeles waltl", "Polypterus senegalus"]
 transgenic_line = ["Wildtype", "hsyn-GFP", "hsyn-GCamP6s", "hsyn-Cre", "mDlx-ChR2"]
@@ -225,8 +259,6 @@ conditions = ["Terrestrial", "Aquatic", "Reaqua"]
 sex = ["None", "Male", "Female"]
 
 #store changes as text file with timestamp to track what people have done
-# Example usage
-#R.euthanize_animal("SAL_005", "2025-3-9", 10, "Male", "Tissue Collection", "AOG")
 
 
 if __name__ == "__main__":
