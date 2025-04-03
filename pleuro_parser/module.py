@@ -13,11 +13,12 @@ from datetime import datetime, timedelta
 
 
 class Rack:     
-    def __init__(self, inventory_file=None):
+    def __init__(self, inventory_file=None, filename =None, csv_file =None):
         self.inventory =[]
         self.euthanasia_log = []
         self.filename = filename  # File to save the state
         self.history = []  # Stack to store previous states for undo
+        self.csv_file = csv_file
 
         if inventory_file:
             try:
@@ -73,6 +74,7 @@ class Rack:
         - experimental_holds (bool): Whether the salamanders are on experimental holds.
         - experimental_history (str): Experiments animals have undergone
         """
+
         if rack not in racks:
             print(f"Error: Rack '{rack}' is not in the current inventory.")
             return
@@ -85,14 +87,22 @@ class Rack:
             print(f"Error: Transgenic line '{transgenic_line}' is not in the current inventory.")
             return
 
-        if sex not in sex:
-            print(f"Error: Default to unknown")
+        if sex not in sex_list:
+            sex = "Unknown"
+            print(f"Error: Default sex to NaN")
+
+        new_salamanders = []
+        existing_ids = self.inventory["Animal ID"].str.extract(r"SAL_(\d+)")  # Extract numeric part
+        existing_ids = existing_ids.dropna().astype(int)  # Convert to int
+        next_id = existing_ids.max().values[0] + 1 if not existing_ids.empty else 1  # Determine next ID
+
     
         for _ in range(num_salamanders):
-            new_id = f"SAL_{len(self.inventory) + 1:03d}"  # Generate new unique ID
-    
+            #new_id = f"SAL_{len(self.inventory) + 1:03d}"  # Generate new unique ID
+            #new_salamanders.append(animal)next_id += 1
+            
             animal = {
-                "Animal ID": new_id,
+                "Animal ID": f"SAL_{next_id:03d}",
                 "Tank": tank,
                 "Rack": rack,
                 "DOB": dob,
@@ -107,11 +117,26 @@ class Rack:
             }
     
             self.inventory = pd.concat([self.inventory, pd.DataFrame([animal])], ignore_index=True)
-                    # Save after adding
-        
+            # Save after adding
+            new_salamanders.append(animal)
+            next_id += 1  # Ensure unique IDs
+            
+            print(f"{num_salamanders} new salamander(s) adding successfully.")
+            
+        # Create DataFrame from new salamanders
+        new_salamanders_df = pd.DataFrame(new_salamanders)
+
+        # Ensure no duplicate IDs before appending
+        if any(new_salamanders_df["Animal ID"].isin(self.inventory["Animal ID"])):
+            print("Error: Duplicate Animal IDs detected. Editing new IDs")
+            return
+
+        # Append new salamanders to inventory
+        self.inventory = pd.concat([self.inventory, new_salamanders_df], ignore_index=True)
+
         self.save_inventory()
     
-        print(f"{num_salamanders} new salamanders added to {rack}, tank {tank}, with DOB {dob}.")
+        print(f"{num_salamanders} baby salamanders added to {rack}, tank {tank}, with DOB {dob}.")
 
     
     def move_salamander(self, animal_id, target_rack):
@@ -256,7 +281,7 @@ transgenic_line = ["Wildtype", "hsyn-GFP", "hsyn-GCamP6s", "hsyn-Cre", "mDlx-ChR
 racks = ["Rack 1", "Rack 2", "Rack 3", "Rack 4", "Rack 5", "Rack 6", "Rack 7", "Rack 8", "Rack 9", "Rack 10", "Rack 11" "Rack 12"]
 protocols = ["AABF2564", "AABL1550", "AABI2617", "AABY5655"]
 conditions = ["Terrestrial", "Aquatic", "Reaqua"]
-sex = ["None", "Male", "Female"]
+sex_list = ["None", "Male", "Female"]
 
 
 if __name__ == "__main__":
