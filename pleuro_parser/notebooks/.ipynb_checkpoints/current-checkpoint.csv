@@ -1,4 +1,4 @@
-Animal ID,Tank,Rack,DOB,Environmental Condition,Sex,Lineage,Transgenic Line,Experimental Holds,Species,Protocol Number,Experimental History
+Animal ID,Tank,Rack,DOB,Environmental Condition,Sex,Lineage,Transgenic Status,Experimental Holds,Species,Protocol Number,Experimental History
 SAL_001,1,Rack 2,2021-09-05,Aquatic,,Sweden,hsyn-GFP,False,Polypterus senegalus,AABL,EdU
 SAL_002,7,Rack 3,2024-02-03,Terrestrial,,YxO,GCamP6s,False,Polypterus senegalus,AABY,EdU
 SAL_003,7,Rack 2,2022-02-09,Terrestrial,,Sweden,Wildtype,True,Polypterus senegalus,AABI,Behavior Conditioning

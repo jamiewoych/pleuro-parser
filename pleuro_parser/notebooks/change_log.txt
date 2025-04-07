@@ -1,0 +1,5 @@
+2025-04-07 19:24:27.369583 - Added animals: Euthanized SAL_011
+2025-04-07 19:30:24.471053 - Added animals: Euthanized SAL_011
+2025-04-07 19:32:41.466593 - Added animals: 5 animals added to Rack 3
+2025-04-07 19:32:57.478605 - Added animals: 5 animals added to Rack 3
+2025-04-07 19:33:29.922411 - Added animals: 5 animals added to Rack 3

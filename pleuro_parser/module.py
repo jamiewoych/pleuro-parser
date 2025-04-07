@@ -40,6 +40,7 @@ class Rack:
         """ Save the current state of the inventory and store in history. """
         self.history.append(self.inventory.copy())  # Save deep copy to history
         self.inventory.to_csv(self.filename, index=False)  # Save to CSV
+        print("State is saving but I dont know where")
 
     def undo(self):
         """ Revert to the last saved state if history exists. """
@@ -52,9 +53,11 @@ class Rack:
             print("No previous state to revert to.")
 
     def log_change(self, action, details):
-        """ Log every change to a text file. """
+        """ Log every change to a text file. 
+        -action (str): what action taken"""
         with open("change_log.txt", "a") as f:
             f.write(f"{pd.Timestamp.now()} - {action}: {details}\n")
+        print("Log successful")
 
     def add_salamanders(self, num_salamanders, dob, species, transgenic_line, lineage, protocol, rack, tank, env_condition, sex, experimental_holds, experimental_history):
         """
@@ -121,8 +124,9 @@ class Rack:
             new_salamanders.append(animal)
             next_id += 1  # Ensure unique IDs
             
-            print(f"{num_salamanders} new salamander(s) adding successfully.")
             
+        print(f"{num_salamanders} new salamander(s) adding successfully.")
+
         # Create DataFrame from new salamanders
         new_salamanders_df = pd.DataFrame(new_salamanders)
 
@@ -177,6 +181,8 @@ class Rack:
         - complications (str, optional): Any complications. Defaults to "None".
         """
         # Check if the animal exists in the inventory
+        animal = self.inventory[self.inventory["Animal ID"] == animal_id]
+
         if animal_id not in self.inventory["Animal ID"].values:
             print(f"Error: Animal {animal_id} not found in inventory. Cannot euthanize.")
             return  
@@ -267,7 +273,7 @@ class Rack:
         plt.ylabel("Animal Line")
         plt.show()
 
-    def save_inventory(self):
+    def save_inventory(self, csv_file = None):
         """Save the current inventory to a CSV file."""
         if self.csv_file:
             self.inventory.to_csv(self.csv_file, index=False)
