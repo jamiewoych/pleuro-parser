@@ -4,21 +4,25 @@
 A function for parsing Tosches lab animal inventory
 """
 
-import pandas as pd
-import numpy as np
+import os
 import random
-import matplotlib.pyplot as plt
+import string
+import itertools
+import numpy as np
+import pandas as pd
 import seaborn as sns
+import matplotlib.pyplot as plt
 from datetime import datetime, timedelta
 
 
+
 class Rack:     
-    def __init__(self, inventory_file=None, filename =None, csv_file =None):
+    def __init__(self, inventory_file="salamander_inventory.csv", filename ="current.csv", euthanasia_log_file ="euthanasia_log.csv"):
         self.inventory =[]
-        self.euthanasia_log = []
+        self.inventory_file = inventory_file
+        self.euthanasia_log_file = euthanasia_log_file
         self.filename = filename  # File to save the state
         self.history = []  # Stack to store previous states for undo
-        self.csv_file = csv_file
 
         if inventory_file:
             try:
@@ -26,8 +30,16 @@ class Rack:
                 print(f"Loaded existing inventory from {inventory_file}")
             except FileNotFoundError:
                 print(f"File {inventory_file} not found.")
+
+        if os.path.exists(self.euthanasia_log_file):
+            try:
+                self.euthanasia_log = pd.read_csv(self.euthanasia_log_file).to_dict(orient="records")
+            except pd.errors.EmptyDataError:
+                print(f"{self.euthanasia_log_file} is empty. Initializing empty euthanasia log.")
+                self.euthanasia_log = []
+        else:
+            self.euthanasia_log = []
                 
-        self.inventory = pd.DataFrame(self.inventory)
         self.save_state()  # Save initial state
         
     def __repr__(self):
@@ -38,26 +50,49 @@ class Rack:
 
     def save_state(self):
         """ Save the current state of the inventory and store in history. """
-        self.history.append(self.inventory.copy())  # Save deep copy to history
-        self.inventory.to_csv(self.filename, index=False)  # Save to CSV
-        print("State is saving but I dont know where")
+        state = {
+            "inventory": self.inventory.copy(),
+            "euthanasia_log": self.euthanasia_log.copy() if isinstance(self.euthanasia_log, list) else self.euthanasia_log
+        }
+        self.history.append(state)
+        self.inventory.to_csv(self.filename, index=False)
+        print(f"State is saving to {self.filename}")
 
     def undo(self):
         """ Revert to the last saved state if history exists. """
         if len(self.history) > 1:
-            self.history.pop()  # Remove the latest state
-            self.inventory = self.history[-1].copy()  # Restore previous state
-            self.inventory.to_csv(self.filename, index=False)  # Save rollback
-            print("Undo successful: reverted to previous state.")
+            self.history.pop()  # Remove the current state
+            previous_state = self.history[-1]
+
+            self.inventory = previous_state["inventory"].copy()
+            self.euthanasia_log = previous_state["euthanasia_log"].copy()
+
+            self.inventory.to_csv(self.filename, index=False)
+            self.save_euthanasia_log()  # Save the reverted euthanasia log
+
+            print("Undo successful: reverted inventory and euthanasia log.")
         else:
             print("No previous state to revert to.")
 
+        self.log_change("Last log change", "is undone")
+
     def log_change(self, action, details):
         """ Log every change to a text file. 
-        -action (str): what action taken"""
+        -action (str): what action taken
+        -details (str): any relevant information to note"""
         with open("change_log.txt", "a") as f:
             f.write(f"{pd.Timestamp.now()} - {action}: {details}\n")
         print("Log successful")
+
+
+    def save_euthanasia_log(self):
+        if self.euthanasia_log_file:
+            df = pd.DataFrame(self.euthanasia_log)
+            
+            # Append new entries without duplicating existing file
+            df.to_csv(self.euthanasia_log_file, index=False)
+        else:
+            print("Euthanasia log not found")
 
     def add_salamanders(self, num_salamanders, dob, species, transgenic_line, lineage, protocol, rack, tank, env_condition, sex, experimental_holds, experimental_history):
         """
@@ -86,7 +121,7 @@ class Rack:
             print(f"Error: Species '{species}' is not in the current inventory.")
             return
     
-        if transgenic_line not in transgenic_line:
+        if transgenic_line not in transgenic_lines:
             print(f"Error: Transgenic line '{transgenic_line}' is not in the current inventory.")
             return
 
@@ -101,6 +136,7 @@ class Rack:
 
     
         for _ in range(num_salamanders):
+            new_id = f"SAL_{next_id:03d}"
             #new_id = f"SAL_{len(self.inventory) + 1:03d}"  # Generate new unique ID
             #new_salamanders.append(animal)next_id += 1
             
@@ -110,16 +146,15 @@ class Rack:
                 "Rack": rack,
                 "DOB": dob,
                 "Environmental Condition": env_condition,
-                "Sex": None,  # User can update later
+                "Sex": sex,  # User can update later
                 "Lineage": lineage,
                 "Transgenic Line": transgenic_line,
                 "Experimental Holds": experimental_holds,
                 "Species": species,
                 "Protocol Number": protocol,
-                "Experimental History": None  # Can be updated later
+                "Experimental History": experimental_history  # Can be updated later
             }
-    
-            self.inventory = pd.concat([self.inventory, pd.DataFrame([animal])], ignore_index=True)
+
             # Save after adding
             new_salamanders.append(animal)
             next_id += 1  # Ensure unique IDs
@@ -139,11 +174,13 @@ class Rack:
         self.inventory = pd.concat([self.inventory, new_salamanders_df], ignore_index=True)
 
         self.save_inventory()
+        self.save_state()
+        self.log_change("Added animals", f"{num_salamanders} animals added to {rack}")
     
         print(f"{num_salamanders} baby salamanders added to {rack}, tank {tank}, with DOB {dob}.")
 
     
-    def move_salamander(self, animal_id, target_rack):
+    def move_salamander(self, animal_id, target_rack, target_tank):
         """
         Move one or multiple salamanders from their current rack to a target rack.
     
@@ -151,9 +188,13 @@ class Rack:
         - animal_id (str): Single animal ID or list of animal IDs to move.
         - target_rack (str): The rack to move the salamanders to.
         """
-        # Trying for multiple animals to move - animal ids as list
-        #if isinstance(animal_id, str):
-            #animal_id = [animal_ids]  # Convert single ID to list
+        # Normalize input to a list if it's a single ID
+        if isinstance(animal_id, str):
+            animal_id = [animal_id]
+
+        if not self.is_valid_tank(target_rack, target_tank):
+            print(f"Error: Tank '{target_tank}' is not valid for {target_rack}.")
+            return
     
         # Loop through each animal ID and update their rack
         for animal_id in animal_id:
@@ -164,8 +205,16 @@ class Rack:
                 # Update the rack of the animal to the target rack
                 self.inventory.loc[self.inventory["Animal ID"] == animal_id, "Rack"] = target_rack
                 print(f"Animal {animal_id} moved to {target_rack}.")
+                self.inventory.loc[self.inventory["Animal ID"] == animal_id, "Tank"] = target_tank
+                print(f"{target_tank}")
+                self.log_change("Animals moved", f"{animal_id} to {target_rack}")
             else:
                 print(f"Animal {animal_id} not found in inventory.")
+
+        self.save_inventory()
+        self.save_state()
+        
+    
 
     def euthanize_animal(self, animal_id, dod, weight, sex, purpose, experimenter, complications="None"):
         """
@@ -186,12 +235,16 @@ class Rack:
         if animal_id not in self.inventory["Animal ID"].values:
             print(f"Error: Animal {animal_id} not found in inventory. Cannot euthanize.")
             return  
-            
+        
+       
         # Automatically carry over the sex if it exists in inventory
-        sex = animal["Sex"].values[0] if pd.notna(animal["Sex"].values[0]) else "Unknown"
+        #this next line wasnt workign
+        #sex = animal["Sex"].values[0] if pd.notna(animal["Sex"].values[0]) else "Unknown"
 
-        # Retrieve the full animal information from the inventory
-        animal_data = self.inventory[self.inventory["Animal ID"] == animal_id].iloc[0]
+        # Retrieve the full animal information from the inventory allowing merge with inventory info
+        animal_data = animal.iloc[0].to_dict()
+        #old version of retrieval
+        #animal_data = self.inventory[self.inventory["Animal ID"] == animal_id].iloc[0]
 
         # Create the euthanasia entry by merging inventory info with euthanasia details
         euth_entry = {
@@ -208,20 +261,92 @@ class Rack:
             "Experimental History": animal_data["Experimental History"],
             "DOD": dod,
             "Weight (g)": weight,
-            "Sex": sex,
+            "Sex": sex if sex and sex != "Unknown" else animal_data.get("Sex", "Unknown"),
             "Purpose": purpose,
             "Experimenter": experimenter,
             "Complications": complications
         }
     
         # Add the euthanasia entry to the euthanasia log
-
         self.euthanasia_log.append(euth_entry)
 
-        self.inventory = self.inventory[self.inventory["Animal ID"] != animal_id]  # Remove from inventory
-        #self.euthanasia_log = pd.DataFrame(self.euthanasia_log)
+        #Remove animal from inventory
+        self.inventory = self.inventory[self.inventory["Animal ID"] != animal_id]
+ 
+        # Save euth log changes
+        self.save_euthanasia_log()
+
+        #update change log
+        self.log_change("Euthanized", f"{animal_id} on {dod}")
+        
+        #save changes to inventory
+        self.save_inventory()
+        self.save_state()
 
         print(f"Animal {animal_id} euthanized and removed from inventory.")
+
+    def edit_salamander_info(self, animal_id, **updates):
+        """
+        Editable fields for a specific salamander by Animal ID.
+
+        Parameters:
+        - animal_id (str): ID of the salamander to edit.
+        - updates (dict): Key-value pairs of the fields to update.
+          Valid keys: 'Environmental Condition', 'Sex', 'Experimental Holds',
+                      'Protocol Number', 'Experimental History'
+        """
+        valid_fields = {
+            "Environmental Condition",
+            "Sex",
+            "Experimental Holds",
+            "Protocol Number",
+            "Experimental History"
+        }
+
+        if animal_id not in self.inventory["Animal ID"].values:
+            print(f"Error: Animal ID {animal_id} not found in inventory.")
+            return
+
+        row_index = self.inventory[self.inventory["Animal ID"] == animal_id].index[0]
+
+        changes = []
+        for key, value in updates.items():
+            if key in valid_fields:
+                old_value = self.inventory.at[row_index, key]
+                self.inventory.at[row_index, key] = value
+                changes.append(f"{key}: {old_value} → {value}")
+            else:
+                print(f"Warning: '{key}' is not a valid editable field. Skipped.")
+
+        if changes:
+            self.save_inventory()
+            self.save_state()
+            self.log_change("Edit", f"{animal_id} - " + "; ".join(changes))
+            print(f"Updated {animal_id}:")
+            for change in changes:
+                print(" -", change)
+        else:
+            print("No valid changes made.")
+
+    def analyze_euthanasia_log(self):
+        if not self.euthanasia_log:
+            print("No euthanasia records to analyze.")
+            return
+
+        log_df = pd.DataFrame(self.euthanasia_log)
+        log_df["Year"] = pd.to_datetime(log_df["DOD"]).dt.year
+
+        summary = (
+            log_df
+            .groupby(["Protocol Number", "Year"])
+            .agg(
+                total_euthanized=("Animal ID", "count"),
+                complications=("Complications", lambda x: (x != "None").sum())
+            )
+            .reset_index()
+        )
+        
+        return summary
 
     def search_salamanders(self, **criteria):
         """
@@ -237,6 +362,9 @@ class Rack:
         if not criteria:
             print("Please provide at least one search criterion.")
             return None
+
+        exact_match_fields = {"Sex", "Rack", "Tank"}  
+        #female was filtering as partial match for male
     
         filtered_inventory = self.inventory  # Start with the full inventory
     
@@ -244,25 +372,109 @@ class Rack:
             if key not in self.inventory.columns:
                 print(f"Warning: '{key}' is not a valid column in the inventory.")
                 continue  # Skip invalid columns
-    
-            # Use case-insensitive regex search for partial matches
-            filtered_inventory = filtered_inventory[
-                filtered_inventory[key].astype(str).str.contains(str(value), case=False, na=False)
-            ]
-    
+            if key in exact_match_fields:
+                filtered_inventory = filtered_inventory[
+                    filtered_inventory[key].astype(str).str.lower() == str(value).lower()
+                ]
+
+            else:
+                # Use case-insensitive regex search for partial matches
+                filtered_inventory = filtered_inventory[
+                    filtered_inventory[key].astype(str).str.contains(str(value), case=False, na=False)
+                ]
+        
         return filtered_inventory if not filtered_inventory.empty else "No matches found."
 
     # Function to plot Rack Space Usage Heatmap
+    def get_tanks_for_rack(self, rack):
+        if rack in limited_racks:
+            return limited_tanks
+        else:
+            return full_tanks
+
     def plot_rack_space(self):
+        """
+        # Define fixed racks and tank labels
+        all_racks = racks
+        all_tanks = [f"{row}{col}" for row in "ABCD" for col in range(1, 7)]  # A1 to D6
+
+        # Make sure tank labels in inventory are strings
+        self.inventory["Tank"] = self.inventory["Tank"].astype(str)
+
+
+        # Create a full index of all combinations
         rack_tank_count = self.inventory.groupby(["Rack", "Tank"]).size().unstack(fill_value=0)
-    
+        rack_tank_count = rack_tank_count.reindex(index=all_racks, columns=all_tanks, fill_value=0)
+        
+
         plt.figure(figsize=(8, 6))
         sns.heatmap(rack_tank_count, annot=True, cmap="coolwarm", linewidths=0.5, fmt="d")
         plt.title("Salamander Distribution Across Racks and Tanks")
         plt.xlabel("Tank Number")
         plt.ylabel("Rack Location")
+        plt.tight_layout()
         plt.show()
-        #empty racks arent shown
+
+        """
+
+        # Create an empty DataFrame with all possible valid (rack, tank) combinations
+        full_layout = []
+
+        for rack in valid_racks:
+            tanks = limited_tanks if rack in limited_racks else full_tanks
+            for tank in tanks:
+                full_layout.append((rack, tank))
+
+        layout_df = pd.DataFrame(full_layout, columns=["Rack", "Tank"])
+        layout_df["Count"] = 0
+
+        # Count current animals
+        counts = self.inventory.groupby(["Rack", "Tank"]).size().reset_index(name="Count")
+
+        # Merge with the full layout to ensure all (rack, tank) pairs are present
+        merged = layout_df.merge(counts, on=["Rack", "Tank"], how="left", suffixes=("", "_actual"))
+        merged["Count"] = merged["Count_actual"].fillna(0).astype(int)
+        merged.drop(columns=["Count_actual"], inplace=True)
+
+        # Pivot for heatmap, sorted numerically by rack
+        pivot = merged.pivot(index="Rack", columns="Tank", values="Count").fillna(0)
+        pivot = pivot.astype(int)
+        pivot = pivot.loc[sorted(pivot.index, key=lambda x: int(x.split()[1]))]
+        
+        # Create a mask for invalid tank positions (tanks that don't exist for the rack)    
+        mask = pd.DataFrame(False, index=pivot.index, columns=pivot.columns)
+        for rack in pivot.index:
+            valid_tanks = self.get_tanks_for_rack(rack)
+            for tank in pivot.columns:
+                if tank not in valid_tanks:
+                    mask.loc[rack, tank] = True
+
+        # Sort the tank columns in a consistent order
+        sorted_tanks = sorted(pivot.columns, key=lambda x: (x[0], int(x[1:])))
+        pivot = pivot[sorted_tanks]
+
+        # Fill NaNs for safe plotting (mask handles visibility)
+        plot_data = pivot.fillna(0).astype(int)
+
+        # Plot
+        plt.figure(figsize=(14, 8))
+        sns.heatmap(
+            plot_data, 
+            mask=mask, 
+            annot=True, 
+            fmt="d", 
+            cmap="coolwarm", 
+            linewidths=0.5, 
+            linecolor='gray', 
+            cbar_kws={'label': 'Count'}
+        )
+        plt.title("Salamander Distribution Across Racks and Tanks", fontsize=16)
+        plt.xlabel("Tank", fontsize=12)
+        plt.ylabel("Rack", fontsize=12)
+        plt.xticks(rotation=45)
+        plt.tight_layout()
+        plt.show()
+
 
     # Function to plot Transgenic Distribution
     def plot_transgenic_distribution(self):
@@ -273,21 +485,69 @@ class Rack:
         plt.ylabel("Animal Line")
         plt.show()
 
-    def save_inventory(self, csv_file = None):
+    def save_inventory(self, inventory_file = None):
         """Save the current inventory to a CSV file."""
-        if self.csv_file:
-            self.inventory.to_csv(self.csv_file, index=False)
-            print(f"Inventory saved to {self.csv_file}.")
+        if self.inventory_file:
+            self.inventory.to_csv(self.inventory_file, index=False)
+            print(f"Inventory saved to {self.inventory_file}.")
         else:
             print("No CSV file specified. Inventory not saved.")
 
+    def is_valid_tank(self, rack, tank):
+        """
+        Check if the provided tank is valid for the given rack based on rack_layouts.
+        
+        Parameters:
+        - rack (str): Rack name (e.g., "Rack 1")
+        - tank (str): Tank ID (e.g., "A3")
+
+            """
+        valid_racks = [
+            "Rack 1", "Rack 2", "Rack 3", "Rack 4", "Rack 5",
+            "Rack 6", "Rack 7", "Rack 8", "Rack 9", "Rack 10", "Rack 11", "Rack 12"
+        ]
+        limited_racks = ["Rack 1", "Rack 3", "Rack 5", "Rack 7", "Rack 9", "Rack 10", "Rack 11"]
+
+        if rack not in valid_racks:
+            return False
+
+        limited_tanks = [f"{row}{col}" for row in "ABC" for col in range(1, 5)] #A1-C4
+        full_tanks = [f"{row}{col}" for row in "ABCD" for col in range(1, 7)] #A1-D6
+
+        valid_tanks = limited_tanks if rack in limited_racks else full_tanks
+        return tank in valid_tanks
+
             
 species_list = ["Ambystoma mexicanum", "Pleurodeles waltl", "Polypterus senegalus"]
-transgenic_line = ["Wildtype", "hsyn-GFP", "hsyn-GCamP6s", "hsyn-Cre", "mDlx-ChR2"]
-racks = ["Rack 1", "Rack 2", "Rack 3", "Rack 4", "Rack 5", "Rack 6", "Rack 7", "Rack 8", "Rack 9", "Rack 10", "Rack 11" "Rack 12"]
+transgenic_lines = ["Wildtype", "hsyn-GFP", "hsyn-GCamP6s", "hsyn-Cre", "mDlx-ChR2"]
+racks = ["Rack 1", "Rack 2", "Rack 3", "Rack 4", "Rack 5", "Rack 6", "Rack 7", "Rack 8", "Rack 9", "Rack 10", "Rack 11", "Rack 12"]
 protocols = ["AABF2564", "AABL1550", "AABI2617", "AABY5655"]
 conditions = ["Terrestrial", "Aquatic", "Reaqua"]
 sex_list = ["None", "Male", "Female"]
+# Define valid racks and tank layout
+valid_racks = [
+        "Rack 1", "Rack 2", "Rack 3", "Rack 4", "Rack 5",
+        "Rack 6", "Rack 7", "Rack 8", "Rack 9", "Rack 10", "Rack 11", "Rack 12"
+        ]
+limited_racks = ["Rack 1", "Rack 3", "Rack 5", "Rack 7", "Rack 9", "Rack 10", "Rack 11"]
+
+limited_tanks = [f"{row}{col}" for row in "ABC" for col in range(1, 5)]   # A1–C4
+full_tanks = [f"{row}{col}" for row in "ABCD" for col in range(1, 7)]     # A1–D6
+
+"""rack_layouts = {
+    "Rack 1":  {"rows": ["A", "B", "C"], "cols": [1, 2, 3, 4]},
+    "Rack 3":  {"rows": ["A", "B", "C"], "cols": [1, 2, 3, 4]},
+    "Rack 5":  {"rows": ["A", "B", "C"], "cols": [1, 2, 3, 4]},
+    "Rack 7":  {"rows": ["A", "B", "C"], "cols": [1, 2, 3, 4]},
+    "Rack 9":  {"rows": ["A", "B", "C"], "cols": [1, 2, 3, 4]},
+    "Rack 10": {"rows": ["A", "B", "C"], "cols": [1, 2, 3, 4]},
+    "Rack 11": {"rows": ["A", "B", "C"], "cols": [1, 2, 3, 4]},
+    "Rack 2":  {"rows": ["A", "B", "C", "D"], "cols": [1, 2, 3, 4, 5, 6]},
+    "Rack 4":  {"rows": ["A", "B", "C", "D"], "cols": [1, 2, 3, 4, 5, 6]},
+    "Rack 6":  {"rows": ["A", "B", "C", "D"], "cols": [1, 2, 3, 4, 5, 6]},
+    "Rack 8":  {"rows": ["A", "B", "C", "D"], "cols": [1, 2, 3, 4, 5, 6]},
+    "Rack 12": {"rows": ["A", "B", "C", "D"], "cols": [1, 2, 3, 4, 5, 6]},
+}"""
 
 
 if __name__ == "__main__":

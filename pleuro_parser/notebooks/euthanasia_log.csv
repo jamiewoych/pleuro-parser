@@ -1,0 +1,3 @@
+Animal ID,Tank,Rack,DOB,Environmental Condition,Lineage,Transgenic Line,Experimental Holds,Species,Protocol Number,Experimental History,DOD,Weight (g),Sex,Purpose,Experimenter,Complications
+SAL_016,A5,Rack 3,2022-05-22,Aqua,PxO,hsyn-GCamP6s, ,Pleurodeles waltl,AABL1550,Edu,2025-4-12,9,Male,Histology,AOG,found dead
+SAL_013,A5,Rack 3,2022-05-22,Aqua,PxO,GCaMP, ,Pleurodeles waltl,AABL1550,,2025-4-12,9,Male,Histology,AOG,found dead
