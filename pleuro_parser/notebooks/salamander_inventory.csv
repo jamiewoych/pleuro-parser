@@ -2,7 +2,7 @@ Animal ID,Tank,Rack,DOB,Environmental Condition,Sex,Lineage,Transgenic Line,Expe
 SAL_001,B5,Rack 1,2021-09-05,Aquatic,,Sweden,hsyn-GFP,False,Polypterus senegalus,AABL,EdU
 SAL_002,A6,Rack 5,2024-02-03,Terrestrial,,YxO,GCamP6s,False,Polypterus senegalus,AABY,EdU
 SAL_003,B5,Rack 1,2022-02-09,Terrestrial,,Sweden,Wildtype,True,Polypterus senegalus,AABI,Behavior Conditioning
-SAL_005,A6,Rack 5,2024-06-21,Aquatic,Male,YxO,GCamP6s,True,Ambystoma mexicanum,AABL,Behavioral Study
+SAL_005,A6,Rack 5,2024-06-21,Aquatic,Female,YxO,GCamP6s,True,Ambystoma mexicanum,AABL,Behavioral Study
 SAL_006,B5,Rack 1,2022-01-16,Reaqua,,Sweden,Wildtype,False,Pleurodeles waltl,AABL,Behavior Conditioning
 SAL_007,D2,Rack 12,2024-01-22,Reaqua,,Jungle Bobs,Wildtype,True,Polypterus senegalus,AABL,Regeneration
 SAL_008,D2,Rack 12,2020-07-19,Reaqua,,Jungle Bobs,hsyn-GFP,True,Ambystoma mexicanum,AABI,Viral injection
@@ -12,4 +12,4 @@ SAL_012,A5,Rack 3,2022-05-22,Aqua,,PxO,GCaMP, ,Pleurodeles waltl,AABL1550,
 SAL_014,A5,Rack 3,2022-05-22,Aqua,,PxO,GCaMP, ,Pleurodeles waltl,AABL1550,
 SAL_015,A6,Rack 5,2022-05-22,Aqua,,PxO,GCaMP, ,Pleurodeles waltl,AABL1550,
 SAL_017,A6,Rack 5,2022-05-22,Aqua,Female,PxO,hsyn-GCamP6s, ,Pleurodeles waltl,AABL1550,Edu
-SAL_018,A6,Rack 5,2022-05-22,Aqua,Female,PxO,hsyn-GCamP6s, ,Pleurodeles waltl,AABL1550,Edu
+SAL_019,A5,Rack 3,2022-05-22,Aqua,Female,PxO,hsyn-GCamP6s, ,Pleurodeles waltl,AABL1550,Edu

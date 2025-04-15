@@ -43,3 +43,11 @@
 2025-04-13 01:00:01.930225 - Animals moved: SAL_007 to Rack 12
 2025-04-13 01:00:01.933340 - Animals moved: SAL_008 to Rack 12
 2025-04-13 01:00:01.935004 - Animals moved: SAL_010 to Rack 12
+2025-04-14 23:26:19.759665 - Added animals: 1 animals added to Rack 3
+2025-04-14 23:26:20.551576 - Euthanized: SAL_018 on 2025-4-12
+2025-04-14 23:27:45.679529 - Added animals: 1 animals added to Rack 3
+2025-04-14 23:27:56.083931 - Animals moved: SAL_007 to Rack 12
+2025-04-14 23:27:56.088843 - Animals moved: SAL_008 to Rack 12
+2025-04-14 23:27:56.091364 - Animals moved: SAL_010 to Rack 12
+2025-04-14 23:28:28.265828 - Edit: SAL_005 - Environmental Condition: Aquatic → Aquatic; Sex: Male → Male; Protocol Number: AABL → AABL; Experimental History: Behavioral Study → Behavioral Study
+2025-04-14 23:28:34.862246 - Edit: SAL_005 - Environmental Condition: Aquatic → Aquatic; Sex: Male → Female; Protocol Number: AABL → AABL; Experimental History: Behavioral Study → Behavioral Study

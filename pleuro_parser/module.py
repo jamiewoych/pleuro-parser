@@ -7,31 +7,43 @@ A function for parsing Tosches lab animal inventory
 import os
 import random
 import string
+import tempfile
 import itertools
 import numpy as np
 import pandas as pd
 import seaborn as sns
+from pathlib import Path
 import matplotlib.pyplot as plt
 from datetime import datetime, timedelta
 
 
 
 class Rack:     
-    def __init__(self, inventory_file="salamander_inventory.csv", filename ="current.csv", euthanasia_log_file ="euthanasia_log.csv"):
-        self.inventory =[]
-        self.inventory_file = inventory_file
-        self.euthanasia_log_file = euthanasia_log_file
-        self.filename = filename  # File to save the state
+    def __init__(self, inventory_file="salamander_inventory.csv", filename ="inventory_state.csv", euthanasia_log_file ="euthanasia_log.csv"):
+        
+        # Expand and resolve relative paths to absolute     
+        def resolve_path(path):
+            return Path(path).expanduser().resolve() if path else None
+
+        self.inventory_file = resolve_path(inventory_file)
+        self.euthanasia_log_file = resolve_path(euthanasia_log_file)
+        self.filename = resolve_path(filename) or Path(self.temp_dir.name) / "session_inventory.csv"  # File to save the state
         self.history = []  # Stack to store previous states for undo
 
-        if inventory_file:
+        # Temporary directory for state saving
+        self.temp_dir = tempfile.TemporaryDirectory()
+        self.state_path = os.path.join(self.temp_dir.name, "inventory_state.csv")
+        print(f"Temporary session directory created at {self.temp_dir}")
+
+        #Loading inventory
+        if self.inventory_file and self.inventory_file.exists():
             try:
                 self.inventory = pd.read_csv(inventory_file)
                 print(f"Loaded existing inventory from {inventory_file}")
             except FileNotFoundError:
                 print(f"File {inventory_file} not found.")
 
-        if os.path.exists(self.euthanasia_log_file):
+        if self.euthanasia_log_file and self.euthanasia_log_file.exists():
             try:
                 self.euthanasia_log = pd.read_csv(self.euthanasia_log_file).to_dict(orient="records")
             except pd.errors.EmptyDataError:
@@ -39,7 +51,8 @@ class Rack:
                 self.euthanasia_log = []
         else:
             self.euthanasia_log = []
-                
+        
+        self.inventory = pd.DataFrame(self.inventory)
         self.save_state()  # Save initial state
         
     def __repr__(self):
@@ -50,31 +63,18 @@ class Rack:
 
     def save_state(self):
         """ Save the current state of the inventory and store in history. """
-        state = {
-            "inventory": self.inventory.copy(),
-            "euthanasia_log": self.euthanasia_log.copy() if isinstance(self.euthanasia_log, list) else self.euthanasia_log
-        }
-        self.history.append(state)
+        self.history.append(self.inventory.copy())
         self.inventory.to_csv(self.filename, index=False)
-        print(f"State is saving to {self.filename}")
 
     def undo(self):
         """ Revert to the last saved state if history exists. """
         if len(self.history) > 1:
-            self.history.pop()  # Remove the current state
-            previous_state = self.history[-1]
-
-            self.inventory = previous_state["inventory"].copy()
-            self.euthanasia_log = previous_state["euthanasia_log"].copy()
-
+            self.history.pop()
+            self.inventory = self.history[-1].copy()
             self.inventory.to_csv(self.filename, index=False)
-            self.save_euthanasia_log()  # Save the reverted euthanasia log
-
-            print("Undo successful: reverted inventory and euthanasia log.")
+            print("Undo successful.")
         else:
-            print("No previous state to revert to.")
-
-        self.log_change("Last log change", "is undone")
+            print("No previous state to undo.")
 
     def log_change(self, action, details):
         """ Log every change to a text file. 
