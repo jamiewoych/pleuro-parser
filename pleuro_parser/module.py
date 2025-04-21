@@ -129,8 +129,13 @@ class Rack:
             sex = "Unknown"
             print(f"Error: Default sex to NaN")
 
+        if tank not in self.get_tanks_for_rack(rack):
+            print(f"Error: Tank '{tank}' does not exist.")
+            return
+
+
         new_salamanders = []
-        existing_ids = self.inventory["Animal ID"].str.extract(r"SAL_(\d+)")  # Extract numeric part
+        existing_ids = self.inventory["Animal_ID"].str.extract(r"SAL_(\d+)")  # Extract numeric part
         existing_ids = existing_ids.dropna().astype(int)  # Convert to int
         next_id = existing_ids.max().values[0] + 1 if not existing_ids.empty else 1  # Determine next ID
 
@@ -141,18 +146,18 @@ class Rack:
             #new_salamanders.append(animal)next_id += 1
             
             animal = {
-                "Animal ID": f"SAL_{next_id:03d}",
+                "Animal_ID": f"SAL_{next_id:03d}",
                 "Tank": tank,
                 "Rack": rack,
                 "DOB": dob,
-                "Environmental Condition": env_condition,
+                "Environmental_Condition": env_condition,
                 "Sex": sex,  # User can update later
                 "Lineage": lineage,
-                "Transgenic Line": transgenic_line,
-                "Experimental Holds": experimental_holds,
+                "Transgenic_Line": transgenic_line,
+                "Experimental_Holds": experimental_holds,
                 "Species": species,
-                "Protocol Number": protocol,
-                "Experimental History": experimental_history  # Can be updated later
+                "Protocol_Number": protocol,
+                "Experimental_History": experimental_history  # Can be updated later
             }
 
             # Save after adding
@@ -166,8 +171,8 @@ class Rack:
         new_salamanders_df = pd.DataFrame(new_salamanders)
 
         # Ensure no duplicate IDs before appending
-        if any(new_salamanders_df["Animal ID"].isin(self.inventory["Animal ID"])):
-            print("Error: Duplicate Animal IDs detected. Editing new IDs")
+        if any(new_salamanders_df["Animal_ID"].isin(self.inventory["Animal_ID"])):
+            print("Error: Duplicate Animal_IDs detected. Editing new IDs")
             return
 
         # Append new salamanders to inventory
@@ -175,7 +180,7 @@ class Rack:
 
         self.save_inventory()
         self.save_state()
-        self.log_change("Added animals", f"{num_salamanders} animals added to {rack}")
+        self.log_change("Added animals", f"{num_salamanders} animals added to {rack} in {tank}.")
     
         print(f"{num_salamanders} baby salamanders added to {rack}, tank {tank}, with DOB {dob}.")
 
@@ -199,13 +204,13 @@ class Rack:
         # Loop through each animal ID and update their rack
         for animal_id in animal_id:
             # Find the animal in the inventory
-            animal = self.inventory[self.inventory["Animal ID"] == animal_id]
+            animal = self.inventory[self.inventory["Animal_ID"] == animal_id]
     
             if not animal.empty:
                 # Update the rack of the animal to the target rack
-                self.inventory.loc[self.inventory["Animal ID"] == animal_id, "Rack"] = target_rack
+                self.inventory.loc[self.inventory["Animal_ID"] == animal_id, "Rack"] = target_rack
                 print(f"Animal {animal_id} moved to {target_rack}.")
-                self.inventory.loc[self.inventory["Animal ID"] == animal_id, "Tank"] = target_tank
+                self.inventory.loc[self.inventory["Animal_ID"] == animal_id, "Tank"] = target_tank
                 print(f"{target_tank}")
                 self.log_change("Animals moved", f"{animal_id} to {target_rack}")
             else:
@@ -230,9 +235,9 @@ class Rack:
         - complications (str, optional): Any complications. Defaults to "None".
         """
         # Check if the animal exists in the inventory
-        animal = self.inventory[self.inventory["Animal ID"] == animal_id]
+        animal = self.inventory[self.inventory["Animal_ID"] == animal_id]
 
-        if animal_id not in self.inventory["Animal ID"].values:
+        if animal_id not in self.inventory["Animal_ID"].values:
             print(f"Error: Animal {animal_id} not found in inventory. Cannot euthanize.")
             return  
         
@@ -244,21 +249,21 @@ class Rack:
         # Retrieve the full animal information from the inventory allowing merge with inventory info
         animal_data = animal.iloc[0].to_dict()
         #old version of retrieval
-        #animal_data = self.inventory[self.inventory["Animal ID"] == animal_id].iloc[0]
+        #animal_data = self.inventory[self.inventory["Animal_ID"] == animal_id].iloc[0]
 
         # Create the euthanasia entry by merging inventory info with euthanasia details
         euth_entry = {
-            "Animal ID": animal_id,
+            "Animal_ID": animal_id,
             "Tank": animal_data["Tank"],
             "Rack": animal_data["Rack"],
             "DOB": animal_data["DOB"],
-            "Environmental Condition": animal_data["Environmental Condition"],
+            "Environmental_Condition": animal_data["Environmental_Condition"],
             "Lineage": animal_data["Lineage"],
-            "Transgenic Line": animal_data["Transgenic Line"],
-            "Experimental Holds": animal_data["Experimental Holds"],
+            "Transgenic_Line": animal_data["Transgenic_Line"],
+            "Experimental_Holds": animal_data["Experimental_Holds"],
             "Species": animal_data["Species"],
-            "Protocol Number": animal_data["Protocol Number"],
-            "Experimental History": animal_data["Experimental History"],
+            "Protocol_Number": animal_data["Protocol_Number"],
+            "Experimental_History": animal_data["Experimental_History"],
             "DOD": dod,
             "Weight (g)": weight,
             "Sex": sex if sex and sex != "Unknown" else animal_data.get("Sex", "Unknown"),
@@ -271,7 +276,7 @@ class Rack:
         self.euthanasia_log.append(euth_entry)
 
         #Remove animal from inventory
-        self.inventory = self.inventory[self.inventory["Animal ID"] != animal_id]
+        self.inventory = self.inventory[self.inventory["Animal_ID"] != animal_id]
  
         # Save euth log changes
         self.save_euthanasia_log()
@@ -296,18 +301,18 @@ class Rack:
                       'Protocol Number', 'Experimental History'
         """
         valid_fields = {
-            "Environmental Condition",
+            "Environmental_Condition",
             "Sex",
-            "Experimental Holds",
-            "Protocol Number",
-            "Experimental History"
+            "Experimental_Holds",
+            "Protocol_Number",
+            "Experimental_History"
         }
 
-        if animal_id not in self.inventory["Animal ID"].values:
-            print(f"Error: Animal ID {animal_id} not found in inventory.")
+        if animal_id not in self.inventory["Animal_ID"].values:
+            print(f"Error: Animal_ID {animal_id} not found in inventory.")
             return
 
-        row_index = self.inventory[self.inventory["Animal ID"] == animal_id].index[0]
+        row_index = self.inventory[self.inventory["Animal_ID"] == animal_id].index[0]
 
         changes = []
         for key, value in updates.items():
@@ -340,7 +345,7 @@ class Rack:
             log_df
             .groupby(["Protocol Number", "Year"])
             .agg(
-                total_euthanized=("Animal ID", "count"),
+                total_euthanized=("Animal_ID", "count"),
                 complications=("Complications", lambda x: (x != "None").sum())
             )
             .reset_index()
@@ -392,30 +397,7 @@ class Rack:
         else:
             return full_tanks
 
-    def plot_rack_space(self):
-        """
-        # Define fixed racks and tank labels
-        all_racks = racks
-        all_tanks = [f"{row}{col}" for row in "ABCD" for col in range(1, 7)]  # A1 to D6
-
-        # Make sure tank labels in inventory are strings
-        self.inventory["Tank"] = self.inventory["Tank"].astype(str)
-
-
-        # Create a full index of all combinations
-        rack_tank_count = self.inventory.groupby(["Rack", "Tank"]).size().unstack(fill_value=0)
-        rack_tank_count = rack_tank_count.reindex(index=all_racks, columns=all_tanks, fill_value=0)
-        
-
-        plt.figure(figsize=(8, 6))
-        sns.heatmap(rack_tank_count, annot=True, cmap="coolwarm", linewidths=0.5, fmt="d")
-        plt.title("Salamander Distribution Across Racks and Tanks")
-        plt.xlabel("Tank Number")
-        plt.ylabel("Rack Location")
-        plt.tight_layout()
-        plt.show()
-
-        """
+    def plot_rack_space(self, inventory_subset=None, return_fig=False):
 
         # Create an empty DataFrame with all possible valid (rack, tank) combinations
         full_layout = []
@@ -429,7 +411,9 @@ class Rack:
         layout_df["Count"] = 0
 
         # Count current animals
-        counts = self.inventory.groupby(["Rack", "Tank"]).size().reset_index(name="Count")
+        inventory = inventory_subset if inventory_subset is not None else self.inventory
+        counts = inventory.groupby(["Rack", "Tank"]).size().reset_index(name="Count")
+
 
         # Merge with the full layout to ensure all (rack, tank) pairs are present
         merged = layout_df.merge(counts, on=["Rack", "Tank"], how="left", suffixes=("", "_actual"))
@@ -454,27 +438,31 @@ class Rack:
         pivot = pivot[sorted_tanks]
 
         # Fill NaNs for safe plotting (mask handles visibility)
-        plot_data = pivot.fillna(0).astype(int)
+        #plot_data = pivot.fillna(0).astype(int)
 
         # Plot
-        plt.figure(figsize=(14, 8))
+        fig, ax = plt.subplots(figsize=(14, 8))
         sns.heatmap(
-            plot_data, 
+            pivot, 
             mask=mask, 
             annot=True, 
             fmt="d", 
             cmap="coolwarm", 
             linewidths=0.5, 
             linecolor='gray', 
-            cbar_kws={'label': 'Count'}
+            cbar_kws={'label': 'Count'},
+            ax=ax
         )
-        plt.title("Salamander Distribution Across Racks and Tanks", fontsize=16)
-        plt.xlabel("Tank", fontsize=12)
-        plt.ylabel("Rack", fontsize=12)
+        ax.set_title("Salamander Distribution Across Racks and Tanks", fontsize=16)
+        ax.set_xlabel("Tank", fontsize=12)
+        ax.set_ylabel("Rack", fontsize=12)
         plt.xticks(rotation=45)
         plt.tight_layout()
-        plt.show()
 
+        if return_fig:
+            return fig
+        else:
+            plt.show()
 
     # Function to plot Transgenic Distribution
     def plot_transgenic_distribution(self):
