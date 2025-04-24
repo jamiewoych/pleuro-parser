@@ -10,8 +10,17 @@ from module import Rack
 #Title of webapp
 st.title('Pleurodeles Parsing')
 
-#initializing
-R = Rack(inventory_file = "salamander_inventory.csv", filename = "inventory_state.csv", euthanasia_log_file = "euthanasia_log.csv")
+# Initialize Rack object only once
+if "rack" not in st.session_state:
+    st.session_state.rack = Rack(
+        inventory_file="salamander_inventory.csv",
+        filename="inventory_state.csv",
+        euthanasia_log_file="euthanasia_log.csv"
+    )
+
+# Use the persisted instance
+R = st.session_state.rack
+
 
 #st.write
 
@@ -24,6 +33,10 @@ with tab1:
         st.subheader("Animal Search")
         species = st.selectbox("Species", ["Pleurodeles waltl", "Axolotl mexicanum", "Polypterus senegalus" ])
         sex = st.selectbox("Sex", ["", "Male", "Female", "Unknown"])
+        transgenic_line = st.selectbox("Transgenic_Line", ["hsyn-GFP", "hsyn-GCaMP6s", "mDlx-GFP", "mDlx-ChR2"])
+        min_age = st.text_input("Minimum Age in years")
+        max_age = st.text_input("Maximum Age in years")
+        protocol = st.selectbox("Protocol_Number", ["AABL1550", "AABF2564", "AABI2617", "AABY5655"])
 
         # Optionally filter before plotting
         if st.button("Plot All Racks"):
@@ -36,6 +49,24 @@ with tab1:
                         search_kwargs["Species"] = species
                 if sex:
                         search_kwargs["Sex"] = sex
+
+                if transgenic_line:
+                        search_kwargs["Transgenic_Line"] = transgenic_line
+
+                if protocol:
+                        search_kwargs["Protocol_Number"] = protocol
+
+                if min_age:
+                    try:
+                        search_kwargs["min_age"] = float(min_age)
+                    except ValueError:
+                        st.warning("Minimum age must be a number.")
+
+                if max_age:
+                    try:
+                        search_kwargs["max_age"] = float(max_age)
+                    except ValueError:
+                        st.warning("Maximum age must be a number.")
 
                 results = R.search_salamanders(**search_kwargs)
                 if isinstance(results, pd.DataFrame):
@@ -82,7 +113,7 @@ with tab3:
 
     animal_id = st.text_input("Animal ID to Euthanize")
     dod = st.date_input("Date of Death").isoformat()
-    weight = st.number_input("Weight (g)", min_value=0.0)
+    weight = st.number_input("Weight_g", min_value=0.0)
     sex = st.selectbox("Sex (optional)", ["Unknown", "Male", "Female"])
     purpose = st.text_input("Purpose of Euthanasia")
     experimenter = st.text_input("Experimenter")
@@ -91,6 +122,16 @@ with tab3:
     if st.button("Euthanize"):
         R.euthanize_animal(animal_id, dod, weight, sex, purpose, experimenter, complications)
         st.success(f"Animal {animal_id} euthanized and logged.")
+
+    if st.button("Undo Last Action"):
+        R.undo()
+        st.success("Undo successful from webapp.")
+        
+    with st.expander("Current Euthanasia Log (in memory)"):
+        st.dataframe(pd.DataFrame(R.euthanasia_log))
+
+    with st.expander("Current Inventory (after euthanasia)"):
+        st.dataframe(R.inventory)
 
 
 

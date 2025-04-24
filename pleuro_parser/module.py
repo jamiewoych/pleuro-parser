@@ -71,7 +71,18 @@ class Rack:
         if len(self.history) > 1:
             self.history.pop()
             self.inventory = self.history[-1].copy()
-            self.inventory.to_csv(self.filename, index=False)
+            self.save_inventory()
+            self.save_state()
+            print("Undo successful.")
+
+            # Remove the most recent euthanasia entry, if it exists
+            if self.euthanasia_log:
+                removed = self.euthanasia_log.pop()  # Removes the last euthanasia entry
+                self.save_euthanasia_log()
+                self.log_change("Undo", f"Re-added {removed['Animal_ID']} and removed euthanasia log entry")
+            else:
+                self.log_change("Undo", "Inventory reverted, but no euthanasia entry to remove")
+
             print("Undo successful.")
         else:
             print("No previous state to undo.")
@@ -265,7 +276,7 @@ class Rack:
             "Protocol_Number": animal_data["Protocol_Number"],
             "Experimental_History": animal_data["Experimental_History"],
             "DOD": dod,
-            "Weight (g)": weight,
+            "Weight_g": weight,
             "Sex": sex if sex and sex != "Unknown" else animal_data.get("Sex", "Unknown"),
             "Purpose": purpose,
             "Experimenter": experimenter,
@@ -364,17 +375,32 @@ class Rack:
         Returns:
         - A filtered DataFrame with matching salamanders.
         """
-        if not criteria:
+        if not criteria and min_age is None and max_age is None:
             print("Please provide at least one search criterion.")
             return None
 
-        exact_match_fields = {"Sex", "Rack", "Tank"}  
-        #female was filtering as partial match for male
+        exact_match_fields = {"Sex", "Rack", "Tank", "Protocol_Number"}  
     
-        filtered_inventory = self.inventory  # Start with the full inventory
-    
+        filtered_inventory = self.inventory.copy()  # Start with the full inventory
+        
+        min_age = criteria.pop("min_age", None)
+        max_age = criteria.pop("max_age", None)
+
+        # Age calculation (DOB must be datetime)
+        filtered_inventory["DOB"] = pd.to_datetime(filtered_inventory["DOB"], errors="coerce")
+        today = pd.Timestamp.today()
+        filtered_inventory["Age_Years"] = (today - filtered_inventory["DOB"]).dt.days / 365.25
+
+        if min_age is not None:
+            filtered_inventory = filtered_inventory[filtered_inventory["Age_Years"] >= min_age]
+
+        if max_age is not None:
+            filtered_inventory = filtered_inventory[filtered_inventory["Age_Years"] <= max_age]
+
+
+
         for key, value in criteria.items():
-            if key not in self.inventory.columns:
+            if key not in filtered_inventory.columns:
                 print(f"Warning: '{key}' is not a valid column in the inventory.")
                 continue  # Skip invalid columns
             if key in exact_match_fields:

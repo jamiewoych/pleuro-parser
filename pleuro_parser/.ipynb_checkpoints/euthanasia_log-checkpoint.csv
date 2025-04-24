@@ -1,0 +1,5 @@
+Animal ID,Tank,Rack,DOB,Environmental Condition,Lineage,Transgenic Line,Experimental Holds,Species,Protocol Number,Experimental History,DOD,Weight (g),Sex,Purpose,Experimenter,Complications,Animal_ID,Environmental_Condition,Transgenic_Line,Experimental_Holds,Protocol_Number,Experimental_History
+SAL_016,A5,Rack 3,2022-05-22,Aqua,PxO,hsyn-GCamP6s, ,Pleurodeles waltl,AABL1550,Edu,2025-4-12,9.0,Male,Histology,AOG,found dead,,,,,,
+SAL_013,A5,Rack 3,2022-05-22,Aqua,PxO,GCaMP, ,Pleurodeles waltl,AABL1550,,2025-4-12,9.0,Male,Histology,AOG,found dead,,,,,,
+SAL_018,A6,Rack 5,2022-05-22,Aqua,PxO,hsyn-GCamP6s, ,Pleurodeles waltl,AABL1550,Edu,2025-4-12,9.0,Male,Histology,AOG,found dead,,,,,,
+,B2,Rack 1,2021-09-05,,Sweden,,,Polypterus senegalus,,,2025-04-23,5.0,,revamping inventory,JW,None,SAL_001,Aquatic,hsyn-GFP,False,AABL,EdU
