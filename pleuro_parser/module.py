@@ -120,7 +120,7 @@ class Rack:
         - tank (int): The tank where salamanders will be placed.
         - env_condition (str): Terra, Aqua, Reaqua
         - sex (str): Male, Female, Unknown
-        - experimental_holds (bool): Whether the salamanders are on experimental holds.
+        - experimental_holds (str): Details if the salamanders are on experimental holds.
         - experimental_history (str): Experiments animals have undergone
         """
 
@@ -490,15 +490,6 @@ class Rack:
         else:
             plt.show()
 
-    # Function to plot Transgenic Distribution
-    def plot_transgenic_distribution(self):
-        plt.figure(figsize=(7, 5))
-        sns.countplot(y=self.inventory["Transgenic Line"], order=self.inventory["Transgenic Line"].value_counts().index)
-        plt.title("Salamander Transgenic Distribution")
-        plt.xlabel("Count")
-        plt.ylabel("Animal Line")
-        plt.show()
-
     def save_inventory(self, inventory_file = None):
         """Save the current inventory to a CSV file."""
         if self.inventory_file:
@@ -533,7 +524,7 @@ class Rack:
 
             
 species_list = ["Ambystoma mexicanum", "Pleurodeles waltl", "Polypterus senegalus"]
-transgenic_lines = ["Wildtype", "hsyn-GFP", "hsyn-GCamP6s", "hsyn-Cre", "mDlx-ChR2"]
+transgenic_lines = ["WT", "hsyn-GFP", "hsyn-GCaMP6s", "hsyn-GCaMP6s F1" "hsyn-Cre", "mDlx-ChR2", "mDlx-GFP"]
 racks = ["Rack 1", "Rack 2", "Rack 3", "Rack 4", "Rack 5", "Rack 6", "Rack 7", "Rack 8", "Rack 9", "Rack 10", "Rack 11", "Rack 12"]
 protocols = ["AABF2564", "AABL1550", "AABI2617", "AABY5655"]
 conditions = ["Terrestrial", "Aquatic", "Reaqua"]

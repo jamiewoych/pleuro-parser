@@ -31,12 +31,16 @@ tab1, tab2, tab3 = st.tabs(["Animal Distribution", "Add Salamanders", "Euthanize
 with tab1:
         #search and plot tank distribution
         st.subheader("Animal Search")
-        species = st.selectbox("Species", ["Pleurodeles waltl", "Axolotl mexicanum", "Polypterus senegalus" ])
+        species = st.selectbox("Species", ["", "Pleurodeles waltl", "Axolotl mexicanum", "Polypterus senegalus" ])
         sex = st.selectbox("Sex", ["", "Male", "Female", "Unknown"])
-        transgenic_line = st.selectbox("Transgenic_Line", ["hsyn-GFP", "hsyn-GCaMP6s", "mDlx-GFP", "mDlx-ChR2"])
+        transgenic_line = st.selectbox("Transgenic_Line", ["", "WT", "hsyn-GFP", "hsyn-GCaMP6s", "mDlx-GFP", "mDlx-ChR2", "hsyn-Cre"])
         min_age = st.text_input("Minimum Age in years")
         max_age = st.text_input("Maximum Age in years")
-        protocol = st.selectbox("Protocol_Number", ["AABL1550", "AABF2564", "AABI2617", "AABY5655"])
+        protocol = st.selectbox("Protocol_Number", ["", "AABL1550", "AABF2564", "AABI2617", "AABY5655"])
+        experimental_holds = st.text_input("Experimental_Holds")
+        environmental_condition = st.selectbox("Condition", ["", "Aquatic", "Terrestrial", "Reaqua"])
+        rack = st.selectbox("Rack", ["", "Rack 1", "Rack 2", "Rack 3", "Rack 4", "Rack 5", "Rack 6", "Rack 7", "Rack 8", "Rack 9", "Rack 10", "Rack 11", "Rack 12"])
+        tank = st.selectbox("Tank", [full_tanks])
 
         # Optionally filter before plotting
         if st.button("Plot All Racks"):
@@ -67,6 +71,15 @@ with tab1:
                         search_kwargs["max_age"] = float(max_age)
                     except ValueError:
                         st.warning("Maximum age must be a number.")
+
+                if experimental_holds:
+                        search_kwargs["Experimental_Holds"] = experimental_holds
+
+                if rack:
+                        search_kwargs["Rack"] = rack
+
+                if environmental_condition:
+                        search_kwargs["Environmental_Condition"] = environmental_condition
 
                 results = R.search_salamanders(**search_kwargs)
                 if isinstance(results, pd.DataFrame):
