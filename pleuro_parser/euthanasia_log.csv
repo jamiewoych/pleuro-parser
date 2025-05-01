@@ -1,13 +1,14 @@
-Animal_ID,Tank,Rack,DOB,Environmental_Condition,Lineage,Transgenic_Line,Experimental_Holds,Species,Protocol_Number,Experimental_History,DOD,Weight_g,Sex,Purpose,Experimenter,Complications
-SAL_016,A5,Rack 3,2022-05-22,Aqua,PxO,hsyn-GCamP6s, ,Pleurodeles waltl,AABL1550,Edu,2025-4-12,9.0,Male,Histology,AOG,found dead
-SAL_013,A5,Rack 3,2022-05-22,Aqua,PxO,GCaMP, ,Pleurodeles waltl,AABL1550,,2025-4-12,9.0,Male,Histology,AOG,found dead
-SAL_018,A6,Rack 5,2022-05-22,Aqua,PxO,hsyn-GCamP6s, ,Pleurodeles waltl,AABL1550,Edu,2025-4-12,9.0,Male,Histology,AOG,found dead
-SAL_003,B2,Rack 1,2022-02-09,Terrestrial,Sweden,Wildtype,True,Polypterus senegalus,AABI,Behavior Conditioning,2025-04-23,,,revamping inventory,JW,
-SAL_005,C3,Rack 2,2024-06-21,Aquatic,YxO,GCamP6s,True,Ambystoma mexicanum,AABL,Behavioral Study,2025-04-23,,Female,revamping inventory,JW,
-SAL_006,C3,Rack 2,2022-01-16,Reaqua,Sweden,Wildtype,False,Pleurodeles waltl,AABL,Behavior Conditioning,2025-04-23,0.0,,,,
-SAL_002,B2,Rack 1,2024-02-03,Terrestrial,YxO,GCamP6s,False,Polypterus senegalus,AABY,EdU,2025-04-23,0.0,,,,
-SAL_002,B2,Rack 1,2024-02-03,Terrestrial,YxO,GCamP6s,False,Polypterus senegalus,AABY,EdU,2025-04-23,0.0,,,,
-SAL_002,B2,Rack 1,2024-02-03,Terrestrial,YxO,GCamP6s,False,Polypterus senegalus,AABY,EdU,2025-04-23,0.0,,,,
-SAL_002,B2,Rack 1,2024-02-03,Terrestrial,YxO,GCamP6s,False,Polypterus senegalus,AABY,EdU,2025-04-23,0.0,,,,
-SAL_007,D2,Rack 12,2024-01-22,Reaqua,Jungle Bobs,Wildtype,True,Polypterus senegalus,AABL,Regeneration,2025-04-23,0.0,,,,
-SAL_008,D2,Rack 12,2020-07-19,Reaqua,Jungle Bobs,hsyn-GFP,True,Ambystoma mexicanum,AABI,Viral injection,2025-04-23,0.0,,,,
+Animal_ID,Tank,Rack,DOB,Environmental_Condition,Lineage,Transgenic_Line,Experimental_Holds,Species,Protocol_Number,Experimental_History,DOD,Weight_g,Sex,Purpose,Experimenter,Complications,RFID,Date_of_Terra,Date_of_Reaqua,Diet
+SAL_016,A5,Rack 3,2022-05-22,Aqua,PxO,hsyn-GCamP6s, ,Pleurodeles waltl,AABL1550,Edu,2025-4-12,9.0,Male,Histology,AOG,found dead,,,,
+SAL_013,A5,Rack 3,2022-05-22,Aqua,PxO,GCaMP, ,Pleurodeles waltl,AABL1550,,2025-4-12,9.0,Male,Histology,AOG,found dead,,,,
+SAL_018,A6,Rack 5,2022-05-22,Aqua,PxO,hsyn-GCamP6s, ,Pleurodeles waltl,AABL1550,Edu,2025-4-12,9.0,Male,Histology,AOG,found dead,,,,
+SAL_003,B2,Rack 1,2022-02-09,Terrestrial,Sweden,Wildtype,True,Polypterus senegalus,AABI,Behavior Conditioning,2025-04-23,,,revamping inventory,JW,,,,,
+SAL_005,C3,Rack 2,2024-06-21,Aquatic,YxO,GCamP6s,True,Ambystoma mexicanum,AABL,Behavioral Study,2025-04-23,,Female,revamping inventory,JW,,,,,
+SAL_006,C3,Rack 2,2022-01-16,Reaqua,Sweden,Wildtype,False,Pleurodeles waltl,AABL,Behavior Conditioning,2025-04-23,0.0,,,,,,,,
+SAL_002,B2,Rack 1,2024-02-03,Terrestrial,YxO,GCamP6s,False,Polypterus senegalus,AABY,EdU,2025-04-23,0.0,,,,,,,,
+SAL_002,B2,Rack 1,2024-02-03,Terrestrial,YxO,GCamP6s,False,Polypterus senegalus,AABY,EdU,2025-04-23,0.0,,,,,,,,
+SAL_002,B2,Rack 1,2024-02-03,Terrestrial,YxO,GCamP6s,False,Polypterus senegalus,AABY,EdU,2025-04-23,0.0,,,,,,,,
+SAL_002,B2,Rack 1,2024-02-03,Terrestrial,YxO,GCamP6s,False,Polypterus senegalus,AABY,EdU,2025-04-23,0.0,,,,,,,,
+SAL_007,D2,Rack 12,2024-01-22,Reaqua,Jungle Bobs,Wildtype,True,Polypterus senegalus,AABL,Regeneration,2025-04-23,0.0,,,,,,,,
+SAL_008,D2,Rack 12,2020-07-19,Reaqua,Jungle Bobs,hsyn-GFP,True,Ambystoma mexicanum,AABI,Viral injection,2025-04-23,0.0,,,,,,,,
+SAL_002,B2,Rack 1,2024-02-03,Terrestrial,YxO,GCamP6s,False,Polypterus senegalus,AABY,EdU,2025-4-12,9.0,Male,Histology,AOG,found dead,,,,

@@ -37,10 +37,10 @@ with tab1:
         min_age = st.text_input("Minimum Age in years")
         max_age = st.text_input("Maximum Age in years")
         protocol = st.selectbox("Protocol_Number", ["", "AABL1550", "AABF2564", "AABI2617", "AABY5655"])
-        experimental_holds = st.text_input("Experimental_Holds")
+        experimental_holds = st.text_input("Experimental_Holds - None if None")
         environmental_condition = st.selectbox("Condition", ["", "Aquatic", "Terrestrial", "Reaqua"])
         rack = st.selectbox("Rack", ["", "Rack 1", "Rack 2", "Rack 3", "Rack 4", "Rack 5", "Rack 6", "Rack 7", "Rack 8", "Rack 9", "Rack 10", "Rack 11", "Rack 12"])
-        tank = st.selectbox("Tank", [full_tanks])
+        #tank = st.selectbox("Tank", [full_tanks])
 
         # Optionally filter before plotting
         if st.button("Plot All Racks"):
@@ -72,8 +72,10 @@ with tab1:
                     except ValueError:
                         st.warning("Maximum age must be a number.")
 
-                if experimental_holds:
-                        search_kwargs["Experimental_Holds"] = experimental_holds
+                if experimental_holds.strip().lower() == "none":
+                    search_kwargs["Experimental_Holds"] = "none"
+                elif experimental_holds.strip():
+                    search_kwargs["Experimental_Holds"] = experimental_holds.strip()
 
                 if rack:
                         search_kwargs["Rack"] = rack
@@ -101,12 +103,12 @@ with tab2:
         st.subheader("Add Salamanders")
         # Form for adding salamanders
 
-        num_animals = st.number_input("Number of Salamanders", min_value=1, value=1)
+        num_salamanders = st.number_input("Number of Salamanders", min_value=1, value=1)
         dob = st.date_input("Date of Birth")
         species = st.text_input("Species", value="Pleurodeles waltl")
-        transgenic_line = st.text_input("Transgenic_Line")
+        transgenic_line = st.selectbox("Transgenic Line", ["WT", "hsyn-GFP", "hsyn-GCaMP6s", "mDlx-GFP", "mDlx-ChR2", "hsyn-Cre"])
         lineage = st.text_input("Lineage")
-        protocol = st.text_input("Protocol_Number")
+        protocol = st.selectbox("Protocol Number", ["AABL1550", "AABF2564", "AABI2617", "AABY5655"])
         rack = st.selectbox("Rack", options=[
                 "Rack 1", "Rack 2", "Rack 3", "Rack 4", "Rack 5",
                 "Rack 6", "Rack 7", "Rack 8", "Rack 9", "Rack 10", "Rack 11", "Rack 12"
@@ -114,12 +116,31 @@ with tab2:
         tank = st.text_input("Tank (e.g., A1, B2, etc.)")
         env_condition = st.text_input("Environmental_Condition", value="Aquatic")
         sex = st.selectbox("Sex", options=["Unknown", "Male", "Female"])
-        experimental_holds = st.selectbox("Experimental_Holds", options=["False", "True"])
-
+        experimental_holds = st.text_input("Experimental_Holds - Defaults None")
+        experimental_history = st.text_input("Experimental_History - Defaults None")
+        RFID = st.text_input("RFID - defaults None")
+        terra_date = st.date_input("Date of Terra")
+        reaqua_date = st.date_input("Date of Reaqua")
+        Diet = st.selectbox("Diet", ["MWF Schedule", "Daily", "Gummy Schedule"])
         if st.button("Add Salamanders"):
-                R.add_salamanders(number, dob, species, transgenic_line, lineage,
-                          protocol, rack, tank, env_condition, sex, holds, experimenter)
-                st.success(f"Added {number} salamander(s) to {rack} {tank}.")
+                R.add_salamanders(
+                        num_salamanders,
+                        dob,
+                        species,
+                        transgenic_line,
+                        lineage,
+                        protocol,
+                        rack, 
+                        tank, 
+                        env_condition, 
+                        sex, 
+                        experimental_holds=experimental_holds, 
+                        experimental_history=experimental_history, 
+                        rfid=RFID, 
+                        terra_date=terra_date, 
+                        aqua_date=reaqua_date, 
+                        diet=Diet)
+                st.success(f"Added {num_salamanders} salamander(s) to {rack} {tank}.")
 
 with tab3:
     st.header("Euthanize Salamander")

@@ -105,7 +105,7 @@ class Rack:
         else:
             print("Euthanasia log not found")
 
-    def add_salamanders(self, num_salamanders, dob, species, transgenic_line, lineage, protocol, rack, tank, env_condition, sex, experimental_holds, experimental_history):
+    def add_salamanders(self, num_salamanders, dob, species, transgenic_line, lineage, protocol, rack, tank, env_condition, sex, experimental_holds = None, experimental_history= None, rfid = None, terra_date = None, aqua_date = None, diet = None):
         """
         Adds multiple salamanders with the same date of birth to the inventory.
     
@@ -122,6 +122,7 @@ class Rack:
         - sex (str): Male, Female, Unknown
         - experimental_holds (str): Details if the salamanders are on experimental holds.
         - experimental_history (str): Experiments animals have undergone
+        - rfid (str): RFID tag
         """
 
         if rack not in racks:
@@ -168,7 +169,11 @@ class Rack:
                 "Experimental_Holds": experimental_holds,
                 "Species": species,
                 "Protocol_Number": protocol,
-                "Experimental_History": experimental_history  # Can be updated later
+                "Experimental_History": experimental_history,  # Can be updated later
+                "RFID": rfid,
+                "Date_of_Terra": terra_date,
+                "Date_of_Reaqua": aqua_date,
+                "Diet": diet
             }
 
             # Save after adding
@@ -252,15 +257,9 @@ class Rack:
             print(f"Error: Animal {animal_id} not found in inventory. Cannot euthanize.")
             return  
         
-       
-        # Automatically carry over the sex if it exists in inventory
-        #this next line wasnt workign
-        #sex = animal["Sex"].values[0] if pd.notna(animal["Sex"].values[0]) else "Unknown"
-
         # Retrieve the full animal information from the inventory allowing merge with inventory info
         animal_data = animal.iloc[0].to_dict()
-        #old version of retrieval
-        #animal_data = self.inventory[self.inventory["Animal_ID"] == animal_id].iloc[0]
+
 
         # Create the euthanasia entry by merging inventory info with euthanasia details
         euth_entry = {
@@ -275,12 +274,17 @@ class Rack:
             "Species": animal_data["Species"],
             "Protocol_Number": animal_data["Protocol_Number"],
             "Experimental_History": animal_data["Experimental_History"],
+            "RFID": animal_data["RFID"],
+            "Date_of_Terra": animal_data["Date_of_Terra"],
+            "Date_of_Reaqua": animal_data["Date_of_Reaqua"],
+            "Diet": animal_data["Diet"],
             "DOD": dod,
             "Weight_g": weight,
             "Sex": sex if sex and sex != "Unknown" else animal_data.get("Sex", "Unknown"),
             "Purpose": purpose,
             "Experimenter": experimenter,
             "Complications": complications
+
         }
     
         # Add the euthanasia entry to the euthanasia log
@@ -403,7 +407,13 @@ class Rack:
             if key not in filtered_inventory.columns:
                 print(f"Warning: '{key}' is not a valid column in the inventory.")
                 continue  # Skip invalid columns
-            if key in exact_match_fields:
+
+            if value is None or str(value).lower() in {"none", "nan", "null"}:
+                # Search for missing values
+                filtered_inventory = filtered_inventory[
+                filtered_inventory[key].isna()
+                ]
+            elif key in exact_match_fields:
                 filtered_inventory = filtered_inventory[
                     filtered_inventory[key].astype(str).str.lower() == str(value).lower()
                 ]
