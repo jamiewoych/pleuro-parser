@@ -358,10 +358,10 @@ class Rack:
 
         summary = (
             log_df
-            .groupby(["Protocol Number", "Year"])
+            .groupby(["Protocol_Number", "Year"])
             .agg(
                 total_euthanized=("Animal_ID", "count"),
-                complications=("Complications", lambda x: (x != "None").sum())
+                complications=("Complications", lambda x: x.fillna("").str.lower().isin(["found dead", "surgical complications"]).sum())
             )
             .reset_index()
         )

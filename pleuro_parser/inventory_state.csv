@@ -1,5 +1,4 @@
 Animal_ID,Tank,Rack,DOB,Environmental_Condition,Sex,Lineage,Transgenic_Line,Experimental_Holds,Species,Protocol_Number,Experimental_History,RFID,Date_of_Terra,Date_of_Reaqua,Diet
-SAL_002,B2,Rack 1,2024-02-03,Terrestrial,,YxO,GCamP6s,False,Polypterus senegalus,AABY,EdU,,,,
 SAL_007,D2,Rack 12,2024-01-22,Reaqua,,Jungle Bobs,Wildtype,True,Polypterus senegalus,AABL,Regeneration,,,,
 SAL_009,D2,Rack 12,2024-02-02,Reaqua,,Sweden,hsyn-GFP,True,Polypterus senegalus,AABI,Viral injection,,,,
 SAL_010,D2,Rack 12,2023-06-12,Aquatic,,Jungle Bobs,GCamP6s,True,Polypterus senegalus,AABF,Behavior Conditioning,,,,
@@ -10,3 +9,4 @@ SAL_017,B4,Rack 8,2022-05-22,Aqua,Female,PxO,hsyn-GCamP6s, ,Pleurodeles waltl,AA
 SAL_019,B4,Rack 8,2022-05-22,Aqua,Female,PxO,hsyn-GCamP6s, ,Pleurodeles waltl,AABL1550,Edu,,,,
 SAL_020,C2,Rack 10,2025-04-15,Terrestrial,Female,Sweden,hsyn-GFP,True,Pleurodeles waltl,AABL1550,TS,,,,
 SAL_021,A1,Rack 1,2025-04-30,Aquatic,Unknown,,WT,,Pleurodeles waltl,AABL1550,,,2025-04-30,2025-04-30,MWF Schedule
+SAL_022,B2,Rack 1,,Aquatic,Unknown,,WT,,Pleurodeles waltl,AABL1550,,,2025-04-30,2025-04-30,MWF Schedule
