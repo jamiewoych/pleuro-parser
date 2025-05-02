@@ -3,7 +3,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-import time # <- We'll need this later as well
+import time 
 
 from module import Rack
 
@@ -22,7 +22,7 @@ if "rack" not in st.session_state:
 R = st.session_state.rack
 
 # Tabs
-tab1, tab2, tab3, tab4 = st.tabs(["Animal Distribution", "Add Salamanders", "Euthanize Salamander", "View Files"])
+tab1, tab2, tab3, tab4, tab5 = st.tabs(["Animal Distribution", "Add Salamanders", "Euthanize Salamander", "View Files", "Edit/Move Animal"])
 
 with tab1:
         #search and plot tank distribution
@@ -103,6 +103,14 @@ with tab1:
                 else:
                         st.warning("Please run a search first")
 
+        # Inventory
+        st.subheader("Current Inventory")
+        try:
+                inventory_df = pd.read_csv("salamander_inventory.csv")
+                st.dataframe(inventory_df, use_container_width=True)
+        except Exception as e:
+                st.error(f"Could not load inventory: {e}")
+
 with tab2:
         st.subheader("Add Salamanders")
         # Form for adding salamanders
@@ -117,8 +125,11 @@ with tab2:
                 "Rack 1", "Rack 2", "Rack 3", "Rack 4", "Rack 5",
                 "Rack 6", "Rack 7", "Rack 8", "Rack 9", "Rack 10", "Rack 11", "Rack 12"
             ])
+        # Use get_tanks_for_rack method to generate valid tanks
+        #valid_tanks = R.get_tanks_for_rack(rack)
+        #tank = st.selectbox("Valid Tanks for Selected Rack", options=valid_tanks)
         tank = st.text_input("Tank (e.g., A1, B2, etc.)*")
-        env_condition = st.text_input("Environmental_Condition", value="Aquatic")
+        env_condition = st.selectbox("Environmental_Condition", ["Aquatic", "Terrestrial", "Reaqua"])
         sex = st.selectbox("Sex", options=["Unknown", "Male", "Female"])
         experimental_holds = st.text_input("Experimental_Holds - Defaults None")
         experimental_history = st.text_input("Experimental_History - Defaults None")
@@ -156,15 +167,15 @@ with tab2:
                 st.success(f"Added {num_salamanders} salamander(s) to {rack} {tank}.")
 
 with tab3:
-    st.header("Euthanize Salamander")
+    st.subheader("Euthanize Salamander")
 
     animal_id = st.text_input("Animal ID to Euthanize (SAL_###)")
     dod = st.date_input("Date of Death").isoformat()
     weight = st.number_input("Weight_g", min_value=0.0)
     sex = st.selectbox("Sex (optional)", ["Unknown", "Male", "Female"])
     purpose = st.text_input("Purpose of Euthanasia")
-    experimenter = st.text_input("Experimenter (Initials)")
-    complications = st.selectbox("Complications", ["", "Found Dead", "Surgical Complications"])
+    experimenter = st.text_input("Experimenter (Initials - separate by comma if multiple)")
+    complications = st.selectbox("Complications if applicable", ["", "Found Dead", "Surgical Complications"])
 
     if st.button("Euthanize"):
         R.euthanize_animal(animal_id, dod, weight, sex, purpose, experimenter, complications)
@@ -181,23 +192,66 @@ with tab3:
         st.dataframe(R.inventory)
 
 with tab4:
-    st.header("Preview Files")
-
     # Euthanasia Log
     st.subheader("Euthanasia Log")
     try:
         euth_log_df = pd.read_csv("euthanasia_log.csv")
-        st.dataframe(euth_log_df, use_container_width=True)
+
+        # Add filter widgets
+        protocols = sorted(euth_log_df["Protocol_Number"].dropna().unique())
+        experimenters = sorted(euth_log_df["Experimenter"].dropna().unique())
+        years = pd.to_datetime(euth_log_df["DOD"], errors="coerce").dt.year.dropna().astype(int).unique()
+
+        selected_protocol = st.selectbox("Protocol", options=["All"] + list(protocols))
+        selected_experimenter = st.selectbox("Experimenter", options=["All"] + list(experimenters))
+        selected_year = st.selectbox("Year", options=["All"] + sorted(years))
+
+        # Apply filters
+        filtered_df = euth_log_df.copy()
+
+        if selected_protocol != "All":
+            filtered_df = filtered_df[filtered_df["Protocol_Number"] == selected_protocol]
+
+        if selected_experimenter != "All":
+            filtered_df = filtered_df[filtered_df["Experimenter"] == selected_experimenter]
+
+        if selected_year != "All":
+            filtered_df["DOD"] = pd.to_datetime(filtered_df["DOD"], errors="coerce")
+            filtered_df = filtered_df[filtered_df["DOD"].dt.year == selected_year]
+
+        st.dataframe(filtered_df, use_container_width=True)
+
     except Exception as e:
         st.error(f"Could not load euthanasia log: {e}")
 
     st.subheader("Analyze Euthanasia Log")
+
+    # Date filters
+    col1, col2 = st.columns(2)
+    with col1:
+        start_date = st.date_input("Start Date", value=None)
+    with col2:
+        end_date = st.date_input("End Date", value=None)
+
+    # Experimenter grouping toggle
+    group_by_exp = st.checkbox("Group by Experimenter (handles multiple initials)", value=False)
+
+
     if st.button("Run Analysis"):
         try:
-                summary_df = R.analyze_euthanasia_log()
-                if summary_df is not None:
-                    st.write("Animals Euthanized per Protocol per Year")
+                summary_df = R.analyze_euthanasia_log(
+                        start_date=start_date if start_date else None,
+                        end_date=end_date if end_date else None,
+                        group_by_experimenter=group_by_exp
+                )
+
+                if summary_df is not None and not summary_df.empty:
+                    st.write("Animals Euthanized for Date Range")
                     st.dataframe(summary_df, use_container_width=True)
+
+                else:
+                        st.info("No euthanasia data matched the selected filters.")
+
 
         except Exception as e:
                 st.error(f"Analysis failed: {e}")
@@ -228,6 +282,62 @@ with tab4:
             except FileNotFoundError:
                 st.info("No change log found.")
 
+
+with tab5:
+        st.subheader("Edit Metadata")
+        animal_id = st.text_input("Animal ID to edit (SAL_###)")
+
+        if animal_id and animal_id in R.inventory["Animal_ID"].values:
+                animal_row = R.inventory[R.inventory["Animal_ID"] == animal_id]
+                st.markdown("**Current Metadata:**")
+                st.dataframe(animal_row, use_container_width=True)
+
+                edit_fields = {
+                "Environmental_Condition": st.selectbox("Environmental Condition Change", ["Aquatic", "Terrestrial", "Reaqua"]),
+                "Sex": st.selectbox("Sex", ["", "Female", "Male", "Unknown"]),
+                "Experimental_Holds": st.text_input("Holds: Initials with Details, or Breeding"),
+                "Protocol_Number": st.selectbox("Protocol Transfer", ["", "AABL1550", "AABF2564", "AABI2617", "AABY5655"]),
+                "Experimental_History": st.text_area("Experimental History"), 
+                "RFID": st.text_input("RFID"),
+                "Diet": st.selectbox("Diet Change", ["", "MWF Schedule", "Daily", "Gummy Schedule"])
+                }
+                
+                # Optional terra/aqua dates
+                col1, col2 = st.columns(2)
+                terra_date = col1.date_input("Date of Terrestrialization (optional)", value=None)
+                aqua_date = col2.date_input("Date of Reaqua (optional)", value=None)
+
+
+                if st.button("Apply Edits"):
+                        updates = {k: v for k, v in edit_fields.items() if v}
+
+                        if terra_date:
+                                updates["Date_of_Terra"] = str(terra_date)
+                        if aqua_date:
+                                updates["Date_of_Reaqua"] = str(aqua_date)
+
+                        R.edit_salamander_info(animal_id, **updates)
+                        st.success(f"Updated {animal_id}")
+        elif animal_id:
+                st.warning("Animal ID not found in inventory")
+
+        st.markdown("---")
+
+        st.subheader("Move Animals")
+        move_id = st.text_input("Animal ID to Move (SAL_###)")
+        target_rack = st.selectbox("Target Rack", [
+                "Rack 1", "Rack 2", "Rack 3", "Rack 4", "Rack 5", "Rack 6", "Rack 7", "Rack 8", "Rack 9", "Rack 10", "Rack 11", "Rack 12"])
+        # Use get_tanks_for_rack method to generate valid tanks
+        valid_tanks = R.get_tanks_for_rack(target_rack)
+        target_tank = st.selectbox("Valid Tanks for Selected Rack", options=valid_tanks)
+
+        if st.button("Move Salamander"):
+                if move_id and target_rack and target_tank:
+                        R.move_salamander(move_id, taget_rack, target_tank)
+                        st.success(f"Moved {move_id} to {target_rack} {target_tank}")
+
+                else:
+                        st.warning("Please provide Animal ID, target rack, and tank.")
 
 
 

@@ -154,8 +154,6 @@ class Rack:
     
         for _ in range(num_salamanders):
             new_id = f"SAL_{next_id:03d}"
-            #new_id = f"SAL_{len(self.inventory) + 1:03d}"  # Generate new unique ID
-            #new_salamanders.append(animal)next_id += 1
             
             animal = {
                 "Animal_ID": f"SAL_{next_id:03d}",
@@ -320,7 +318,12 @@ class Rack:
             "Sex",
             "Experimental_Holds",
             "Protocol_Number",
-            "Experimental_History"
+            "Experimental_History",
+            "Experimental_Holds",
+            "RFID",
+            "Date_of_Terra", 
+            "Date_of_Reaqua", 
+            "Diet"
         }
 
         if animal_id not in self.inventory["Animal_ID"].values:
@@ -348,24 +351,41 @@ class Rack:
         else:
             print("No valid changes made.")
 
-    def analyze_euthanasia_log(self):
+    def analyze_euthanasia_log(self, start_date=None, end_date=None, group_by_experimenter=False):
         if not self.euthanasia_log:
             print("No euthanasia records to analyze.")
             return
 
         log_df = pd.DataFrame(self.euthanasia_log)
-        log_df["Year"] = pd.to_datetime(log_df["DOD"]).dt.year
+        log_df["DOD"] = pd.to_datetime(log_df["DOD"], errors="coerce")
+        log_df["Year"] = log_df["DOD"].dt.year
+        
+        # Apply date filtering if specified
+        if start_date:
+            log_df = log_df[log_df["DOD"] >= pd.to_datetime(start_date)]
+        if end_date:
+            log_df = log_df[log_df["DOD"] <= pd.to_datetime(end_date)]
+
+        # Handle multiple experimenters in one cell by splitting and exploding
+        if group_by_experimenter:
+            log_df["Experimenter"] = log_df["Experimenter"].fillna("")
+            log_df["Experimenter_List"] = log_df["Experimenter"].str.split(",\s*")
+            log_df = log_df.explode("Experimenter_List")
+            group_cols = ["Experimenter_List", "Year"]
+        else:
+            group_cols = ["Protocol_Number", "Year"]
+
 
         summary = (
             log_df
-            .groupby(["Protocol_Number", "Year"])
+            .groupby(group_cols)
             .agg(
                 total_euthanized=("Animal_ID", "count"),
                 complications=("Complications", lambda x: x.fillna("").str.lower().isin(["found dead", "surgical complications"]).sum())
             )
             .reset_index()
         )
-        
+
         return summary
 
     def search_salamanders(self, **criteria):
