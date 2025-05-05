@@ -86,3 +86,45 @@
 2025-04-30 20:23:38.318633 - Euthanized: SAL_002 on 2025-4-12
 2025-04-30 20:44:11.531344 - Added animals: 1 animals added to Rack 1 in B2.
 2025-05-02 00:10:14.422864 - Edit: SAL_007 - Environmental_Condition: Reaqua → Aquatic; Sex: nan → Female; Experimental_Holds: True → ECJ; Experimental_History: Regeneration → does this append or replace
+2025-05-04 16:25:50.377824 - Edit: SAL_007 - Environmental_Condition: Aquatic → Aquatic; Diet: nan → MWF Schedule
+2025-05-04 16:35:07.559511 - Added animals: 5 animals added to Rack 12 in A1.
+2025-05-04 16:35:22.241854 - Added animals: 5 animals added to Rack 12 in A2.
+2025-05-04 16:40:10.085889 - Undo: Re-added SAL_002 and removed euthanasia log entry
+2025-05-04 16:40:12.355199 - Undo: Re-added SAL_008 and removed euthanasia log entry
+2025-05-04 16:40:22.498321 - Undo: Re-added SAL_007 and removed euthanasia log entry
+2025-05-04 17:46:22.588282 - Euthanized: SAL_027 on 2025-05-04
+2025-05-04 17:46:42.035621 - Added animals: 1 animals added to Rack 3 in A1.
+2025-05-04 18:26:21.687722 - Edit: SAL_027 - Environmental_Condition: Aquatic → Aquatic; RFID: nan → tgdgd
+2025-05-04 19:17:01.379941 - Edit: SAL_027 - Environmental_Condition: Aquatic → Aquatic; Sex: Unknown → Female
+2025-05-04 19:24:45.672006 - Animals moved: SAL_027 to Rack 1
+2025-05-04 19:25:34.196290 - Euthanized: SAL_027 on 2025-05-04
+2025-05-04 19:26:11.250252 - Added animals: 1 animals added to Rack 5 in B2.
+2025-05-04 19:28:31.614563 - Euthanized: SAL_027 on 2025-05-04
+2025-05-04 19:28:58.592796 - Added animals: 1 animals added to Rack 5 in A3.
+2025-05-04 19:31:43.867759 - Euthanized: SAL_027 on 2025-05-04
+2025-05-04 19:31:51.274336 - Added animals: 1 animals added to Rack 1 in A1.
+2025-05-04 19:32:17.553018 - Added animals: 5 animals added to Rack 1 in A1.
+2025-05-04 19:32:36.267143 - Euthanized: SAL_032 on 2025-05-04
+2025-05-04 19:32:53.501911 - Added animals: 5 animals added to Rack 7 in A2.
+2025-05-04 20:18:57.369871 - Animals moved: SAL_007 to Rack 3
+2025-05-04 20:18:57.373831 - Animals moved: SAL_009 to Rack 3
+2025-05-04 20:27:00.846010 - Undo: Re-added SAL_032 and removed euthanasia log entry
+2025-05-04 21:19:57.197377 - Edit: SAL_007 - Environmental_Condition: Aquatic → Aquatic; Diet: MWF Schedule → MWF Schedule
+2025-05-04 21:26:34.442040 - Edit: SAL_007 - Environmental_Condition: Aquatic → Aquatic; Protocol_Number: AABL → AABF2564; Diet: MWF Schedule → MWF Schedule
+2025-05-04 21:26:34.447781 - Edit: SAL_034 - Environmental_Condition: Aquatic → Aquatic; Protocol_Number: AABL1550 → AABF2564; Diet: nan → MWF Schedule
+2025-05-04 21:26:34.452261 - Edit: SAL_009 - Environmental_Condition: Reaqua → Aquatic; Protocol_Number: AABI → AABF2564; Diet: nan → MWF Schedule
+2025-05-04 21:37:52.699510 - Edit: SAL_007 - Environmental_Condition: Aquatic → Aquatic; Protocol_Number: AABF2564 → AABI2617; Diet: MWF Schedule → Daily
+2025-05-04 21:37:52.704746 - Edit: SAL_034 - Environmental_Condition: Aquatic → Aquatic; Protocol_Number: AABF2564 → AABI2617; Diet: MWF Schedule → Daily
+2025-05-04 21:37:52.710108 - Edit: SAL_009 - Environmental_Condition: Aquatic → Aquatic; Protocol_Number: AABF2564 → AABI2617; Diet: MWF Schedule → Daily
+2025-05-04 21:38:13.814423 - Edit: SAL_007 - Environmental_Condition: Aquatic → Aquatic; Protocol_Number: AABI2617 → AABI2617; Diet: Daily → Daily
+2025-05-04 21:38:13.821022 - Edit: SAL_034 - Environmental_Condition: Aquatic → Aquatic; Protocol_Number: AABI2617 → AABI2617; Diet: Daily → Daily
+2025-05-04 21:38:13.825158 - Edit: SAL_009 - Environmental_Condition: Aquatic → Aquatic; Protocol_Number: AABI2617 → AABI2617; Diet: Daily → Daily
+2025-05-04 21:38:48.671770 - Edit: SAL_009 - Environmental_Condition: Aquatic → Terrestrial; Experimental_Holds: True → JW; Protocol_Number: AABI2617 → AABF2564
+2025-05-04 21:38:48.675145 - Edit: SAL_014 - Environmental_Condition: Aqua → Terrestrial; Experimental_Holds:   → JW; Protocol_Number: AABL1550 → AABF2564
+2025-05-04 21:38:48.679114 - Edit: SAL_017 - Environmental_Condition: Aqua → Terrestrial; Experimental_Holds:   → JW; Protocol_Number: AABL1550 → AABF2564
+2025-05-04 21:40:01.092163 - Edit: SAL_009 - Environmental_Condition: Terrestrial → Terrestrial; Experimental_Holds: JW → JW; Protocol_Number: AABF2564 → AABF2564
+2025-05-04 21:40:01.099750 - Edit: SAL_014 - Environmental_Condition: Terrestrial → Terrestrial; Experimental_Holds: JW → JW; Protocol_Number: AABF2564 → AABF2564
+2025-05-04 21:40:01.105967 - Edit: SAL_017 - Environmental_Condition: Terrestrial → Terrestrial; Experimental_Holds: JW → JW; Protocol_Number: AABF2564 → AABF2564
+2025-05-04 21:40:26.696927 - Edit: SAL_010 - Environmental_Condition: Aquatic → Aquatic; Protocol_Number: AABF → AABF2564; Diet: nan → Gummy Schedule
+2025-05-04 21:40:26.703878 - Edit: SAL_012 - Environmental_Condition: Aqua → Aquatic; Protocol_Number: AABL1550 → AABF2564; Diet: nan → Gummy Schedule
+2025-05-04 21:40:26.711297 - Edit: SAL_015 - Environmental_Condition: Aqua → Aquatic; Protocol_Number: AABL1550 → AABF2564; Diet: nan → Gummy Schedule

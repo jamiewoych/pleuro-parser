@@ -1,5 +1,5 @@
 Animal_ID,Tank,Rack,DOB,Environmental_Condition,Sex,Lineage,Transgenic_Line,Experimental_Holds,Species,Protocol_Number,Experimental_History,RFID,Date_of_Terra,Date_of_Reaqua,Diet
-SAL_007,D2,Rack 12,2024-01-22,Reaqua,,Jungle Bobs,Wildtype,True,Polypterus senegalus,AABL,Regeneration,,,,
+SAL_007,D2,Rack 12,2024-01-22,Aquatic,Female,Jungle Bobs,Wildtype,ECJ,Polypterus senegalus,AABL,does this append or replace,,,,MWF Schedule
 SAL_009,D2,Rack 12,2024-02-02,Reaqua,,Sweden,hsyn-GFP,True,Polypterus senegalus,AABI,Viral injection,,,,
 SAL_010,D2,Rack 12,2023-06-12,Aquatic,,Jungle Bobs,GCamP6s,True,Polypterus senegalus,AABF,Behavior Conditioning,,,,
 SAL_012,C3,Rack 2,2022-05-22,Aqua,,PxO,GCaMP, ,Pleurodeles waltl,AABL1550,,,,,
@@ -9,3 +9,18 @@ SAL_017,B4,Rack 8,2022-05-22,Aqua,Female,PxO,hsyn-GCamP6s, ,Pleurodeles waltl,AA
 SAL_019,B4,Rack 8,2022-05-22,Aqua,Female,PxO,hsyn-GCamP6s, ,Pleurodeles waltl,AABL1550,Edu,,,,
 SAL_020,C2,Rack 10,2025-04-15,Terrestrial,Female,Sweden,hsyn-GFP,True,Pleurodeles waltl,AABL1550,TS,,,,
 SAL_021,A1,Rack 1,2025-04-30,Aquatic,Unknown,,WT,,Pleurodeles waltl,AABL1550,,,2025-04-30,2025-04-30,MWF Schedule
+SAL_022,B2,Rack 1,,Aquatic,Unknown,,WT,,Pleurodeles waltl,AABL1550,,,2025-04-30,2025-04-30,MWF Schedule
+SAL_023,A1,Rack 12,2024-02-23 00:00:00,Aquatic,Unknown,,WT,,Pleurodeles waltl,AABL1550,,,,,
+SAL_024,A1,Rack 12,2024-02-23 00:00:00,Aquatic,Unknown,,WT,,Pleurodeles waltl,AABL1550,,,,,
+SAL_025,A1,Rack 12,2024-02-23 00:00:00,Aquatic,Unknown,,WT,,Pleurodeles waltl,AABL1550,,,,,
+SAL_026,A1,Rack 12,2024-02-23 00:00:00,Aquatic,Unknown,,WT,,Pleurodeles waltl,AABL1550,,,,,
+SAL_027,A1,Rack 1,,Aquatic,Unknown,,WT,,Pleurodeles waltl,AABL1550,,,,,
+SAL_028,A1,Rack 1,,Aquatic,Unknown,,WT,,Pleurodeles waltl,AABL1550,,,,,
+SAL_029,A1,Rack 1,,Aquatic,Unknown,,WT,,Pleurodeles waltl,AABL1550,,,,,
+SAL_030,A1,Rack 1,,Aquatic,Unknown,,WT,,Pleurodeles waltl,AABL1550,,,,,
+SAL_031,A1,Rack 1,,Aquatic,Unknown,,WT,,Pleurodeles waltl,AABL1550,,,,,
+SAL_033,A2,Rack 7,,Aquatic,Unknown,,WT,,Pleurodeles waltl,AABL1550,,,,,
+SAL_034,A2,Rack 7,,Aquatic,Unknown,,WT,,Pleurodeles waltl,AABL1550,,,,,
+SAL_035,A2,Rack 7,,Aquatic,Unknown,,WT,,Pleurodeles waltl,AABL1550,,,,,
+SAL_036,A2,Rack 7,,Aquatic,Unknown,,WT,,Pleurodeles waltl,AABL1550,,,,,
+SAL_037,A2,Rack 7,,Aquatic,Unknown,,WT,,Pleurodeles waltl,AABL1550,,,,,

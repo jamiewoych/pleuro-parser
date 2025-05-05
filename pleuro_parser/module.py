@@ -84,8 +84,10 @@ class Rack:
                 self.log_change("Undo", "Inventory reverted, but no euthanasia entry to remove")
 
             print("Undo successful.")
+            return True
         else:
             print("No previous state to undo.")
+            return False
 
     def log_change(self, action, details):
         """ Log every change to a text file. 
@@ -105,7 +107,7 @@ class Rack:
         else:
             print("Euthanasia log not found")
 
-    def add_salamanders(self, num_salamanders, dob, species, transgenic_line, lineage, protocol, rack, tank, env_condition, sex, experimental_holds = None, experimental_history= None, rfid = None, terra_date = None, aqua_date = None, diet = None):
+    def add_salamanders(self, num_salamanders, dob, species, transgenic_line, lineage, protocol, rack, tank, env_condition, sex, cohort = None, experimental_holds = None, experimental_history= None, rfid = None, terra_date = None, aqua_date = None, diet = None):
         """
         Adds multiple salamanders with the same date of birth to the inventory.
     
@@ -145,11 +147,17 @@ class Rack:
             print(f"Error: Tank '{tank}' does not exist.")
             return
 
+        if rack in blocked_tanks and tank in blocked_tanks[rack]:
+            print(f"Error: Tank {tank} on {rack} is blocked for use.")
+            return
+
 
         new_salamanders = []
         existing_ids = self.inventory["Animal_ID"].str.extract(r"SAL_(\d+)")  # Extract numeric part
         existing_ids = existing_ids.dropna().astype(int)  # Convert to int
-        next_id = existing_ids.max().values[0] + 1 if not existing_ids.empty else 1  # Determine next ID
+        old_ids = pd.DataFrame(self.euthanasia_log)["Animal_ID"].str.extract(r"SAL_(\d+)").dropna().astype(int) #already used and in euthanasia log
+        all_ids = pd.concat([existing_ids, old_ids], ignore_index = True)
+        next_id = all_ids.max().values[0] + 1 if not all_ids.empty else 1  # Determine next ID
 
     
         for _ in range(num_salamanders):
@@ -160,6 +168,7 @@ class Rack:
                 "Tank": tank,
                 "Rack": rack,
                 "DOB": dob,
+                "Cohort": cohort,
                 "Environmental_Condition": env_condition,
                 "Sex": sex,  # User can update later
                 "Lineage": lineage,
@@ -199,7 +208,7 @@ class Rack:
         print(f"{num_salamanders} baby salamanders added to {rack}, tank {tank}, with DOB {dob}.")
 
     
-    def move_salamander(self, animal_id, target_rack, target_tank):
+    def move_salamander(self, animal_ids, target_rack, target_tank):
         """
         Move one or multiple salamanders from their current rack to a target rack.
     
@@ -208,15 +217,20 @@ class Rack:
         - target_rack (str): The rack to move the salamanders to.
         """
         # Normalize input to a list if it's a single ID
-        if isinstance(animal_id, str):
-            animal_id = [animal_id]
+        if isinstance(animal_ids, str):
+            animal_ids = [animal_ids]
 
         if not self.is_valid_tank(target_rack, target_tank):
             print(f"Error: Tank '{target_tank}' is not valid for {target_rack}.")
             return
+
+        if target_rack in blocked_tanks and target_tank in blocked_tanks[target_rack]:
+            print(f"Error: Tank {target_tank} on {target_rack} is blocked for use.")
+            return
+
     
         # Loop through each animal ID and update their rack
-        for animal_id in animal_id:
+        for animal_id in animal_ids:
             # Find the animal in the inventory
             animal = self.inventory[self.inventory["Animal_ID"] == animal_id]
     
@@ -253,7 +267,7 @@ class Rack:
 
         if animal_id not in self.inventory["Animal_ID"].values:
             print(f"Error: Animal {animal_id} not found in inventory. Cannot euthanize.")
-            return  
+            return False
         
         # Retrieve the full animal information from the inventory allowing merge with inventory info
         animal_data = animal.iloc[0].to_dict()
@@ -302,10 +316,11 @@ class Rack:
         self.save_state()
 
         print(f"Animal {animal_id} euthanized and removed from inventory.")
+        return True
 
-    def edit_salamander_info(self, animal_id, **updates):
+    def edit_salamander_info(self, animal_ids, **updates):
         """
-        Editable fields for a specific salamander by Animal ID.
+        Editable fields for a specific salamander by Animal ID or list of IDs.
 
         Parameters:
         - animal_id (str): ID of the salamander to edit.
@@ -313,6 +328,9 @@ class Rack:
           Valid keys: 'Environmental Condition', 'Sex', 'Experimental Holds',
                       'Protocol Number', 'Experimental History'
         """
+        if isinstance(animal_ids, str):
+            animal_ids = [animal_ids]
+
         valid_fields = {
             "Environmental_Condition",
             "Sex",
@@ -323,33 +341,65 @@ class Rack:
             "RFID",
             "Date_of_Terra", 
             "Date_of_Reaqua", 
-            "Diet"
+            "Diet", 
+            "Cohort"
         }
 
-        if animal_id not in self.inventory["Animal_ID"].values:
-            print(f"Error: Animal_ID {animal_id} not found in inventory.")
-            return
+        for animal_id in animal_ids:
+            if animal_id not in self.inventory["Animal_ID"].values:
+                print(f"Error: Animal_ID {animal_id} not found in inventory.")
+                continue
 
-        row_index = self.inventory[self.inventory["Animal_ID"] == animal_id].index[0]
+            row_index = self.inventory[self.inventory["Animal_ID"] == animal_id].index[0]
 
-        changes = []
-        for key, value in updates.items():
-            if key in valid_fields:
-                old_value = self.inventory.at[row_index, key]
-                self.inventory.at[row_index, key] = value
-                changes.append(f"{key}: {old_value} → {value}")
+            changes = []
+            for key, value in updates.items():
+                if key in valid_fields:
+                    old_value = self.inventory.at[row_index, key]
+                    if key == "Experimental_History" and pd.notna(old_value) and value:
+                        new_value = f"{old_value}; {value}"
+                    else:
+                        new_value = value
+
+                    self.inventory.at[row_index, key] = value
+                    changes.append(f"{key}: {old_value} → {value}")
+                else:
+                    print(f"Warning: '{key}' is not a valid editable field. Skipped.")
+
+            if changes:
+                self.save_inventory()
+                self.save_state()
+                self.log_change("Edit", f"{animal_id} - " + "; ".join(changes))
+                print(f"Updated {animal_id}:")
+                for change in changes:
+                    print(" -", change)
             else:
-                print(f"Warning: '{key}' is not a valid editable field. Skipped.")
+                print("No valid changes made.")
 
-        if changes:
-            self.save_inventory()
-            self.save_state()
-            self.log_change("Edit", f"{animal_id} - " + "; ".join(changes))
-            print(f"Updated {animal_id}:")
-            for change in changes:
-                print(" -", change)
-        else:
-            print("No valid changes made.")
+    def highlight_changes(self, updated_df, original_df):
+        """
+        Returns a styled DataFrame where cells with changed values are highlighted.
+
+        Parameters:
+        - updated_df (pd.DataFrame): The current inventory after updates.
+        - original_df (pd.DataFrame): The inventory snapshot before updates.
+
+        Returns:
+        - styled DataFrame with yellow highlights on modified cells
+        """
+        def style_row(row):
+            animal_id = row["Animal_ID"]
+            original = original_df[original_df["Animal_ID"] == animal_id]
+            if original.empty:
+                return [""] * len(row)
+            original_row = original.squeeze()
+            return [
+                "background-color: yellow" if str(row[col]) != str(original_row.get(col, "")) else ""
+                for col in row.index
+            ]
+
+        return updated_df.style.apply(style_row, axis = 1)
+
 
     def analyze_euthanasia_log(self, start_date=None, end_date=None, group_by_experimenter=False):
         if not self.euthanasia_log:
@@ -399,6 +449,10 @@ class Rack:
         Returns:
         - A filtered DataFrame with matching salamanders.
         """
+
+        min_age = criteria.pop("min_age", None)
+        max_age = criteria.pop("max_age", None)
+
         if not criteria and min_age is None and max_age is None:
             print("Please provide at least one search criterion.")
             return None
@@ -407,8 +461,6 @@ class Rack:
     
         filtered_inventory = self.inventory.copy()  # Start with the full inventory
         
-        min_age = criteria.pop("min_age", None)
-        max_age = criteria.pop("max_age", None)
 
         # Age calculation (DOB must be datetime)
         filtered_inventory["DOB"] = pd.to_datetime(filtered_inventory["DOB"], errors="coerce")
@@ -428,7 +480,12 @@ class Rack:
                 print(f"Warning: '{key}' is not a valid column in the inventory.")
                 continue  # Skip invalid columns
 
-            if value is None or str(value).lower() in {"none", "nan", "null"}:
+            if isinstance(value, list): #allow multiple tanks for filtering dataframe
+                filtered_inventory = filtered_inventory[
+                    filtered_inventory[key].astype(str).isin([str(v) for v in value])
+                ]
+
+            elif value is None or str(value).lower() in {"none", "nan", "null"}:
                 # Search for missing values
                 filtered_inventory = filtered_inventory[
                 filtered_inventory[key].isna()
@@ -448,26 +505,68 @@ class Rack:
 
     # Function to plot Rack Space Usage Heatmap
     def get_tanks_for_rack(self, rack):
+        tanks = limited_tanks if rack in limited_racks else full_tanks
+
+        if rack in blocked_tanks:
+            tanks = [t for t in tanks if t not in blocked_tanks[rack]]
+
+        return tanks
+
+        """    #merging tanks wont work nicely unless switching to matplotlib
         if rack in limited_racks:
-            return limited_tanks
+            base_tanks = limited_tanks.copy()
         else:
-            return full_tanks
+            base_tanks = full_tanks.copy()
+
+        #Sometimes tanks are merged 
+        if rack in merged_tanks:
+            for merged, components in merged_tanks[rack].items():
+                #Remove individual options
+                for comp in components:
+                    if comp in base_tanks:
+                        base_tanks.remove(comp)
+                #Merging label
+            base_tanks.extend(merged_tanks[rack].keys())
+
+        return sorted(base_tanks)"""
 
     def plot_rack_space(self, inventory_subset=None, return_fig=False):
 
         # Create an empty DataFrame with all possible valid (rack, tank) combinations
         full_layout = []
+        
+        """ failed attempt to merge tanks
+        for rack in valid_racks:
+            if rack in merged_tanks:
+                tanks = full_tanks.copy()
+                for merged, components in merged_tanks[rack].items():
+                    tanks = [t for t in tanks if t not in components] # remove components
+                    tanks.append(merged) # add merged label
+            else: 
+                tanks = limited_tanks if rack in limited_racks else full_tanks
+
+            for tank in tanks:
+                full_layout.append((rack, tank)) """       
 
         for rack in valid_racks:
             tanks = limited_tanks if rack in limited_racks else full_tanks
             for tank in tanks:
-                full_layout.append((rack, tank))
+                full_layout.append((rack, tank))        
 
         layout_df = pd.DataFrame(full_layout, columns=["Rack", "Tank"])
         layout_df["Count"] = 0
 
-        # Count current animals
-        inventory = inventory_subset if inventory_subset is not None else self.inventory
+        # Use subset or full inventory; make a copy to safely edit tank labels
+        inventory = inventory_subset.copy() if inventory_subset is not None else self.inventory.copy()
+        
+        """ removed but maybe try again later
+        #Remap compopnents tanks to merged tank labels
+        for rack, merge_info in merged_tanks.items():
+            for merged_label, components in merge_info.items():
+                condition = (inventory["Rack"] == rack) & (inventory["Tank"].isin(components))
+                inventory.loc[condition, "Tank"] == merged_label"""
+
+        #Count animals per tank
         counts = inventory.groupby(["Rack", "Tank"]).size().reset_index(name="Count")
 
 
@@ -477,8 +576,7 @@ class Rack:
         merged.drop(columns=["Count_actual"], inplace=True)
 
         # Pivot for heatmap, sorted numerically by rack
-        pivot = merged.pivot(index="Rack", columns="Tank", values="Count").fillna(0)
-        pivot = pivot.astype(int)
+        pivot = merged.pivot(index="Rack", columns="Tank", values="Count").fillna(0).astype(int)
         pivot = pivot.loc[sorted(pivot.index, key=lambda x: int(x.split()[1]))]
         
         # Create a mask for invalid tank positions (tanks that don't exist for the rack)    
@@ -486,10 +584,11 @@ class Rack:
         for rack in pivot.index:
             valid_tanks = self.get_tanks_for_rack(rack)
             for tank in pivot.columns:
-                if tank not in valid_tanks:
+                if tank not in valid_tanks or (rack in blocked_tanks and tank  in blocked_tanks[rack]):
                     mask.loc[rack, tank] = True
 
-        # Sort the tank columns in a consistent order
+        # Sort the tank columns in a consistent order, supporting merged tanks
+        # ThisDidntWork: sorted_tanks = sorted(pivot.columns, key=lambda x: (x[0], int(x.split('+')[0][1:]) if '+' in x else int(x[1:])))
         sorted_tanks = sorted(pivot.columns, key=lambda x: (x[0], int(x[1:])))
         pivot = pivot[sorted_tanks]
 
@@ -547,9 +646,20 @@ class Rack:
             return False
 
         limited_tanks = [f"{row}{col}" for row in "ABC" for col in range(1, 5)] #A1-C4
-        full_tanks = [f"{row}{col}" for row in "ABCD" for col in range(1, 7)] #A1-D6
+        full_tanks = [f"{row}{col}" for row in "ABCD" for col in range(1, 6)] #A1-D5
 
         valid_tanks = limited_tanks if rack in limited_racks else full_tanks
+        
+        blocked_tanks = { #! Can be adjusted if smaller tanks replace large tanks
+            "Rack 1": ["C4"], #polypterus tank in two slots
+            "Rack 3": ["A2", "A4", "B2", "C2"], #Large breeding tanks
+            "Rack 10": ["C1"], #Bucket lives here
+            "Rack 12": ["B2", "B3", "B5", "C2", "C3", "C5", "D2", "D3", "D5"] #Breeding tanks
+        }
+        #Remove blocked tanks
+        if rack in blocked_tanks:
+            valid_tanks = [t for t in valid_tanks if t not in blocked_tanks[rack]]
+
         return tank in valid_tanks
 
             
@@ -559,6 +669,8 @@ racks = ["Rack 1", "Rack 2", "Rack 3", "Rack 4", "Rack 5", "Rack 6", "Rack 7", "
 protocols = ["AABF2564", "AABL1550", "AABI2617", "AABY5655"]
 conditions = ["Terrestrial", "Aquatic", "Reaqua"]
 sex_list = ["None", "Male", "Female"]
+
+
 # Define valid racks and tank layout
 valid_racks = [
         "Rack 1", "Rack 2", "Rack 3", "Rack 4", "Rack 5",
@@ -567,8 +679,40 @@ valid_racks = [
 limited_racks = ["Rack 1", "Rack 3", "Rack 5", "Rack 7", "Rack 9", "Rack 10", "Rack 11"]
 
 limited_tanks = [f"{row}{col}" for row in "ABC" for col in range(1, 5)]   # A1–C4
-full_tanks = [f"{row}{col}" for row in "ABCD" for col in range(1, 7)]     # A1–D6
+full_tanks = [f"{row}{col}" for row in "ABCD" for col in range(1, 6)]     # A1–D5
+#When a large tank is in the place of two tank slots 
+blocked_tanks = { #! Can be adjusted if smaller tanks replace large tanks
+    "Rack 1": ["C4"], #polypterus tank in two slots
+    "Rack 3": ["A2", "A4", "B2", "C2"], #Large breeding tanks
+    "Rack 10": ["C1"], #Bucket lives here
+    "Rack 12": ["B2", "B3", "B5", "C2", "C3", "C5", "D2", "D3", "D5"] #Breeding tanks
+}
 
+"""
+#Merged tanks - would have to switch to matplotlib to merge cells - masked tanks instead
+merged_tanks = {
+    "Rack 1": {
+        "C3+C4": ["C3", "C4"] #Polypterus Tank
+    }, 
+    "Rack 3": { #Breeding tanks
+        "A1+A2": ["A1", "A2"], 
+        "A3+A4": ["A3", "A4"],
+        "B1+B2": ["B1", "B2"], 
+        "C1+C2": ["C1", "C2"]
+    }, 
+    "Rack 10": {
+        "C1+C2": ["C1", "C2"] #Bucket lives here
+    },
+    "Rack 12": { #Breeding tanks
+        "B1+B2+B3": ["B1", "B2", "B3"], 
+        "B4+B5": ["B4", "B5"],
+        "C1+C2+C3": ["C1", "C2", "C3"], 
+        "C4+C5": ["C4", "C5"], 
+        "D1+D2+D3": ["D1", "D2", "D3"], 
+        "D4+D5": ["D4", "D5"] 
+    }
+}
+"""
 """rack_layouts = {
     "Rack 1":  {"rows": ["A", "B", "C"], "cols": [1, 2, 3, 4]},
     "Rack 3":  {"rows": ["A", "B", "C"], "cols": [1, 2, 3, 4]},
