@@ -1,8 +1,6 @@
 
 import io
 import sys
-import time 
-import numpy as np
 import pandas as pd
 import streamlit as st
 from module import Rack
@@ -48,6 +46,12 @@ with capture_stdout_to_sidebar():
     tab1, tab2, tab3, tab4, tab5 = st.tabs(["Animal Distribution", "Add Salamanders", "Euthanize Salamander", "View Files", "Edit/Move Animal"])
 
     with tab1:
+
+            if st.button("Plot All Racks"):
+                    fig = R.plot_rack_space(return_fig=True)
+                    st.pyplot(fig)
+
+
             #search and plot tank distribution
             st.subheader("Animal Search")
             species = st.selectbox("Species", ["", "Pleurodeles waltl", "Axolotl mexicanum", "Polypterus senegalus" ])
@@ -62,12 +66,6 @@ with capture_stdout_to_sidebar():
             rack = st.selectbox("Rack", ["", "Rack 1", "Rack 2", "Rack 3", "Rack 4", "Rack 5", "Rack 6", "Rack 7", "Rack 8", "Rack 9", "Rack 10", "Rack 11", "Rack 12", "Rack 13 - Off"])
             valid_tanks = R.get_tanks_for_rack(rack)
             tank = st.multiselect("Tank", options=valid_tanks)
-
-
-            # Optionally filter before plotting
-            if st.button("Plot All Racks"):
-                    fig = R.plot_rack_space(return_fig=True)
-                    st.pyplot(fig)
 
             if st.button("Search"):
                     search_kwargs = {}

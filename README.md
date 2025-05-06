@@ -19,11 +19,11 @@ The Streamlit based webapp provides function for the following tasks
 - **Move Salamanders**: Move salamanders between racks and tanks, updating their locations in the inventory.
 - **Euthanize Salamanders**: Euthanize salamanders and log their details (e.g., date of death, purpose, experimenter).
 - **Search Salamanders**: Search the salamander inventory based on various criteria such as species, age, rack, tank, environmental condition, etc.
-- **Euthanasia Log Analysis**: Analyze euthanasia logs by filtering by date, experimenter, or protocol and summarize euthanasia reasons.
+- **Euthanasia Log Analysis**: Analyze euthanasia logs by filtering by date, experimenter, or protocol 
 - **Plot Rack Space**: Visualize the distribution of salamanders across racks and tanks using a heatmap.
 - **Undo**: restore previous state before changes made to invenotry
 - **Change log**: automatically reports time, date, and change made
-- **Analyze Euthanasia log**: track number of animals by protocol or experimenter, with options for date range and and complications specified
+
 
 
 ### Installation

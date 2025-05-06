@@ -5,11 +5,7 @@ A function for parsing Tosches lab animal inventory
 """
 
 import os
-import random
-import string
 import tempfile
-import itertools
-import numpy as np
 import pandas as pd
 import seaborn as sns
 from pathlib import Path
@@ -527,34 +523,19 @@ class Rack:
 
         return tanks
 
-        """    #merging tanks wont work nicely unless switching to matplotlib
-        if rack in limited_racks:
-            base_tanks = limited_tanks.copy()
-        else:
-            base_tanks = full_tanks.copy()
-
-        #Sometimes tanks are merged 
-        if rack in merged_tanks:
-            for merged, components in merged_tanks[rack].items():
-                #Remove individual options
-                for comp in components:
-                    if comp in base_tanks:
-                        base_tanks.remove(comp)
-                #Merging label
-            base_tanks.extend(merged_tanks[rack].keys())
-
-        return sorted(base_tanks)"""
 
     def plot_rack_space(self, inventory_subset=None, return_fig=False):
 
         # Create an empty DataFrame with all possible valid (rack, tank) combinations
         full_layout = []
         
+        # Generate possible Rack/Tank pairings based on if rack is limited or full as defined in is_valid_tank()
         for rack in valid_racks:
             tanks = limited_tanks if rack in limited_racks else full_tanks
             for tank in tanks:
-                full_layout.append((rack, tank))        
+                full_layout.append((rack, tank))   #Appends pairings to full_layout list     
 
+        # Generate Dataframe from full layout list, with column for count
         layout_df = pd.DataFrame(full_layout, columns=["Rack", "Tank"])
         layout_df["Count"] = 0
 
@@ -562,16 +543,16 @@ class Rack:
         inventory = inventory_subset.copy() if inventory_subset is not None else self.inventory.copy()
 
 
-        #Count animals per tank
+        #Count animals per tank in dataframe, reset index for simple dataframe structure
         counts = inventory.groupby(["Rack", "Tank"]).size().reset_index(name="Count")
 
 
-        # Merge with the full layout to ensure all (rack, tank) pairs are present
+        # Merge counts with the full layout dataframe ensuring all (rack, tank) pairs are present even if empty counts
         merged = layout_df.merge(counts, on=["Rack", "Tank"], how="left", suffixes=("", "_actual"))
         merged["Count"] = merged["Count_actual"].fillna(0).astype(int)
         merged.drop(columns=["Count_actual"], inplace=True)
 
-        # Pivot for heatmap, sorted numerically by rack
+        # Pivot for heatmap, sorted numerically by rack in rows, tank in columns
         pivot = merged.pivot(index="Rack", columns="Tank", values="Count").fillna(0).astype(int)
         pivot = pivot.loc[sorted(pivot.index, key=lambda x: int(x.split()[1]))]
         
@@ -588,20 +569,17 @@ class Rack:
                 if tank not in valid_tanks or (rack in blocked_tanks and tank in blocked_tanks[rack]):
                     mask.loc[rack, tank] = True
 
-        # Fill NaNs for safe plotting (mask handles visibility)
-        #plot_data = pivot.fillna(0).astype(int)
-
-        # Plot
+        # Plot with Seaborn heatmap
         fig, ax = plt.subplots(figsize=(14, 8))
         sns.heatmap(
             pivot, 
-            mask=mask, 
+            mask=mask, #hides invalid tanks
             annot=True, 
-            fmt="d", 
+            fmt="d", #annotations as integers
             cmap="coolwarm", 
             linewidths=0.5, 
             linecolor='gray', 
-            cbar_kws={'label': 'Count'},
+            cbar_kws={'label': 'Count'}, #label for color bar
             ax=ax
         )
         ax.set_title("Salamander Distribution Across Racks and Tanks", fontsize=16)
