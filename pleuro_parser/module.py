@@ -151,11 +151,24 @@ class Rack:
             print(f"Error: Tank {tank} on {rack} is blocked for use.")
             return
 
+    
+        # Handle empty euthanasia log by checking before performing operations
+        if not self.euthanasia_log:  # Euthanasia log is empty
+            old_ids = pd.DataFrame()  # Initialize an empty DataFrame
+        else:
+            old_ids = pd.DataFrame(self.euthanasia_log)["Animal_ID"].str.extract(r"SAL_(\d+)").dropna().astype(int) # already used and in euthanasia log
+        
+        
+        # Handle empty inventory for first time initializing
+        if self.inventory.empty:
+            # Initialize the inventory DataFrame with columns, no rows
+            self.inventory = pd.DataFrame(columns=["Animal_ID", "Tank", "Rack", "DOB", "Cohort", "Environmental_Condition", "Sex", "Lineage", "Transgenic_Line", "Experimental_Holds", "Species", "Protocol_Number", "Experimental_History", "RFID", "Date_of_Terra", "Date_of_Reaqua", "Diet"])
+        
 
         new_salamanders = []
         existing_ids = self.inventory["Animal_ID"].str.extract(r"SAL_(\d+)")  # Extract numeric part
         existing_ids = existing_ids.dropna().astype(int)  # Convert to int
-        old_ids = pd.DataFrame(self.euthanasia_log)["Animal_ID"].str.extract(r"SAL_(\d+)").dropna().astype(int) #already used and in euthanasia log
+        #old_ids = pd.DataFrame(self.euthanasia_log)["Animal_ID"].str.extract(r"SAL_(\d+)").dropna().astype(int) #already used and in euthanasia log
         all_ids = pd.concat([existing_ids, old_ids], ignore_index = True)
         next_id = all_ids.max().values[0] + 1 if not all_ids.empty else 1  # Determine next ID
 
@@ -279,6 +292,7 @@ class Rack:
             "Tank": animal_data["Tank"],
             "Rack": animal_data["Rack"],
             "DOB": animal_data["DOB"],
+            "Cohort": animal_data["Cohort"],
             "Environmental_Condition": animal_data["Environmental_Condition"],
             "Lineage": animal_data["Lineage"],
             "Transgenic_Line": animal_data["Transgenic_Line"],
@@ -505,6 +519,7 @@ class Rack:
 
     # Function to plot Rack Space Usage Heatmap
     def get_tanks_for_rack(self, rack):
+
         tanks = limited_tanks if rack in limited_racks else full_tanks
 
         if rack in blocked_tanks:
@@ -535,19 +550,6 @@ class Rack:
         # Create an empty DataFrame with all possible valid (rack, tank) combinations
         full_layout = []
         
-        """ failed attempt to merge tanks
-        for rack in valid_racks:
-            if rack in merged_tanks:
-                tanks = full_tanks.copy()
-                for merged, components in merged_tanks[rack].items():
-                    tanks = [t for t in tanks if t not in components] # remove components
-                    tanks.append(merged) # add merged label
-            else: 
-                tanks = limited_tanks if rack in limited_racks else full_tanks
-
-            for tank in tanks:
-                full_layout.append((rack, tank)) """       
-
         for rack in valid_racks:
             tanks = limited_tanks if rack in limited_racks else full_tanks
             for tank in tanks:
@@ -558,13 +560,7 @@ class Rack:
 
         # Use subset or full inventory; make a copy to safely edit tank labels
         inventory = inventory_subset.copy() if inventory_subset is not None else self.inventory.copy()
-        
-        """ removed but maybe try again later
-        #Remap compopnents tanks to merged tank labels
-        for rack, merge_info in merged_tanks.items():
-            for merged_label, components in merge_info.items():
-                condition = (inventory["Rack"] == rack) & (inventory["Tank"].isin(components))
-                inventory.loc[condition, "Tank"] == merged_label"""
+
 
         #Count animals per tank
         counts = inventory.groupby(["Rack", "Tank"]).size().reset_index(name="Count")
@@ -579,18 +575,18 @@ class Rack:
         pivot = merged.pivot(index="Rack", columns="Tank", values="Count").fillna(0).astype(int)
         pivot = pivot.loc[sorted(pivot.index, key=lambda x: int(x.split()[1]))]
         
+
+        # Sort the tank columns in a consistent order A1-D6, supporting merged tanks
+        sorted_tanks = sorted(pivot.columns, key=lambda x: (x[0], int(x[1:])))
+        pivot = pivot[sorted_tanks]
+
         # Create a mask for invalid tank positions (tanks that don't exist for the rack)    
         mask = pd.DataFrame(False, index=pivot.index, columns=pivot.columns)
         for rack in pivot.index:
             valid_tanks = self.get_tanks_for_rack(rack)
             for tank in pivot.columns:
-                if tank not in valid_tanks or (rack in blocked_tanks and tank  in blocked_tanks[rack]):
+                if tank not in valid_tanks or (rack in blocked_tanks and tank in blocked_tanks[rack]):
                     mask.loc[rack, tank] = True
-
-        # Sort the tank columns in a consistent order, supporting merged tanks
-        # ThisDidntWork: sorted_tanks = sorted(pivot.columns, key=lambda x: (x[0], int(x.split('+')[0][1:]) if '+' in x else int(x[1:])))
-        sorted_tanks = sorted(pivot.columns, key=lambda x: (x[0], int(x[1:])))
-        pivot = pivot[sorted_tanks]
 
         # Fill NaNs for safe plotting (mask handles visibility)
         #plot_data = pivot.fillna(0).astype(int)
@@ -638,9 +634,9 @@ class Rack:
             """
         valid_racks = [
             "Rack 1", "Rack 2", "Rack 3", "Rack 4", "Rack 5",
-            "Rack 6", "Rack 7", "Rack 8", "Rack 9", "Rack 10", "Rack 11", "Rack 12"
+            "Rack 6", "Rack 7", "Rack 8", "Rack 9", "Rack 10", "Rack 11", "Rack 12", "Rack 13 - Off"
         ]
-        limited_racks = ["Rack 1", "Rack 3", "Rack 5", "Rack 7", "Rack 9", "Rack 10", "Rack 11"]
+        limited_racks = ["Rack 1", "Rack 3", "Rack 5", "Rack 7", "Rack 9", "Rack 10", "Rack 11", "Rack 13 - Off"]
 
         if rack not in valid_racks:
             return False
@@ -654,7 +650,8 @@ class Rack:
             "Rack 1": ["C4"], #polypterus tank in two slots
             "Rack 3": ["A2", "A4", "B2", "C2"], #Large breeding tanks
             "Rack 10": ["C1"], #Bucket lives here
-            "Rack 12": ["B2", "B3", "B5", "C2", "C3", "C5", "D2", "D3", "D5"] #Breeding tanks
+            "Rack 12": ["B2", "B3", "B5", "C2", "C3", "C5", "D2", "D3", "D5"], #Breeding tanks
+            "Rack 13 - Off": ["A2", "A3", "A4","B1", "B2", "B3", "B4", "C1", "C2", "C3", "C4"] # This rack doesnt really exist - for noting which animals are off rack
         }
         #Remove blocked tanks
         if rack in blocked_tanks:
@@ -664,8 +661,8 @@ class Rack:
 
             
 species_list = ["Ambystoma mexicanum", "Pleurodeles waltl", "Polypterus senegalus"]
-transgenic_lines = ["WT", "hsyn-GFP", "hsyn-GCaMP6s", "hsyn-GCaMP6s F1" "hsyn-Cre", "mDlx-ChR2", "mDlx-GFP"]
-racks = ["Rack 1", "Rack 2", "Rack 3", "Rack 4", "Rack 5", "Rack 6", "Rack 7", "Rack 8", "Rack 9", "Rack 10", "Rack 11", "Rack 12"]
+transgenic_lines = ["WT", "hsyn-GFP", "hsyn-GCaMP6s", "hsyn-GCaMP6s F1", "hsyn-Cre", "mDlx-ChR2", "mDlx-GFP"]
+racks = ["Rack 1", "Rack 2", "Rack 3", "Rack 4", "Rack 5", "Rack 6", "Rack 7", "Rack 8", "Rack 9", "Rack 10", "Rack 11", "Rack 12", "Rack 13 - Off"]
 protocols = ["AABF2564", "AABL1550", "AABI2617", "AABY5655"]
 conditions = ["Terrestrial", "Aquatic", "Reaqua"]
 sex_list = ["None", "Male", "Female"]
@@ -674,59 +671,21 @@ sex_list = ["None", "Male", "Female"]
 # Define valid racks and tank layout
 valid_racks = [
         "Rack 1", "Rack 2", "Rack 3", "Rack 4", "Rack 5",
-        "Rack 6", "Rack 7", "Rack 8", "Rack 9", "Rack 10", "Rack 11", "Rack 12"
+        "Rack 6", "Rack 7", "Rack 8", "Rack 9", "Rack 10", "Rack 11", "Rack 12", "Rack 13 - Off"
         ]
-limited_racks = ["Rack 1", "Rack 3", "Rack 5", "Rack 7", "Rack 9", "Rack 10", "Rack 11"]
+limited_racks = ["Rack 1", "Rack 3", "Rack 5", "Rack 7", "Rack 9", "Rack 10", "Rack 11", "Rack 13 - Off"]
 
 limited_tanks = [f"{row}{col}" for row in "ABC" for col in range(1, 5)]   # A1–C4
 full_tanks = [f"{row}{col}" for row in "ABCD" for col in range(1, 6)]     # A1–D5
+
 #When a large tank is in the place of two tank slots 
 blocked_tanks = { #! Can be adjusted if smaller tanks replace large tanks
     "Rack 1": ["C4"], #polypterus tank in two slots
     "Rack 3": ["A2", "A4", "B2", "C2"], #Large breeding tanks
     "Rack 10": ["C1"], #Bucket lives here
-    "Rack 12": ["B2", "B3", "B5", "C2", "C3", "C5", "D2", "D3", "D5"] #Breeding tanks
+    "Rack 12": ["B2", "B3", "B5", "C2", "C3", "C5", "D2", "D3", "D5"],
+    "Rack 13 - Off": ["A2", "A3", "A4","B1", "B2", "B3", "B4", "C1", "C2", "C3", "C4"] # This rack doesnt really exist - for noting which animals are off rack #Breeding tanks
 }
-
-"""
-#Merged tanks - would have to switch to matplotlib to merge cells - masked tanks instead
-merged_tanks = {
-    "Rack 1": {
-        "C3+C4": ["C3", "C4"] #Polypterus Tank
-    }, 
-    "Rack 3": { #Breeding tanks
-        "A1+A2": ["A1", "A2"], 
-        "A3+A4": ["A3", "A4"],
-        "B1+B2": ["B1", "B2"], 
-        "C1+C2": ["C1", "C2"]
-    }, 
-    "Rack 10": {
-        "C1+C2": ["C1", "C2"] #Bucket lives here
-    },
-    "Rack 12": { #Breeding tanks
-        "B1+B2+B3": ["B1", "B2", "B3"], 
-        "B4+B5": ["B4", "B5"],
-        "C1+C2+C3": ["C1", "C2", "C3"], 
-        "C4+C5": ["C4", "C5"], 
-        "D1+D2+D3": ["D1", "D2", "D3"], 
-        "D4+D5": ["D4", "D5"] 
-    }
-}
-"""
-"""rack_layouts = {
-    "Rack 1":  {"rows": ["A", "B", "C"], "cols": [1, 2, 3, 4]},
-    "Rack 3":  {"rows": ["A", "B", "C"], "cols": [1, 2, 3, 4]},
-    "Rack 5":  {"rows": ["A", "B", "C"], "cols": [1, 2, 3, 4]},
-    "Rack 7":  {"rows": ["A", "B", "C"], "cols": [1, 2, 3, 4]},
-    "Rack 9":  {"rows": ["A", "B", "C"], "cols": [1, 2, 3, 4]},
-    "Rack 10": {"rows": ["A", "B", "C"], "cols": [1, 2, 3, 4]},
-    "Rack 11": {"rows": ["A", "B", "C"], "cols": [1, 2, 3, 4]},
-    "Rack 2":  {"rows": ["A", "B", "C", "D"], "cols": [1, 2, 3, 4, 5, 6]},
-    "Rack 4":  {"rows": ["A", "B", "C", "D"], "cols": [1, 2, 3, 4, 5, 6]},
-    "Rack 6":  {"rows": ["A", "B", "C", "D"], "cols": [1, 2, 3, 4, 5, 6]},
-    "Rack 8":  {"rows": ["A", "B", "C", "D"], "cols": [1, 2, 3, 4, 5, 6]},
-    "Rack 12": {"rows": ["A", "B", "C", "D"], "cols": [1, 2, 3, 4, 5, 6]},
-}"""
 
 
 if __name__ == "__main__":

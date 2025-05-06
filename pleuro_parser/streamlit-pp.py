@@ -53,13 +53,13 @@ with capture_stdout_to_sidebar():
             species = st.selectbox("Species", ["", "Pleurodeles waltl", "Axolotl mexicanum", "Polypterus senegalus" ])
             sex = st.selectbox("Sex", ["", "Male", "Female", "Unknown"])
             transgenic_line = st.selectbox("Transgenic_Line", ["", "WT", "hsyn-GFP", "hsyn-GCaMP6s", "mDlx-GFP", "mDlx-ChR2", "hsyn-Cre"])
-            cohort = st.text_input("Cohort, ex. Terra A")
+            cohort = st.text_input("Cohort, ex. Terra A, EdU, Viral, F0")
             min_age = st.text_input("Minimum Age in years")
             max_age = st.text_input("Maximum Age in years")
             protocol = st.selectbox("Protocol_Number", ["", "AABL1550", "AABF2564", "AABI2617", "AABY5655"])
-            experimental_holds = st.text_input("Experimental_Holds - None if None")
+            experimental_holds = st.text_input("Experimental_Holds - Priority to Use, None, or Initials")
             environmental_condition = st.selectbox("Condition", ["", "Aquatic", "Terrestrial", "Reaqua"])
-            rack = st.selectbox("Rack", ["", "Rack 1", "Rack 2", "Rack 3", "Rack 4", "Rack 5", "Rack 6", "Rack 7", "Rack 8", "Rack 9", "Rack 10", "Rack 11", "Rack 12"])
+            rack = st.selectbox("Rack", ["", "Rack 1", "Rack 2", "Rack 3", "Rack 4", "Rack 5", "Rack 6", "Rack 7", "Rack 8", "Rack 9", "Rack 10", "Rack 11", "Rack 12", "Rack 13 - Off"])
             valid_tanks = R.get_tanks_for_rack(rack)
             tank = st.multiselect("Tank", options=valid_tanks)
 
@@ -116,6 +116,11 @@ with capture_stdout_to_sidebar():
                             st.subheader("Search Results")
                             st.dataframe(results, use_container_width=True)
 
+                            #Summary counts
+                            total_animals = len(R.inventory)
+                            filtered_animals = len(results)
+                            st.markdown(f"**Filtered Animals:** {filtered_animals} out of {total_animals} total animals in inventory")
+
                             st.subheader("Rack Plot of Filtered Results")
                             fig = R.plot_rack_space(inventory_subset=results, return_fig=True)
                             st.pyplot(fig)
@@ -149,14 +154,14 @@ with capture_stdout_to_sidebar():
 
             num_salamanders = st.number_input("Number of Salamanders", min_value=1, value=1)
             dob_str = st.text_input("Date of Birth (YYYY/MM/DD)")
-            cohort = st.text_input("Cohort ie. Terra D")
-            species = st.text_input("Species", value="Pleurodeles waltl")
+            cohort = st.text_input("Cohort ie. Terra A, EdU, Viral")
+            species = st.selectbox("Species -", ["Pleurodeles waltl", "Axolotl mexicanum", "Polypterus senegalus"])
             transgenic_line = st.selectbox("Transgenic Line", ["WT", "hsyn-GFP", "hsyn-GCaMP6s", "mDlx-GFP", "mDlx-ChR2", "hsyn-Cre"])
             lineage = st.text_input("Lineage")
             protocol = st.selectbox("Protocol Number", ["AABL1550", "AABF2564", "AABI2617", "AABY5655"])
             rack = st.selectbox("Rack", options=[
                     "Rack 1", "Rack 2", "Rack 3", "Rack 4", "Rack 5",
-                    "Rack 6", "Rack 7", "Rack 8", "Rack 9", "Rack 10", "Rack 11", "Rack 12"
+                    "Rack 6", "Rack 7", "Rack 8", "Rack 9", "Rack 10", "Rack 11", "Rack 12", "Rack 13 - Off"
                 ])
             # Use get_tanks_for_rack method to generate valid tanks
             valid_tanks = R.get_tanks_for_rack(rack)
@@ -164,7 +169,7 @@ with capture_stdout_to_sidebar():
             #tank = st.text_input("Tank (e.g., A1, B2, etc.)*")
             env_condition = st.selectbox("Environmental_Condition", ["Aquatic", "Terrestrial", "Reaqua"])
             sex = st.selectbox("Sex", options=["Unknown", "Male", "Female"])
-            experimental_holds = st.text_input("Experimental_Holds - Defaults None")
+            experimental_holds = st.text_input("Experimental_Holds - Include Initials - Defaults None")
             experimental_history = st.text_input("Experimental_History - Defaults None")
             RFID = st.text_input("RFID - defaults None")
             Diet = st.selectbox("Diet", ["", "MWF Schedule", "Daily", "Gummy Schedule"])
@@ -335,7 +340,7 @@ with capture_stdout_to_sidebar():
                 edit_fields = {
                 "Environmental_Condition": st.selectbox("Environmental Condition Change", ["Aquatic", "Terrestrial", "Reaqua"]),
                 "Sex": st.selectbox("Sex", ["", "Female", "Male", "Unknown"]),
-                "Experimental_Holds": st.text_input("Holds: Initials with Details, or Breeding"),
+                "Experimental_Holds": st.text_input("Holds: Initials with Details, or Breeding - Please Check if Current Holds"),
                 "Protocol_Number": st.selectbox("Protocol Transfer", ["", "AABL1550", "AABF2564", "AABI2617", "AABY5655"]),
                 "Experimental_History": st.text_area("Experimental History"), 
                 "RFID": st.text_input("RFID"),
@@ -375,7 +380,7 @@ with capture_stdout_to_sidebar():
             st.subheader("Move Animals")
             move_id = st.multiselect("Animal ID to Move (SAL_###)", options = R.inventory["Animal_ID"].tolist())
             target_rack = st.selectbox("Target Rack", [
-                    "Rack 1", "Rack 2", "Rack 3", "Rack 4", "Rack 5", "Rack 6", "Rack 7", "Rack 8", "Rack 9", "Rack 10", "Rack 11", "Rack 12"])
+                    "Rack 1", "Rack 2", "Rack 3", "Rack 4", "Rack 5", "Rack 6", "Rack 7", "Rack 8", "Rack 9", "Rack 10", "Rack 11", "Rack 12", "Rack 13 - Off"])
             # Use get_tanks_for_rack method to generate valid tanks
             valid_tanks = R.get_tanks_for_rack(target_rack)
             target_tank = st.selectbox("Valid Tanks for Selected Rack", options=valid_tanks)
