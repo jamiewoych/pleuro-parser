@@ -28,7 +28,7 @@ The Streamlit based webapp provides function for the following tasks
 
 ### Installation
 
-**Packages**
+#### Packages
 - io: used for displaying stdout in sidebar panel. Useful for troubleshooting
 - sys: also used for redirecting stdout to sidebar panel. Useful for troubleshooting
 - contextlib.contextmanager: sidebar panel usage again. Used for troubleshooting
@@ -42,8 +42,11 @@ The Streamlit based webapp provides function for the following tasks
 - datetime, timedelta: calculating age and logging dates
 
 git clone https://github.com/jamiewoych/pleuro-parser.git
+
 cd ./pleuro_parser
+
 streamlit run streamlit-pp.py
+
 **this will be run on the Workstation through the Tosches Lab github page to ensure only one copy of the inventory is circulating**
 
 #### Files
@@ -67,6 +70,7 @@ streamlit run streamlit-pp.py
 - Diet: Diet schedule - useful for matching controls 
 
 **euthanasia_log.csv**: Logs the euthanized salamanders.
+
 -Information transferred from inventory:
 Animal_ID, Tank, Rack, DOB, Cohort, Environmental_Condition, Lineage, Transgenic_Line, Experimental_Holds, Species, Protocol_Number, Experimental_History, RFID, Date_of_Terra, Date_of_Reaqua, Diet, Sex if applicable
 
