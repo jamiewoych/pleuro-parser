@@ -1,1 +1,7 @@
-Animal_ID,Tank,Rack,DOB,Cohort,Environmental_Condition,Lineage,Transgenic_Line,Experimental_Holds,Species,Protocol_Number,Experimental_History,DOD,Weight_g,Sex,Purpose,Experimenter,Complications,RFID,Date_of_Terra,Date_of_Reaqua,Diet
+Animal_ID,Experimenter,DOD,Tank,Rack,DOB,Cohort,Environmental_Condition,Lineage,Transgenic_Line,Experimental_Holds,Species,Protocol_Number,Experimental_History,RFID,Date_of_Terra,Date_of_Reaqua,Diet,Weight_g,Sex,Purpose,Complications
+SAL_734,,5/10/25,C4,Rack 12,1/21/20,,Aquatic,fake,WT,No history,Pleurodeles waltl,AABF2564,rifd,5/4/25,4/3/25,Gummy diet,,0,Female,,
+SAL_734,,5/10/25,C4,Rack 12,1/21/20,,Aquatic,fake,WT,No history,Pleurodeles waltl,AABF2564,rifd,5/4/25,4/3/25,Gummy diet,,0,Female,,
+SAL_739,,5/10/25,A1,Rack 1,,,Aquatic,,WT,,Pleurodeles waltl,AABL1550,,,,,,0,Unknown,,
+SAL_739,,5/10/25,A1,Rack 1,,,Aquatic,,WT,,Pleurodeles waltl,AABL1550,,,,,,0,Unknown,,
+SAL_739,,5/10/25,A1,Rack 1,,,Aquatic,,WT,,Pleurodeles waltl,AABL1550,,,,,,0,Unknown,,
+SAL_739,,5/10/25,A1,Rack 1,,,Aquatic,,WT,,Pleurodeles waltl,AABL1550,,,,,,0,Unknown,,

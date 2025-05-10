@@ -19,10 +19,10 @@ def capture_stdout_to_sidebar():
         sys.stdout = original_stdout
         logs = buffer.getvalue()
         if logs.strip():
-            st.sidebar.markdown("### ⚠️ Warnings & Logs")
+            st.sidebar.markdown("### Log Changes and Warnings")
             st.sidebar.code(logs)
         else:
-            st.sidebar.markdown("### ✅ No warnings")
+            st.sidebar.markdown("### No current messages")
 
 #Title of webapp
 st.title('Pleurodeles Parsing')
@@ -38,9 +38,20 @@ if "rack" not in st.session_state:
 # Use the persisted instance
 R = st.session_state.rack
 
-
 # Capture and display all print/warning output to sidebar
 with capture_stdout_to_sidebar():
+    # Sidebar setup with the Undo button
+    with st.sidebar:
+        st.subheader("Undo Last Action")
+
+        # Button to perform the undo
+        if st.button("Undo Last Action"):
+            success = R.undo()
+            if success:
+                st.success("Undo successful from sidebar.")
+            else:
+                st.warning("No previous state to undo")
+
 
     # Tabs
     tab1, tab2, tab3, tab4, tab5 = st.tabs(["Animal Distribution", "Add Salamanders", "Euthanize Salamander", "View Files", "Edit/Move Animal"])
@@ -66,6 +77,7 @@ with capture_stdout_to_sidebar():
             rack = st.selectbox("Rack", ["", "Rack 1", "Rack 2", "Rack 3", "Rack 4", "Rack 5", "Rack 6", "Rack 7", "Rack 8", "Rack 9", "Rack 10", "Rack 11", "Rack 12", "Rack 13 - Off"])
             valid_tanks = R.get_tanks_for_rack(rack)
             tank = st.multiselect("Tank", options=valid_tanks)
+            animal_ids = st.multiselect("Animal IDs for search", options = R.inventory["Animal_ID"].tolist() )
 
             if st.button("Search"):
                     search_kwargs = {}
@@ -108,6 +120,9 @@ with capture_stdout_to_sidebar():
 
                     if environmental_condition:
                             search_kwargs["Environmental_Condition"] = environmental_condition
+
+                    if animal_ids:
+                            search_kwargs["Animal_ID"] = animal_ids
                     
                     results = R.search_salamanders(**search_kwargs)
                     if isinstance(results, pd.DataFrame): #check if search results in dataframe
@@ -151,7 +166,7 @@ with capture_stdout_to_sidebar():
             # Form for adding salamanders
 
             num_salamanders = st.number_input("Number of Salamanders", min_value=1, value=1)
-            dob_str = st.text_input("Date of Birth (YYYY/MM/DD)")
+            dob_str = st.selectbox("Date of Birth for Clutches", options = R.get_dob_options())
             cohort = st.text_input("Cohort ie. Terra A, EdU, Viral")
             species = st.selectbox("Species -", ["Pleurodeles waltl", "Axolotl mexicanum", "Polypterus senegalus"])
             transgenic_line = st.selectbox("Transgenic Line", ["WT", "hsyn-GFP", "hsyn-GCaMP6s", "mDlx-GFP", "mDlx-ChR2", "hsyn-Cre"])
@@ -183,7 +198,7 @@ with capture_stdout_to_sidebar():
                             st.warning("Invalid Date format. Please use YYYY-MM-DD.")
                             st.stop()
 
-                    R.add_salamanders(
+                    new_animal_ids = R.add_salamanders(
                             num_salamanders,
                             dob,
                             species,
@@ -200,13 +215,18 @@ with capture_stdout_to_sidebar():
                             rfid=RFID, 
                             terra_date=terra_date, 
                             aqua_date=aqua_date, 
-                            diet=Diet)
-                    st.success(f"Added {num_salamanders} salamander(s) to {rack} {tank}.")
+                            diet=Diet
+                    )
 
+                    if new_animal_ids:
+                        st.success(f"Added {num_salamanders} salamander(s) to {rack} {tank}.")
+                        st.write("New Animal IDs:", ", ".join(new_animal_ids))  # Display the new Animal IDs
+                    else:
+                        st.warning("no new animals")
     with tab3:
         st.subheader("Euthanize Salamander/Undo")
 
-        animal_id = st.text_input("Animal ID to Euthanize (SAL_###)")
+        animal_id = st.selectbox("Animal ID to Euthanize (SAL_###)", options = R.inventory["Animal_ID"].tolist())
         dod = st.date_input("Date of Death").isoformat()
         weight = st.number_input("Weight_g", min_value=0.0)
         sex = st.selectbox("Sex (optional)", ["Unknown", "Male", "Female"])
@@ -220,19 +240,32 @@ with capture_stdout_to_sidebar():
                 st.success(f"Animal {animal_id} euthanized and logged.")
             else:
                 st.warning(f"Failure to euthanize {animal_id} Check terminal logs for more info")
-
-        if st.button("Undo Last Action"):
-            success = R.undo()
-            if success:
-                st.success("Undo successful from webapp.")
-            else:
-                st.warning("No previous state to undo")
             
         with st.expander("Current Euthanasia Log (in memory)"):
             st.dataframe(pd.DataFrame(R.euthanasia_log))
 
         with st.expander("Current Inventory (after euthanasia)"):
             st.dataframe(R.inventory)
+
+
+        st.markdown("---")
+
+        st.subheader("Euthanize Larvae")
+
+        #Inputs
+        dob = st.selectbox("Select DOB from Larval Clutch", options= R.get_dob_options())  # You can use the DOB options from the larval clutch data
+        dod = st.date_input("DOD").isoformat()
+        experimenter = st.text_input("Experimenter (Initials)")
+        num_larvae = st.number_input("Number of Larvae", min_value=1, value=1, step=1)
+        stage = st.text_input("Stage")
+        purpose = st.text_input("Purpose")
+        complications = st.selectbox("Complications",["", "Found Dead", "Surgical Complications"])
+
+
+        if st.button("Euthanize Larvae"):
+            success = R.log_larval_euthanasia(dob, dod, experimenter, num_larvae, stage, purpose, protocol, complications)
+            if success:
+                st.success(f"{num_larvae} euthanized and logged")
 
     with tab4:
         # Euthanasia Log
@@ -336,7 +369,7 @@ with capture_stdout_to_sidebar():
                 st.dataframe(current_rows, use_container_width=True)
 
                 edit_fields = {
-                "Environmental_Condition": st.selectbox("Environmental Condition Change", ["Aquatic", "Terrestrial", "Reaqua"]),
+                "Environmental_Condition": st.selectbox("Environmental Condition Change", ["", "Aquatic", "Terrestrial", "Reaqua"]),
                 "Sex": st.selectbox("Sex", ["", "Female", "Male", "Unknown"]),
                 "Experimental_Holds": st.text_input("Holds: Initials with Details, or Breeding - Please Check if Current Holds"),
                 "Protocol_Number": st.selectbox("Protocol Transfer", ["", "AABL1550", "AABF2564", "AABI2617", "AABY5655"]),
@@ -344,7 +377,7 @@ with capture_stdout_to_sidebar():
                 "RFID": st.text_input("RFID"),
                 "Diet": st.selectbox("Diet Change", ["", "MWF Schedule", "Daily", "Gummy Schedule"]), 
                 "Cohort": st.text_input("Cohort, ie. Terra A")
-                }
+                } 
                             
                 # Optional terra/aqua dates
                 col1, col2 = st.columns(2)
@@ -371,7 +404,7 @@ with capture_stdout_to_sidebar():
                         st.warning("No changes specified")
 
                 elif animal_id:
-                    st.warning("Animal ID not found in inventory")
+                    st.warning("No edits applied")
 
             st.markdown("---")
 
@@ -387,6 +420,10 @@ with capture_stdout_to_sidebar():
                     if move_id and target_rack and target_tank:
                             R.move_salamander(move_id, target_rack, target_tank)
                             st.success(f"Moved {move_id} to {target_rack} {target_tank}")
+                            
+                            st.markdown("**Metadata for Animals Moved:**")
+                            current_rows = R.inventory[R.inventory["Animal_ID"].isin(move_id)]
+                            st.dataframe(current_rows, use_container_width=True)
 
                     else:
                             st.warning("Please provide Animal ID, target rack, and tank.")

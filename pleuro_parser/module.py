@@ -15,7 +15,7 @@ from datetime import datetime, timedelta
 
 
 class Rack:     
-    def __init__(self, inventory_file="salamander_inventory.csv", filename ="inventory_state.csv", euthanasia_log_file ="euthanasia_log.csv"):
+    def __init__(self, inventory_file="salamander_inventory.csv", filename ="inventory_state.csv", euthanasia_log_file ="euthanasia_log.csv", clutches = "Larval_Clutches.csv", larval_euth_log = "larval_euth_log.csv"):
         
         # Expand and resolve relative paths to absolute     
         def resolve_path(path):
@@ -25,6 +25,8 @@ class Rack:
         self.euthanasia_log_file = resolve_path(euthanasia_log_file)
         self.filename = resolve_path(filename) or Path(self.temp_dir.name) / "session_inventory.csv"  # File to save the state
         self.history = []  # Stack to store previous states for undo
+        self.larval_clutches = resolve_path(clutches)
+        self.larval_euth_log = resolve_path(larval_euth_log)
 
         # Temporary directory for state saving
         self.temp_dir = tempfile.TemporaryDirectory()
@@ -47,6 +49,23 @@ class Rack:
                 self.euthanasia_log = []
         else:
             self.euthanasia_log = []
+
+        if self.larval_clutches and self.larval_clutches.exists():
+            try:
+                self.larval_clutches = pd.read_csv(clutches)
+                print(f"Loading existing inventory from {clutches}")
+            except pd.errors.EmptyDataError:
+                print(f"{self.clutches} is empty. Initializing empty log.")
+                self.larval_clutches = []
+
+        if self.larval_euth_log and self.larval_euth_log.exists():
+            try:
+                self.larval_euth_log = pd.read_csv(larval_euth_log)
+                print(f"Loading existing inventory from {larval_euth_log}")
+            except pd.errors.EmptyDataError:
+                print(f"{self.larval_euth_log} is empty. Initializing empty log.")
+                self.larval_euth_log = []
+
         
         self.inventory = pd.DataFrame(self.inventory)
         self.save_state()  # Save initial state
@@ -60,25 +79,37 @@ class Rack:
     def save_state(self):
         """ Save the current state of the inventory and store in history. """
         self.history.append(self.inventory.copy())
+        print(f"State saved: {len(self.history)} states in history.")  # Debugging line
         self.inventory.to_csv(self.filename, index=False)
 
     def undo(self):
         """ Revert to the last saved state if history exists. """
         if len(self.history) > 1:
+            print(f"History before undo: {len(self.history)} states")  # Debugging line
             self.history.pop()
+            print(f"History after undo: {len(self.history)} states")  # Debugging line
+
+            #revert to previous state
             self.inventory = self.history[-1].copy()
-            self.save_inventory()
-            self.save_state()
+
+            if hasattr(self, 'last_action_type') and self.last_action_type == "Euthanize":
+                # Remove the most recent euthanasia entry, if it exists
+                if self.euthanasia_log:
+                    removed = self.euthanasia_log.pop()  # Removes the last euthanasia entry
+                    print(f"Removed euthanasia log entry: {removed['Animal_ID']}")
+                    self.save_euthanasia_log()
+                    print(f"Euthanasia log saved to {self.euthanasia_log_file}")
+                    self.log_change("Undo", f"Re-added {removed['Animal_ID']} and removed euthanasia log entry")
+                else:
+                    print("No euth log entry to remove")
+                    self.log_change("Undo", "Inventory reverted, but no euthanasia entry to remove")
+            else: 
+                print("No euthanize action to undo.")
+                self.log_change("Undo", "Inventory reverted, no euthanasia")
+
             print("Undo successful.")
-
-            # Remove the most recent euthanasia entry, if it exists
-            if self.euthanasia_log:
-                removed = self.euthanasia_log.pop()  # Removes the last euthanasia entry
-                self.save_euthanasia_log()
-                self.log_change("Undo", f"Re-added {removed['Animal_ID']} and removed euthanasia log entry")
-            else:
-                self.log_change("Undo", "Inventory reverted, but no euthanasia entry to remove")
-
+            self.save_inventory()
+            print(f"Inventory saved to {self.filename}")
             print("Undo successful.")
             return True
         else:
@@ -91,7 +122,7 @@ class Rack:
         -details (str): any relevant information to note"""
         with open("change_log.txt", "a") as f:
             f.write(f"{pd.Timestamp.now()} - {action}: {details}\n")
-        print("Log successful")
+        print(f"Log added: {action}:{details}")
 
 
     def save_euthanasia_log(self):
@@ -102,6 +133,16 @@ class Rack:
             df.to_csv(self.euthanasia_log_file, index=False)
         else:
             print("Euthanasia log not found")
+
+    def save_larval_euthanasia_log(self):
+        """ Save the larval euthanasia log to the file. """
+        if self.larval_euth_log:
+            larva_log = pd.DataFrame(self.larval_euth_log)
+            larval_log.to_csv(self.larval_euth_log, index=False)
+            print(f"Larval euthanasia log saved to {self.larval_euth_log}.")
+        else:
+            print("No file specified for larval euthanasia log. Log not saved.")
+
 
     def add_salamanders(self, num_salamanders, dob, species, transgenic_line, lineage, protocol, rack, tank, env_condition, sex, cohort = None, experimental_holds = None, experimental_history= None, rfid = None, terra_date = None, aqua_date = None, diet = None):
         """
@@ -146,8 +187,7 @@ class Rack:
         if rack in blocked_tanks and tank in blocked_tanks[rack]:
             print(f"Error: Tank {tank} on {rack} is blocked for use.")
             return
-
-    
+        
         # Handle empty euthanasia log by checking before performing operations
         if not self.euthanasia_log:  # Euthanasia log is empty
             old_ids = pd.DataFrame()  # Initialize an empty DataFrame
@@ -167,11 +207,12 @@ class Rack:
         #old_ids = pd.DataFrame(self.euthanasia_log)["Animal_ID"].str.extract(r"SAL_(\d+)").dropna().astype(int) #already used and in euthanasia log
         all_ids = pd.concat([existing_ids, old_ids], ignore_index = True)
         next_id = all_ids.max().values[0] + 1 if not all_ids.empty else 1  # Determine next ID
-
+        #append new animal IDs to a list
+        new_animal_ids = []
     
         for _ in range(num_salamanders):
             new_id = f"SAL_{next_id:03d}"
-            
+            new_animal_ids.append(new_id)
             animal = {
                 "Animal_ID": f"SAL_{next_id:03d}",
                 "Tank": tank,
@@ -209,13 +250,15 @@ class Rack:
 
         # Append new salamanders to inventory
         self.inventory = pd.concat([self.inventory, new_salamanders_df], ignore_index=True)
+        # Set the last action type to "Add"
+        self.last_action_type = "Add"
 
         self.save_inventory()
         self.save_state()
         self.log_change("Added animals", f"{num_salamanders} animals added to {rack} in {tank}.")
     
-        print(f"{num_salamanders} baby salamanders added to {rack}, tank {tank}, with DOB {dob}.")
-
+        print(f"{new_animal_ids} salamanders added to {rack}, tank {tank}, with DOB {dob}.")
+        return new_animal_ids
     
     def move_salamander(self, animal_ids, target_rack, target_tank):
         """
@@ -253,6 +296,8 @@ class Rack:
             else:
                 print(f"Animal {animal_id} not found in inventory.")
 
+        # Set the last action type to "Move"
+        self.last_action_type = "Move" 
         self.save_inventory()
         self.save_state()
         
@@ -318,6 +363,9 @@ class Rack:
         # Save euth log changes
         self.save_euthanasia_log()
 
+        # Set the last action type to "Euthanize"
+        self.last_action_type = "Euthanize"
+
         #update change log
         self.log_change("Euthanized", f"{animal_id} on {dod}")
         
@@ -327,6 +375,28 @@ class Rack:
 
         print(f"Animal {animal_id} euthanized and removed from inventory.")
         return True
+
+
+    def log_larval_euthanasia(self, dob, dod, experimenter, num_larvae, stage, purpose, protocol, complications):
+        """ Log a larval euthanasia event to the log. """
+        
+        # Prepare the new log entry
+        new_entry = {
+            "DOB": dob,
+            "DOD": dod,
+            "Experimenter": experimenter,
+            "Num_larvae": num_larvae,
+            "Stage": stage,
+            "Purpose": purpose,
+            "Protocol": protocol,
+            "Complications": complications
+        }
+        
+        # Append the new entry to the existing log
+        self.larval_euthanasia_log = self.larval_euthanasia_log.append(new_entry, ignore_index=True)
+        
+        # Save the updated log to the CSV file
+        self.save_larval_euthanasia_log()
 
     def edit_salamander_info(self, animal_ids, **updates):
         """
@@ -377,6 +447,8 @@ class Rack:
                     print(f"Warning: '{key}' is not a valid editable field. Skipped.")
 
             if changes:
+                # Set the last action type to "Edit"
+                self.last_action_type = "Edit"
                 self.save_inventory()
                 self.save_state()
                 self.log_change("Edit", f"{animal_id} - " + "; ".join(changes))
@@ -429,7 +501,7 @@ class Rack:
         # Handle multiple experimenters in one cell by splitting and exploding
         if group_by_experimenter:
             log_df["Experimenter"] = log_df["Experimenter"].fillna("")
-            log_df["Experimenter_List"] = log_df["Experimenter"].str.split(",\s*")
+            log_df["Experimenter_List"] = log_df["Experimenter"].str.split(r",\s*")
             log_df = log_df.explode("Experimenter_List")
             group_cols = ["Experimenter_List", "Year"]
         else:
@@ -467,7 +539,7 @@ class Rack:
             print("Please provide at least one search criterion.")
             return None
 
-        exact_match_fields = {"Sex", "Rack", "Tank", "Protocol_Number"}  
+        exact_match_fields = {"Sex", "Rack", "Tank", "Protocol_Number", "Animal_ID"}  
     
         filtered_inventory = self.inventory.copy()  # Start with the full inventory
         
@@ -576,12 +648,26 @@ class Rack:
             mask=mask, #hides invalid tanks
             annot=True, 
             fmt="d", #annotations as integers
-            cmap="coolwarm", 
+            cmap="coolwarm",  
             linewidths=0.5, 
             linecolor='gray', 
             cbar_kws={'label': 'Count'}, #label for color bar
             ax=ax
         )
+
+        # Add darker lines between rows for easier visualization
+        tank_columns = list(pivot.columns)  # Get the column names (tank identifiers)
+
+        # Identify the boundary between sets of rows
+        boundary_idx_AB = next(i for i, t in enumerate(tank_columns) if not t.startswith('A')) #first column not starting with A
+        boundary_idx_BC = next(i for i, t in enumerate(tank_columns) if not t.startswith('B') and t.startswith('C'))
+        boundary_idx_CD = next(i for i, t in enumerate(tank_columns) if not t.startswith('C') and t.startswith('D'))
+
+        # Draw vertical lines between the row boundaries
+        ax.vlines(boundary_idx_AB, 0, len(pivot), color='black', linewidth=2)
+        ax.vlines(boundary_idx_BC, 0, len(pivot), color ='black', linewidth=2)
+        ax.vlines(boundary_idx_CD, 0, len(pivot), color='black', linewidth=2)
+
         ax.set_title("Salamander Distribution Across Racks and Tanks", fontsize=16)
         ax.set_xlabel("Tank", fontsize=12)
         ax.set_ylabel("Rack", fontsize=12)
@@ -636,6 +722,19 @@ class Rack:
             valid_tanks = [t for t in valid_tanks if t not in blocked_tanks[rack]]
 
         return tank in valid_tanks
+
+
+    def get_dob_options(self):
+        """ Return a list of unique DOBs from the larval clutch data """
+        if hasattr(self, 'larval_clutches') and not self.larval_clutches.empty:
+            # Get unique DOB values from the larval clutch data
+            dob_options = self.larval_clutches['DOB'].dropna().unique()
+            dob_options = list(dob_options)
+            return dob_options
+        else:
+            # If no larval clutch data is available, return None
+            print("No larval clutch data available.")
+            return None
 
             
 species_list = ["Ambystoma mexicanum", "Pleurodeles waltl", "Polypterus senegalus"]

@@ -385,3 +385,145 @@
 2025-05-05 21:57:38.210121 - Added animals: 7 animals added to Rack 5 in C3.
 2025-05-05 21:57:51.822854 - Added animals: 5 animals added to Rack 5 in C4.
 2025-05-05 21:58:50.456958 - Added animals: 2 animals added to Rack 1 in C3.
+2025-05-06 09:44:00.619294 - Added animals: 5 animals added to Rack 7 in A1.
+2025-05-06 09:44:15.310985 - Undo: Inventory reverted, but no euthanasia entry to remove
+2025-05-06 09:45:53.475715 - Edit: SAL_057 - Environmental_Condition: Aquatic → Terrestrial
+2025-05-06 09:46:20.717140 - Animals moved: SAL_057 to Rack 6
+2025-05-06 09:46:53.917677 - Undo: Inventory reverted, but no euthanasia entry to remove
+2025-05-06 09:47:04.806747 - Undo: Inventory reverted, but no euthanasia entry to remove
+2025-05-06 09:48:50.984551 - Euthanized: SAL_571 on 2025-04-24
+2025-05-06 11:00:00.408067 - Edit: SAL_461 - Environmental_Condition: Aquatic → Terrestrial; Diet: nan → Gummy Schedule; Date_of_Terra: nan → 2025-05-04
+2025-05-06 11:00:00.426093 - Edit: SAL_462 - Environmental_Condition: Aquatic → Terrestrial; Diet: nan → Gummy Schedule; Date_of_Terra: nan → 2025-05-04
+2025-05-06 11:00:00.436041 - Edit: SAL_463 - Environmental_Condition: Aquatic → Terrestrial; Diet: nan → Gummy Schedule; Date_of_Terra: nan → 2025-05-04
+2025-05-06 11:00:27.460830 - Animals moved: SAL_461 to Rack 11
+2025-05-06 11:00:27.462853 - Animals moved: SAL_462 to Rack 11
+2025-05-06 11:00:27.464527 - Animals moved: SAL_463 to Rack 11
+2025-05-06 11:01:03.086937 - Euthanized: SAL_089 on 2025-05-01
+2025-05-08 16:20:06.483903 - Animals moved: SAL_464 to Rack 8
+2025-05-08 16:20:06.486603 - Animals moved: SAL_465 to Rack 8
+2025-05-08 16:20:06.487865 - Animals moved: SAL_466 to Rack 8
+2025-05-08 16:22:09.618404 - Animals moved: SAL_489 to Rack 8
+2025-05-08 16:22:09.619918 - Animals moved: SAL_490 to Rack 8
+2025-05-08 16:22:09.621604 - Animals moved: SAL_485 to Rack 8
+2025-05-08 16:23:48.306313 - Euthanized: SAL_673 on 2025-05-08
+2025-05-08 16:26:07.105643 - Animals moved: SAL_674 to Rack 5
+2025-05-08 16:26:07.107396 - Animals moved: SAL_675 to Rack 5
+2025-05-08 16:58:52.017703 - Edit: SAL_486 - Environmental_Condition: Aquatic → Terrestrial; Diet: nan → Gummy Schedule; Date_of_Terra: nan → 2025-05-05
+2025-05-08 16:58:52.032277 - Edit: SAL_487 - Environmental_Condition: Aquatic → Terrestrial; Diet: nan → Gummy Schedule; Date_of_Terra: nan → 2025-05-05
+2025-05-08 16:58:52.044665 - Edit: SAL_488 - Environmental_Condition: Aquatic → Terrestrial; Diet: nan → Gummy Schedule; Date_of_Terra: nan → 2025-05-05
+2025-05-08 16:59:01.822052 - Edit: SAL_486 - Environmental_Condition: Terrestrial → Terrestrial; Diet: Gummy Schedule → Gummy Schedule; Cohort: nan → Terra W; Date_of_Terra: 2025-05-05 → 2025-05-05
+2025-05-08 16:59:01.835886 - Edit: SAL_487 - Environmental_Condition: Terrestrial → Terrestrial; Diet: Gummy Schedule → Gummy Schedule; Cohort: nan → Terra W; Date_of_Terra: 2025-05-05 → 2025-05-05
+2025-05-08 16:59:01.849672 - Edit: SAL_488 - Environmental_Condition: Terrestrial → Terrestrial; Diet: Gummy Schedule → Gummy Schedule; Cohort: nan → Terra W; Date_of_Terra: 2025-05-05 → 2025-05-05
+2025-05-08 16:59:13.564918 - Animals moved: SAL_486 to Rack 11
+2025-05-08 16:59:13.566791 - Animals moved: SAL_487 to Rack 11
+2025-05-08 16:59:13.568310 - Animals moved: SAL_488 to Rack 11
+2025-05-08 17:02:06.090032 - Edit: SAL_461 - Environmental_Condition: Terrestrial → Terrestrial; Cohort: EdU → Terra V
+2025-05-08 17:02:06.104236 - Edit: SAL_462 - Environmental_Condition: Terrestrial → Terrestrial; Cohort: EdU → Terra V
+2025-05-08 17:02:06.118822 - Edit: SAL_463 - Environmental_Condition: Terrestrial → Terrestrial; Cohort: EdU → Terra V
+2025-05-08 17:40:46.702779 - Euthanized: SAL_090 on 2025-04-30
+2025-05-08 17:40:58.211748 - Euthanized: SAL_091 on 2025-04-30
+2025-05-08 17:41:04.178085 - Undo: Re-added SAL_091 and removed euthanasia log entry
+2025-05-08 17:41:10.772137 - Euthanized: SAL_092 on 2025-04-30
+2025-05-08 17:41:45.241455 - Euthanized: SAL_091 on 2025-04-30
+2025-05-08 17:43:02.569409 - Euthanized: SAL_093 on 2025-04-30
+2025-05-10 13:58:33.619547 - Added animals: 1 animals added to Rack 1 in A1.
+2025-05-10 13:59:04.471770 - Undo: Re-added SAL_093 and removed euthanasia log entry
+2025-05-10 13:59:20.050685 - Added animals: 1 animals added to Rack 1 in A1.
+2025-05-10 13:59:42.105850 - Undo: Re-added SAL_091 and removed euthanasia log entry
+2025-05-10 14:02:52.958923 - Added animals: 1 animals added to Rack 1 in A1.
+2025-05-10 14:02:59.426330 - Undo: Re-added SAL_092 and removed euthanasia log entry
+2025-05-10 14:04:46.034736 - Added animals: 1 animals added to Rack 1 in A1.
+2025-05-10 14:04:54.513634 - Undo: Re-added SAL_090 and removed euthanasia log entry
+2025-05-10 14:06:32.133769 - Added animals: 1 animals added to Rack 1 in A1.
+2025-05-10 14:06:42.443965 - Undo: Re-added SAL_673 and removed euthanasia log entry
+2025-05-10 14:06:47.951753 - Added animals: 1 animals added to Rack 1 in A1.
+2025-05-10 14:06:55.679806 - Undo: Re-added SAL_089 and removed euthanasia log entry
+2025-05-10 14:12:40.697918 - Added animals: 1 animals added to Rack 1 in A1.
+2025-05-10 14:12:46.833285 - Added animals: 1 animals added to Rack 1 in A1.
+2025-05-10 14:12:57.189560 - Undo: Re-added SAL_571 and removed euthanasia log entry
+2025-05-10 14:13:01.308636 - Undo: Inventory reverted, but no euthanasia entry to remove
+2025-05-10 14:31:55.575029 - Euthanized: SAL_001 on 2025-05-10
+2025-05-10 14:32:00.655008 - Added animals: 1 animals added to Rack 1 in A1.
+2025-05-10 14:32:12.310971 - Undo: Re-added SAL_001 and removed euthanasia log entry
+2025-05-10 14:34:36.932922 - Added animals: 1 animals added to Rack 1 in A1.
+2025-05-10 14:34:40.177524 - Undo: Inventory reverted, but no euthanasia entry to remove
+2025-05-10 14:35:04.710015 - Euthanized: SAL_732 on 2025-05-10
+2025-05-10 14:35:07.981338 - Added animals: 1 animals added to Rack 1 in A1.
+2025-05-10 14:35:12.593965 - Undo: Re-added SAL_732 and removed euthanasia log entry
+2025-05-10 14:36:21.024483 - Euthanized: SAL_002 on 2025-05-10
+2025-05-10 14:36:26.365528 - Added animals: 1 animals added to Rack 1 in A1.
+2025-05-10 14:37:07.478458 - Added animals: 1 animals added to Rack 1 in A1.
+2025-05-10 14:37:13.397689 - Added animals: 1 animals added to Rack 1 in A1.
+2025-05-10 14:40:50.153964 - Added animals: 3 animals added to Rack 12 in C4.
+2025-05-10 14:41:04.443974 - Euthanized: SAL_003 on 2025-4-12
+2025-05-10 15:01:54.745369 - Added animals: 3 animals added to Rack 12 in C4.
+2025-05-10 15:02:09.847303 - Euthanized: SAL_736 on 2025-4-12
+2025-05-10 15:02:18.056395 - Undo: Re-added SAL_736 and removed euthanasia log entry
+2025-05-10 15:02:52.924412 - Undo: Re-added SAL_003 and removed euthanasia log entry
+2025-05-10 15:05:01.089453 - Added animals: 3 animals added to Rack 12 in C4.
+2025-05-10 15:05:05.811198 - Euthanized: SAL_740 on 2025-4-12
+2025-05-10 15:05:09.276064 - Undo: Re-added SAL_740 and removed euthanasia log entry
+2025-05-10 15:05:21.137957 - Undo: Re-added SAL_002 and removed euthanasia log entry
+2025-05-10 15:14:42.874530 - Added animals (Add): 1 animals added to Rack 1 in A1.
+2025-05-10 15:20:23.493106 - Added animals (Add): 1 animals added to Rack 1 in A1.
+2025-05-10 15:20:27.370451 - Undo (None): Inventory reverted, but no euthanasia entry to remove
+2025-05-10 15:20:57.155239 - Added animals (Add): 1 animals added to Rack 1 in A1.
+2025-05-10 15:21:24.267873 - Added animals (Add): 1 animals added to Rack 1 in A1.
+2025-05-10 15:22:07.968232 - Added animals (Add): 1 animals added to Rack 1 in A1.
+2025-05-10 15:22:40.281513 - Added animals (Add): 1 animals added to Rack 1 in A1.
+2025-05-10 15:23:21.504495 - Added animals (Add): 1 animals added to Rack 1 in A1.
+2025-05-10 15:23:22.882131 - Undo (None): Inventory reverted, no euthanasia
+2025-05-10 15:23:30.721385 - Added animals (Add): 1 animals added to Rack 1 in A1.
+2025-05-10 15:23:33.662417 - Undo (None): Inventory reverted, no euthanasia
+2025-05-10 15:24:24.346227 - Euthanized (Euthanize): SAL_734 on 2025-05-10
+2025-05-10 15:24:31.954499 - Undo (None): Inventory reverted, no euthanasia
+2025-05-10 15:25:04.197033 - Added animals (Add): 1 animals added to Rack 1 in A1.
+2025-05-10 15:25:10.622731 - Euthanized (Euthanize): SAL_734 on 2025-05-10
+2025-05-10 15:25:25.076797 - Undo (None): Inventory reverted, no euthanasia
+2025-05-10 15:25:41.566596 - Undo (None): Inventory reverted, no euthanasia
+2025-05-10 15:25:57.557858 - Added animals (Add): 1 animals added to Rack 1 in A1.
+2025-05-10 15:26:04.256455 - Euthanized (Euthanize): SAL_739 on 2025-05-10
+2025-05-10 15:26:09.792133 - Undo (None): Inventory reverted, no euthanasia
+2025-05-10 15:26:33.212662 - Undo (None): Inventory reverted, no euthanasia
+2025-05-10 15:26:53.067121 - Euthanized (Euthanize): SAL_739 on 2025-05-10
+2025-05-10 15:26:58.505380 - Undo (None): Inventory reverted, no euthanasia
+2025-05-10 15:27:05.612814 - Euthanized (Euthanize): SAL_739 on 2025-05-10
+2025-05-10 15:27:11.239042 - Undo (None): Inventory reverted, no euthanasia
+2025-05-10 15:31:43.651263 - Added animals (Add): 1 animals added to Rack 1 in A1.
+2025-05-10 15:31:50.143079 - Euthanized (Euthanize): SAL_739 on 2025-05-10
+2025-05-10 15:31:58.832435 - Undo (None): Inventory reverted, no euthanasia
+2025-05-10 15:32:17.355370 - Undo (None): Inventory reverted, no euthanasia
+2025-05-10 15:47:25.764955 - Added animals: 1 animals added to Rack 1 in A1.
+2025-05-10 15:47:28.043127 - Undo: Inventory reverted, no euthanasia
+2025-05-10 15:47:44.175830 - Euthanized: SAL_730 on 2025-05-10
+2025-05-10 15:47:47.800158 - Undo: Re-added SAL_730 and removed euthanasia log entry
+2025-05-10 15:49:22.796888 - Edit: SAL_740 - Environmental_Condition: Aquatic → Reaqua
+2025-05-10 15:49:25.447842 - Undo: Inventory reverted, no euthanasia
+2025-05-10 15:49:43.189940 - Animals moved: SAL_003 to Rack 1
+2025-05-10 15:49:45.230682 - Undo: Inventory reverted, no euthanasia
+2025-05-10 15:51:50.589653 - Edit: SAL_003 - Environmental_Condition: Aquatic → Terrestrial
+2025-05-10 15:51:55.812128 - Animals moved: SAL_003 to Rack 1
+2025-05-10 15:51:59.097537 - Undo: Inventory reverted, no euthanasia
+2025-05-10 15:51:59.991199 - Undo: Inventory reverted, no euthanasia
+2025-05-10 15:58:44.141350 - Edit: SAL_003 - Environmental_Condition: Aquatic → Terrestrial
+2025-05-10 15:58:45.830416 - Undo: Inventory reverted, no euthanasia
+2025-05-10 17:15:41.529133 - Animals moved: SAL_003 to Rack 1
+2025-05-10 17:16:07.579630 - Animals moved: SAL_003 to Rack 1
+2025-05-10 17:16:07.581709 - Animals moved: SAL_009 to Rack 1
+2025-05-10 17:16:07.583661 - Animals moved: SAL_004 to Rack 1
+2025-05-10 17:19:52.794545 - Animals moved: SAL_003 to Rack 1
+2025-05-10 17:19:52.796304 - Animals moved: SAL_009 to Rack 1
+2025-05-10 17:19:52.797798 - Animals moved: SAL_004 to Rack 1
+2025-05-10 17:20:05.632045 - Animals moved: SAL_003 to Rack 4
+2025-05-10 17:20:05.633534 - Animals moved: SAL_009 to Rack 4
+2025-05-10 17:20:05.634995 - Animals moved: SAL_004 to Rack 4
+2025-05-10 17:23:45.107043 - Animals moved: SAL_003 to Rack 4
+2025-05-10 17:23:45.108683 - Animals moved: SAL_009 to Rack 4
+2025-05-10 17:23:45.110552 - Animals moved: SAL_004 to Rack 4
+2025-05-10 17:25:03.991416 - Edit: SAL_003 - Protocol_Number: AABF2564 → AABL1550
+2025-05-10 17:25:12.477817 - Undo: Inventory reverted, no euthanasia
+2025-05-10 17:25:22.847745 - Edit: SAL_003 - Protocol_Number: AABF2564 → AABL1550
+2025-05-10 17:25:49.674449 - Edit: SAL_003 - Protocol_Number: AABL1550 → AABL1550
+2025-05-10 17:26:18.317475 - Animals moved: SAL_003 to Rack 4
+2025-05-10 17:26:18.319566 - Animals moved: SAL_009 to Rack 4
+2025-05-10 17:26:18.321720 - Animals moved: SAL_004 to Rack 4
