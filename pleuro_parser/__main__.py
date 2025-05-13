@@ -6,7 +6,7 @@ Command line interface to mini-project
 
 import argparse
 import pandas as pd
-from mini_project import Rack
+from pleuro_parser import Rack
 
 def parse_command_line():
     "parses args for the mini-project function"
@@ -50,7 +50,7 @@ def main():
     "run main function on parsed args"
     # get arguments from command line as a dict-like object
     args = parse_command_line()
-    R = Rack(args.num_salamanders)
+    R = Rack()
     R.inventory
     
     

@@ -20,7 +20,7 @@ setup(
         "console_scripts": ["pleuro_parser = pleuro_parser.__main__:main"]
     },
 
-    install_requires=[  # Add this section to list dependencies
+    install_requires=[  # 
         "seaborn",      # For heatmap plotting
         "streamlit",    # For the webapp interface
         "pandas",       # For handling dataframes and CSV manipulation
