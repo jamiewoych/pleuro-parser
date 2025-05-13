@@ -43,7 +43,11 @@ The Streamlit based webapp provides function for the following tasks
 
 git clone https://github.com/jamiewoych/pleuro-parser.git
 
-cd ./pleuro_parser
+cd pleuro-parser/
+
+pip install -e .
+
+cd pleuro_parser/
 
 streamlit run streamlit-pp.py
 
