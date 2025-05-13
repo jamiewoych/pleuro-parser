@@ -592,3 +592,97 @@
 2025-05-12 22:53:35.453912 - Added Clutch by JW: 05/12/2025 from 
 2025-05-12 22:57:30.381330 - Custom Message by JW: Webapp complete - real inventory and logs will be loaded tomorrow
 
+2025-05-13 11:16:10.567043 - Animals moved by JW: SAL_464 to Rack 8
+2025-05-13 11:16:10.571812 - Animals moved by JW: SAL_465 to Rack 8
+2025-05-13 11:16:10.573764 - Animals moved by JW: SAL_466 to Rack 8
+2025-05-13 11:21:28.299943 - Edit by JW: SAL_464 - Diet: nan → Gummy Schedule
+2025-05-13 11:21:28.313917 - Edit by JW: SAL_465 - Diet: nan → Gummy Schedule
+2025-05-13 11:21:28.328863 - Edit by JW: SAL_466 - Diet: nan → Gummy Schedule
+2025-05-13 11:22:03.269072 - Animals moved by JW: SAL_489 to Rack 8
+2025-05-13 11:22:03.270943 - Animals moved by JW: SAL_490 to Rack 8
+2025-05-13 11:22:03.272990 - Animals moved by JW: SAL_485 to Rack 8
+2025-05-13 11:22:33.070289 - Edit by JW: SAL_489 - Diet: nan → Gummy Schedule
+2025-05-13 11:22:33.085455 - Edit by JW: SAL_490 - Diet: nan → Gummy Schedule
+2025-05-13 11:22:33.099341 - Edit by JW: SAL_485 - Diet: nan → Gummy Schedule
+2025-05-13 11:28:21.207122 - Euthanized by JW: SAL_673 on 05/08/2025
+2025-05-13 11:32:58.137677 - Euthanized by JW: SAL_089 on 05/01/2025
+2025-05-13 11:33:13.914026 - Euthanized by JW: SAL_090 on 04/30/2025
+2025-05-13 11:33:28.148342 - Euthanized by JW: SAL_091 on 04/30/2025
+2025-05-13 11:33:42.552801 - Euthanized by JW: SAL_092 on 04/30/2025
+2025-05-13 11:33:51.149072 - Euthanized by JW: SAL_093 on 04/30/2025
+2025-05-13 11:36:27.047014 - Euthanized by JW: SAL_571 on 04/24/2025
+2025-05-13 11:42:29.352740 - Euthanized by JW: SAL_439 on 03/03/2025
+2025-05-13 11:42:57.500490 - Euthanized by JW: SAL_440 on 03/03/2025
+2025-05-13 11:43:16.364947 - Euthanized by JW: SAL_441 on 03/03/2025
+2025-05-13 11:43:55.445628 - Animals moved by JW: SAL_442 to Rack 13 - Off
+2025-05-13 11:43:55.447868 - Animals moved by JW: SAL_443 to Rack 13 - Off
+2025-05-13 11:45:10.900908 - Euthanized by JW: SAL_501 on 05/01/2025
+2025-05-13 11:45:49.870833 - Euthanized by JW: SAL_502 on 04/26/2025
+2025-05-13 11:51:07.909807 - Euthanized by JW: SAL_544 on 03/03/2025
+2025-05-13 11:53:51.079511 - Euthanized by JW: SAL_597 on 04/06/2025
+2025-05-13 11:54:17.560980 - Undo by JW: Re-added SAL_597 and removed euthanasia log entry
+2025-05-13 11:54:27.156528 - Euthanized by JW: SAL_597 on 04/06/2025
+2025-05-13 11:55:09.019568 - Euthanized by JW: SAL_611 on 05/01/2025
+2025-05-13 12:01:57.808144 - Euthanized by JW: SAL_631 on 04/24/2025
+2025-05-13 12:02:15.667868 - Euthanized by JW: SAL_632 on 04/24/2025
+2025-05-13 12:02:23.698581 - Euthanized by JW: SAL_633 on 04/24/2025
+2025-05-13 12:02:26.627714 - Undo by JW: Re-added SAL_633 and removed euthanasia log entry
+2025-05-13 12:02:27.685577 - Undo by JW: Re-added SAL_632 and removed euthanasia log entry
+2025-05-13 12:02:28.635089 - Undo by JW: Re-added SAL_631 and removed euthanasia log entry
+2025-05-13 12:02:42.653955 - Euthanized by JW: SAL_631 on 04/24/2025
+2025-05-13 12:02:54.000086 - Euthanized by JW: SAL_632 on 04/24/2025
+2025-05-13 12:03:05.751553 - Euthanized by JW: SAL_633 on 04/24/2025
+2025-05-13 12:03:15.114701 - Euthanized by JW: SAL_634 on 04/24/2025
+2025-05-13 12:03:28.269362 - Euthanized by JW: SAL_635 on 04/24/2025
+2025-05-13 12:03:42.233736 - Euthanized by JW: SAL_636 on 04/24/2025
+2025-05-13 12:03:51.578647 - Euthanized by JW: SAL_637 on 04/24/2025
+2025-05-13 12:05:50.652246 - Euthanized by JW: SAL_644 on 03/25/2025
+2025-05-13 12:06:17.382747 - Euthanized by JW: SAL_645 on 04/02/2025
+2025-05-13 12:07:25.729965 - Euthanized by JW: SAL_658 on 05/01/2025
+2025-05-13 12:07:50.374998 - Euthanized by JW: SAL_716 on 05/01/2025
+2025-05-13 12:08:14.349705 - Euthanized by JW: SAL_717 on 04/30/2025
+2025-05-13 12:10:28.597317 - Animals moved by JW: SAL_290 to Rack 13 - Off
+2025-05-13 12:13:15.288181 - Animals moved by JW: SAL_606 to Rack 4
+2025-05-13 12:13:15.290936 - Animals moved by JW: SAL_607 to Rack 4
+2025-05-13 12:13:15.292737 - Animals moved by JW: SAL_608 to Rack 4
+2025-05-13 12:13:15.294741 - Animals moved by JW: SAL_609 to Rack 4
+2025-05-13 12:13:15.296569 - Animals moved by JW: SAL_610 to Rack 4
+2025-05-13 12:14:03.046143 - Animals moved by JW: SAL_492 to Rack 4
+2025-05-13 12:14:03.048024 - Animals moved by JW: SAL_493 to Rack 4
+2025-05-13 12:14:03.050260 - Animals moved by JW: SAL_494 to Rack 4
+2025-05-13 12:14:03.053167 - Animals moved by JW: SAL_495 to Rack 4
+2025-05-13 12:14:03.055187 - Animals moved by JW: SAL_496 to Rack 4
+2025-05-13 12:14:03.057122 - Animals moved by JW: SAL_497 to Rack 4
+2025-05-13 12:14:03.059480 - Animals moved by JW: SAL_498 to Rack 4
+2025-05-13 12:15:19.955819 - Edit by JW: SAL_057 - Environmental_Condition: Terrestrial → Aquatic; Experimental_Holds: DNE - Fake Placeholder  → None; Protocol_Number: AABF2564 → AABF2564
+2025-05-13 12:15:19.971367 - Edit by JW: SAL_058 - Environmental_Condition: Aquatic → Aquatic; Experimental_Holds: DNE - Fake Placeholder  → None; Protocol_Number: AABF2564 → AABF2564
+2025-05-13 12:15:54.548147 - Animals moved by JW: SAL_057 to Rack 5
+2025-05-13 12:15:54.550812 - Animals moved by JW: SAL_058 to Rack 5
+2025-05-13 12:20:21.716334 - Edit by JW: SAL_059 - Experimental_Holds: DNE - Fake Placeholder  → None; Protocol_Number: AABF2564 → AABF2564
+2025-05-13 12:20:21.733179 - Edit by JW: SAL_345 - Experimental_Holds: DNE Fake Placeholder → None; Protocol_Number: AABL1550 → AABF2564
+2025-05-13 12:20:21.748443 - Edit by JW: SAL_346 - Experimental_Holds: DNE Fake Placeholder → None; Protocol_Number: AABL1550 → AABF2564
+2025-05-13 12:20:21.764703 - Edit by JW: SAL_347 - Experimental_Holds: DNE Fake Placeholder → None; Protocol_Number: AABL1550 → AABF2564
+2025-05-13 12:20:21.777049 - Edit by JW: SAL_348 - Experimental_Holds: DNE Fake Placeholder → None; Protocol_Number: AABL1550 → AABF2564
+2025-05-13 12:20:21.787514 - Edit by JW: SAL_349 - Experimental_Holds: DNE Fake Placeholder → None; Protocol_Number: AABL1550 → AABF2564
+2025-05-13 12:20:21.797331 - Edit by JW: SAL_350 - Experimental_Holds: DNE Fake Placeholder → None; Protocol_Number: AABL1550 → AABF2564
+2025-05-13 12:21:05.788624 - Animals moved by JW: SAL_059 to Rack 9
+2025-05-13 12:21:05.790521 - Animals moved by JW: SAL_345 to Rack 9
+2025-05-13 12:21:05.792206 - Animals moved by JW: SAL_346 to Rack 9
+2025-05-13 12:21:05.794027 - Animals moved by JW: SAL_347 to Rack 9
+2025-05-13 12:21:05.795659 - Animals moved by JW: SAL_348 to Rack 9
+2025-05-13 12:21:05.797761 - Animals moved by JW: SAL_349 to Rack 9
+2025-05-13 12:21:05.799357 - Animals moved by JW: SAL_350 to Rack 9
+2025-05-13 12:34:47.508787 - Edit by JW: SAL_491 - Experimental_Holds: DNE Fake Placeholder → AOG; Protocol_Number: AABL1550 → AABI2617
+2025-05-13 12:35:07.385804 - Edit by JW: SAL_491 - Experimental_Holds: AOG → AOG; Protocol_Number: AABI2617 → AABI2617; Cohort: Fake →  
+2025-05-13 12:35:22.274428 - Animals moved by JW: SAL_491 to Rack 4
+2025-05-13 12:36:25.202037 - Euthanized by JW: SAL_491 on 05/03/2025
+2025-05-13 12:37:52.360186 - Euthanized by JW: SAL_182 on 05/07/2025
+2025-05-13 12:38:06.110183 - Euthanized by JW: SAL_185 on 05/07/2025
+2025-05-13 12:38:23.743231 - Euthanized by JW: SAL_442 on 05/07/2025
+2025-05-13 12:40:15.568089 - Euthanized by JW: SAL_186 on 05/08/2025
+2025-05-13 12:40:30.554842 - Euthanized by JW: SAL_187 on 05/08/2025
+2025-05-13 12:40:46.418997 - Euthanized by JW: SAL_188 on 05/08/2025
+2025-05-13 12:40:57.444116 - Euthanized by JW: SAL_189 on 05/08/2025
+2025-05-13 12:42:09.736916 - Euthanized by JW: SAL_097 on 05/09/2025
+2025-05-13 12:42:25.861948 - Euthanized by JW: SAL_120 on 05/09/2025
+2025-05-13 12:42:35.861968 - Euthanized by JW: SAL_121 on 05/09/2025

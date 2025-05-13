@@ -577,7 +577,7 @@ class Rack:
         if group_by_experimenter:
             log_df["Experimenter"] = log_df["Experimenter"].fillna("")
             log_df["Experimenter"] = log_df["Experimenter"].str.strip().str.upper()
-            log_df["Experimenter_List"] = log_df["Experimenter"].str.split(r",\s*")
+            log_df["Experimenter_List"] = log_df["Experimenter"].str.split(r"[,\s/]+")
             log_df = log_df.explode("Experimenter_List")
   
 

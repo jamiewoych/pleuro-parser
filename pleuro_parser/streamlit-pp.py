@@ -25,11 +25,11 @@ PASSWORD = "Pleurodeles123!" #This is temporary
 def check_password():
     password = st.text_input("Enter password", type="password")
     if password != PASSWORD:
-        st.error("Enter password!")
+        st.markdown("Enter password!")
         return False
     initials = st.text_input("Enter initials here to login")
     if not initials:
-        st.error("Initials are required to log actions")
+        st.markdown("Initials are required to log actions")
         return False
     st.session_state.initials = initials
     return True
@@ -301,7 +301,7 @@ with capture_stdout_to_sidebar():
         weight = st.number_input("Weight_g", min_value=0.0)
         sex = st.selectbox("Sex (optional)", ["", "Unknown", "Male", "Female"])
         purpose = st.text_input("Purpose of Euthanasia")
-        experimenter = st.text_input("Experimenter (Initials - separate by comma if multiple)")
+        experimenter = st.text_input("Experimenter (Initials - separate by comma if multiple - found dead = NA)")
         complications = st.selectbox("Complications if applicable", ["", "Found Dead", "Surgical Complications"])
 
         if st.button("Euthanize"):
@@ -578,6 +578,7 @@ with capture_stdout_to_sidebar():
 
         ### 3. Euthanize Salamander:
         ##### Euthanize Salamander  
+            All animals on the rack are entered on this log - even if they are larvae
             One Animal_ID can be euthanized at a time to encourage input of individual metadata  
             Additional Notes and details can be included in Purpose  
             Animals with IDs are preassigned Protocols  
@@ -587,6 +588,7 @@ with capture_stdout_to_sidebar():
             Initials split by a comma will allow splitting by experimenter  
 
         ##### Euthanize Larvae  
+            Larvae that are still on the shelf are logged here - they do not have animal IDs
             Multiple larvae can be recorded  
             These animals are not preassigned protocol numbers, this is a required field  
             Additional notes can be recorded under Purpose  
