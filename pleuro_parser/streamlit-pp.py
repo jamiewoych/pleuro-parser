@@ -24,10 +24,10 @@ PASSWORD = "Pleurodeles123!" #This is temporary
 # Function to check password
 def check_password():
     password = st.text_input("Enter password", type="password")
+    initials = st.text_input("Enter initials here to login")
     if password != PASSWORD:
         st.markdown("Enter password!")
         return False
-    initials = st.text_input("Enter initials here to login")
     if not initials:
         st.markdown("Initials are required to log actions")
         return False
@@ -295,6 +295,16 @@ with capture_stdout_to_sidebar():
         st.subheader("Euthanize Salamander")
 
         animal_id = st.selectbox("Animal ID to Euthanize (SAL_###)", options = ["Select Animal ID"] + R.inventory["Animal_ID"].tolist(), index = 0)
+
+        if animal_id:
+            # Display the current inventory entry for the selected animal
+            current_inventory_entry = R.inventory[R.inventory["Animal_ID"] == animal_id]
+            if not current_inventory_entry.empty:
+                st.markdown(f"**Current Inventory Entry for {animal_id}:**")
+                st.dataframe(current_inventory_entry, use_container_width=True)
+            else:
+                st.warning(f"No inventory entry found for {animal_id}.")
+
         dod = st.date_input("Date of Death")
         dod = pd.to_datetime(dod)
         dod_str = dod.strftime("%m/%d/%Y") #convert to correct format for analyze_euthanasia function
@@ -509,6 +519,12 @@ with capture_stdout_to_sidebar():
 
             st.subheader("Move Animals")
             move_id = st.multiselect("Animal ID to Move (SAL_###)", options = R.inventory["Animal_ID"].tolist())
+
+            if animal_ids:
+                st.markdown("**Current Metadata for Selected Animals:**")
+                current_rows = R.inventory[R.inventory["Animal_ID"].isin(move_id)]
+                st.dataframe(current_rows, use_container_width=True)
+
             target_rack = st.selectbox("Target Rack", [
                     "Rack 1", "Rack 2", "Rack 3", "Rack 4", "Rack 5", "Rack 6", "Rack 7", "Rack 8", "Rack 9", "Rack 10", "Rack 11", "Rack 12", "Rack 13 - Off"])
             # Use get_tanks_for_rack method to generate valid tanks
