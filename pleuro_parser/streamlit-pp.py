@@ -8,25 +8,6 @@ import matplotlib.pyplot as plt
 from contextlib import contextmanager
 
 
-@contextmanager
-def capture_stdout_to_sidebar():
-    buffer = io.StringIO()
-    original_stdout = sys.stdout
-    sys.stdout = buffer
-    try:
-        yield
-    finally:
-        sys.stdout = original_stdout
-        logs = buffer.getvalue()
-        if logs.strip():
-            st.sidebar.markdown("### Log Changes and Warnings")
-            st.sidebar.code(logs)
-        else:
-            st.sidebar.markdown("### No current messages")
-
-#Title of webapp
-st.title('Pleurodeles Parsing')
-
 # Initialize Rack object only once
 if "rack" not in st.session_state:
     st.session_state.rack = Rack(
@@ -38,11 +19,59 @@ if "rack" not in st.session_state:
 # Use the persisted instance
 R = st.session_state.rack
 
+PASSWORD = "Pleurodeles123!" #This is temporary
+
+# Function to check password
+def check_password():
+    password = st.text_input("Enter password", type="password")
+    if password != PASSWORD:
+        st.error("Enter password!")
+        return False
+    initials = st.text_input("Enter initials here to login")
+    if not initials:
+        st.error("Initials are required to log actions")
+        return False
+    st.session_state.initials = initials
+    return True
+
+if not check_password():
+    st.stop() #stops app if password is wrong
+    st.write("Incorrect password! Access denied.")
+
+R.initials = st.session_state.initials
+
+@contextmanager
+def capture_stdout_to_sidebar():
+    buffer = io.StringIO()
+    original_stdout = sys.stdout
+    sys.stdout = buffer
+    try:
+        yield
+    finally:
+        sys.stdout = original_stdout
+        logs = buffer.getvalue()
+        if logs.strip():
+            st.sidebar.markdown("### Terminal Messages")
+            st.sidebar.code(logs)
+        else:
+            st.sidebar.markdown("### No current messages")
+
+#Title of webapp
+st.title('Pleurodeles Parsing')
+
+
+
 # Capture and display all print/warning output to sidebar
 with capture_stdout_to_sidebar():
     # Sidebar setup with the Undo button
     with st.sidebar:
         st.subheader("Undo Last Action")
+
+        if st.button("Last Action to Undo"):
+            if hasattr(R, 'last_action_type'):
+                st.markdown(f"Click to undo {R.last_action_type}")
+            else:
+                st.warning("No action to undo")
 
         # Button to perform the undo
         if st.button("Undo Last Action"):
@@ -52,9 +81,22 @@ with capture_stdout_to_sidebar():
             else:
                 st.warning("No previous state to undo")
 
+        st.subheader("Custom Change Log Input")
+        with st.expander("Write Custom Change Log Message", expanded = True):
+            custom_message = st.text_area("Input", height = 100)
+
+            if st.button("Submit Custom Message"):
+                if custom_message:
+                    action = "Custom Message"
+                    details = custom_message
+                    R.log_change(action, details)
+                    st.success("Custom message logged successfully!")
+                else: 
+                    st.warning("Please enter a message before submitting")
+
 
     # Tabs
-    tab1, tab2, tab3, tab4, tab5 = st.tabs(["Animal Distribution", "Add Salamanders", "Euthanize Salamander", "View Files", "Edit/Move Animal"])
+    tab1, tab2, tab3, tab4, tab5, tab6 = st.tabs(["Animal Distribution", "Add Salamanders", "Euthanize Salamander", "Edit/Move Animal", "View Files", "User Guide"])
 
     with tab1:
 
@@ -223,19 +265,47 @@ with capture_stdout_to_sidebar():
                         st.write("New Animal IDs:", ", ".join(new_animal_ids))  # Display the new Animal IDs
                     else:
                         st.warning("no new animals")
-    with tab3:
-        st.subheader("Euthanize Salamander/Undo")
 
-        animal_id = st.selectbox("Animal ID to Euthanize (SAL_###)", options = R.inventory["Animal_ID"].tolist())
-        dod = st.date_input("Date of Death").isoformat()
+            st.subheader("Add Larval Clutch")
+
+            dob = st.date_input("DOB")
+            dob_str = dob.strftime("%m/%d/%Y")
+            parents = st.text_input("Parents")
+            room = st.selectbox("Room Born In", ["Main Room", "Behavior Room"])
+            breeding_condition = st.selectbox("Breeding_Condition", ["Natural", "Induced", "Hormone Injection", "IVF"])
+            fridging = st.text_input("Time Spent Fridging")
+
+            if st.button("Add Larval Clutch"):
+
+                    new_babies = R.add_larval_clutch(
+                            dob_str,
+                            parents, 
+                            room, 
+                            breeding_condition, 
+                            fridging
+                            )
+
+                    if new_babies:
+                        st.success(f"Added babies born on {dob_str} to batch select")
+                    else: 
+                        st.warning("no new clutches added")
+
+
+    with tab3:
+        st.subheader("Euthanize Salamander")
+
+        animal_id = st.selectbox("Animal ID to Euthanize (SAL_###)", options = ["Select Animal ID"] + R.inventory["Animal_ID"].tolist(), index = 0)
+        dod = st.date_input("Date of Death")
+        dod = pd.to_datetime(dod)
+        dod_str = dod.strftime("%m/%d/%Y") #convert to correct format for analyze_euthanasia function
         weight = st.number_input("Weight_g", min_value=0.0)
-        sex = st.selectbox("Sex (optional)", ["Unknown", "Male", "Female"])
+        sex = st.selectbox("Sex (optional)", ["", "Unknown", "Male", "Female"])
         purpose = st.text_input("Purpose of Euthanasia")
         experimenter = st.text_input("Experimenter (Initials - separate by comma if multiple)")
         complications = st.selectbox("Complications if applicable", ["", "Found Dead", "Surgical Complications"])
 
         if st.button("Euthanize"):
-            success = R.euthanize_animal(animal_id, dod, weight, sex, purpose, experimenter, complications)
+            success = R.euthanize_animal(animal_id, dod_str, weight, sex, purpose, experimenter, complications)
             if success:
                 st.success(f"Animal {animal_id} euthanized and logged.")
             else:
@@ -254,20 +324,23 @@ with capture_stdout_to_sidebar():
 
         #Inputs
         dob = st.selectbox("Select DOB from Larval Clutch", options= R.get_dob_options())  # You can use the DOB options from the larval clutch data
-        dod = st.date_input("DOD").isoformat()
+        dod = st.date_input("DOD")
+        dod = pd.to_datetime(dod)
+        dod_str = dod.strftime("%m/%d/%Y")
         experimenter = st.text_input("Experimenter (Initials)")
         num_larvae = st.number_input("Number of Larvae", min_value=1, value=1, step=1)
         stage = st.text_input("Stage")
         purpose = st.text_input("Purpose")
+        protocol = st.selectbox("Experimental Protocol", ["AABF2564", "AABL1550", "AABI2617", "AABY5655"])
         complications = st.selectbox("Complications",["", "Found Dead", "Surgical Complications"])
 
 
         if st.button("Euthanize Larvae"):
-            success = R.log_larval_euthanasia(dob, dod, experimenter, num_larvae, stage, purpose, protocol, complications)
+            success = R.log_larval_euthanasia(dob, dod_str, experimenter, num_larvae, stage, purpose, protocol, complications)
             if success:
                 st.success(f"{num_larvae} euthanized and logged")
 
-    with tab4:
+    with tab5:
         # Euthanasia Log
         st.subheader("Euthanasia Log")
         try:
@@ -303,14 +376,23 @@ with capture_stdout_to_sidebar():
         st.subheader("Analyze Euthanasia Log")
 
         # Date filters
+        st.markdown("All entries analyzed unless date range specified")
         col1, col2 = st.columns(2)
         with col1:
             start_date = st.date_input("Start Date", value=None)
         with col2:
             end_date = st.date_input("End Date", value=None)
 
+        # Convert Streamlit date inputs to pandas Timestamp
+        if start_date:
+            start_date = pd.to_datetime(start_date)
+            start_date = start_date.strftime("%m/%d/%Y")  # Ensure proper datetime format
+        if end_date:
+            end_date = pd.to_datetime(end_date)
+            end_date = end_date.strftime("%m/%d/%Y")  # Ensure proper datetime format
+
         # Experimenter grouping toggle
-        group_by_exp = st.checkbox("Group by Experimenter (handles multiple initials)", value=False)
+        group_by_exp = st.checkbox("Group by Experimenter - animals under multiple initials counted for both individuals", value=False)
 
 
         if st.button("Run Analysis"):
@@ -331,6 +413,14 @@ with capture_stdout_to_sidebar():
 
             except Exception as e:
                     st.error(f"Analysis failed: {e}")
+
+        st.subheader("Larval Euthanasia Log")
+        try:
+            larval_euth_log = pd.read_csv("larval_euth_log.csv")
+            st.dataframe(larval_euth_log, use_container_width=True)
+        except Exception as e:
+            st.error(f"Could not load log: {e}")
+
 
         # Inventory
         st.subheader("Current Inventory")
@@ -354,12 +444,21 @@ with capture_stdout_to_sidebar():
                 try:
                     with open("change_log.txt", "r") as f:
                         log_content = f.read()
-                        st.text_area("Change Log Contents", value=log_content, height=300, disabled=True)
+                        reversed_log = '\n'.join(reversed(log_content.splitlines()))
+                        st.text_area("Change Log Contents", value=reversed_log, height=300, disabled=True)
                 except FileNotFoundError:
                     st.info("No change log found.")
 
+        #Clutches
+        st.subheader("Clutches")
+        try:
+            larval_info = pd.read_csv("Larval_Clutches.csv")
+            st.dataframe(larval_info, use_container_width=True)
+        except Exception as e:
+            st.error(f"Could not load info: {e}")
 
-    with tab5:
+
+    with tab4:
             st.subheader("Edit Metadata")
             animal_ids = st.multiselect("Animal ID to edit (SAL_###)", options = R.inventory["Animal_ID"].tolist())
 
@@ -428,5 +527,100 @@ with capture_stdout_to_sidebar():
                     else:
                             st.warning("Please provide Animal ID, target rack, and tank.")
 
+    with tab6:  # User Guide tab
+        st.markdown("""
+        ## Pleurodeles Parsing User Guide! 
+        Updated: May 12 2025 JW
+
+        ### Sidebar
+            Actions that can be undone:  
+            -Edit  
+            -Move  
+            -Add  
+            -Euthanize  
+            -Larval Euthanasia  
+            -Added Clutch  
+
+            This works by saving history 'states'-  
+            The number of states saved will be printed at the bottom of the sidebar after undo  
+            To ensure you're undoing the correct action, the "Last Action to Undo" button prints the last action  
+            Undone actions cannot be redone (except manually)  
+
+            Undoing an "Add" Function will remove the last input from the inventory  
+            Undoing a "Euthanize" Function will remove the euthanasia entry and return the animal to the inventory  
+            All actions record a "Change Log" that is timestamped with the action  
+            Record custom logs to yourself or admin by typing in the message box  
 
 
+        ### 1. Animal Distribution:
+            Search by one or multiple parameters  
+            Leaving the field blank will exclude the search parameter  
+            Dropdown menus are provided for parameters with exact matches required  
+            Other fields allow partial matches and are case insensitive  
+            Age parameters allow for floats (ie 1.5)  
+            When searching by Rack, Tank dropdown automatically populates the tanks that exist on given rack  
+            Multiple tanks can be chosen  
+            Darker lines on plot correspond to row change  
+
+
+        ### 2. Add Salamanders:
+        ##### Add Salamanders  
+            This is useful for the first time an animal or group of animals is added to the rack.  
+            At this point, the animals are assigned a Protocol number, and a Tank  
+            Date of Birth is allowed only for those clutches that have had breeding details recorded  
+            Required fields are autofilled so they cannot be left blank  
+            Please include initials under experimental holds if applicable   
+
+        ##### Add Larval Clutch  
+            This field is for recording breeding events  
+            If the desired date of birth is not available in the dropdown above, please add details of the breeding event and it will populate the dropdown  
+
+
+        ### 3. Euthanize Salamander:
+        ##### Euthanize Salamander  
+            One Animal_ID can be euthanized at a time to encourage input of individual metadata  
+            Additional Notes and details can be included in Purpose  
+            Animals with IDs are preassigned Protocols  
+                - please make sure your animal is on the right protocol!  
+                - Edit BEFORE euthanasia for a protocol transfer for proper record keeping
+            Relevant information will carry over from the Inventory file  
+            Initials split by a comma will allow splitting by experimenter  
+
+        ##### Euthanize Larvae  
+            Multiple larvae can be recorded  
+            These animals are not preassigned protocol numbers, this is a required field  
+            Additional notes can be recorded under Purpose  
+
+        ### 4. Edit/Move Animal:
+        ##### Edit Metadata
+            Multiple animals can be edited at the same time  
+            The current metadata is printed, for ease of verifying the correct animals are chosen  
+            Please note that Terrestrial animals, and animals on Rack 8 are on a Gummy diet (May 2025)  
+            ** Holds will repopulate this field   
+                - please check the animals you are holding are not already being held  
+                - please include initials so animals you have on hold can be easily searched  
+
+            Experimental history will append to existing history  
+
+        ##### Move Animals
+            Multiple animals can be moved at a time, but only to the same tank  
+            Only tanks that exist will appear in the dropdown  
+            Rack 13 Tank 1 is a holding place for animals off the racks that have not been euthanized  
+
+        ### 5. View Files:
+            Preview all files and logged changes to the inventory  
+
+        ##### Analyze Euthanasia Log:  
+            Analyzes entire inventory unless date range specified   
+            Complications include animals found dead or surgical complications  
+            Only protocols with entries in the date range will appear in the analysis table   
+
+
+        Feel free to ask questions and give recommendations for things that can be optimized!  
+        
+        ### Notes: 
+        - The data is saved automatically to CSV files, so you don't need to worry about manually saving any changes.  
+        - Ensure all inputs are valid, especially when specifying dates and numerical values.  
+ 
+        Happy parsing! - Jamie
+        """)

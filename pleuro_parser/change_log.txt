@@ -527,3 +527,68 @@
 2025-05-10 17:26:18.317475 - Animals moved: SAL_003 to Rack 4
 2025-05-10 17:26:18.319566 - Animals moved: SAL_009 to Rack 4
 2025-05-10 17:26:18.321720 - Animals moved: SAL_004 to Rack 4
+2025-05-12 09:52:06.635728 - Custom Message: Testing message submission
+2025-05-12 10:42:24.424123 - Euthanized: SAL_007 on 2024-03-05
+2025-05-12 10:42:33.598478 - Euthanized: SAL_003 on 2024-03-05
+2025-05-12 14:32:51.563331 - Euthanized: SAL_004 on 2025-05-12
+2025-05-12 15:12:21.352106 - Larval Euthanasia: 14 on AABL1550
+2025-05-12 15:12:40.958038 - Undo: Inventory reverted, no euthanasia
+2025-05-12 15:22:20.540189 - Undo: Inventory reverted, no euthanasia
+2025-05-12 15:30:57.811235 - Larval Euthanasia: 3 on AABL1550
+2025-05-12 15:34:05.623156 - Larval Euthanasia: 1 on AABF2564
+2025-05-12 15:56:02.588335 - Added Clutch: 05/12/2025 from fak again
+2025-05-12 16:57:29.720935 - Added Clutch: 05/17/2022 from fake clutch
+2025-05-12 16:57:33.877025 - Undo: Inventory reverted, no euthanasia
+2025-05-12 16:58:13.346625 - Added Clutch: 05/17/2022 from fake clutch
+2025-05-12 16:58:29.581784 - Undo: Inventory reverted, no euthanasia
+2025-05-12 17:02:39.007409 - Added Clutch: 05/12/2025 from 
+2025-05-12 17:04:08.262522 - Added Clutch: 05/12/2025 from 
+2025-05-12 17:08:42.892379 - Added Clutch: 05/12/2025 from 
+2025-05-12 17:14:00.362539 - Added Clutch: 05/12/2025 from 
+2025-05-12 17:19:06.497827 - Added Clutch: 05/14/2025 from 
+2025-05-12 17:22:38.073823 - Added Clutch: 05/17/2025 from 
+2025-05-12 17:24:02.684239 - Added Clutch: 05/24/2025 from 
+2025-05-12 17:24:59.971328 - Added Clutch: 05/28/2025 from 
+2025-05-12 17:25:28.650657 - Larval Euthanasia: 12 on AABF2564
+2025-05-12 17:25:30.987677 - Larval Euthanasia: 12 on AABI2617
+2025-05-12 17:25:36.137052 - Larval Euthanasia: 12 on AABY5655
+2025-05-12 17:39:34.121028 - Larval Euthanasia: 1 on AABF2564
+2025-05-12 17:39:40.034597 - Undo: Removed entry from larval euthanasia log
+2025-05-12 17:40:07.758660 - Larval Euthanasia: 1 on AABF2564
+2025-05-12 17:40:19.318912 - Undo: Removed entry from larval euthanasia log
+2025-05-12 17:40:48.874483 - Larval Euthanasia: 1 on AABF2564
+2025-05-12 17:40:55.345147 - Undo: Removed entry from larval euthanasia log
+2025-05-12 18:11:36.499829 - Euthanized: SAL_011 on 2025-05-12
+2025-05-12 18:22:21.938271 - Euthanized: SAL_012 on 05/12/2025
+2025-05-12 18:25:55.903023 - Euthanized: SAL_014 on 05/12/2025
+2025-05-12 18:26:01.701859 - Euthanized: SAL_005 on 05/12/2025
+2025-05-12 18:26:13.901412 - Euthanized: SAL_006 on 05/12/2025
+2025-05-12 18:26:15.866276 - Euthanized: SAL_008 on 05/12/2025
+2025-05-12 18:26:18.733571 - Euthanized: SAL_009 on 05/12/2025
+2025-05-12 18:26:20.150994 - Euthanized: SAL_010 on 05/12/2025
+2025-05-12 18:27:20.328216 - Euthanized: SAL_013 on 05/12/2025
+2025-05-12 18:27:54.646739 - Euthanized: SAL_015 on 05/12/2025
+2025-05-12 18:29:29.243794 - Undo: Re-added SAL_015 and removed euthanasia log entry
+2025-05-12 20:23:53.660039 - Euthanized: SAL_015 on 05/12/2025
+2025-05-12 20:23:54.301864 - Euthanized: SAL_016 on 05/12/2025
+2025-05-12 20:23:54.946518 - Euthanized: SAL_017 on 05/12/2025
+2025-05-12 20:23:55.426488 - Euthanized: SAL_018 on 05/12/2025
+2025-05-12 20:23:55.808503 - Euthanized: SAL_019 on 05/12/2025
+2025-05-12 20:23:56.233604 - Euthanized: SAL_020 on 05/12/2025
+2025-05-12 20:23:56.664870 - Euthanized: SAL_021 on 05/12/2025
+2025-05-12 20:23:57.019924 - Euthanized: SAL_022 on 05/12/2025
+2025-05-12 20:24:06.299740 - Larval Euthanasia: 20 on AABF2564
+2025-05-12 20:24:12.757465 - Larval Euthanasia: 13 on AABI2617
+2025-05-12 20:40:54.412410 - Added Clutch: 05/02/2016 from 
+2025-05-12 20:41:22.196058 - Added animals: 20 animals added to Rack 1 in B4.
+2025-05-12 20:50:43.002389 - Euthanized: SAL_023 on 05/12/2025
+2025-05-12 20:50:48.356007 - Larval Euthanasia: 13 on AABI2617
+2025-05-12 20:51:01.402385 - Added animals: 20 animals added to Rack 1 in B4.
+2025-05-12 20:51:12.023630 - Added Clutch: 05/02/2016 from 
+2025-05-12 21:34:09.996530 - Euthanized: SAL_024 on 05/12/2025
+2025-05-12 21:34:12.418446 - Euthanized: SAL_025 on 05/12/2025
+2025-05-12 21:37:04.682800 - Euthanized: SAL_026 on 05/12/2025
+2025-05-12 22:24:42.324648 - Euthanized: SAL_027 on 05/12/2025
+2025-05-12 22:53:35.453912 - Added Clutch by JW: 05/12/2025 from 
+2025-05-12 22:57:30.381330 - Custom Message by JW: Webapp complete - real inventory and logs will be loaded tomorrow
+
