@@ -82,6 +82,12 @@ Additional information to supply for euthanasia
 - Experimenter: who is performing the experiment; can handle multiple initials if separated by commas
 - Complications: If animal died of natural cause "found dead", or due to "Surgical Complications"
 
+**Larval_Clutches.csv**:
+Breeding events
+
+**Larval_euth_log.csv**
+larval euthanasia
+
 ### Near Future directions
 - Include metadata by birthdate of clutch to automatically choose when adding to rack
 - Add larval euthanasia log and expand analyze feature to include this log
