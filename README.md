@@ -88,10 +88,7 @@ Breeding events
 **Larval_euth_log.csv**
 larval euthanasia
 
-### Near Future directions
-- Include metadata by birthdate of clutch to automatically choose when adding to rack
-- Add larval euthanasia log and expand analyze feature to include this log
-- Add capability to store animal information of animals donated to other labs rather than euthanized
+### Future directions
 - Deploy webapp so others in the lab can use it before to many things change to track
 
 

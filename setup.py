@@ -19,6 +19,17 @@ setup(
     entry_points={
         "console_scripts": ["pleuro_parser = pleuro_parser.__main__:main"]
     },
-)
 
+    install_requires=[  # Add this section to list dependencies
+        "seaborn",      # For heatmap plotting
+        "streamlit",    # For the webapp interface
+        "pandas",       # For handling dataframes and CSV manipulation
+        "matplotlib",   # For general plotting and visualization
+        "pathlib",      # For handling file paths
+        "datetime",     # For date and time manipulation
+        "io",           # Part of the standard library, no need to install
+        "sys",          # Part of the standard library, no need to install
+        "contextlib",   # Part of the standard library, no need to install
+    ],
+)
 
