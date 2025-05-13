@@ -51,6 +51,8 @@ cd pleuro_parser/
 
 streamlit run streamlit-pp.py
 
+PASSWORD = "Pleurodeles123!" #This is temporary
+
 **this will be run on the Workstation through the Tosches Lab github page to ensure only one copy of the inventory is circulating**
 
 #### Files
