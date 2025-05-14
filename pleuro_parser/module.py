@@ -67,7 +67,7 @@ class Rack:
                 self.larval_euth_log = []
 
         
-        self.inventory = pd.DataFrame(self.inventory)
+        self.inventory = pd.DataFrame(self.inventory_file)
         self.last_action_type = ""
         self.initials = None
         self.save_state()  # Save initial state
