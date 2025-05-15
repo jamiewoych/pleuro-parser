@@ -15,7 +15,7 @@ from datetime import datetime, timedelta
 
 
 class Rack:     
-    def __init__(self, inventory_file="salamander_inventory.csv", filename ="inventory_state.csv", euthanasia_log_file ="euthanasia_log.csv", clutches_file = "Larval_Clutches.csv", larval_euth_file = "larval_euth_log.csv"):
+    def __init__(self, inventory_file="https://raw.githubusercontent.com/jamiewoych/pleuro-parser/refs/heads/main/pleuro_parser/salamander_inventory.csv", filename ="https://raw.githubusercontent.com/jamiewoych/pleuro-parser/refs/heads/main/pleuro_parser/inventory_state.csv", euthanasia_log_file ="https://raw.githubusercontent.com/jamiewoych/pleuro-parser/refs/heads/main/pleuro_parser/euthanasia_log.csv", clutches_file = "https://raw.githubusercontent.com/jamiewoych/pleuro-parser/refs/heads/main/pleuro_parser/Larval_Clutches.csv", larval_euth_file = "https://raw.githubusercontent.com/jamiewoych/pleuro-parser/refs/heads/main/pleuro_parser/larval_euth_log.csv"):
         
         # Expand and resolve relative paths to absolute     
         def resolve_path(path):
@@ -151,7 +151,7 @@ class Rack:
         -action (str): what action taken
         -details (str): any relevant information to note"""
         user = self.initials if self.initials else "Unknown"
-        with open("change_log.txt", "a") as f:
+        with open("https://raw.githubusercontent.com/jamiewoych/pleuro-parser/refs/heads/main/pleuro_parser/change_log.txt", "a") as f:
             f.write(f"{pd.Timestamp.now()} - {action} by {user}: {details}\n")
         print(f"Log added: {action} by {self.initials} :{details}")
 
