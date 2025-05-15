@@ -28,6 +28,7 @@ class Rack:
         self.clutches_file = resolve_path(clutches_file)
         self.larval_euth_file = resolve_path(larval_euth_file)
 
+        
         # Temporary directory for state saving
         self.temp_dir = tempfile.TemporaryDirectory()
         self.state_path = os.path.join(self.temp_dir.name, "inventory_state.csv")
@@ -40,6 +41,9 @@ class Rack:
                 print(f"Loaded existing inventory from {inventory_file}")
             except FileNotFoundError:
                 print(f"File {inventory_file} not found.")
+                self.inventory = pd.DataFrame()
+        else:
+            self.inventory = pd.DataFrame()
 
         if self.euthanasia_log_file and self.euthanasia_log_file.exists():
             try:
@@ -67,7 +71,7 @@ class Rack:
                 self.larval_euth_log = []
 
         
-        self.inventory = pd.DataFrame(self.inventory_file)
+        self.inventory = pd.DataFrame(self.inventory)
         self.last_action_type = ""
         self.initials = None
         self.save_state()  # Save initial state
