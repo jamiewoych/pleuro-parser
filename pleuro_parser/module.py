@@ -20,19 +20,16 @@ class Rack:
         # Expand and resolve relative paths to absolute     
         def resolve_path(path):
             return Path(path).expanduser().resolve() if path else None
-        """
+        
         self.inventory_file = resolve_path(inventory_file)
         self.euthanasia_log_file = resolve_path(euthanasia_log_file)
         self.filename = resolve_path(filename) or Path(self.temp_dir.name) / "session_inventory.csv"  # File to save the state
         self.history = []  # Stack to store previous states for undo
         self.clutches_file = resolve_path(clutches_file)
-        self.larval_euth_file = resolve_path(larval_euth_file)"""
-        self.inventory_file = inventory_file
-        self.euthanasia_log_file = euthanasia_log_file
-        self.filename = filename
-        self.history = []
-        self.clutches_file = clutches_file
-        self.larval_euth_file = larval_euth_file
+        self.larval_euth_file = resolve_path(larval_euth_file)
+
+        #Initialize inventory
+        self.inventory = pd.DataFrame()
 
         
         # Temporary directory for state saving
@@ -49,7 +46,7 @@ class Rack:
                 print(f"File {inventory_file} not found.")
                 self.inventory = pd.DataFrame()
         else:
-            self.inventory = pd.DataFrame()
+            print("No inventory file found, initializing with empty DataFrame")
 
         if self.euthanasia_log_file and self.euthanasia_log_file.exists():
             try:
@@ -77,7 +74,6 @@ class Rack:
                 self.larval_euth_log = []
 
         
-        self.inventory = pd.DataFrame(self.inventory)
         self.last_action_type = ""
         self.initials = None
         self.save_state()  # Save initial state
