@@ -154,7 +154,7 @@ class Rack:
         -action (str): what action taken
         -details (str): any relevant information to note"""
         user = self.initials if self.initials else "Unknown"
-        with open("https://raw.githubusercontent.com/jamiewoych/pleuro-parser/refs/heads/main/pleuro_parser/change_log.txt", "a") as f:
+        with open("change_log.txt", "a") as f: #"https://raw.githubusercontent.com/jamiewoych/pleuro-parser/refs/heads/main/pleuro_parser/change_log.txt", "a") as f:
             f.write(f"{pd.Timestamp.now()} - {action} by {user}: {details}\n")
         print(f"Log added: {action} by {self.initials} :{details}")
 
