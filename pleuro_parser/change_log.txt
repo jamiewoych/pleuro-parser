@@ -686,3 +686,52 @@
 2025-05-13 12:42:09.736916 - Euthanized by JW: SAL_097 on 05/09/2025
 2025-05-13 12:42:25.861948 - Euthanized by JW: SAL_120 on 05/09/2025
 2025-05-13 12:42:35.861968 - Euthanized by JW: SAL_121 on 05/09/2025
+2025-05-21 15:29:15.326552 - Animals moved by JW: SAL_605 to Rack 7
+2025-05-21 15:29:42.080283 - Animals moved by JW: SAL_604 to Rack 7
+2025-05-21 15:29:42.083188 - Animals moved by JW: SAL_603 to Rack 7
+2025-05-21 15:29:42.086466 - Animals moved by JW: SAL_602 to Rack 7
+2025-05-21 15:29:42.089687 - Animals moved by JW: SAL_601 to Rack 7
+2025-05-21 15:29:42.094015 - Animals moved by JW: SAL_600 to Rack 7
+2025-05-21 15:29:42.096931 - Animals moved by JW: SAL_599 to Rack 7
+2025-05-21 15:30:20.073113 - Animals moved by JW: SAL_008 to Rack 3
+2025-05-21 15:30:20.075844 - Animals moved by JW: SAL_007 to Rack 3
+2025-05-21 15:30:54.420770 - Animals moved by JW: SAL_715 to Rack 4
+2025-05-21 15:30:54.423966 - Animals moved by JW: SAL_714 to Rack 4
+2025-05-21 15:30:54.426726 - Animals moved by JW: SAL_713 to Rack 4
+2025-05-21 15:30:54.429612 - Animals moved by JW: SAL_712 to Rack 4
+2025-05-21 15:30:54.431815 - Animals moved by JW: SAL_711 to Rack 4
+2025-05-21 15:31:30.516445 - Animals moved by JW: SAL_460 to Rack 8
+2025-05-21 15:32:06.055562 - Animals moved by JW: SAL_624 to Rack 2
+2025-05-21 15:32:06.057684 - Animals moved by JW: SAL_625 to Rack 2
+2025-05-21 15:32:06.059751 - Animals moved by JW: SAL_626 to Rack 2
+2025-05-21 15:32:06.062313 - Animals moved by JW: SAL_627 to Rack 2
+2025-05-21 15:32:06.065395 - Animals moved by JW: SAL_628 to Rack 2
+2025-05-21 15:32:25.515956 - Animals moved by JW: SAL_499 to Rack 8
+2025-05-21 15:32:25.518306 - Animals moved by JW: SAL_500 to Rack 8
+2025-05-21 15:33:12.778012 - Animals moved by JW: SAL_503 to Rack 8
+2025-05-21 15:33:12.780794 - Animals moved by JW: SAL_504 to Rack 8
+2025-05-21 15:33:12.784383 - Animals moved by JW: SAL_505 to Rack 8
+2025-05-21 15:33:12.786453 - Animals moved by JW: SAL_506 to Rack 8
+2025-05-21 15:33:12.788727 - Animals moved by JW: SAL_507 to Rack 8
+2025-05-21 15:33:12.791565 - Animals moved by JW: SAL_508 to Rack 8
+2025-05-21 15:35:22.492031 - Edit by JW: SAL_565 - Environmental_Condition: Aquatic → Aquatic; Experimental_Holds: DNE Fake Placeholder → None; Protocol_Number: AABL1550 → AABF2564; Experimental_History: nan → None
+2025-05-21 15:35:22.506132 - Edit by JW: SAL_138 - Environmental_Condition: Aquatic → Aquatic; Experimental_Holds: DNE - Fake Placeholder  → None; Protocol_Number: AABI2617 → AABF2564; Experimental_History: nan → None
+2025-05-21 15:35:22.519074 - Edit by JW: SAL_351 - Environmental_Condition: Aquatic → Aquatic; Experimental_Holds: DNE Fake Placeholder → None; Protocol_Number: AABL1550 → AABF2564; Experimental_History: nan → None
+2025-05-21 15:35:22.530871 - Edit by JW: SAL_352 - Environmental_Condition: Aquatic → Aquatic; Experimental_Holds: DNE Fake Placeholder → None; Protocol_Number: AABL1550 → AABF2564; Experimental_History: nan → None
+2025-05-21 15:35:22.545074 - Edit by JW: SAL_353 - Environmental_Condition: Aquatic → Aquatic; Experimental_Holds: DNE Fake Placeholder → None; Protocol_Number: AABL1550 → AABF2564; Experimental_History: nan → None
+2025-05-21 15:35:22.557797 - Edit by JW: SAL_354 - Environmental_Condition: Aquatic → Aquatic; Experimental_Holds: DNE Fake Placeholder → None; Protocol_Number: AABL1550 → AABF2564; Experimental_History: nan → None
+2025-05-21 15:35:22.574435 - Edit by JW: SAL_422 - Environmental_Condition: Aquatic → Aquatic; Experimental_Holds: DNE Fake Placeholder → None; Protocol_Number: AABL1550 → AABF2564; Experimental_History: nan → None
+2025-05-21 15:35:22.588210 - Edit by JW: SAL_459 - Environmental_Condition: Aquatic → Aquatic; Experimental_Holds: DNE fake placeholder → None; Protocol_Number: AABL1550 → AABF2564; Experimental_History: nan → None
+2025-05-21 15:36:40.585613 - Animals moved by JW: SAL_138 to Rack 9
+2025-05-21 15:36:40.588996 - Animals moved by JW: SAL_565 to Rack 9
+2025-05-21 15:36:40.591281 - Animals moved by JW: SAL_351 to Rack 9
+2025-05-21 15:36:40.593808 - Animals moved by JW: SAL_352 to Rack 9
+2025-05-21 15:36:40.597082 - Animals moved by JW: SAL_353 to Rack 9
+2025-05-21 15:36:40.600883 - Animals moved by JW: SAL_354 to Rack 9
+2025-05-21 15:36:40.603832 - Animals moved by JW: SAL_422 to Rack 9
+2025-05-21 15:36:40.606744 - Animals moved by JW: SAL_459 to Rack 9
+2025-05-21 16:02:44.614111 - Added animals by JW: 7 animals added to Rack 5 in C2.
+2025-05-21 16:03:42.876117 - Added animals by JW: 8 animals added to Rack 9 in C1.
+2025-05-21 16:04:04.160516 - Added animals by JW: 8 animals added to Rack 9 in A2.
+2025-05-21 16:04:35.583240 - Added animals by JW: 8 animals added to Rack 9 in C3.
+2025-05-21 16:04:53.909991 - Added animals by JW: 9 animals added to Rack 9 in C4.
