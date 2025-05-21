@@ -89,7 +89,7 @@ class Rack:
     def save_state(self):
         """ Save the current state of the inventory and store in history. """
         self.history.append(self.inventory.copy())
-        print(f"State saved: {len(self.history)} states in history.")  # Debugging line
+        print(f"State saved: {len(self.history)} states in history at {self.history}.")  # Debugging line
         self.inventory.to_csv(self.filename, index=False)
 
     def undo(self):
