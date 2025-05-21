@@ -32,6 +32,7 @@ class Rack:
         #Initialize inventory
         self.inventory = pd.DataFrame()
         st.write(f"Inventory file path: {self.inventory_file}")
+        print(f"Current working dir: {os.getcwd()}")
         
         # Temporary directory for state saving
         self.temp_dir = tempfile.TemporaryDirectory()
