@@ -1,5 +1,6 @@
 
 import io
+import os
 import sys
 import pandas as pd
 import streamlit as st
@@ -7,6 +8,8 @@ from module import Rack
 import matplotlib.pyplot as plt
 from contextlib import contextmanager
 
+if str(os.getcwd()) == "/mount/src/pleuro-parser":
+      os.chdir("/mount/src/pleuro-parser/pleuro_parser")
 
 # Initialize Rack object only once
 if "rack" not in st.session_state:
@@ -469,6 +472,35 @@ with capture_stdout_to_sidebar():
 
 
     with tab4:
+
+            st.subheader("Move Animals")
+            move_id = st.multiselect("Animal ID to Move (SAL_###)", options = R.inventory["Animal_ID"].tolist())
+
+            if animal_ids:
+                st.markdown("**Current Metadata for Selected Animals:**")
+                current_rows = R.inventory[R.inventory["Animal_ID"].isin(move_id)]
+                st.dataframe(current_rows, use_container_width=True)
+
+            target_rack = st.selectbox("Target Rack", [
+                    "Rack 1", "Rack 2", "Rack 3", "Rack 4", "Rack 5", "Rack 6", "Rack 7", "Rack 8", "Rack 9", "Rack 10", "Rack 11", "Rack 12", "Rack 13 - Off"])
+            # Use get_tanks_for_rack method to generate valid tanks
+            valid_tanks = R.get_tanks_for_rack(target_rack)
+            target_tank = st.selectbox("Valid Tanks for Selected Rack", options=valid_tanks)
+
+            if st.button("Move Salamanders"):
+                    if move_id and target_rack and target_tank:
+                            R.move_salamander(move_id, target_rack, target_tank)
+                            st.success(f"Moved {move_id} to {target_rack} {target_tank}")
+                            
+                            st.markdown("**Metadata for Animals Moved:**")
+                            current_rows = R.inventory[R.inventory["Animal_ID"].isin(move_id)]
+                            st.dataframe(current_rows, use_container_width=True)
+
+                    else:
+                            st.warning("Please provide Animal ID, target rack, and tank.")
+
+            st.markdown("---")
+
             st.subheader("Edit Metadata")
             animal_ids = st.multiselect("Animal ID to edit (SAL_###)", options = R.inventory["Animal_ID"].tolist())
 
@@ -515,33 +547,6 @@ with capture_stdout_to_sidebar():
                 elif animal_id:
                     st.warning("No edits applied")
 
-            st.markdown("---")
-
-            st.subheader("Move Animals")
-            move_id = st.multiselect("Animal ID to Move (SAL_###)", options = R.inventory["Animal_ID"].tolist())
-
-            if animal_ids:
-                st.markdown("**Current Metadata for Selected Animals:**")
-                current_rows = R.inventory[R.inventory["Animal_ID"].isin(move_id)]
-                st.dataframe(current_rows, use_container_width=True)
-
-            target_rack = st.selectbox("Target Rack", [
-                    "Rack 1", "Rack 2", "Rack 3", "Rack 4", "Rack 5", "Rack 6", "Rack 7", "Rack 8", "Rack 9", "Rack 10", "Rack 11", "Rack 12", "Rack 13 - Off"])
-            # Use get_tanks_for_rack method to generate valid tanks
-            valid_tanks = R.get_tanks_for_rack(target_rack)
-            target_tank = st.selectbox("Valid Tanks for Selected Rack", options=valid_tanks)
-
-            if st.button("Move Salamanders"):
-                    if move_id and target_rack and target_tank:
-                            R.move_salamander(move_id, target_rack, target_tank)
-                            st.success(f"Moved {move_id} to {target_rack} {target_tank}")
-                            
-                            st.markdown("**Metadata for Animals Moved:**")
-                            current_rows = R.inventory[R.inventory["Animal_ID"].isin(move_id)]
-                            st.dataframe(current_rows, use_container_width=True)
-
-                    else:
-                            st.warning("Please provide Animal ID, target rack, and tank.")
 
     with tab6:  # User Guide tab
         st.markdown("""
