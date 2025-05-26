@@ -8,8 +8,8 @@ from module import Rack
 import matplotlib.pyplot as plt
 from contextlib import contextmanager
 
-if str(os.getcwd()) == "/mount/src/pleuro-parser":
-      os.chdir("/mount/src/pleuro-parser")
+#if str(os.getcwd()) == "/mount/src/pleuro-parser":
+#      os.chdir("/mount/src/pleuro-parser")
 
 # Initialize Rack object only once
 if "rack" not in st.session_state:
