@@ -14,38 +14,71 @@ import matplotlib.pyplot as plt
 from datetime import datetime, timedelta
 
 #to run locally switch comment for 18/19 and 158/159
-
 class Rack:     
-    def __init__(self, inventory_file="https://raw.githubusercontent.com/jamiewoych/pleuro-parser/refs/heads/main/pleuro_parser/salamander_inventory.csv", filename ="https://raw.githubusercontent.com/jamiewoych/pleuro-parser/refs/heads/main/pleuro_parser/inventory_state.csv", euthanasia_log_file ="https://raw.githubusercontent.com/jamiewoych/pleuro-parser/refs/heads/main/pleuro_parser/euthanasia_log.csv", clutches_file = "https://raw.githubusercontent.com/jamiewoych/pleuro-parser/refs/heads/main/pleuro_parser/Larval_Clutches.csv", larval_euth_file = "https://raw.githubusercontent.com/jamiewoych/pleuro-parser/refs/heads/main/pleuro_parser/larval_euth_log.csv"):
-    #def __init__(self, inventory_file="salamander_inventory.csv", filename ="inventory_state.csv", euthanasia_log_file ="euthanasia_log.csv", clutches_file = "Larval_Clutches.csv", larval_euth_file = "larval_euth_log.csv"):
+    #def __init__(self, inventory_file="https://raw.githubusercontent.com/jamiewoych/pleuro-parser/refs/heads/main/pleuro_parser/salamander_inventory.csv", filename ="https://raw.githubusercontent.com/jamiewoych/pleuro-parser/refs/heads/main/pleuro_parser/inventory_state.csv", euthanasia_log_file ="https://raw.githubusercontent.com/jamiewoych/pleuro-parser/refs/heads/main/pleuro_parser/euthanasia_log.csv", clutches_file = "https://raw.githubusercontent.com/jamiewoych/pleuro-parser/refs/heads/main/pleuro_parser/Larval_Clutches.csv", larval_euth_file = "https://raw.githubusercontent.com/jamiewoych/pleuro-parser/refs/heads/main/pleuro_parser/larval_euth_log.csv"):
+    def __init__(self, inventory_file="salamander_inventory.csv", filename ="inventory_state.csv", euthanasia_log_file ="euthanasia_log.csv", clutches_file = "Larval_Clutches.csv", larval_euth_file = "larval_euth_log.csv"):
         # Expand and resolve relative paths to absolute     
         def resolve_path(path):
             return Path(path).expanduser().resolve() if path else None
-        
+
+
+        # Check if we are running in a Streamlit environment or locally
+        is_streamlit = "STREAMLIT" in os.environ  # Streamlit Cloud or similar platform can set this variable
+
+
+        # Get the base directory for the pleuro_parser folder (current working directory is the pleuro_parser directory)
+        base_dir = Path(__file__).resolve().parent  # Directory of the current script (i.e., pleuro_parser)
+
+        if is_streamlit:
+            self.inventory_file="https://raw.githubusercontent.com/jamiewoych/pleuro-parser/refs/heads/main/pleuro_parser/salamander_inventory.csv" 
+            self.filename ="https://raw.githubusercontent.com/jamiewoych/pleuro-parser/refs/heads/main/pleuro_parser/inventory_state.csv"
+            self.euthanasia_log_file ="https://raw.githubusercontent.com/jamiewoych/pleuro-parser/refs/heads/main/pleuro_parser/euthanasia_log.csv" 
+            self.clutches_file = "https://raw.githubusercontent.com/jamiewoych/pleuro-parser/refs/heads/main/pleuro_parser/Larval_Clutches.csv",
+            self.larval_euth_file = "https://raw.githubusercontent.com/jamiewoych/pleuro-parser/refs/heads/main/pleuro_parser/larval_euth_log.csv"
+        else:
+            # Local paths for local development
+            parent_dir = base_dir.parent  # This points to the 'pleuro-parser' parent folder
+            
+            # Local file paths
+            self.inventory_file = parent_dir / 'salamander_inventory.csv'
+            self.filename = parent_dir / 'inventory_state.csv'
+            self.euthanasia_log_file = parent_dir / 'euthanasia_log.csv'
+            self.clutches_file = parent_dir / 'Larval_Clutches.csv'
+            self.larval_euth_file = parent_dir / 'larval_euth_log.csv'
+
+        """
+        Removed 6-10-25 
         self.inventory_file = resolve_path(inventory_file)
         self.euthanasia_log_file = resolve_path(euthanasia_log_file)
         self.filename = resolve_path(filename) or Path(self.temp_dir.name) / "session_inventory.csv"  # File to save the state
         self.history = []  # Stack to store previous states for undo
         self.clutches_file = resolve_path(clutches_file)
-        self.larval_euth_file = resolve_path(larval_euth_file)
+        self.larval_euth_file = resolve_path(larval_euth_file)"""
+
+        # Print paths for debugging
+        st.write(f"Inventory file path: {self.inventory_file}")
+        st.write(f"Clutches file path: {self.clutches_file}")
+        st.write(f"Current working dir: {os.getcwd()}")
 
         #Initialize inventory
         self.inventory = pd.DataFrame()
-        st.write(f"Inventory file path: {self.inventory_file}")
-        st.write(f"Current working dir: {os.getcwd()}")
+        # Initialize history (to store previous states for undo functionality)
+        self.history = []  # Initialize the history attribute
         
         # Temporary directory for state saving
         self.temp_dir = tempfile.TemporaryDirectory()
         self.state_path = os.path.join(self.temp_dir.name, "inventory_state.csv")
         print(f"Temporary session directory created at {self.temp_dir}")
 
+
+        """ #Rewrote 6-10-25 idea to remove redundancy from loading in each log
         #Loading inventory
         if self.inventory_file and self.inventory_file.exists():
             try:
                 self.inventory = pd.read_csv(inventory_file)
-                print(f"Loaded existing inventory from {inventory_file}")
+                print(f"Loaded existing inventory from {self.inventory_file}")
             except FileNotFoundError:
-                print(f"File {inventory_file} not found.")
+                print(f"File {self.inventory_file} not found.")
                 self.inventory = pd.DataFrame()
         else:
             print("No inventory file found, initializing with empty DataFrame")
@@ -75,6 +108,31 @@ class Rack:
                 print(f"{self.larval_euth_file} is empty. Initializing empty log.")
                 self.larval_euth_log = []
 
+        """   
+
+        # **USE ABSOLUTE PATH** to load inventory file (either from GitHub or local)
+        try:
+            if self.inventory_file.exists():
+                self.inventory = pd.read_csv(self.inventory_file)
+                print(f"Loaded existing inventory from {self.inventory_file}")
+            elif isinstance(self.inventory_file, str) and self.inventory_file.startswith("https://"):
+                self.inventory = pd.read_csv(self.inventory_file)  # Load from GitHub URL
+                print(f"Loaded inventory from {self.inventory_file}")
+            else:
+                print(f"File {self.inventory_file} not found.")
+                self.inventory = pd.DataFrame()  # Initialize as empty DataFrame
+        except FileNotFoundError as e:
+            print(f"FileNotFoundError: {e}")
+            self.inventory = pd.DataFrame()  # Initialize as empty DataFrame
+        except Exception as e:
+            print(f"Failed to load inventory: {e}")
+            self.inventory = pd.DataFrame()  # Initialize as empty DataFrame
+        
+        # Load other files (euthanasia log, clutches, etc.) using similar logic
+        self.euthanasia_log = self.load_log(self.euthanasia_log_file)
+        self.larval_clutches = self.load_log(self.clutches_file)
+        self.larval_euth_log = self.load_log(self.larval_euth_file)
+
         
         self.last_action_type = ""
         self.initials = None
@@ -85,6 +143,20 @@ class Rack:
 
     def __str__(self):
         return f"Inventory with {len(self.inventory)} salamanders:\n{self.inventory.head()}"
+
+    def load_log(self, file_path):
+        """Helper function to load log files (euthanasia, larval euthanasia, etc.)"""
+        log_data = pd.DataFrame()  # Initialize as empty DataFrame
+        try:
+            if file_path.exists():
+                log_data = pd.read_csv(file_path)  # Load as DataFrame
+                print(f"Loaded log from {file_path}")
+            elif isinstance(file_path, str) and file_path.startswith("https://"):
+                log_data = pd.read_csv(file_path)  # Load from GitHub URL
+                print(f"Loaded log from {file_path}")
+        except Exception as e:
+            print(f"Failed to load log from {file_path}: {e}")
+        return log_data  # Return as DataFrame
 
     def save_state(self):
         """ Save the current state of the inventory and store in history. """
@@ -155,8 +227,8 @@ class Rack:
         -action (str): what action taken
         -details (str): any relevant information to note"""
         user = self.initials if self.initials else "Unknown"
-        #with open("change_log.txt", "a") as f: 
-        with open("https://raw.githubusercontent.com/jamiewoych/pleuro-parser/refs/heads/main/pleuro_parser/change_log.txt", "a") as f:
+        with open("change_log.txt", "a") as f: 
+        #with open("https://raw.githubusercontent.com/jamiewoych/pleuro-parser/refs/heads/main/pleuro_parser/change_log.txt", "a") as f:
             f.write(f"{pd.Timestamp.now()} - {action} by {user}: {details}\n")
         print(f"Log added: {action} by {self.initials} :{details}")
 

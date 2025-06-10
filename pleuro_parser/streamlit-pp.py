@@ -11,6 +11,9 @@ from contextlib import contextmanager
 #if str(os.getcwd()) == "/mount/src/pleuro-parser":
 #      os.chdir("/mount/src/pleuro-parser")
 
+#if str(os.getcwd()) == "/Users/jamie/hacks/pleuro-parser/pleuro_parser":
+#    os.chdir("/Users/jamie/hacks/pleuro-parser")
+
 # Initialize Rack object only once
 if "rack" not in st.session_state:
     st.session_state.rack = Rack(
@@ -68,6 +71,11 @@ st.title('Pleurodeles Parsing')
 with capture_stdout_to_sidebar():
     # Sidebar setup with the Undo button
     with st.sidebar:
+
+        st.subheader("Working directory")
+        st.write(f"Inventory file path: {R.inventory_file}")
+        st.write(f"Current working dir: {os.getcwd()}")
+        
         st.subheader("Undo Last Action")
 
         if st.button("Last Action to Undo"):
@@ -201,7 +209,7 @@ with capture_stdout_to_sidebar():
             # Inventory
             st.subheader("Current Inventory")
             try:
-                    inventory_df = pd.read_csv("salamander_inventory.csv")
+                    inventory_df = pd.read_csv(R.inventory_file)
                     st.dataframe(inventory_df, use_container_width=True)
             except Exception as e:
                     st.error(f"Could not load inventory: {e}")
