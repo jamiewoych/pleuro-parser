@@ -310,7 +310,7 @@ class Rack:
             return
         
         # Handle empty euthanasia log by checking before performing operations
-        if not self.euthanasia_log:  # Euthanasia log is empty
+        if not hasattr(self, 'euthanasia_log') or self.euthanasia_log.empty:  # Check if euthanasia log is empty
             old_ids = pd.DataFrame()  # Initialize an empty DataFrame
         else:
             old_ids = pd.DataFrame(self.euthanasia_log)["Animal_ID"].str.extract(r"SAL_(\d+)").dropna().astype(int) # already used and in euthanasia log
@@ -475,8 +475,12 @@ class Rack:
 
         }
     
-        # Add the euthanasia entry to the euthanasia log
-        self.euthanasia_log.append(euth_entry)
+        # Convert the euthanasia entry to a DataFrame
+        euth_entry_df = pd.DataFrame([euth_entry])
+
+        # Use pd.concat() to add the new entry to the existing euthanasia log DataFrame
+        self.euthanasia_log = pd.concat([self.euthanasia_log, euth_entry_df], ignore_index=True)
+
 
         #Remove animal from inventory
         self.inventory = self.inventory[self.inventory["Animal_ID"] != animal_id]
