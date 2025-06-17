@@ -81,3 +81,13 @@
 2025-06-17 14:18:12.423589 - Added animals by JW: 8 animals added to Rack 9 in A2.
 2025-06-17 14:19:16.563153 - Added animals by JW: 6 animals added to Rack 9 in C3.
 2025-06-17 14:19:42.716370 - Added animals by JW: 2 animals added to Rack 4 in B1.
+2025-06-17 15:41:04.574171 - Euthanized by JW: SAL_560 on 06/17/2025
+2025-06-17 15:46:07.217039 - Animals moved by JW: SAL_674 to Rack 4
+2025-06-17 15:46:07.218944 - Animals moved by JW: SAL_675 to Rack 4
+2025-06-17 15:46:07.220890 - Animals moved by JW: SAL_718 to Rack 4
+2025-06-17 15:46:07.222432 - Animals moved by JW: SAL_725 to Rack 4
+2025-06-17 15:46:07.223934 - Animals moved by JW: SAL_726 to Rack 4
+2025-06-17 15:46:07.225371 - Animals moved by JW: SAL_728 to Rack 4
+2025-06-17 15:46:07.226831 - Animals moved by JW: SAL_729 to Rack 4
+2025-06-17 15:46:36.109049 - Animals moved by JW: SAL_727 to Rack 4
+2025-06-17 15:50:09.507716 - Euthanized by JW: SAL_430 on 06/17/2025

@@ -635,7 +635,7 @@ class Rack:
 
 
     def analyze_euthanasia_log(self, start_date=None, end_date=None, group_by_experimenter=False):
-        if not self.euthanasia_log and not self.larval_euth_log:
+        if not hasattr(self, 'euthanasia_log') or self.euthanasia_log.empty:
             print("No euthanasia records to analyze.")
             return
 

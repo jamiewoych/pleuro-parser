@@ -365,7 +365,8 @@ with capture_stdout_to_sidebar():
         # Euthanasia Log
         st.subheader("Euthanasia Log")
         try:
-            euth_log_df = pd.read_csv("euthanasia_log.csv")
+            euth_log_df = pd.read_csv(R.euthanasia_log_file)
+            st.dataframe(euth_log_df, use_container_width = True)
 
             # Add filter widgets
             protocols = sorted(euth_log_df["Protocol_Number"].dropna().unique())
@@ -437,7 +438,7 @@ with capture_stdout_to_sidebar():
 
         st.subheader("Larval Euthanasia Log")
         try:
-            larval_euth_log = pd.read_csv("larval_euth_log.csv")
+            larval_euth_log = pd.read_csv(R.larval_euth_file)
             st.dataframe(larval_euth_log, use_container_width=True)
         except Exception as e:
             st.error(f"Could not load log: {e}")
@@ -446,7 +447,7 @@ with capture_stdout_to_sidebar():
         # Inventory
         st.subheader("Current Inventory")
         try:
-            inventory_df = pd.read_csv("salamander_inventory.csv")
+            inventory_df = pd.read_csv(R.inventory_file)
             st.dataframe(inventory_df, use_container_width=True)
         except Exception as e:
             st.error(f"Could not load inventory: {e}")
@@ -454,7 +455,7 @@ with capture_stdout_to_sidebar():
         # Inventory State File
         st.subheader("Last Saved Inventory State")
         try:
-            state_df = pd.read_csv("inventory_state.csv")
+            state_df = pd.read_csv(R.filename)
             st.dataframe(state_df, use_container_width=True)
         except Exception as e:
             st.error(f"Could not load inventory state: {e}")
@@ -473,7 +474,7 @@ with capture_stdout_to_sidebar():
         #Clutches
         st.subheader("Clutches")
         try:
-            larval_info = pd.read_csv("Larval_Clutches.csv")
+            larval_info = pd.read_csv(R.clutches_file)
             st.dataframe(larval_info, use_container_width=True)
         except Exception as e:
             st.error(f"Could not load info: {e}")
