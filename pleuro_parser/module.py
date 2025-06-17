@@ -5,11 +5,13 @@ A function for parsing Tosches lab animal inventory
 """
 
 import os
+import git
 import tempfile
 import pandas as pd
 import seaborn as sns
 import streamlit as st
 from pathlib import Path
+from github import Github
 import matplotlib.pyplot as plt
 from datetime import datetime, timedelta
 
@@ -913,6 +915,46 @@ class Rack:
             # If no larval clutch data is available, return None
             print("No larval clutch data available.")
             return None
+
+    # Function to clone the repository (or pull the latest changes)
+    def clone_or_pull_repo(self):
+        repo_dir = "/tmp/pleuro-parser"  # Temporary directory for the cloned repo
+        if not os.path.exists(repo_dir):
+            # Clone the repo if it doesn't exist
+            repo = git.Repo.clone_from(f"https://github.com/jamiewoych/pleuro-parser.git", repo_dir)
+        else:
+            # Pull the latest changes if the repo already exists
+            repo = git.Repo(repo_dir)
+            origin = repo.remotes.origin
+            origin.pull()
+
+        return repo
+
+    def push_changes(self):
+        try:
+            # Clone or pull the repository
+            repo = clone_or_pull_repo()
+            
+            # Make some changes to the files (e.g., update CSV)
+            # Example: Replace this with actual code that modifies your files
+            file_path = "/tmp/pleuro-parser/pleuro_parser/salamander_inventory.csv"
+            with open(file_path, "a") as f:
+                f.write("\nNew Entry")
+            
+            # Stage the changes
+            repo.git.add(file_path)  # Add the modified files
+
+            # Commit the changes
+            repo.index.commit("Updated salamander inventory")
+
+            # Push changes back to GitHub
+            repo.remotes.origin.push()
+
+            st.success("Changes pushed to GitHub successfully!")
+
+        except Exception as e:
+            st.error(f"Error pushing changes to GitHub: {e}")
+
 
             
 species_list = ["Ambystoma mexicanum", "Pleurodeles waltl", "Polypterus senegalus"]

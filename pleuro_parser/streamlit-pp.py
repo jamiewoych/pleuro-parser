@@ -2,8 +2,10 @@
 import io
 import os
 import sys
+import git
 import pandas as pd
 import streamlit as st
+from github import Github
 from module import Rack
 import matplotlib.pyplot as plt
 from contextlib import contextmanager
@@ -104,6 +106,14 @@ with capture_stdout_to_sidebar():
                     st.success("Custom message logged successfully!")
                 else: 
                     st.warning("Please enter a message before submitting")
+
+        st.subheader("Save Changes")
+        if st.button("Push Changes to Github"):
+            action = "Pushing Changes"
+            details = "trying to push"
+            R.log_change(action, details)
+            R.push_changes()
+            st.success("Changes pushed to GitHub successfully!")
 
 
     # Tabs
