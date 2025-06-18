@@ -28,7 +28,7 @@ setup(
         "pathlib",      # For handling file paths
         "datetime",     # For date and time manipulation
         "io",           # Part of the standard library, no need to install
-        "os",           # chaning directory if not in right one
+        #"os",           # chaning directory if not in right one
         "sys",          # Part of the standard library, no need to install
         "contextlib",   # Part of the standard library, no need to install
     ],

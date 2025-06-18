@@ -4,7 +4,7 @@
 A function for parsing Tosches lab animal inventory
 """
 
-import os
+#import os gave errors
 #import git
 import tempfile
 import pandas as pd
