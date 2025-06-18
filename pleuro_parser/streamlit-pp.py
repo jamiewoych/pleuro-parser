@@ -2,7 +2,7 @@
 import io
 import os
 import sys
-import git
+#import git
 import pandas as pd
 import streamlit as st
 #from github import Github
