@@ -5,7 +5,7 @@ import sys
 import git
 import pandas as pd
 import streamlit as st
-from github import Github
+#from github import Github
 from module import Rack
 import matplotlib.pyplot as plt
 from contextlib import contextmanager

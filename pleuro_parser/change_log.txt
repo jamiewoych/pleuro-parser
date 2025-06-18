@@ -91,3 +91,12 @@
 2025-06-17 15:46:07.226831 - Animals moved by JW: SAL_729 to Rack 4
 2025-06-17 15:46:36.109049 - Animals moved by JW: SAL_727 to Rack 4
 2025-06-17 15:50:09.507716 - Euthanized by JW: SAL_430 on 06/17/2025
+2025-06-18 12:01:13.455788 - Animals moved by JW: SAL_742 to Rack 9
+2025-06-18 12:01:13.458824 - Animals moved by JW: SAL_747 to Rack 9
+2025-06-18 12:01:13.460348 - Animals moved by JW: SAL_748 to Rack 9
+2025-06-18 12:01:13.461657 - Animals moved by JW: SAL_749 to Rack 9
+2025-06-18 12:01:13.462931 - Animals moved by JW: SAL_750 to Rack 9
+2025-06-18 12:01:13.464226 - Animals moved by JW: SAL_751 to Rack 9
+2025-06-18 12:01:13.465508 - Animals moved by JW: SAL_752 to Rack 9
+2025-06-18 12:01:13.466950 - Animals moved by JW: SAL_753 to Rack 9
+2025-06-18 12:01:13.469323 - Animals moved by JW: SAL_754 to Rack 9
