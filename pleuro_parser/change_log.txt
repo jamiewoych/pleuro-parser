@@ -100,3 +100,26 @@
 2025-06-18 12:01:13.465508 - Animals moved by JW: SAL_752 to Rack 9
 2025-06-18 12:01:13.466950 - Animals moved by JW: SAL_753 to Rack 9
 2025-06-18 12:01:13.469323 - Animals moved by JW: SAL_754 to Rack 9
+2025-06-23 17:12:11.501393 - Edit by JW: SAL_169 - Date_of_Terra: 1/10/22 0:00 → 2023-01-10; Date_of_Reaqua: nan → 2025-02-10
+2025-06-23 17:12:11.559921 - Edit by JW: SAL_168 - Date_of_Terra: 1/10/22 0:00 → 2023-01-10; Date_of_Reaqua: nan → 2025-02-10
+2025-06-23 17:12:11.626815 - Edit by JW: SAL_167 - Date_of_Terra: 1/10/22 0:00 → 2023-01-10; Date_of_Reaqua: nan → 2025-02-10
+2025-06-23 17:12:11.710671 - Edit by JW: SAL_166 - Date_of_Terra: 1/10/22 0:00 → 2023-01-10; Date_of_Reaqua: nan → 2025-02-10
+2025-06-23 17:12:11.800718 - Edit by JW: SAL_165 - Date_of_Terra: 1/10/22 0:00 → 2023-01-10; Date_of_Reaqua: nan → 2025-02-10
+2025-07-01 12:34:54.494360 - Edit by JW: SAL_149 - Protocol_Number: AABF2564 → AABI2617
+2025-07-01 12:36:15.380425 - Euthanized by JW: SAL_149 on 05/13/2025
+2025-07-01 12:36:43.046423 - Edit by JW: SAL_150 - Protocol_Number: AABF2564 → AABI2617
+2025-07-01 12:37:03.698278 - Euthanized by JW: SAL_150 on 05/13/2025
+2025-07-01 12:41:11.666922 - Edit by JW: SAL_183 - Protocol_Number: AABF2564 → AABI2617
+2025-07-01 12:41:11.786638 - Edit by JW: SAL_184 - Protocol_Number: AABF2564 → AABI2617
+2025-07-01 12:55:44.107036 - Euthanized by JW: SAL_183 on 05/14/2025
+2025-07-01 12:58:10.098386 - Euthanized by JW: SAL_184 on 05/14/2025
+2025-07-01 12:58:24.371868 - Euthanized by JW: SAL_443 on 05/14/2025
+2025-07-01 13:17:14.744059 - Edit by JW: SAL_751 - Protocol_Number: AABF2564 → AABF2564
+2025-07-01 13:17:14.801118 - Edit by JW: SAL_461 - Protocol_Number: AABL1550 → AABF2564
+2025-07-01 13:17:14.869886 - Edit by JW: SAL_486 - Protocol_Number: AABL1550 → AABF2564
+2025-07-01 13:17:14.956223 - Edit by JW: SAL_464 - Protocol_Number: AABL1550 → AABF2564
+2025-07-01 13:17:15.044346 - Edit by JW: SAL_462 - Protocol_Number: AABL1550 → AABF2564
+2025-07-01 13:17:15.159369 - Edit by JW: SAL_463 - Protocol_Number: AABL1550 → AABF2564
+2025-07-01 13:17:15.268663 - Edit by JW: SAL_465 - Protocol_Number: AABL1550 → AABF2564
+2025-07-01 13:17:15.387312 - Edit by JW: SAL_485 - Protocol_Number: AABL1550 → AABF2564
+2025-07-01 13:17:15.518946 - Edit by JW: SAL_489 - Protocol_Number: AABL1550 → AABF2564
