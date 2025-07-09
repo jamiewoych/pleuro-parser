@@ -954,17 +954,17 @@ class Rack:
                 "state": {
                     "src": self.filename,
                     "dst": os.path.join(repo_root, "inventory_state.csv"),
-                    "save": lambda dst=os.path.join(repo_root, "inventory_state.csv"): pd.DataFrame(self.filename).to_csv(dst, index=False),
+                    "save": lambda dst=os.path.join(repo_root, "inventory_state.csv"): pd.read_csv(self.filename).to_csv(dst, index=False),
                 },
                 "clutches": {
                     "src": self.clutches_file,
                     "dst": os.path.join(repo_root, "Larval_Clutches.csv"),
-                    "save": lambda dst=os.path.join(repo_root, "Larval_Clutches.csv"): pd.DataFrame(self.clutches_file).to_csv(dst, index=False),
+                    "save": lambda dst=os.path.join(repo_root, "Larval_Clutches.csv"): self.larval_clutches.to_csv(dst, index=False),
                 },
                 "larval_euth": {
                     "src": self.larval_euth_file,
                     "dst": os.path.join(repo_root, "larval_euth_log.csv"),
-                    "save": lambda dst=os.path.join(repo_root, "larval_euth_log.csv"): pd.DataFrame(self.larval_euth_file).to_csv(dst, index=False),
+                    "save": lambda dst=os.path.join(repo_root, "larval_euth_log.csv"): self.larval_euth_log.to_csv(dst, index=False),
                 },
                 "change_log": {
                     "src": "change_log.txt",
