@@ -933,7 +933,7 @@ class Rack:
     def push_changes(self):
         try:
             # Clone or pull the repository
-            repo = clone_or_pull_repo()
+            repo = self.clone_or_pull_repo()
             
             # Make some changes to the files (e.g., update CSV)
             # Example: Replace this with actual code that modifies your files
