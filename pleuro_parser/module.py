@@ -932,8 +932,11 @@ class Rack:
 
     def push_changes(self):
         try:
+            token = st.secrets["GITHUB_TOKEN"]
             # Clone or pull the repository
             repo = self.clone_or_pull_repo()
+            origin_url = f"https://{token}@github.com/jamiewoych/pleuro-parser.git"
+            repo.remotes.origin.set_url(origin_url)
             
             # Make some changes to the files (e.g., update CSV)
             # Example: Replace this with actual code that modifies your files
