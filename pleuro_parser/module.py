@@ -941,41 +941,45 @@ class Rack:
 
             # Paths inside the repo
             files_to_push = {
-                "inventory": (
-                    self.inventory_file,
-                    os.path.join(repo_root, "salamander_inventory.csv"),
-                    lambda: self.inventory.to_csv(file_map["dest"], index=False),
-                ),
-                "euth_log": (
-                    self.euthanasia_log_file,
-                    os.path.join(repo_root, "euthanasia_log.csv"),
-                    lambda: pd.DataFrame(self.euthanasia_log).to_csv(file_map["dest"], index=False),
-                ),
-                "state": (
-                    self.filename,
-                    os.path.join(repo_root, "inventory_state.csv"),
-                    lambda: pd.read_csv(file_map["src"]).to_csv(file_map["dest"], index=False),
-                ),
-                "clutches": (
-                    self.clutches_file,
-                    os.path.join(repo_root, "Larval_Clutches.csv"),
-                    lambda: pd.DataFrame(self.larval_clutches).to_csv(file_map["dest"], index=False),
-                ),
-                "larval_euth": (
-                    self.larval_euth_file,
-                    os.path.join(repo_root, "larval_euth_log.csv"),
-                    lambda: pd.DataFrame(self.larval_euth_log).to_csv(file_map["dest"], index=False),
-                ),
-                "change_log": (
-                    "change_log.txt",
-                    os.path.join(repo_root, "change_log.txt"),
-                    lambda: shutil.copy("change_log.txt", file_map["dest"]),
-                ),
+                "inventory": {
+                    "src": self.inventory_file,
+                    "dst": os.path.join(repo_root, "salamander_inventory.csv"),
+                    "save": lambda dst=os.path.join(repo_root, "salamander_inventory.csv"): self.inventory.to_csv(dst, index=False),
+                },
+                "euth_log": {
+                    "src": self.euthanasia_log_file,
+                    "dst": os.path.join(repo_root, "euthanasia_log.csv"),
+                    "save": lambda dst=os.path.join(repo_root, "euthanasia_log.csv"): pd.DataFrame(self.euthanasia_log).to_csv(dst, index=False),
+                },
+                "state": {
+                    "src": self.filename,
+                    "dst": os.path.join(repo_root, "inventory_state.csv"),
+                    "save": lambda dst=os.path.join(repo_root, "inventory_state.csv"): pd.DataFrame(self.filename).to_csv(dst, index=False),
+                },
+                "clutches": {
+                    "src": self.clutches_file,
+                    "dst": os.path.join(repo_root, "Larval_Clutches.csv"),
+                    "save": lambda dst=os.path.join(repo_root, "Larval_Clutches.csv"): pd.DataFrame(self.clutches_file).to_csv(dst, index=False),
+                },
+                "larval_euth": {
+                    "src": self.larval_euth_file,
+                    "dst": os.path.join(repo_root, "larval_euth_log.csv"),
+                    "save": lambda dst=os.path.join(repo_root, "larval_euth_log.csv"): pd.DataFrame(self.larval_euth_file).to_csv(dst, index=False),
+                },
+                "change_log": {
+                    "src": "change_log.txt",
+                    "dst": os.path.join(repo_root, "change_log.txt"),
+                    "save": lambda dst=os.path.join(repo_root, "change_log.txt"): shutil.copy("change_log.txt", dst),
+
+                },
             }
 
             # Save or copy each file into the repo
             for key, file_map in files_to_push.items():
-                src, dst, save_func = file_map
+                src = file_map["src"]
+                dst = file_map["dst"]
+                save_func = file_map["save"]
+
                 if os.path.exists(src) or getattr(self, key, None) is not None:
                     save_func()
                     repo.git.add(dst)
