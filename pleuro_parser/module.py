@@ -6,6 +6,7 @@ A function for parsing Tosches lab animal inventory
 
 import os
 import git
+import shutil
 import tempfile
 import pandas as pd
 import seaborn as sns
@@ -935,6 +936,62 @@ class Rack:
 
     def push_changes(self):
         try:
+            repo = self.clone_or_pull_repo()
+            repo_root = repo.working_tree_dir  # e.g. /tmp/pleuro-parser
+
+            # Paths inside the repo
+            files_to_push = {
+                "inventory": (
+                    self.inventory_file,
+                    os.path.join(repo_root, "salamander_inventory.csv"),
+                    lambda: self.inventory.to_csv(file_map["dest"], index=False),
+                ),
+                "euth_log": (
+                    self.euthanasia_log_file,
+                    os.path.join(repo_root, "euthanasia_log.csv"),
+                    lambda: pd.DataFrame(self.euthanasia_log).to_csv(file_map["dest"], index=False),
+                ),
+                "state": (
+                    self.filename,
+                    os.path.join(repo_root, "inventory_state.csv"),
+                    lambda: pd.read_csv(file_map["src"]).to_csv(file_map["dest"], index=False),
+                ),
+                "clutches": (
+                    self.clutches_file,
+                    os.path.join(repo_root, "Larval_Clutches.csv"),
+                    lambda: pd.DataFrame(self.larval_clutches).to_csv(file_map["dest"], index=False),
+                ),
+                "larval_euth": (
+                    self.larval_euth_file,
+                    os.path.join(repo_root, "larval_euth_log.csv"),
+                    lambda: pd.DataFrame(self.larval_euth_log).to_csv(file_map["dest"], index=False),
+                ),
+                "change_log": (
+                    "change_log.txt",
+                    os.path.join(repo_root, "change_log.txt"),
+                    lambda: shutil.copy("change_log.txt", file_map["dest"]),
+                ),
+            }
+
+            # Save or copy each file into the repo
+            for key, file_map in files_to_push.items():
+                src, dst, save_func = file_map
+                if os.path.exists(src) or hasattr(self, key):
+                    save_func()
+                    repo.git.add(dst)
+
+            # Commit and push
+            commit_msg = "📦 Update salamander inventory & logs"
+            repo.index.commit(commit_msg)
+            repo.remotes.origin.push()
+            st.success("All updated files pushed to GitHub successfully!")
+
+        except Exception as e:
+            st.error(f"Error pushing changes to GitHub: {e}")
+
+""" #old push_changes , only for updating inventory
+    def push_changes(self):
+        try:
             # Clone or pull the repository
             repo = self.clone_or_pull_repo()
             repo_root = repo.working_tree_dir
@@ -955,7 +1012,7 @@ class Rack:
             st.success("Changes pushed to GitHub successfully!")
 
         except Exception as e:
-            st.error(f"Error pushing changes to GitHub: {e}")
+            st.error(f"Error pushing changes to GitHub: {e}")"""
 
 
             
