@@ -976,7 +976,7 @@ class Rack:
             # Save or copy each file into the repo
             for key, file_map in files_to_push.items():
                 src, dst, save_func = file_map
-                if os.path.exists(src) or hasattr(self, key):
+                if os.path.exists(src) or getattr(self, key, None) is not None:
                     save_func()
                     repo.git.add(dst)
 
