@@ -919,13 +919,13 @@ class Rack:
     # Function to clone the repository (or pull the latest changes)
     def clone_or_pull_repo(self):
         repo_dir = "/tmp/pleuro-parser"
+        token = st.secrets["GITHUB_TOKEN"]
         git_url = "https://github.com/jamiewoych/pleuro-parser.git"
         # Embed token into the URL
-        token = st.secrets["GITHUB_TOKEN"]
-        authed_url = git_url.replace("https://", f"https://{token}@")
+        authed_url = git_url.replace("https://", f"https://{token}:x-oauth-basic@")
         if not os.path.exists(repo_dir):
             # Clone the repo if it doesn't exist
-            repo = git.Repo.clone_from(f"https://github.com/jamiewoych/pleuro-parser.git", repo_dir)
+            repo = git.Repo.clone_from(authed_url, repo_dir)
         else:
             # Pull the latest changes if the repo already exists
             repo = git.Repo(repo_dir)
@@ -940,7 +940,7 @@ class Rack:
             
             # Make some changes to the files (e.g., update CSV)
             # Example: Replace this with actual code that modifies your files
-            file_path = "/tmp/pleuro-parser/pleuro_parser/salamander_inventory.csv"
+            file_path = os.path.join(repo.working_tree_dir, "pleuro_parser/salamander_inventory.csv")
             with open(file_path, "a") as f:
                 f.write("\nNew Entry")
             
