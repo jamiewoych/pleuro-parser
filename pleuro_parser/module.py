@@ -5,7 +5,7 @@ A function for parsing Tosches lab animal inventory
 """
 
 import os
-#import git
+import git
 import tempfile
 import pandas as pd
 import seaborn as sns
