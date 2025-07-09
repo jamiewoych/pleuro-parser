@@ -938,11 +938,9 @@ class Rack:
             # Clone or pull the repository
             repo = self.clone_or_pull_repo()
             
-            # Make some changes to the files (e.g., update CSV)
-            # Example: Replace this with actual code that modifies your files
-            file_path = os.path.join(repo.working_tree_dir, "pleuro_parser/salamander_inventory.csv")
-            with open(file_path, "a") as f:
-                f.write("\nNew Entry")
+            # Write the current inventory DataFrame to CSV in the repo
+            file_path = os.path.join(repo_root, "salamander_inventory.csv")
+            self.inventory.to_csv(file_path, index=False)
             
             # Stage the changes
             repo.git.add(file_path)  # Add the modified files
