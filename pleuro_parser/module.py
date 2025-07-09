@@ -937,9 +937,10 @@ class Rack:
         try:
             # Clone or pull the repository
             repo = self.clone_or_pull_repo()
+            repo_root = repo.working_tree_dir
             
             # Write the current inventory DataFrame to CSV in the repo
-            file_path = os.path.join(repo_root, "salamander_inventory.csv")
+            file_path = os.path.join(repo_root, "pleuro_parser/salamander_inventory.csv")
             self.inventory.to_csv(file_path, index=False)
             
             # Stage the changes
