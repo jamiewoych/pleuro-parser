@@ -1,6 +1,7 @@
 streamlit==1.46.0  # Newest version of Streamlit 2025-06
 seaborn==0.11.2    # Adjust if necessary, this is a stable version
-pandas==1.4.3      # Ensure you're using a compatible pandas version
+pandas==2.2.0      # Ensure you're using a compatible pandas version
+numpy==2.2.0
 matplotlib==3.5.2  # Adjust if needed, this should work with Streamlit
 datetime==4.3      # You might not need this since `datetime` is part of the Python standard library
 rich==14.0.0       # This version is mentioned in your logs
