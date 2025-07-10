@@ -739,3 +739,57 @@
 2025-05-23 17:46:20.023826 - Animals moved by JW: SAL_017 to Rack 12
 2025-07-09 21:19:02.516808 - Added animals by JW: 2 animals added to Rack 9 in B4.
 2025-07-09 21:19:10.029486 - Pushing Changes by JW: trying to push
+2025-07-10 14:56:12.302615 - Added animals by JW: 8 animals added to Rack 5 in A4.
+2025-07-10 14:56:20.832832 - Added animals by JW: 8 animals added to Rack 5 in B1.
+2025-07-10 14:57:11.720409 - Added animals by JW: 8 animals added to Rack 9 in A1.
+2025-07-10 14:57:27.536087 - Added animals by JW: 8 animals added to Rack 9 in B2.
+2025-07-10 14:57:39.834239 - Added animals by JW: 8 animals added to Rack 9 in B3.
+2025-07-10 14:58:54.344694 - Animals moved by JW: SAL_623 to Rack 2
+2025-07-10 14:58:54.347232 - Animals moved by JW: SAL_621 to Rack 2
+2025-07-10 14:58:54.349031 - Animals moved by JW: SAL_620 to Rack 2
+2025-07-10 14:58:54.350790 - Animals moved by JW: SAL_619 to Rack 2
+2025-07-10 14:58:54.352246 - Animals moved by JW: SAL_618 to Rack 2
+2025-07-10 14:59:53.787831 - Animals moved by JW: SAL_742 to Rack 7
+2025-07-10 14:59:53.790563 - Animals moved by JW: SAL_754 to Rack 7
+2025-07-10 14:59:53.792663 - Animals moved by JW: SAL_753 to Rack 7
+2025-07-10 14:59:53.794398 - Animals moved by JW: SAL_752 to Rack 7
+2025-07-10 14:59:53.795857 - Animals moved by JW: SAL_750 to Rack 7
+2025-07-10 14:59:53.797130 - Animals moved by JW: SAL_749 to Rack 7
+2025-07-10 15:02:46.028970 - Animals moved by JW: SAL_747 to Rack 7
+2025-07-10 15:02:46.030719 - Animals moved by JW: SAL_656 to Rack 7
+2025-07-10 15:02:46.032353 - Animals moved by JW: SAL_651 to Rack 7
+2025-07-10 15:02:46.034091 - Animals moved by JW: SAL_655 to Rack 7
+2025-07-10 15:02:46.036388 - Animals moved by JW: SAL_654 to Rack 7
+2025-07-10 15:02:46.038216 - Animals moved by JW: SAL_653 to Rack 7
+2025-07-10 15:02:46.040112 - Animals moved by JW: SAL_652 to Rack 7
+2025-07-10 15:02:46.041500 - Animals moved by JW: SAL_657 to Rack 7
+2025-07-10 15:03:14.440646 - Undo by JW: Inventory reverted
+2025-07-10 15:03:20.936636 - Animals moved by JW: SAL_747 to Rack 7
+2025-07-10 15:03:20.938421 - Animals moved by JW: SAL_656 to Rack 7
+2025-07-10 15:03:20.940103 - Animals moved by JW: SAL_651 to Rack 7
+2025-07-10 15:03:20.941806 - Animals moved by JW: SAL_655 to Rack 7
+2025-07-10 15:03:20.943230 - Animals moved by JW: SAL_654 to Rack 7
+2025-07-10 15:03:20.944668 - Animals moved by JW: SAL_653 to Rack 7
+2025-07-10 15:03:20.946505 - Animals moved by JW: SAL_652 to Rack 7
+2025-07-10 15:03:20.948307 - Animals moved by JW: SAL_657 to Rack 7
+2025-07-10 15:06:08.624625 - Animals moved by JW: SAL_565 to Rack 7
+2025-07-10 15:06:08.625910 - Animals moved by JW: SAL_353 to Rack 7
+2025-07-10 15:06:08.627164 - Animals moved by JW: SAL_800 to Rack 7
+2025-07-10 15:06:08.628340 - Animals moved by JW: SAL_799 to Rack 7
+2025-07-10 15:06:08.629454 - Animals moved by JW: SAL_798 to Rack 7
+2025-07-10 15:06:08.631596 - Animals moved by JW: SAL_354 to Rack 7
+2025-07-10 15:06:08.632836 - Animals moved by JW: SAL_422 to Rack 7
+2025-07-10 15:06:32.059817 - Animals moved by JW: SAL_748 to Rack 5
+2025-07-10 15:07:33.664767 - Animals moved by JW: SAL_782 to Rack 9
+2025-07-10 15:07:33.666682 - Animals moved by JW: SAL_783 to Rack 9
+2025-07-10 15:07:33.668290 - Animals moved by JW: SAL_784 to Rack 9
+2025-07-10 15:07:33.669769 - Animals moved by JW: SAL_785 to Rack 9
+2025-07-10 15:07:33.670982 - Animals moved by JW: SAL_786 to Rack 9
+2025-07-10 15:07:33.672520 - Animals moved by JW: SAL_787 to Rack 9
+2025-07-10 15:07:33.673663 - Animals moved by JW: SAL_788 to Rack 9
+2025-07-10 15:07:33.675012 - Animals moved by JW: SAL_789 to Rack 9
+2025-07-10 15:08:26.954543 - Euthanized by JW: SAL_617 on 07/02/2025
+2025-07-10 15:08:58.619971 - Euthanized by JW: SAL_622 on 06/25/2025
+2025-07-10 15:09:54.159492 - Larval Euthanasia by JW: 1 on AABF2564
+2025-07-10 15:09:57.685006 - Undo by JW: Removed entry from larval euthanasia log
+2025-07-10 15:10:39.644400 - Pushing Changes by JW: trying to push
