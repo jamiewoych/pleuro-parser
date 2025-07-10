@@ -1,32 +1,32 @@
 Animal_ID,Tank,Rack,DOD,DOB,Cohort,Environmental_Condition,Lineage,Transgenic_Line,Experimental_Holds,Species,Protocol_Number,Experimental_History,RFID,Date_of_Terra,Date_of_Reaqua,Diet,Weight_g,Sex,Purpose,Experimenter,Complications
-SAL_673,B1,Rack 5,5/8/25,12/10/24 0:00,,Aquatic,,WT,,Pleurodeles waltl,AABF2564,,,,,,0,Unknown,,,Found Dead
-SAL_089,C4,Rack 2,4/30/25,2/23/22 0:00,,Aquatic,,WT,,Pleurodeles waltl,AABL1550,LX viral injections,,,,,0,Unknown,Brain atlas,"NJC, TS",
-SAL_090,C4,Rack 2,4/30/25,2/23/22 0:00,,Aquatic,,WT,,Pleurodeles waltl,AABL1550,LX viral injections,,,,,0,Unknown,Brain atlas,"NJC, TS",
-SAL_091,C4,Rack 2,4/30/25,2/23/22 0:00,,Aquatic,,WT,,Pleurodeles waltl,AABL1550,LX viral injections,,,,,0,Unknown,Brain atlas,"NJC, TS",
-SAL_092,C4,Rack 2,4/30/25,2/23/22 0:00,,Aquatic,,WT,,Pleurodeles waltl,AABL1550,LX viral injections,,,,,0,Unknown,Brain atlas,"NJC, TS",
-SAL_093,C4,Rack 2,4/30/25,2/23/22 0:00,,Aquatic,,WT,,Pleurodeles waltl,AABL1550,LX viral injections,,,,,0,Unknown,Brain atlas,"NJC, TS",
-SAL_571,B3,Rack 7,4/24/25,9/1/22 0:00,,Aquatic,Sweden,hsyn-GCaMP6s,,Pleurodeles waltl,AABL1550,DOB 2021/07 - 2023/09,,,,,0,Unknown,,,Found Dead
-SAL_439,A1,Rack 8,3/3/25,12/18/23 0:00,,Aquatic,,WT,AOG,Pleurodeles waltl,AABI2617,AOG ,,,,,9,Unknown,"84 dpi regeneration, NTS whole mount",AOG,
+SAL_673,B1,Rack 5,5/8/25,12/10/24 0:00,,Aquatic,,WT,,Pleurodeles waltl,AABF2564,,,,,,0.0,Unknown,,,Found Dead
+SAL_089,C4,Rack 2,4/30/25,2/23/22 0:00,,Aquatic,,WT,,Pleurodeles waltl,AABL1550,LX viral injections,,,,,0.0,Unknown,Brain atlas,"NJC, TS",
+SAL_090,C4,Rack 2,4/30/25,2/23/22 0:00,,Aquatic,,WT,,Pleurodeles waltl,AABL1550,LX viral injections,,,,,0.0,Unknown,Brain atlas,"NJC, TS",
+SAL_091,C4,Rack 2,4/30/25,2/23/22 0:00,,Aquatic,,WT,,Pleurodeles waltl,AABL1550,LX viral injections,,,,,0.0,Unknown,Brain atlas,"NJC, TS",
+SAL_092,C4,Rack 2,4/30/25,2/23/22 0:00,,Aquatic,,WT,,Pleurodeles waltl,AABL1550,LX viral injections,,,,,0.0,Unknown,Brain atlas,"NJC, TS",
+SAL_093,C4,Rack 2,4/30/25,2/23/22 0:00,,Aquatic,,WT,,Pleurodeles waltl,AABL1550,LX viral injections,,,,,0.0,Unknown,Brain atlas,"NJC, TS",
+SAL_571,B3,Rack 7,4/24/25,9/1/22 0:00,,Aquatic,Sweden,hsyn-GCaMP6s,,Pleurodeles waltl,AABL1550,DOB 2021/07 - 2023/09,,,,,0.0,Unknown,,,Found Dead
+SAL_439,A1,Rack 8,3/3/25,12/18/23 0:00,,Aquatic,,WT,AOG,Pleurodeles waltl,AABI2617,AOG ,,,,,9.0,Unknown,"84 dpi regeneration, NTS whole mount",AOG,
 SAL_440,A1,Rack 8,3/3/25,12/18/23 0:00,,Aquatic,,WT,AOG,Pleurodeles waltl,AABI2617,AOG ,,,,,6.2,Unknown,"84 dpi regeneration, NTS whole mount",AOG,
-SAL_441,A1,Rack 8,3/3/25,12/18/23 0:00,,Aquatic,,WT,AOG,Pleurodeles waltl,AABI2617,AOG ,,,,,11,Unknown,"84 dpi regeneration, NTS whole mount",AOG,
-SAL_501,C3,Rack 9,5/1/25,5/17/24 0:00,,Aquatic,,WT,Priority to use ,Pleurodeles waltl,AABF2564,Slow growers,,,,,0,Unknown,Cannibal in tank - missing,,Found Dead
-SAL_502,C3,Rack 9,4/26/25,5/17/24 0:00,,Aquatic,,WT,Priority to use ,Pleurodeles waltl,AABF2564,Slow growers,,,,,0,Unknown,Cannibal,,Found Dead
-SAL_544,B4,Rack 1,3/3/25,9/1/23 0:00,,Aquatic,Sweden,hsyn-GCaMP6s,,Pleurodeles waltl,AABL1550,,,,,,6,Unknown,Sickly - GG histology,JW,
-SAL_597,A3,Rack 7,4/6/25,8/8/24 0:00,,Aquatic,,WT,Priority to use,Pleurodeles waltl,AABI2617,Previously PTU controls,,,,,0,Unknown,,,Found Dead
-SAL_611,B2,Rack 9,5/1/25,10/25/24 0:00,Viral,Aquatic,,WT,NJC,Pleurodeles waltl,AABL1550,Viral PHPeB G6s NJC,,,,,0,Unknown,cannibal in tank,,Found Dead
-SAL_631,A4,Rack 9,4/24/25,10/25/24 0:00,,Aquatic,,WT,AOG,Pleurodeles waltl,AABI2617,Regen,,,,,0,Unknown,Larval regeneration 84 dpi,"AOG, MK",
-SAL_632,A4,Rack 9,4/24/25,10/25/24 0:00,,Aquatic,,WT,AOG,Pleurodeles waltl,AABI2617,Regen,,,,,0,Unknown,Larval regeneration 84 dpi,"AOG, MK",
-SAL_633,A4,Rack 9,4/24/25,10/25/24 0:00,,Aquatic,,WT,AOG,Pleurodeles waltl,AABI2617,Regen,,,,,0,Unknown,Larval regeneration 84 dpi,"AOG, MK",
-SAL_634,A4,Rack 9,4/24/25,10/25/24 0:00,,Aquatic,,WT,AOG,Pleurodeles waltl,AABI2617,Regen,,,,,0,Unknown,Larval regeneration 84 dpi,"AOG, MK",
-SAL_635,A4,Rack 9,4/24/25,10/25/24 0:00,,Aquatic,,WT,AOG,Pleurodeles waltl,AABI2617,Regen,,,,,0,Unknown,Larval regeneration 84 dpi,"AOG, MK",
-SAL_636,A4,Rack 9,4/24/25,10/25/24 0:00,,Aquatic,,WT,AOG,Pleurodeles waltl,AABI2617,Regen,,,,,0,Unknown,Larval regeneration 84 dpi,"AOG, MK",
-SAL_637,A4,Rack 9,4/24/25,10/25/24 0:00,,Aquatic,,WT,AOG,Pleurodeles waltl,AABI2617,Regen,,,,,0,Unknown,Larval regeneration 84 dpi,"AOG, MK",
-SAL_644,C2,Rack 9,3/25/25,12/10/24 0:00,,Aquatic,,WT,AOG,Pleurodeles waltl,AABI2617,AOG Electroporation,,,,,0,Unknown,Foxp1 OE,"AOG, MK",
-SAL_645,C2,Rack 9,4/2/25,12/10/24 0:00,,Aquatic,,WT,AOG,Pleurodeles waltl,AABI2617,AOG Electroporation,,,,,0,Unknown,Foxp1 OE,AOG,
-SAL_658,A1,Rack 5,5/1/25,12/10/24 0:00,,Aquatic,,WT,,Pleurodeles waltl,AABF2564,,,,,,0,Unknown,Cannibal in tank - missing,,Found Dead
-SAL_716,C2,Rack 5,5/1/25,12/10/24 0:00,,Aquatic,,WT,,Pleurodeles waltl,AABF2564,,,,,,0,Unknown,Cannibal,,Found Dead
-SAL_717,C2,Rack 5,4/30/25,12/10/24 0:00,,Aquatic,,WT,,Pleurodeles waltl,AABF2564,,,,,,0,Unknown,Cannibal,,Found Dead
-SAL_491,D1,Rack 4,5/3/25,5/17/24 0:00, ,Aquatic,,WT,AOG,Pleurodeles waltl,AABI2617,,,,,,0,Unknown,Adult Neurogenesis with Edu,AOG,
+SAL_441,A1,Rack 8,3/3/25,12/18/23 0:00,,Aquatic,,WT,AOG,Pleurodeles waltl,AABI2617,AOG ,,,,,11.0,Unknown,"84 dpi regeneration, NTS whole mount",AOG,
+SAL_501,C3,Rack 9,5/1/25,5/17/24 0:00,,Aquatic,,WT,Priority to use ,Pleurodeles waltl,AABF2564,Slow growers,,,,,0.0,Unknown,Cannibal in tank - missing,,Found Dead
+SAL_502,C3,Rack 9,4/26/25,5/17/24 0:00,,Aquatic,,WT,Priority to use ,Pleurodeles waltl,AABF2564,Slow growers,,,,,0.0,Unknown,Cannibal,,Found Dead
+SAL_544,B4,Rack 1,3/3/25,9/1/23 0:00,,Aquatic,Sweden,hsyn-GCaMP6s,,Pleurodeles waltl,AABL1550,,,,,,6.0,Unknown,Sickly - GG histology,JW,
+SAL_597,A3,Rack 7,4/6/25,8/8/24 0:00,,Aquatic,,WT,Priority to use,Pleurodeles waltl,AABI2617,Previously PTU controls,,,,,0.0,Unknown,,,Found Dead
+SAL_611,B2,Rack 9,5/1/25,10/25/24 0:00,Viral,Aquatic,,WT,NJC,Pleurodeles waltl,AABL1550,Viral PHPeB G6s NJC,,,,,0.0,Unknown,cannibal in tank,,Found Dead
+SAL_631,A4,Rack 9,4/24/25,10/25/24 0:00,,Aquatic,,WT,AOG,Pleurodeles waltl,AABI2617,Regen,,,,,0.0,Unknown,Larval regeneration 84 dpi,"AOG, MK",
+SAL_632,A4,Rack 9,4/24/25,10/25/24 0:00,,Aquatic,,WT,AOG,Pleurodeles waltl,AABI2617,Regen,,,,,0.0,Unknown,Larval regeneration 84 dpi,"AOG, MK",
+SAL_633,A4,Rack 9,4/24/25,10/25/24 0:00,,Aquatic,,WT,AOG,Pleurodeles waltl,AABI2617,Regen,,,,,0.0,Unknown,Larval regeneration 84 dpi,"AOG, MK",
+SAL_634,A4,Rack 9,4/24/25,10/25/24 0:00,,Aquatic,,WT,AOG,Pleurodeles waltl,AABI2617,Regen,,,,,0.0,Unknown,Larval regeneration 84 dpi,"AOG, MK",
+SAL_635,A4,Rack 9,4/24/25,10/25/24 0:00,,Aquatic,,WT,AOG,Pleurodeles waltl,AABI2617,Regen,,,,,0.0,Unknown,Larval regeneration 84 dpi,"AOG, MK",
+SAL_636,A4,Rack 9,4/24/25,10/25/24 0:00,,Aquatic,,WT,AOG,Pleurodeles waltl,AABI2617,Regen,,,,,0.0,Unknown,Larval regeneration 84 dpi,"AOG, MK",
+SAL_637,A4,Rack 9,4/24/25,10/25/24 0:00,,Aquatic,,WT,AOG,Pleurodeles waltl,AABI2617,Regen,,,,,0.0,Unknown,Larval regeneration 84 dpi,"AOG, MK",
+SAL_644,C2,Rack 9,3/25/25,12/10/24 0:00,,Aquatic,,WT,AOG,Pleurodeles waltl,AABI2617,AOG Electroporation,,,,,0.0,Unknown,Foxp1 OE,"AOG, MK",
+SAL_645,C2,Rack 9,4/2/25,12/10/24 0:00,,Aquatic,,WT,AOG,Pleurodeles waltl,AABI2617,AOG Electroporation,,,,,0.0,Unknown,Foxp1 OE,AOG,
+SAL_658,A1,Rack 5,5/1/25,12/10/24 0:00,,Aquatic,,WT,,Pleurodeles waltl,AABF2564,,,,,,0.0,Unknown,Cannibal in tank - missing,,Found Dead
+SAL_716,C2,Rack 5,5/1/25,12/10/24 0:00,,Aquatic,,WT,,Pleurodeles waltl,AABF2564,,,,,,0.0,Unknown,Cannibal,,Found Dead
+SAL_717,C2,Rack 5,4/30/25,12/10/24 0:00,,Aquatic,,WT,,Pleurodeles waltl,AABF2564,,,,,,0.0,Unknown,Cannibal,,Found Dead
+SAL_491,D1,Rack 4,5/3/25,5/17/24 0:00, ,Aquatic,,WT,AOG,Pleurodeles waltl,AABI2617,,,,,,0.0,Unknown,Adult Neurogenesis with Edu,AOG,
 SAL_182,A4,Rack 4,5/7/25,2/2/23 0:00,,Aquatic,,WT,,Pleurodeles waltl,AABF2564,,,,,,13.6,Unknown,Adult 3dpi with edu,"AOG, MK",
 SAL_185,A5,Rack 4,5/7/25,2/2/23 0:00,,Aquatic,,WT,,Pleurodeles waltl,AABF2564,,,,,,7.1,Unknown,Adult 3dpi with edu,"AOG, MK",
 SAL_442,A1,Rack 13 - Off,5/7/25,12/18/23 0:00,,Aquatic,,WT,AOG,Pleurodeles waltl,AABI2617,AOG ,,,,,6.66,Unknown,Adult 3dpi with edu,"AOG, MK",
@@ -34,24 +34,27 @@ SAL_186,A5,Rack 4,5/8/25,2/2/23 0:00,,Aquatic,,WT,,Pleurodeles waltl,AABF2564,,,
 SAL_187,A5,Rack 4,5/8/25,2/2/23 0:00,,Aquatic,,WT,,Pleurodeles waltl,AABF2564,,,,,,12.3,Unknown,Adult 5dpi with edu,AOG,
 SAL_188,A5,Rack 4,5/8/25,2/2/23 0:00,,Aquatic,,WT,,Pleurodeles waltl,AABF2564,,,,,,10.2,Unknown,Adult 5dpi with edu,AOG,
 SAL_189,A5,Rack 4,5/8/25,2/2/23 0:00,,Aquatic,,WT,,Pleurodeles waltl,AABF2564,,,,,,10.9,Unknown,Adult 5dpi with edu,AOG,
-SAL_097,A3,Rack 10,5/9/25,2/23/22 0:00,Terra C,Terrestrial,,WT,JW Histology - matched on R8,Pleurodeles waltl,AABL1550,,,6/20/23 0:00,,,10,Unknown,perk,TS,
+SAL_097,A3,Rack 10,5/9/25,2/23/22 0:00,Terra C,Terrestrial,,WT,JW Histology - matched on R8,Pleurodeles waltl,AABL1550,,,6/20/23 0:00,,,10.0,Unknown,perk,TS,
 SAL_120,C5,Rack 8,5/9/25,2/23/22 0:00,Aqua C',Aquatic,,WT,JW,Pleurodeles waltl,AABL1550,,,,,Gummy Schedule,8.6,Unknown,perk,TS,
 SAL_121,C5,Rack 8,5/9/25,2/23/22 0:00,Aqua C',Aquatic,,WT,JW,Pleurodeles waltl,AABL1550,,,,,Gummy Schedule,6.5,Unknown,perk,TS,
-SAL_560,B1,Rack 7,6/17/25,9/1/23 0:00,,Aquatic,Sweden,hsyn-GCaMP6s,,Pleurodeles waltl,AABL1550,DOB 11/2021-Sept/2023,,,,,0,Unknown,,,Found Dead
-SAL_430,D4,Rack 6,6/17/25,11/24/23 0:00,Viral,Aquatic,,WT,LX,Pleurodeles waltl,AABL1550,LX PHPeB CAG G8s Viral,,,,,0,Unknown,,,Found Dead
-SAL_149,A2,Rack 8,5/13/25,3/16/22 0:00,,Aquatic,,WT,,Pleurodeles waltl,AABI2617,,,,,Gummy Schedule,7,Unknown,7dpi adult,"AOG, MK",
-SAL_150,A2,Rack 8,5/13/25,3/16/22 0:00,,Aquatic,,WT,,Pleurodeles waltl,AABI2617,,,,,Gummy Schedule,7,Unknown,7dpi adult,"AOG, MK",
-SAL_183,A4,Rack 4,5/14/25,2/2/23 0:00,,Aquatic,,WT,,Pleurodeles waltl,AABI2617,,,,,,13,Unknown,10 dpi adult,"AOG, MK",
-SAL_184,A4,Rack 4,5/14/25,2/2/23 0:00,,Aquatic,,WT,,Pleurodeles waltl,AABI2617,,,,,,14,Unknown,10 dpi adult,"AOG, MK",
-SAL_443,A1,Rack 13 - Off,5/14/25,12/9/23 0:00,,Aquatic,,WT,AOG,Pleurodeles waltl,AABI2617,AOG ,,,,,6,Unknown,10 dpi adult,"AOG, MK",
-SAL_617,A1,Rack 9,7/2/25,10/25/24 0:00,Viral,Aquatic,,WT,TS,Pleurodeles waltl,AABL1550,TS PHPeB GCaMP,,,,,0,Unknown,,,Found Dead
-SAL_622,A1,Rack 9,6/25/25,10/25/24 0:00,Viral,Aquatic,,WT,TS,Pleurodeles waltl,AABL1550,TS PHPeB GCaMP,,,,,0,Unknown,,,Found Dead
-SAL_293,B3,Rack 11,5/14/25,11/24/23 0:00,Terra R,Terrestrial,,WT,ECJ TS TY Rotation,Pleurodeles waltl,AABL1550,ECJ 1 day behavior,,12/11/24 0:00,,Gummy Schedule,0,Unknown,OB lesioning & behavior,ECJ,
-SAL_294,B3,Rack 11,5/14/25,11/24/23 0:00,Terra R,Terrestrial,,WT,ECJ TS TY Rotation,Pleurodeles waltl,AABL1550,ECJ 1 day behavior,,12/11/24 0:00,,Gummy Schedule,0,Unknown,OB lesioning & behavior,ECJ,
-SAL_295,B3,Rack 11,5/14/25,11/24/23 0:00,Terra R,Terrestrial,,WT,ECJ TS TY Rotation,Pleurodeles waltl,AABL1550,ECJ 1 day behavior,,12/11/24 0:00,,Gummy Schedule,0,Unknown,OB lesioning & behavior,ECJ,
-SAL_296,B3,Rack 11,5/14/25,11/24/23 0:00,Terra R,Terrestrial,,WT,ECJ TS TY Rotation,Pleurodeles waltl,AABL1550,ECJ 1 day behavior,,12/11/24 0:00,,Gummy Schedule,0,Unknown,OB lesioning & behavior,ECJ,
-SAL_297,B3,Rack 11,5/14/25,11/24/23 0:00,Terra R,Terrestrial,,WT,ECJ TS TY Rotation,Pleurodeles waltl,AABL1550,ECJ 1 day behavior,,12/11/24 0:00,,Gummy Schedule,0,Unknown,OB lesioning & behavior,ECJ,
-SAL_298,B3,Rack 11,5/14/25,11/24/23 0:00,Terra R,Terrestrial,,WT,ECJ TS TY Rotation,Pleurodeles waltl,AABL1550,ECJ 1 day behavior,,12/11/24 0:00,,Gummy Schedule,0,Unknown,OB lesioning & behavior,ECJ,
-SAL_559,B1,Rack 7,5/19/25,9/1/23 0:00,,Aquatic,Sweden,hsyn-GCaMP6s,,Pleurodeles waltl,AABL1550,DOB 11/2021-Sept/2023,,,,,0,Unknown,,,Found Dead
-SAL_575,B4,Rack 7,5/19/25,9/1/22 0:00,,Aquatic,Sweden,hsyn-GCaMP6s,,Pleurodeles waltl,AABL1550,DOB 2021/11 - 2023/09,,,,,0,Unknown,,,Found Dead
-SAL_751,B2,Rack 9,5/22/25,12/10/24 0:00,,Aquatic,PxW,WT,,Pleurodeles waltl,AABF2564,fridged > St 37,,,,,0,Unknown,,,Found Dead
+SAL_560,B1,Rack 7,6/17/25,9/1/23 0:00,,Aquatic,Sweden,hsyn-GCaMP6s,,Pleurodeles waltl,AABL1550,DOB 11/2021-Sept/2023,,,,,0.0,Unknown,,,Found Dead
+SAL_430,D4,Rack 6,6/17/25,11/24/23 0:00,Viral,Aquatic,,WT,LX,Pleurodeles waltl,AABL1550,LX PHPeB CAG G8s Viral,,,,,0.0,Unknown,,,Found Dead
+SAL_149,A2,Rack 8,5/13/25,3/16/22 0:00,,Aquatic,,WT,,Pleurodeles waltl,AABI2617,,,,,Gummy Schedule,7.0,Unknown,7dpi adult,"AOG, MK",
+SAL_150,A2,Rack 8,5/13/25,3/16/22 0:00,,Aquatic,,WT,,Pleurodeles waltl,AABI2617,,,,,Gummy Schedule,7.0,Unknown,7dpi adult,"AOG, MK",
+SAL_183,A4,Rack 4,5/14/25,2/2/23 0:00,,Aquatic,,WT,,Pleurodeles waltl,AABI2617,,,,,,13.0,Unknown,10 dpi adult,"AOG, MK",
+SAL_184,A4,Rack 4,5/14/25,2/2/23 0:00,,Aquatic,,WT,,Pleurodeles waltl,AABI2617,,,,,,14.0,Unknown,10 dpi adult,"AOG, MK",
+SAL_443,A1,Rack 13 - Off,5/14/25,12/9/23 0:00,,Aquatic,,WT,AOG,Pleurodeles waltl,AABI2617,AOG ,,,,,6.0,Unknown,10 dpi adult,"AOG, MK",
+SAL_617,A1,Rack 9,7/2/25,10/25/24 0:00,Viral,Aquatic,,WT,TS,Pleurodeles waltl,AABL1550,TS PHPeB GCaMP,,,,,0.0,Unknown,,,Found Dead
+SAL_622,A1,Rack 9,6/25/25,10/25/24 0:00,Viral,Aquatic,,WT,TS,Pleurodeles waltl,AABL1550,TS PHPeB GCaMP,,,,,0.0,Unknown,,,Found Dead
+SAL_293,B3,Rack 11,5/14/25,11/24/23 0:00,Terra R,Terrestrial,,WT,ECJ TS TY Rotation,Pleurodeles waltl,AABL1550,ECJ 1 day behavior,,12/11/24 0:00,,Gummy Schedule,0.0,Unknown,OB lesioning & behavior,ECJ,
+SAL_294,B3,Rack 11,5/14/25,11/24/23 0:00,Terra R,Terrestrial,,WT,ECJ TS TY Rotation,Pleurodeles waltl,AABL1550,ECJ 1 day behavior,,12/11/24 0:00,,Gummy Schedule,0.0,Unknown,OB lesioning & behavior,ECJ,
+SAL_295,B3,Rack 11,5/14/25,11/24/23 0:00,Terra R,Terrestrial,,WT,ECJ TS TY Rotation,Pleurodeles waltl,AABL1550,ECJ 1 day behavior,,12/11/24 0:00,,Gummy Schedule,0.0,Unknown,OB lesioning & behavior,ECJ,
+SAL_296,B3,Rack 11,5/14/25,11/24/23 0:00,Terra R,Terrestrial,,WT,ECJ TS TY Rotation,Pleurodeles waltl,AABL1550,ECJ 1 day behavior,,12/11/24 0:00,,Gummy Schedule,0.0,Unknown,OB lesioning & behavior,ECJ,
+SAL_297,B3,Rack 11,5/14/25,11/24/23 0:00,Terra R,Terrestrial,,WT,ECJ TS TY Rotation,Pleurodeles waltl,AABL1550,ECJ 1 day behavior,,12/11/24 0:00,,Gummy Schedule,0.0,Unknown,OB lesioning & behavior,ECJ,
+SAL_298,B3,Rack 11,5/14/25,11/24/23 0:00,Terra R,Terrestrial,,WT,ECJ TS TY Rotation,Pleurodeles waltl,AABL1550,ECJ 1 day behavior,,12/11/24 0:00,,Gummy Schedule,0.0,Unknown,OB lesioning & behavior,ECJ,
+SAL_559,B1,Rack 7,5/19/25,9/1/23 0:00,,Aquatic,Sweden,hsyn-GCaMP6s,,Pleurodeles waltl,AABL1550,DOB 11/2021-Sept/2023,,,,,0.0,Unknown,,,Found Dead
+SAL_575,B4,Rack 7,5/19/25,9/1/22 0:00,,Aquatic,Sweden,hsyn-GCaMP6s,,Pleurodeles waltl,AABL1550,DOB 2021/11 - 2023/09,,,,,0.0,Unknown,,,Found Dead
+SAL_751,B2,Rack 9,5/22/25,12/10/24 0:00,,Aquatic,PxW,WT,,Pleurodeles waltl,AABF2564,fridged > St 37,,,,,0.0,Unknown,,,Found Dead
+SAL_870,A1,Rack 13 - Off,05/02/2025,2023-12-18 00:00:00,Regeneration,Aquatic,,WT,AOG,Pleurodeles waltl,AABI2617,"EDU, regeneration surgery",,,,,4.1,Unknown,adult 7 dpi w Edu,"AOG, MK",
+SAL_868,A1,Rack 13 - Off,05/22/2025,2024-10-25 00:00:00,PTU,Aquatic,,WT,AOG,Pleurodeles waltl,AABI2617,PTU,,,,,0.0,Unknown,,NA,Found Dead
+SAL_869,A1,Rack 13 - Off,05/23/2025,2024-10-25 00:00:00,PTU sibling,Aquatic,,WT,AOG,Pleurodeles waltl,AABI2617,PTU sibling,,,,,0.0,Unknown,,NA,Found Dead

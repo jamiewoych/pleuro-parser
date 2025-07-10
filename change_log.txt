@@ -812,3 +812,8 @@
 2025-07-10 17:48:47.152850 - Added Clutch by JW: 12/18/2023 from WT Pink male x White female
 2025-07-10 17:49:14.313057 - Pushing Changes by JW: trying to push
 2025-07-10 20:14:13.650646 - Pushing Changes by JW: trying to push
+2025-07-10 20:48:07.097602 - Added animals by JW: 1 animals added to Rack 13 - Off in A1.
+2025-07-10 20:49:40.811830 - Euthanized by JW: SAL_870 on 05/02/2025
+2025-07-10 20:50:45.176241 - Euthanized by JW: SAL_868 on 05/22/2025
+2025-07-10 20:53:37.914901 - Euthanized by JW: SAL_869 on 05/23/2025
+2025-07-10 20:55:39.846842 - Pushing Changes by JW: trying to push
