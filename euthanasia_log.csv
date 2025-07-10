@@ -96,3 +96,11 @@ SAL_614,B3,Rack 9,07/02/2025,10/25/24 0:00,,Aquatic,,WT,AOG,Pleurodeles waltl,AA
 SAL_615,B3,Rack 9,07/02/2025,10/25/24 0:00,,Aquatic,,WT,AOG,Pleurodeles waltl,AABI2617,,,,,,0.0,Unknown,foxp1 overexpression,MK,
 SAL_616,B3,Rack 9,07/02/2025,10/25/24 0:00,,Aquatic,,WT,AOG,Pleurodeles waltl,AABI2617,,,,,,0.0,Unknown,,NA,Found Dead
 SAL_629,A3,Rack 9,07/03/2025,10/25/24 0:00,,Aquatic,,WT,AOG,Pleurodeles waltl,AABI2617,Regen,,,,,0.0,Unknown,,MK,
+SAL_630,A3,Rack 9,07/03/2025,10/25/24 0:00,,Aquatic,,WT,AOG,Pleurodeles waltl,AABI2617,Regen,,,,,0.0,Unknown,,MK,
+SAL_638,A4,Rack 9,07/03/2025,10/25/24 0:00,,Aquatic,,WT,AOG,Pleurodeles waltl,AABI2617,Regen,,,,,0.0,Unknown,,MK,
+SAL_650,C2,Rack 9,07/03/2025,12/10/24 0:00,,Aquatic,,WT,AOG,Pleurodeles waltl,AABI2617,AOG Electroporation,,,,,0.0,Unknown,,MK,
+SAL_007,C4,Rack 3,07/10/2025,1/21/20,Reptiles & Critters ,Aquatic,,WT,Breeding,Pleurodeles waltl,AABF2564,,,,,,0.0,Male,JC iontophoresis,TS,
+SAL_008,C4,Rack 3,07/10/2025,1/21/20,Reptiles & Critters ,Aquatic,,WT,Breeding,Pleurodeles waltl,AABF2564,,,,,,0.0,Male,JC iontophoresis,TS,
+SAL_232,B2,Rack 10,07/10/2025,11/24/23 0:00,Terra F,Terrestrial,F1,hsyn-GCaMP6s,TS ECJ Imaging,Pleurodeles waltl,AABL1550,,,12/5/24 0:00,,Gummy Schedule,0.0,Unknown,2P imaging,ECJ,
+SAL_362,B2,Rack 6,07/10/2025,11/24/23 0:00,,Aquatic,F1,hsyn-GCaMP6s,,Pleurodeles waltl,AABL1550,,,,,,0.0,Unknown,2P imaging,ECJ,
+SAL_769,C4,Rack 9,07/10/2025,12/10/24 0:00,,Aquatic,PxW,WT,,Pleurodeles waltl,AABF2564,fridged > St 37,,,,,0.0,Unknown,PA Iontophoresis,TS,
