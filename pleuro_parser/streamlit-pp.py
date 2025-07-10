@@ -368,6 +368,8 @@ with capture_stdout_to_sidebar():
         st.subheader("Euthanasia Log")
         try:
             euth_log_df = pd.read_csv(R.euthanasia_log_file)
+            euth_log_df["DOD"] = (pd.to_datetime(euth_log_df["DOD"].astype(str), format="%m/%d/%Y", errors="coerce").dt.strftime("%m/%d/%Y").fillna(""))
+
             st.dataframe(euth_log_df, use_container_width = True)
 
             # Add filter widgets
