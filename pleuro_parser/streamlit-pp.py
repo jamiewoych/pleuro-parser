@@ -29,7 +29,7 @@ R = st.session_state.rack
 
 def ensure_initials():
     if "initials" not in st.session_state:
-    st.session_state.initials = ""
+        st.session_state.initials = ""
     initials = st.text_input("Enter initials to login", key="initials")
     if not initials:
         st.warning("Initials are required to log actions")
