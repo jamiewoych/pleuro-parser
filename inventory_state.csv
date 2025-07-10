@@ -278,12 +278,6 @@ SAL_289,Rack 11,A2,11/24/23 0:00,Terra M,Terrestrial,Unknown,,WT,JW Histology,Pl
 SAL_290,Rack 13 - Off,A1,12/9/23 0:00,Terra O,Terrestrial,Unknown,F1,hsyn-GCaMP6s,ECJ TS Imaging,Pleurodeles waltl,AABL1550,,,7/15/24 0:00,,Gummy Schedule
 SAL_291,Rack 11,A4,12/9/23 0:00,Terra O,Terrestrial,Unknown,F1,hsyn-GCaMP6s,ECJ TS Imaging,Pleurodeles waltl,AABL1550,,,7/15/24 0:00,,Gummy Schedule
 SAL_292,Rack 11,A4,12/9/23 0:00,Terra O,Terrestrial,Unknown,F1,hsyn-GCaMP6s,ECJ TS Imaging,Pleurodeles waltl,AABL1550,,,7/15/24 0:00,,Gummy Schedule
-SAL_293,Rack 11,B3,11/24/23 0:00,Terra R,Terrestrial,Unknown,,WT,ECJ TS TY Rotation,Pleurodeles waltl,AABL1550,ECJ 1 day behavior,,12/11/24 0:00,,Gummy Schedule
-SAL_294,Rack 11,B3,11/24/23 0:00,Terra R,Terrestrial,Unknown,,WT,ECJ TS TY Rotation,Pleurodeles waltl,AABL1550,ECJ 1 day behavior,,12/11/24 0:00,,Gummy Schedule
-SAL_295,Rack 11,B3,11/24/23 0:00,Terra R,Terrestrial,Unknown,,WT,ECJ TS TY Rotation,Pleurodeles waltl,AABL1550,ECJ 1 day behavior,,12/11/24 0:00,,Gummy Schedule
-SAL_296,Rack 11,B3,11/24/23 0:00,Terra R,Terrestrial,Unknown,,WT,ECJ TS TY Rotation,Pleurodeles waltl,AABL1550,ECJ 1 day behavior,,12/11/24 0:00,,Gummy Schedule
-SAL_297,Rack 11,B3,11/24/23 0:00,Terra R,Terrestrial,Unknown,,WT,ECJ TS TY Rotation,Pleurodeles waltl,AABL1550,ECJ 1 day behavior,,12/11/24 0:00,,Gummy Schedule
-SAL_298,Rack 11,B3,11/24/23 0:00,Terra R,Terrestrial,Unknown,,WT,ECJ TS TY Rotation,Pleurodeles waltl,AABL1550,ECJ 1 day behavior,,12/11/24 0:00,,Gummy Schedule
 SAL_299,Rack 11,C1,11/24/23 0:00,Terra T,Terrestrial,Unknown,,WT,ECJ TS TY Rotation,Pleurodeles waltl,AABL1550,ECJ 1 day behavior,,12/11/24 0:00,,Gummy Schedule
 SAL_300,Rack 11,C1,11/24/23 0:00,Terra T,Terrestrial,Unknown,,WT,ECJ TS TY Rotation,Pleurodeles waltl,AABL1550,ECJ 1 day behavior,,12/11/24 0:00,,Gummy Schedule
 SAL_301,Rack 11,C1,11/24/23 0:00,Terra T,Terrestrial,Unknown,,WT,ECJ TS TY Rotation,Pleurodeles waltl,AABL1550,ECJ 1 day behavior,,12/11/24 0:00,,Gummy Schedule
@@ -534,7 +528,6 @@ SAL_555,Rack 1,C2,7/1/22 0:00,,Aquatic,Unknown,Sweden,mDlx-GFP,,Pleurodeles walt
 SAL_556,Rack 11,C2,9/1/23 0:00,Terra U,Terrestrial,Unknown,Sweden,hsyn-GCaMP6s,ECJ TS Imaging,Pleurodeles waltl,AABL1550,,,10/29/24 0:00,,
 SAL_557,Rack 11,C2,9/1/23 0:00,Terra U,Terrestrial,Unknown,Sweden,hsyn-GCaMP6s,ECJ TS Imaging,Pleurodeles waltl,AABL1550,,,10/29/24 0:00,,
 SAL_558,Rack 11,C2,9/1/23 0:00,Terra U,Terrestrial,Unknown,Sweden,hsyn-GCaMP6s,ECJ TS Imaging,Pleurodeles waltl,AABL1550,,,10/29/24 0:00,,
-SAL_559,Rack 7,B1,9/1/23 0:00,,Aquatic,Unknown,Sweden,hsyn-GCaMP6s,,Pleurodeles waltl,AABL1550,DOB 11/2021-Sept/2023,,,,
 SAL_561,Rack 7,B1,9/1/23 0:00,,Aquatic,Unknown,Sweden,hsyn-GCaMP6s,,Pleurodeles waltl,AABL1550,DOB 11/2021-Sept/2023,,,,
 SAL_562,Rack 7,B1,9/1/23 0:00,,Aquatic,Unknown,Sweden,hsyn-GCaMP6s,,Pleurodeles waltl,AABL1550,DOB 11/2021-Sept/2023,,,,
 SAL_563,Rack 7,B1,9/1/23 0:00,,Aquatic,Unknown,Sweden,hsyn-GCaMP6s,,Pleurodeles waltl,AABL1550,DOB 11/2021-Sept/2023,,,,
@@ -548,7 +541,6 @@ SAL_570,Rack 7,B2,9/1/22 0:00,,Aquatic,Unknown,Sweden,hsyn-GCaMP6s,,Pleurodeles 
 SAL_572,Rack 7,B3,9/1/22 0:00,,Aquatic,Unknown,Sweden,hsyn-GCaMP6s,,Pleurodeles waltl,AABL1550,DOB 2021/07 - 2023/09,,,,
 SAL_573,Rack 7,B3,9/1/22 0:00,,Aquatic,Unknown,Sweden,hsyn-GCaMP6s,,Pleurodeles waltl,AABL1550,DOB 2021/07 - 2023/09,,,,
 SAL_574,Rack 7,B3,9/1/22 0:00,,Aquatic,Unknown,Sweden,hsyn-GCaMP6s,,Pleurodeles waltl,AABL1550,,,,,
-SAL_575,Rack 7,B4,9/1/22 0:00,,Aquatic,Unknown,Sweden,hsyn-GCaMP6s,,Pleurodeles waltl,AABL1550,DOB 2021/11 - 2023/09,,,,
 SAL_576,Rack 7,B4,9/1/22 0:00,,Aquatic,Unknown,Sweden,hsyn-GCaMP6s,,Pleurodeles waltl,AABL1550,DOB 2021/11 - 2023/09,,,,
 SAL_577,Rack 7,B4,9/1/22 0:00,,Aquatic,Unknown,Sweden,hsyn-GCaMP6s,,Pleurodeles waltl,AABL1550,DOB 2021/11 - 2023/09,,,,
 SAL_578,Rack 7,B4,9/1/22 0:00,,Aquatic,Unknown,Sweden,hsyn-GCaMP6s,,Pleurodeles waltl,AABL1550,DOB 2021/11 - 2023/09,,,,
@@ -738,14 +730,14 @@ SAL_778,Rack 5,A2,2024-12-10 00:00:00,,Aquatic,Unknown,,WT,,Pleurodeles waltl,AA
 SAL_779,Rack 5,A2,2024-12-10 00:00:00,,Aquatic,Unknown,,WT,,Pleurodeles waltl,AABF2564,,,,,
 SAL_780,Rack 5,A2,2024-12-10 00:00:00,,Aquatic,Unknown,,WT,,Pleurodeles waltl,AABF2564,,,,,
 SAL_781,Rack 5,A2,2024-12-10 00:00:00,,Aquatic,Unknown,,WT,,Pleurodeles waltl,AABF2564,,,,,
-SAL_782,Rack 9,B3,2025-01-03 00:00:00,,Aquatic,Unknown,,WT,,Pleurodeles waltl,AABF2564,,,,,
-SAL_783,Rack 9,B3,2025-01-03 00:00:00,,Aquatic,Unknown,,WT,,Pleurodeles waltl,AABF2564,,,,,
-SAL_784,Rack 9,B3,2025-01-03 00:00:00,,Aquatic,Unknown,,WT,,Pleurodeles waltl,AABF2564,,,,,
-SAL_785,Rack 9,B3,2025-01-03 00:00:00,,Aquatic,Unknown,,WT,,Pleurodeles waltl,AABF2564,,,,,
-SAL_786,Rack 9,B3,2025-01-03 00:00:00,,Aquatic,Unknown,,WT,,Pleurodeles waltl,AABF2564,,,,,
-SAL_787,Rack 9,B3,2025-01-03 00:00:00,,Aquatic,Unknown,,WT,,Pleurodeles waltl,AABF2564,,,,,
-SAL_788,Rack 9,B3,2025-01-03 00:00:00,,Aquatic,Unknown,,WT,,Pleurodeles waltl,AABF2564,,,,,
-SAL_789,Rack 9,B3,2025-01-03 00:00:00,,Aquatic,Unknown,,WT,,Pleurodeles waltl,AABF2564,,,,,
+SAL_782,Rack 8,B3,2025-01-03 00:00:00,,Aquatic,Unknown,,WT,,Pleurodeles waltl,AABF2564,,,,,
+SAL_783,Rack 8,B3,2025-01-03 00:00:00,,Aquatic,Unknown,,WT,,Pleurodeles waltl,AABF2564,,,,,
+SAL_784,Rack 8,B3,2025-01-03 00:00:00,,Aquatic,Unknown,,WT,,Pleurodeles waltl,AABF2564,,,,,
+SAL_785,Rack 8,B3,2025-01-03 00:00:00,,Aquatic,Unknown,,WT,,Pleurodeles waltl,AABF2564,,,,,
+SAL_786,Rack 8,B3,2025-01-03 00:00:00,,Aquatic,Unknown,,WT,,Pleurodeles waltl,AABF2564,,,,,
+SAL_787,Rack 8,B3,2025-01-03 00:00:00,,Aquatic,Unknown,,WT,,Pleurodeles waltl,AABF2564,,,,,
+SAL_788,Rack 8,B3,2025-01-03 00:00:00,,Aquatic,Unknown,,WT,,Pleurodeles waltl,AABF2564,,,,,
+SAL_789,Rack 8,B3,2025-01-03 00:00:00,,Aquatic,Unknown,,WT,,Pleurodeles waltl,AABF2564,,,,,
 SAL_790,Rack 5,C4,2025-01-03 00:00:00,,Aquatic,Unknown,,WT,,Pleurodeles waltl,AABF2564,,,,,
 SAL_791,Rack 5,C4,2025-01-03 00:00:00,,Aquatic,Unknown,,WT,,Pleurodeles waltl,AABF2564,,,,,
 SAL_792,Rack 5,C4,2025-01-03 00:00:00,,Aquatic,Unknown,,WT,,Pleurodeles waltl,AABF2564,,,,,

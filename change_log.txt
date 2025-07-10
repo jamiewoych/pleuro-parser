@@ -793,3 +793,21 @@
 2025-07-10 15:09:54.159492 - Larval Euthanasia by JW: 1 on AABF2564
 2025-07-10 15:09:57.685006 - Undo by JW: Removed entry from larval euthanasia log
 2025-07-10 15:10:39.644400 - Pushing Changes by JW: trying to push
+2025-07-10 15:15:57.340961 - Euthanized by JW: SAL_293 on 05/14/2025
+2025-07-10 15:16:19.670115 - Euthanized by JW: SAL_294 on 05/14/2025
+2025-07-10 15:16:48.299403 - Euthanized by JW: SAL_295 on 05/14/2025
+2025-07-10 15:17:04.202182 - Euthanized by JW: SAL_296 on 05/14/2025
+2025-07-10 15:17:35.570423 - Euthanized by JW: SAL_297 on 05/14/2025
+2025-07-10 15:17:44.958744 - Euthanized by JW: SAL_298 on 05/14/2025
+2025-07-10 15:18:38.606743 - Euthanized by JW: SAL_559 on 05/19/2025
+2025-07-10 15:19:19.864390 - Euthanized by JW: SAL_575 on 05/19/2025
+2025-07-10 17:29:44.268101 - Animals moved by JW: SAL_782 to Rack 8
+2025-07-10 17:29:44.269309 - Animals moved by JW: SAL_783 to Rack 8
+2025-07-10 17:29:44.270318 - Animals moved by JW: SAL_784 to Rack 8
+2025-07-10 17:29:44.271233 - Animals moved by JW: SAL_785 to Rack 8
+2025-07-10 17:29:44.272450 - Animals moved by JW: SAL_786 to Rack 8
+2025-07-10 17:29:44.273581 - Animals moved by JW: SAL_787 to Rack 8
+2025-07-10 17:29:44.274594 - Animals moved by JW: SAL_788 to Rack 8
+2025-07-10 17:29:44.275591 - Animals moved by JW: SAL_789 to Rack 8
+2025-07-10 17:48:47.152850 - Added Clutch by JW: 12/18/2023 from WT Pink male x White female
+2025-07-10 17:49:14.313057 - Pushing Changes by JW: trying to push
