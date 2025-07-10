@@ -182,7 +182,7 @@ class Rack:
 
             if hasattr(self, 'last_action_type') and self.last_action_type == "Euthanize":
                 # Remove the most recent euthanasia entry, if it exists
-                if self.euthanasia_log:
+                if not self.euthanasia_log.empty:
                     removed = self.euthanasia_log.pop()  # Removes the last euthanasia entry
                     print(f"Removed euthanasia log entry: {removed['Animal_ID']}")
                     self.save_euthanasia_log()
