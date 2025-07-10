@@ -59,9 +59,9 @@ class Rack:
         self.larval_euth_file = resolve_path(larval_euth_file)"""
 
         # Print paths for debugging
-        st.write(f"Inventory file path: {self.inventory_file}")
-        st.write(f"Clutches file path: {self.clutches_file}")
-        st.write(f"Current working dir: {os.getcwd()}")
+        #st.write(f"Inventory file path: {self.inventory_file}")
+        #st.write(f"Clutches file path: {self.clutches_file}")
+        #st.write(f"Current working dir: {os.getcwd()}")
 
         #Initialize inventory
         self.inventory = pd.DataFrame()
