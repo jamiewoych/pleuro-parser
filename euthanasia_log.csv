@@ -56,5 +56,8 @@ SAL_559,B1,Rack 7,5/19/25,9/1/23 0:00,,Aquatic,Sweden,hsyn-GCaMP6s,,Pleurodeles 
 SAL_575,B4,Rack 7,5/19/25,9/1/22 0:00,,Aquatic,Sweden,hsyn-GCaMP6s,,Pleurodeles waltl,AABL1550,DOB 2021/11 - 2023/09,,,,,0.0,Unknown,,,Found Dead
 SAL_751,B2,Rack 9,5/22/25,12/10/24 0:00,,Aquatic,PxW,WT,,Pleurodeles waltl,AABF2564,fridged > St 37,,,,,0.0,Unknown,,,Found Dead
 SAL_870,A1,Rack 13 - Off,05/02/2025,2023-12-18 00:00:00,Regeneration,Aquatic,,WT,AOG,Pleurodeles waltl,AABI2617,"EDU, regeneration surgery",,,,,4.1,Unknown,adult 7 dpi w Edu,"AOG, MK",
-SAL_868,A1,Rack 13 - Off,05/22/2025,2024-10-25 00:00:00,PTU,Aquatic,,WT,AOG,Pleurodeles waltl,AABI2617,PTU,,,,,0.0,Unknown,,NA,Found Dead
-SAL_869,A1,Rack 13 - Off,05/23/2025,2024-10-25 00:00:00,PTU sibling,Aquatic,,WT,AOG,Pleurodeles waltl,AABI2617,PTU sibling,,,,,0.0,Unknown,,NA,Found Dead
+SAL_868,A1,Rack 13 - Off,05/22/2025,2024-10-25 00:00:00,PTU,Aquatic,,WT,AOG,Pleurodeles waltl,AABI2617,PTU,,,,,0.0,Unknown,,,Found Dead
+SAL_869,A1,Rack 13 - Off,05/23/2025,2024-10-25 00:00:00,PTU sibling,Aquatic,,WT,AOG,Pleurodeles waltl,AABI2617,PTU sibling,,,,,0.0,Unknown,,,Found Dead
+SAL_449,B2,Rack 8,05/27/2025,11/24/23 0:00,,Aquatic,,WT,JW AMMM histology,Pleurodeles waltl,AABL1550,,,,,,10.16,Female,Single cell OE3,JW,
+SAL_165,D5,Rack 8,05/27/2025,3/21/22 0:00,,Reaqua,,WT,,Pleurodeles waltl,AABL1550,,,2023-01-10,2025-02-10,Gummy Schedule,10.0,Female,Single cell OE3 Reaqua,JW,
+SAL_230,B1,Rack 10,05/20/2025,11/24/23 0:00,Terra E ,Terrestrial,F1,hsyn-GCaMP6s,TS ECJ Imaging,Pleurodeles waltl,AABL1550,,,11/12/24 0:00,,Gummy Schedule,12.0,Male,histology,TS,
