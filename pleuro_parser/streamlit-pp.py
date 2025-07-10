@@ -28,14 +28,16 @@ if "rack" not in st.session_state:
 R = st.session_state.rack
 
 def ensure_initials():
-    initials = st.text_input("Enter initials here to login")
+    if "initials" not in st.session_state:
+    st.session_state.initials = ""
+    initials = st.text_input("Enter initials to login", key="initials")
     if not initials:
-        st.markdown("Initials are required to log actions")
-        return False
-    st.session_state.initials = initials
+        st.warning("Initials are required to log actions")
+        st.stop()
     return True
 
-
+#Require initials before proceeding
+initials = ensure_initials()
 R.initials = st.session_state.initials
 
 @contextmanager
