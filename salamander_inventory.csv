@@ -699,7 +699,6 @@ SAL_747,Rack 7,A4,12/10/24 0:00,,Aquatic,Unknown,PxW,WT,,Pleurodeles waltl,AABF2
 SAL_748,Rack 5,A1,12/10/24 0:00,,Aquatic,Unknown,PxW,WT,,Pleurodeles waltl,AABF2564,fridged > St 37,,,,
 SAL_749,Rack 7,A1,12/10/24 0:00,,Aquatic,Unknown,PxW,WT,,Pleurodeles waltl,AABF2564,fridged > St 37,,,,
 SAL_750,Rack 7,A1,12/10/24 0:00,,Aquatic,Unknown,PxW,WT,,Pleurodeles waltl,AABF2564,fridged > St 37,,,,
-SAL_751,Rack 9,B2,12/10/24 0:00,,Aquatic,Unknown,PxW,WT,,Pleurodeles waltl,AABF2564,fridged > St 37,,,,
 SAL_752,Rack 7,A1,12/10/24 0:00,,Aquatic,Unknown,PxW,WT,,Pleurodeles waltl,AABF2564,fridged > St 37,,,,
 SAL_753,Rack 7,A1,12/10/24 0:00,,Aquatic,Unknown,PxW,WT,,Pleurodeles waltl,AABF2564,fridged > St 37,,,,
 SAL_754,Rack 7,A1,12/10/24 0:00,,Aquatic,Unknown,PxW,WT,,Pleurodeles waltl,AABF2564,fridged > St 37,,,,
@@ -816,3 +815,5 @@ SAL_864,Rack 9,B3,2025-01-03 00:00:00,,Aquatic,Unknown,,WT,,Pleurodeles waltl,AA
 SAL_865,Rack 9,B3,2025-01-03 00:00:00,,Aquatic,Unknown,,WT,,Pleurodeles waltl,AABL1550,fridged 1/6-1/27,,,,
 SAL_866,Rack 9,B3,2025-01-03 00:00:00,,Aquatic,Unknown,,WT,,Pleurodeles waltl,AABL1550,fridged 1/6-1/27,,,,
 SAL_867,Rack 9,B3,2025-01-03 00:00:00,,Aquatic,Unknown,,WT,,Pleurodeles waltl,AABL1550,fridged 1/6-1/27,,,,
+SAL_868,Rack 13 - Off,A1,2024-10-25 00:00:00,PTU,Aquatic,Unknown,,WT,AOG,Pleurodeles waltl,AABI2617,PTU,,,,
+SAL_869,Rack 13 - Off,A1,2024-10-25 00:00:00,PTU sibling,Aquatic,Unknown,,WT,AOG,Pleurodeles waltl,AABI2617,PTU sibling,,,,
