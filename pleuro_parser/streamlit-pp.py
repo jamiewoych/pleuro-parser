@@ -35,26 +35,6 @@ def ensure_initials():
     st.session_state.initials = initials
     return True
 
-"""
-PASSWORD = "Pleurodeles123!" #This is temporary
-
-# Function to check password
-def check_password():
-    password = st.text_input("Enter password", type="password")
-    initials = st.text_input("Enter initials here to login")
-    if password != PASSWORD:
-        st.markdown("Enter password!")
-        return False
-    if not initials:
-        st.markdown("Initials are required to log actions")
-        return False
-    st.session_state.initials = initials
-    return True
-
-if not check_password():
-    st.stop() #stops app if password is wrong
-    st.write("Incorrect password! Access denied.")"""
-
 
 R.initials = st.session_state.initials
 
