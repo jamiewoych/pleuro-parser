@@ -34,11 +34,11 @@ def ensure_initials():
     if not initials:
         st.warning("Initials are required to log actions")
         st.stop()
-    return True
+    return initials
 
 #Require initials before proceeding
 initials = ensure_initials()
-R.initials = st.session_state.initials
+R.initials = initials
 
 @contextmanager
 def capture_stdout_to_sidebar():
