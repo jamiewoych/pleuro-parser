@@ -74,7 +74,7 @@ with capture_stdout_to_sidebar():
     # Sidebar setup with the Undo button
     with st.sidebar:
 
-        st.subheader("Working directory")
+        #st.subheader("Working directory")
         #st.write(f"Inventory file path: {R.inventory_file}")
         #st.write(f"Current working dir: {os.getcwd()}")
         
