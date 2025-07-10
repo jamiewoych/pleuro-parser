@@ -27,9 +27,17 @@ if "rack" not in st.session_state:
 # Use the persisted instance
 R = st.session_state.rack
 
-PASSWORD = "Pleurodeles123!" #This is temporary
+def ensure_initials():
+    initials = st.text_input("Enter initials here to login")
+    if not initials:
+        st.markdown("Initials are required to log actions")
+        return False
+    st.session_state.initials = initials
+    return True
 
 """
+PASSWORD = "Pleurodeles123!" #This is temporary
+
 # Function to check password
 def check_password():
     password = st.text_input("Enter password", type="password")
@@ -47,7 +55,7 @@ if not check_password():
     st.stop() #stops app if password is wrong
     st.write("Incorrect password! Access denied.")"""
 
-initials = st.text_input("Enter initials here to login")
+
 R.initials = st.session_state.initials
 
 @contextmanager
