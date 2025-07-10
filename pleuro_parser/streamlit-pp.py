@@ -2,7 +2,7 @@
 import io
 import os 
 import sys
-#import git
+import git
 import pandas as pd
 import streamlit as st
 #from github import Github
@@ -75,8 +75,8 @@ with capture_stdout_to_sidebar():
     with st.sidebar:
 
         st.subheader("Working directory")
-        st.write(f"Inventory file path: {R.inventory_file}")
-        st.write(f"Current working dir: {os.getcwd()}")
+        #st.write(f"Inventory file path: {R.inventory_file}")
+        #st.write(f"Current working dir: {os.getcwd()}")
         
         st.subheader("Undo Last Action")
 
