@@ -102,7 +102,7 @@ with capture_stdout_to_sidebar():
         st.subheader("Save Changes")
         if st.button("Push Changes to Github"):
             action = "Pushing Changes"
-            details = "trying to push"
+            details = "Changes saved"
             R.log_change(action, details)
             R.push_changes()
             st.success("Changes pushed to GitHub successfully!")
