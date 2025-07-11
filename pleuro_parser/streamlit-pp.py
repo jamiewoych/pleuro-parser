@@ -562,8 +562,12 @@ with capture_stdout_to_sidebar():
 
     with tab6:  # User Guide tab
         st.markdown("""
-        ## Pleurodeles Parsing User Guide! 
+        ## Tosches Inventory User Guide! 
         Updated: May 12 2025 JW
+
+        ### Important Notes
+            - Changes need to be Saved in the Sidebar in order for it to be reflected in inventory
+            - CHECK PROTOCOL animal is listed under before euthanizing. This can be changed under "Edit Metadata" before logging to log under correct protocol if necessary.
 
         ### Sidebar
             Actions that can be undone:  
