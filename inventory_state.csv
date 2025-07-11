@@ -85,11 +85,6 @@ SAL_085,AABF2564,Rack 3,B1,2/23/22 0:00,,Aquatic,Male,,WT,Breeding,Pleurodeles w
 SAL_086,AABF2564,Rack 3,B1,2/23/22 0:00,,Aquatic,Male,,WT,Breeding,Pleurodeles waltl,,,,,
 SAL_087,AABF2564,Rack 3,B1,2/23/22 0:00,,Aquatic,Male,,WT,Breeding,Pleurodeles waltl,,,,,
 SAL_088,AABF2564,Rack 3,B1,2/23/22 0:00,,Aquatic,Male,,WT,Breeding,Pleurodeles waltl,,,,,
-SAL_089,AABL1550,Rack 2,C4,2/23/22 0:00,,Aquatic,Unknown,,WT,,Pleurodeles waltl,LX viral injections,,,,
-SAL_090,AABL1550,Rack 2,C4,2/23/22 0:00,,Aquatic,Unknown,,WT,,Pleurodeles waltl,LX viral injections,,,,
-SAL_091,AABL1550,Rack 2,C4,2/23/22 0:00,,Aquatic,Unknown,,WT,,Pleurodeles waltl,LX viral injections,,,,
-SAL_092,AABL1550,Rack 2,C4,2/23/22 0:00,,Aquatic,Unknown,,WT,,Pleurodeles waltl,LX viral injections,,,,
-SAL_093,AABL1550,Rack 2,C4,2/23/22 0:00,,Aquatic,Unknown,,WT,,Pleurodeles waltl,LX viral injections,,,,
 SAL_094,AABF2564,Rack 2,D5,2/23/22 0:00,,Aquatic,Unknown,,WT,,Pleurodeles waltl,,,,,
 SAL_095,AABF2564,Rack 2,D5,2/23/22 0:00,,Aquatic,Unknown,,WT,,Pleurodeles waltl,,,,,
 SAL_096,AABF2564,Rack 12,A3,2/23/22 0:00,,Aquatic,Male,,WT,Breeding,Pleurodeles waltl,,EED,,,
@@ -151,7 +146,6 @@ SAL_156,AABL1550,Rack 8,C4,3/21/22 0:00,,Aquatic,Male,,WT,LX - St Jude,Pleurodel
 SAL_157,AABL1550,Rack 8,C4,3/21/22 0:00,,Aquatic,Male,,WT,LX - St Jude,Pleurodeles waltl,,,,,Gummy Schedule
 SAL_158,AABL1550,Rack 8,C4,3/21/22 0:00,,Aquatic,Male,,WT,LX - St Jude,Pleurodeles waltl,,,,,Gummy Schedule
 SAL_159,AABL1550,Rack 8,D2,5/4/22 0:00,,Aquatic,Unknown,,WT,,Pleurodeles waltl,,,,,Gummy Schedule
-SAL_160,AABL1550,Rack 8,D2,5/4/22 0:00,,Aquatic,Unknown,,WT,,Pleurodeles waltl,,,,,Gummy Schedule
 SAL_161,AABL1550,Rack 8,D2,5/4/22 0:00,,Aquatic,Unknown,,WT,,Pleurodeles waltl,,,,,Gummy Schedule
 SAL_162,AABL1550,Rack 8,D2,5/4/22 0:00,,Aquatic,Unknown,,WT,,Pleurodeles waltl,,,,,Gummy Schedule
 SAL_163,AABL1550,Rack 8,D2,5/4/22 0:00,,Aquatic,Unknown,,WT,,Pleurodeles waltl,,,,,Gummy Schedule
@@ -160,7 +154,6 @@ SAL_167,AABL1550,Rack 8,D5,3/21/22 0:00,,Reaqua,Unknown,,WT,,Pleurodeles waltl,,
 SAL_168,AABL1550,Rack 8,D5,3/21/22 0:00,,Reaqua,Unknown,,WT,,Pleurodeles waltl,,,1/10/23,2/10/25,Gummy Schedule
 SAL_169,AABL1550,Rack 8,D5,3/21/22 0:00,,Reaqua,Unknown,,WT,,Pleurodeles waltl,,,1/10/23,2/10/25,Gummy Schedule
 SAL_170,AABL1550,Rack 2,A4,2/2/23 0:00,,Aquatic,Unknown,,WT,ECJ,Pleurodeles waltl,PHP CAG G8s ECJ,,,,
-SAL_173,AABL1550,Rack 2,A5,1/14/23 0:00,,Aquatic,Unknown,,hsyn-GCaMP6s,Priority to use ,Pleurodeles waltl,low signal/inconclusive/1 is soma G7s,,,,
 SAL_174,AABL1550,Rack 2,B2,1/14/23 0:00,,Aquatic,Unknown,,WT,,Pleurodeles waltl,Craniotomy Leucistic; Viral PHPeB CAG G8s,,,,
 SAL_175,AABL1550,Rack 2,B2,1/14/23 0:00,,Aquatic,Unknown,,hsyn-GCaMP6s,,Pleurodeles waltl,Craniotomy,,,,
 SAL_176,AABF2564,Rack 2,D3,2/2/23 0:00,EdU,Aquatic,Unknown,,WT,AD,Pleurodeles waltl,"AD EdU @ St 55a, 1 WT mixed in ",,,,

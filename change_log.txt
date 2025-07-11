@@ -874,3 +874,15 @@
 2025-07-10 22:37:00.569076 - Pushing Changes by JW: trying to push
 2025-07-11 14:32:52.978531 - Custom Message by JW: Inventory released to the lab
 2025-07-11 14:33:00.104185 - Pushing Changes by JW: trying to push
+2025-07-11 16:36:30.912843 - Euthanized by JW: SAL_089 on 04/30/2025
+2025-07-11 16:36:44.991912 - Euthanized by JW: SAL_090 on 04/30/2025
+2025-07-11 16:37:02.292724 - Euthanized by JW: SAL_091 on 04/30/2025
+2025-07-11 16:37:13.835057 - Euthanized by JW: SAL_092 on 04/30/2025
+2025-07-11 16:37:26.496430 - Euthanized by JW: SAL_093 on 04/30/2025
+2025-07-11 16:38:44.946904 - Euthanized by JW: SAL_173 on 06/30/2025
+2025-07-11 16:38:57.277900 - Undo by JW: Re-added SAL_173 and removed euthanasia log entry
+2025-07-11 16:39:23.251660 - Edit by JW: SAL_173 - Protocol_Number: AABL1550 → AABI2617
+2025-07-11 16:40:05.995056 - Euthanized by JW: SAL_173 on 06/30/2025
+2025-07-11 16:41:06.044101 - Edit by JW: SAL_160 - Protocol_Number: AABL1550 → AABI2617
+2025-07-11 16:41:54.513937 - Euthanized by JW: SAL_160 on 07/09/2025
+2025-07-11 16:42:17.775189 - Pushing Changes by JW: trying to push
