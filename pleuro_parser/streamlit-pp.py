@@ -346,7 +346,12 @@ with capture_stdout_to_sidebar():
         st.subheader("Euthanize Larvae")
 
         #Inputs
-        dob = st.selectbox("Select DOB from Larval Clutch", options= ["", R.get_dob_options()])  # You can use the DOB options from the larval clutch data
+        dob = st.selectbox(
+            "Select DOB from Larval Clutch",
+            options=R.get_dob_options(),
+            index=None,             # No option pre-selected
+            placeholder="-- choose DOB --"
+        ) # You can use the DOB options from the larval clutch data
         dod = st.date_input("DOD")
         dod = pd.to_datetime(dod)
         dod_str = dod.strftime("%m/%d/%Y")
