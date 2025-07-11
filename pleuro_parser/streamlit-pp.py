@@ -383,7 +383,7 @@ with capture_stdout_to_sidebar():
 
             selected_protocol = st.multiselect("Protocol", options=protocols, default = [])
             selected_experimenter = st.multiselect("Experimenter", options=experimenters, default = [])
-            selected_year = st.multiselect("Year", options=sorted(years), deafult = [])
+            selected_year = st.multiselect("Year", options=sorted(years), default = [])
 
             # Apply filters
             filtered_df = euth_log_df.copy()
