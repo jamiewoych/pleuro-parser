@@ -381,9 +381,9 @@ with capture_stdout_to_sidebar():
             experimenters = sorted(euth_log_df["Experimenter"].dropna().unique())
             years = pd.to_datetime(euth_log_df["DOD"], errors="coerce").dt.year.dropna().astype(int).unique()
 
-            selected_protocol = st.multiselect("Protocol", options=["All"] + list(protocols))
-            selected_experimenter = st.multiselect("Experimenter", options=["All"] + list(experimenters))
-            selected_year = st.multiselect("Year", options=["All"] + sorted(years))
+            selected_protocol = st.multiselect("Protocol", options=protocols, default = [])
+            selected_experimenter = st.multiselect("Experimenter", options=experimenters, default = [])
+            selected_year = st.multiselect("Year", options=sorted(years), deafult = [])
 
             # Apply filters
             filtered_df = euth_log_df.copy()
