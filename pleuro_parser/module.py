@@ -652,11 +652,11 @@ class Rack:
 
         #Adult euthanasia log to dataframe
         log_df = pd.DataFrame(self.euthanasia_log)
-        log_df["DOD"] = pd.to_datetime(log_df["DOD"], format ="%m/%d/%Y", errors="coerce")
+        log_df["DOD"] = pd.to_datetime(log_df["DOD"], errors="coerce")
         
         #Larval euthanasia log to dataframe
         larval_df = pd.DataFrame(self.larval_euth_log)
-        larval_df["DOD"] = pd.to_datetime(larval_df["DOD"], format = "%m/%d/%Y", errors="coerce")
+        larval_df["DOD"] = pd.to_datetime(larval_df["DOD"], errors="coerce")
 
 
         # Apply date filtering if specified
