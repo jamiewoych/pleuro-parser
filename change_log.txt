@@ -889,3 +889,27 @@
 2025-07-11 18:31:28.471028 - Custom Message by JW: custom message test
 2025-07-11 18:31:42.766530 - Pushing Changes by JW: trying to push
 2025-07-11 18:37:09.666495 - Pushing Changes by JW: Changes saved
+2025-07-11 19:04:59.099445 - Larval Euthanasia by JW: 5 on AABI2617
+2025-07-11 19:06:00.160610 - Larval Euthanasia by JW: 4 on AABF2564
+2025-07-11 19:06:31.301986 - Larval Euthanasia by JW: 1 on AABI2617
+2025-07-11 19:07:56.278480 - Larval Euthanasia by JW: 10 on AABF2564
+2025-07-11 19:08:20.127662 - Larval Euthanasia by JW: 10 on AABL1550
+2025-07-11 19:08:51.808631 - Larval Euthanasia by JW: 3 on AABF2564
+2025-07-11 19:09:55.864167 - Larval Euthanasia by JW: 5 on AABF2564
+2025-07-11 19:10:31.313684 - Larval Euthanasia by JW: 6 on AABF2564
+2025-07-11 19:11:00.250028 - Larval Euthanasia by JW: 3 on AABI2617
+2025-07-11 19:11:42.698934 - Larval Euthanasia by JW: 1 on AABF2564
+2025-07-11 19:12:12.314408 - Larval Euthanasia by JW: 6 on AABF2564
+2025-07-11 19:12:54.375176 - Larval Euthanasia by JW: 4 on AABF2564
+2025-07-11 19:13:26.776158 - Larval Euthanasia by JW: 4 on AABI2617
+2025-07-11 19:13:51.390273 - Larval Euthanasia by JW: 8 on AABI2617
+2025-07-11 19:14:21.523447 - Larval Euthanasia by JW: 3 on AABF2564
+2025-07-11 19:14:55.937157 - Larval Euthanasia by JW: 4 on AABF2564
+2025-07-11 19:15:20.302670 - Larval Euthanasia by JW: 6 on AABF2564
+2025-07-11 19:15:35.439317 - Undo by JW: Removed entry from larval euthanasia log
+2025-07-11 19:16:29.897230 - Larval Euthanasia by JW: 6 on AABF2564
+2025-07-11 19:16:51.278336 - Larval Euthanasia by JW: 4 on AABF2564
+2025-07-11 19:17:19.309459 - Larval Euthanasia by JW: 5 on AABI2617
+2025-07-11 19:17:45.440166 - Larval Euthanasia by JW: 5 on AABI2617
+2025-07-11 19:18:04.120757 - Larval Euthanasia by JW: 1 on AABI2617
+2025-07-11 19:18:36.705431 - Pushing Changes by JW: Changes saved
