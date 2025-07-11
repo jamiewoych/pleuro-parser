@@ -360,7 +360,7 @@ with capture_stdout_to_sidebar():
         stage = st.text_input("Stage")
         purpose = st.text_input("Purpose")
         protocol = st.selectbox("Experimental Protocol", ["AABF2564", "AABL1550", "AABI2617", "AABY5655"])
-        complications = st.selectbox("Complications",["", "Found Dead", "Surgical Complications"])
+        complications = st.selectbox("Complications",["", "Cannibalism", "Found Dead", "Surgical Complications"])
 
 
         if st.button("Euthanize Larvae"):
