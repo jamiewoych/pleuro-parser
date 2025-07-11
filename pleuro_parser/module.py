@@ -640,8 +640,8 @@ class Rack:
 
 
     def analyze_euthanasia_log(self, start_date=None, end_date=None, group_by_experimenter=False):
-        if not hasattr(self, 'euthanasia_log') or self.euthanasia_log.empty:
-            print("No euthanasia records to analyze.")
+        if not hasattr(self, 'euthanasia_log') or len(self.euthanasia_log) == 0:
+            print("No adult euthanasia records to analyze.")
             return
 
         #Adult euthanasia log to dataframe
