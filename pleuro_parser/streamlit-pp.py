@@ -566,25 +566,32 @@ with capture_stdout_to_sidebar():
         Updated: May 12 2025 JW
 
         ### Important Notes
-            - Changes need to be Saved in the Sidebar in order for it to be reflected in inventory
-            - CHECK PROTOCOL animal is listed under before euthanizing. This can be changed under "Edit Metadata" before logging to log under correct protocol if necessary.
+            - Changes need to be Saved in the Sidebar in order for it to be 
+              reflected in inventory
+            - CHECK PROTOCOL animal is listed under before euthanizing. 
+              This can be changed under "Edit Metadata" before logging 
+              to log under correct protocol if necessary.
 
         ### Sidebar
-            Actions that can be undone:  
-            -Edit  
-            -Move  
-            -Add  
-            -Euthanize  
-            -Larval Euthanasia  
-            -Added Clutch  
+            Rebooting app will reset all changes not pushed to save
+            Within each session, actions that can be undone:  
+            - Edit  
+            - Move  
+            - Add  
+            - Euthanize  
+            - Larval Euthanasia  
+            - Added Clutch  
 
             This works by saving history 'states'-  
-            The number of states saved will be printed at the bottom of the sidebar after undo  
-            To ensure you're undoing the correct action, the "Last Action to Undo" button prints the last action  
+            The number of states saved will be printed at the bottom of the sidebar
+             after undo  
+            To ensure you're undoing the correct action, the "Last Action to Undo" 
+             button prints the last action  
             Undone actions cannot be redone (except manually)  
 
             Undoing an "Add" Function will remove the last input from the inventory  
-            Undoing a "Euthanize" Function will remove the euthanasia entry and return the animal to the inventory  
+            Undoing a "Euthanize" Function will remove the euthanasia entry 
+             and return the animal to the inventory  
             All actions record a "Change Log" that is timestamped with the action  
             Record custom logs to yourself or admin by typing in the message box  
 
@@ -595,22 +602,26 @@ with capture_stdout_to_sidebar():
             Dropdown menus are provided for parameters with exact matches required  
             Other fields allow partial matches and are case insensitive  
             Age parameters allow for floats (ie 1.5)  
-            When searching by Rack, Tank dropdown automatically populates the tanks that exist on given rack  
+            When searching by Rack, Tank dropdown automatically populates the tanks 
+             that exist on given rack  
             Multiple tanks can be chosen  
             Darker lines on plot correspond to row change  
 
 
         ### 2. Add Salamanders:
         ##### Add Salamanders  
-            This is useful for the first time an animal or group of animals is added to the rack.  
+            This is useful for the first time an animal or group of animals is added 
+             to the rack.  
             At this point, the animals are assigned a Protocol number, and a Tank  
-            Date of Birth is allowed only for those clutches that have had breeding details recorded  
+            Date of Birth is allowed only for those clutches that have had breeding 
+             details recorded  
             Required fields are autofilled so they cannot be left blank  
             Please include initials under experimental holds if applicable   
 
         ##### Add Larval Clutch  
             This field is for recording breeding events  
-            If the desired date of birth is not available in the dropdown above, please add details of the breeding event and it will populate the dropdown  
+            If the desired date of birth is not available in the dropdown above, 
+             please add details of the breeding event and it will populate the dropdown  
 
 
         ### 3. Euthanize Salamander:
