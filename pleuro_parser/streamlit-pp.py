@@ -388,13 +388,13 @@ with capture_stdout_to_sidebar():
             # Apply filters
             filtered_df = euth_log_df.copy()
 
-            if selected_protocol != "All":
+            if selected_protocol:
                 filtered_df = filtered_df[filtered_df["Protocol_Number"] == selected_protocol]
 
-            if selected_experimenter != "All":
+            if selected_experimenter:
                 filtered_df = filtered_df[filtered_df["Experimenter"] == selected_experimenter]
 
-            if selected_year != "All":
+            if selected_year:
                 filtered_df["DOD"] = pd.to_datetime(filtered_df["DOD"], errors="coerce")
                 filtered_df = filtered_df[filtered_df["DOD"].dt.year == selected_year]
 
