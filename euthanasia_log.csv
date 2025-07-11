@@ -84,7 +84,7 @@ SAL_465,C1,Rack 8,06/16/2025,5/17/24 0:00,EdU,Aquatic,,WT,AMMM TGZ Edu,Pleurodel
 SAL_485,B3,Rack 8,06/16/2025,5/17/24 0:00,,Aquatic,,WT,AMMM TGZ,Pleurodeles waltl,AABF2564,,,,,Gummy Schedule,0.0,Unknown,perfused for perk and edu with TGZ,"AMMM, TS",
 SAL_489,B3,Rack 8,06/16/2025,5/17/24 0:00,,Aquatic,,WT,AMMM TGZ,Pleurodeles waltl,AABF2564,,,,,Gummy Schedule,0.0,Unknown,perfused for perk and edu with TGZ,"AMMM, TS",
 SAL_490,B3,Rack 8,06/16/2025,5/17/24 0:00,,Aquatic,,WT,AMMM TGZ,Pleurodeles waltl,AABL1550,,,,,Gummy Schedule,0.0,Unknown,perfused for perk and edu with TGZ,"AMMM, TS",
-SAL_676,B1,Rack 5,06/16/2025,12/10/24 0:00,,Aquatic,,WT,,Pleurodeles waltl,AABF2564,,,,,,0.0,Unknown,"found dead by sean, AMMM logged",NA,
+SAL_676,B1,Rack 5,06/16/2025,12/10/24 0:00,,Aquatic,,WT,,Pleurodeles waltl,AABF2564,,,,,,0.0,Unknown,"found dead by sean, AMMM logged",,
 SAL_313,A1,Rack 6,06/17/2025,11/24/24 0:00,,Aquatic,F1,hsyn-GCaMP6s,LX St Jude,Pleurodeles waltl,AABL1550,,,,,,3.2,Unknown,2p imaging,ECJ,
 SAL_459,B4,Rack 9,06/17/2025,1/3/25 0:00,,Aquatic,,WT,,Pleurodeles waltl,AABF2564,,,,,Gummy Schedule,0.0,Unknown,histology,TS,
 SAL_172,A5,Rack 2,06/18/2025,1/14/23 0:00,,Aquatic,,hsyn-GCaMP6s,Priority to use ,Pleurodeles waltl,AABL1550,low signal/inconclusive/1 is soma G7s,,,,,0.0,Unknown,tracing,TS,
@@ -94,7 +94,7 @@ SAL_612,B3,Rack 9,07/02/2025,10/25/24 0:00,,Aquatic,,WT,AOG,Pleurodeles waltl,AA
 SAL_613,B3,Rack 9,07/02/2025,10/25/24 0:00,,Aquatic,,WT,AOG,Pleurodeles waltl,AABI2617,,,,,,0.0,Unknown,foxp1 overexpression,MK,
 SAL_614,B3,Rack 9,07/02/2025,10/25/24 0:00,,Aquatic,,WT,AOG,Pleurodeles waltl,AABI2617,,,,,,0.0,Unknown,foxp1 overexpression,MK,
 SAL_615,B3,Rack 9,07/02/2025,10/25/24 0:00,,Aquatic,,WT,AOG,Pleurodeles waltl,AABI2617,,,,,,0.0,Unknown,foxp1 overexpression,MK,
-SAL_616,B3,Rack 9,07/02/2025,10/25/24 0:00,,Aquatic,,WT,AOG,Pleurodeles waltl,AABI2617,,,,,,0.0,Unknown,,NA,Found Dead
+SAL_616,B3,Rack 9,07/02/2025,10/25/24 0:00,,Aquatic,,WT,AOG,Pleurodeles waltl,AABI2617,,,,,,0.0,Unknown,,,Found Dead
 SAL_629,A3,Rack 9,07/03/2025,10/25/24 0:00,,Aquatic,,WT,AOG,Pleurodeles waltl,AABI2617,Regen,,,,,0.0,Unknown,,MK,
 SAL_630,A3,Rack 9,07/03/2025,10/25/24 0:00,,Aquatic,,WT,AOG,Pleurodeles waltl,AABI2617,Regen,,,,,0.0,Unknown,,MK,
 SAL_638,A4,Rack 9,07/03/2025,10/25/24 0:00,,Aquatic,,WT,AOG,Pleurodeles waltl,AABI2617,Regen,,,,,0.0,Unknown,,MK,
