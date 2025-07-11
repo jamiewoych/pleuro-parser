@@ -422,14 +422,6 @@ with capture_stdout_to_sidebar():
 
 
         if st.button("Run Analysis"):
-            st.write("Adult euthanasia log preview:")
-            st.dataframe(pd.DataFrame(R.euthanasia_log).head())
-
-            st.write("Larval euthanasia log preview:")
-            st.dataframe(pd.DataFrame(R.larval_euth_log).head())
-            st.write(f"Adult log entries: {len(R.euthanasia_log)}")
-            st.write(f"Larval log entries: {len(R.larval_euth_log)}")
-
             try:
                     summary_df = R.analyze_euthanasia_log(
                             start_date=start_date,
