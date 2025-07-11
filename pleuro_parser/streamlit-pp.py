@@ -415,11 +415,9 @@ with capture_stdout_to_sidebar():
 
         # Convert Streamlit date inputs to pandas Timestamp
         if start_date:
-            start_date = pd.to_datetime(start_date)
-            start_date = start_date.strftime("%m/%d/%Y")  # Ensure proper datetime format
+            filtered_df = filtered_df[ filtered_df['DOD'] >= pd.Timestamp(start_date) ]  # Ensure proper datetime format
         if end_date:
-            end_date = pd.to_datetime(end_date)
-            end_date = end_date.strftime("%m/%d/%Y")  # Ensure proper datetime format
+            filtered_df = filtered_df[ filtered_df['DOD'] <= pd.Timestamp(end_date) ]
 
         # Experimenter grouping toggle
         group_by_exp = st.checkbox("Group by Experimenter - animals under multiple initials counted for both individuals", value=False)
