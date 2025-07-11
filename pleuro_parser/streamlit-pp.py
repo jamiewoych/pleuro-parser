@@ -57,7 +57,7 @@ def capture_stdout_to_sidebar():
             st.sidebar.markdown("### No current messages")
 
 #Title of webapp
-st.title('Pleurodeles Parsing')
+st.title('Tosches Lab Animal Inventory')
 
 
 
