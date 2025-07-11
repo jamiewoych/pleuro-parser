@@ -413,11 +413,9 @@ with capture_stdout_to_sidebar():
         with col2:
             end_date = st.date_input("End Date", value=None)
 
-        # Convert Streamlit date inputs to pandas Timestamp
-        if start_date:
-            filtered_df = filtered_df[ filtered_df['DOD'] >= pd.Timestamp(start_date) ]  # Ensure proper datetime format
-        if end_date:
-            filtered_df = filtered_df[ filtered_df['DOD'] <= pd.Timestamp(end_date) ]
+        # Convert to pandas datetime
+        start_date = pd.to_datetime(start_date) if start_date else None
+        end_date = pd.to_datetime(end_date) if end_date else None
 
         # Experimenter grouping toggle
         group_by_exp = st.checkbox("Group by Experimenter - animals under multiple initials counted for both individuals", value=False)
@@ -426,8 +424,8 @@ with capture_stdout_to_sidebar():
         if st.button("Run Analysis"):
             try:
                     summary_df = R.analyze_euthanasia_log(
-                            start_date=start_date if start_date else None,
-                            end_date=end_date if end_date else None,
+                            start_date=start_date,
+                            end_date=end_date,
                             group_by_experimenter=group_by_exp
                     )
 
