@@ -655,11 +655,11 @@ class Rack:
 
         # Apply date filtering if specified
         if start_date:
-            start_date = pd.to_datetime(start_date, format = "%m/%d/%Y", errors = "coerce")
+            start_date = pd.to_datetime(start_date)
             log_df = log_df[log_df["DOD"] >= start_date]
             larval_df = larval_df[larval_df["DOD"] >= start_date]
         if end_date:
-            end_date = pd.to_datetime(end_date, format = "%m/%d/%Y", errors= "coerce")
+            end_date = pd.to_datetime(end_date)
             log_df = log_df[log_df["DOD"] <= end_date]
             larval_df = larval_df[larval_df["DOD"] <= end_date]
 
