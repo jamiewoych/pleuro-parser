@@ -644,6 +644,12 @@ class Rack:
             print("No adult euthanasia records to analyze.")
             return
 
+        if not hasattr(self, 'larval_euth_log') or len(self.larval_euth_log) == 0:
+            larval_df = pd.DataFrame(columns=["DOD", "Experimenter", "Protocol_Number", "Complications"])  # empty frame
+        else:
+            larval_df = pd.DataFrame(self.larval_euth_log)
+            larval_df["DOD"] = pd.to_datetime(larval_df["DOD"], format="%m/%d/%Y", errors="coerce")
+
         #Adult euthanasia log to dataframe
         log_df = pd.DataFrame(self.euthanasia_log)
         log_df["DOD"] = pd.to_datetime(log_df["DOD"], format ="%m/%d/%Y", errors="coerce")
