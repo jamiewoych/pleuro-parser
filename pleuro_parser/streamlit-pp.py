@@ -105,7 +105,7 @@ with capture_stdout_to_sidebar():
             details = "Changes saved"
             R.log_change(action, details)
             R.push_changes()
-            st.success("Changes pushed to GitHub successfully!")
+            st.success("Changes saved successfully!")
 
 
     # Tabs

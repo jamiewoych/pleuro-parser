@@ -990,7 +990,7 @@ class Rack:
             commit_msg = "📦 Update salamander inventory & logs"
             repo.index.commit(commit_msg)
             repo.remotes.origin.push()
-            st.success("All updated files pushed to GitHub successfully!")
+            #st.success("All updated files pushed to GitHub successfully!")
 
         except Exception as e:
             st.error(f"Error pushing changes to GitHub: {e}")
