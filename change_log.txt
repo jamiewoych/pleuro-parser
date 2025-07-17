@@ -929,3 +929,21 @@
 2025-07-16 18:51:44.000601 - Pushing Changes by LDVA: Changes saved
 2025-07-17 18:18:31.202960 - Euthanized by AOG: SAL_827 on 07/17/2025
 2025-07-17 19:53:20.758164 - Pushing Changes by JW: Changes saved
+2025-07-17 20:58:00.244192 - Euthanized by JW: SAL_872 on 05/29/2025
+2025-07-17 20:59:37.083192 - Added animals by JW: 1 animals added to Rack 13 - Off in A1.
+2025-07-17 20:59:49.320445 - Added animals by JW: 1 animals added to Rack 13 - Off in A1.
+2025-07-17 21:02:30.364499 - Added animals by JW: 1 animals added to Rack 13 - Off in A1.
+2025-07-17 21:02:54.204445 - Added animals by JW: 1 animals added to Rack 13 - Off in A1.
+2025-07-17 21:02:58.993203 - Added animals by JW: 1 animals added to Rack 13 - Off in A1.
+2025-07-17 21:03:18.626909 - Added animals by JW: 1 animals added to Rack 13 - Off in A1.
+2025-07-17 21:03:26.081587 - Added animals by JW: 1 animals added to Rack 13 - Off in A1.
+2025-07-17 21:03:40.136564 - Added animals by JW: 1 animals added to Rack 13 - Off in A1.
+2025-07-17 21:03:44.267473 - Added animals by JW: 1 animals added to Rack 13 - Off in A1.
+2025-07-17 21:03:58.289735 - Added animals by JW: 1 animals added to Rack 13 - Off in A1.
+2025-07-17 21:04:08.244544 - Added animals by JW: 1 animals added to Rack 13 - Off in A1.
+2025-07-17 21:04:26.519606 - Added animals by JW: 4 animals added to Rack 13 - Off in A1.
+2025-07-17 21:04:43.596573 - Added animals by JW: 1 animals added to Rack 13 - Off in A1.
+2025-07-17 21:04:48.944304 - Added animals by JW: 1 animals added to Rack 13 - Off in A1.
+2025-07-17 21:04:57.118495 - Added animals by JW: 1 animals added to Rack 13 - Off in A1.
+2025-07-17 21:08:57.943425 - Euthanized by AOG: SAL_826 on 07/17/2025
+2025-07-17 21:09:12.365459 - Pushing Changes by AOG: Changes saved
