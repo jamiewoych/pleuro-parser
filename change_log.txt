@@ -927,3 +927,5 @@
 2025-07-16 18:50:46.006120 - Pushing Changes by LDVA: Changes saved
 2025-07-16 18:51:42.012774 - Euthanized by LDVA: SAL_599 on 07/15/2025
 2025-07-16 18:51:44.000601 - Pushing Changes by LDVA: Changes saved
+2025-07-17 18:18:31.202960 - Euthanized by AOG: SAL_827 on 07/17/2025
+2025-07-17 19:53:20.758164 - Pushing Changes by JW: Changes saved
