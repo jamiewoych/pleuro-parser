@@ -958,3 +958,18 @@
 2025-07-17 21:12:48.523486 - Pushing Changes by AOG: Changes saved
 2025-07-17 21:13:10.284808 - Edit by JW: SAL_085 - RFID: nan → 3D6.1543AFBBEA
 2025-07-17 21:15:50.500619 - Pushing Changes by JW: Changes saved
+2025-07-17 21:17:03.381279 - Euthanized by AOG: SAL_891 on 07/17/2025
+2025-07-17 21:17:22.077255 - Euthanized by AOG: SAL_892 on 07/17/2025
+2025-07-17 21:17:40.430390 - Euthanized by AOG: SAL_893 on 07/17/2025
+2025-07-17 21:18:00.536337 - Edit by JW: SAL_279 - RFID: nan → 3D6.1543AFBBE1
+2025-07-17 21:18:07.300532 - Euthanized by AOG: SAL_894 on 07/17/2025
+2025-07-17 21:18:22.236827 - Edit by JW: SAL_280 - RFID: nan → 3D6.1543AFBBE2
+2025-07-17 21:18:29.259463 - Euthanized by AOG: SAL_895 on 07/17/2025
+2025-07-17 21:18:52.048731 - Euthanized by AOG: SAL_896 on 07/17/2025
+2025-07-17 21:19:15.327047 - Euthanized by AOG: SAL_897 on 07/17/2025
+2025-07-17 21:19:37.085461 - Euthanized by AOG: SAL_898 on 07/17/2025
+2025-07-17 21:19:41.093664 - Edit by JW: SAL_280 - Experimental_History: nan → LHRH Injection June 2025
+; RFID: 3D6.1543AFBBE2 → 3D6.1543AFBBE2
+2025-07-17 21:20:11.049137 - Edit by JW: SAL_279 - Experimental_History: nan → LHRH injection June 2025
+2025-07-17 21:20:11.551438 - Edit by JW: SAL_281 - Experimental_History: nan → LHRH injection June 2025
+2025-07-17 21:20:13.859470 - Pushing Changes by AOG: Changes saved
