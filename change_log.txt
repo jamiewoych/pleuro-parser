@@ -947,3 +947,12 @@
 2025-07-17 21:04:57.118495 - Added animals by JW: 1 animals added to Rack 13 - Off in A1.
 2025-07-17 21:08:57.943425 - Euthanized by AOG: SAL_826 on 07/17/2025
 2025-07-17 21:09:12.365459 - Pushing Changes by AOG: Changes saved
+2025-07-17 21:10:34.761608 - Added animals by JW: 8 animals added to Rack 9 in A4.
+2025-07-17 21:11:30.084485 - Edit by JW: SAL_157 - RFID: nan → 3D6.1543AFBBF8
+2025-07-17 21:11:34.389963 - Euthanized by AOG: SAL_479 on 07/17/2025
+2025-07-17 21:12:01.768392 - Edit by JW: SAL_156 - RFID: nan → 3D6.1543AFBBD9
+2025-07-17 21:12:01.948499 - Euthanized by AOG: SAL_481 on 07/17/2025
+2025-07-17 21:12:27.111691 - Edit by JW: SAL_086 - RFID: nan → 3D6.1543AFBBCF
+2025-07-17 21:12:40.055878 - Euthanized by AOG: SAL_482 on 07/17/2025
+2025-07-17 21:12:45.040419 - Edit by JW: SAL_084 - RFID: nan → 3D6.1543AFBBDD
+2025-07-17 21:12:48.523486 - Pushing Changes by AOG: Changes saved
