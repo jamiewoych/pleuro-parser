@@ -973,3 +973,5 @@
 2025-07-17 21:20:11.049137 - Edit by JW: SAL_279 - Experimental_History: nan → LHRH injection June 2025
 2025-07-17 21:20:11.551438 - Edit by JW: SAL_281 - Experimental_History: nan → LHRH injection June 2025
 2025-07-17 21:20:13.859470 - Pushing Changes by AOG: Changes saved
+2025-07-17 21:23:43.870045 - Euthanized by AOG: SAL_826 on 07/17/2025
+2025-07-17 21:23:46.320538 - Pushing Changes by AOG: Changes saved
