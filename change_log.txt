@@ -981,3 +981,18 @@
 2025-07-18 15:27:16.644817 - Pushing Changes by AOG: Changes saved
 2025-07-18 15:28:08.269196 - Added animals by AOG: 4 animals added to Rack 9 in C2.
 2025-07-18 15:28:13.879400 - Pushing Changes by AOG: Changes saved
+2025-07-18 17:38:21.926092 - Edit by JW: SAL_005 - RFID: nan → 3D6.15346D5EEC
+2025-07-18 17:39:01.591584 - Edit by JW: SAL_006 - RFID: nan → 3D6.15346D5EB5
+2025-07-18 17:39:24.524897 - Edit by JW: SAL_025 - RFID: nan → 3D6.15346D5ECD
+2025-07-18 17:39:49.261214 - Edit by JW: SAL_025 - Experimental_History: nan → LHRH injected April 2023; RFID: 3D6.15346D5ECD → 3D6.15346D5ECD
+2025-07-18 17:40:16.637306 - Edit by JW: SAL_026 - RFID: nan → 3D6.15346D5ECB
+2025-07-18 17:40:50.276589 - Edit by JW: SAL_027 - RFID: nan → 3D6.15346D5ECF
+2025-07-18 17:41:20.368098 - Edit by JW: SAL_014 - Experimental_History: Craniotomy → GRH injected April 2023; RFID: nan → 3D6.15346D5F08
+2025-07-18 17:41:35.506986 - Edit by JW: SAL_014 - Sex: Unknown → Female; Experimental_History: GRH injected April 2023 → GRH injected April 2023; RFID: 3D6.15346D5F08 → 3D6.15346D5F08
+2025-07-18 17:42:16.191420 - Edit by JW: SAL_015 - Sex: Unknown → Female; RFID: nan → 3D6.15346D5ED6
+2025-07-18 17:42:44.833077 - Edit by JW: SAL_016 - Sex: Male → Male; RFID: nan → 3D6.15346D5F15
+2025-07-18 17:43:47.110794 - Edit by JW: SAL_017 - Sex: Male → Male; Experimental_History: nan → LHRH Injection February 2023; RFID: nan → 3D6.15346D5EEF
+2025-07-18 17:44:26.536237 - Edit by JW: SAL_009 - Sex: Female → Female; Experimental_History: nan → LHRH Injection March 2023; RFID: nan → 3D6.15346D5EEB
+2025-07-18 17:44:43.304195 - Edit by JW: SAL_010 - Sex: Female → Female; Experimental_History: nan → LHRH Injection March 2023; RFID: nan → 3D6.15346D5EBB
+2025-07-18 17:45:27.158406 - Edit by JW: SAL_096 - Sex: Male → Male; Experimental_Holds: Breeding → Breeding; Experimental_History: nan → LHRH Injection January 2023; RFID: EED → 3D6.15346D5EED
+2025-07-18 17:46:22.649097 - Pushing Changes by JW: Changes saved

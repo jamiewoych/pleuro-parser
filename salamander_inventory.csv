@@ -3,17 +3,17 @@ SAL_001,AABF2564,Rack 12,C4,,Reptile Rapture - Yellow,Aquatic,Female,,WT,Breedin
 SAL_002,AABF2564,Rack 12,C4,,Reptile Rapture - Yellow,Aquatic,Female,,WT,Breeding,Pleurodeles waltl,,,,,
 SAL_003,AABF2564,Rack 12,C4,,Reptile Rapture - Yellow,Aquatic,Female,,WT,Breeding,Pleurodeles waltl,,,,,
 SAL_004,AABF2564,Rack 12,C4,1/21/20,Reptile Rapture - Yellow,Aquatic,Male,,WT,Breeding,Pleurodeles waltl,,3D6.1546D5EE1,,,
-SAL_005,AABF2564,Rack 12,C4,1/21/20,Reptile Rapture - Yellow,Aquatic,Male,,WT,Breeding,Pleurodeles waltl,,,,,
-SAL_006,AABF2564,Rack 12,C4,1/21/20,Reptile Rapture - Yellow,Aquatic,Male,,WT,Breeding,Pleurodeles waltl,,,,,
-SAL_009,AABF2564,Rack 12,A5,6/2/20,Jungle Bobs,Aquatic,Female,,WT,Breeding,Pleurodeles waltl,,,,,
-SAL_010,AABF2564,Rack 12,A5,6/2/20,Jungle Bobs,Aquatic,Female,,WT,Breeding,Pleurodeles waltl,,,,,
+SAL_005,AABF2564,Rack 12,C4,1/21/20,Reptile Rapture - Yellow,Aquatic,Male,,WT,Breeding,Pleurodeles waltl,,3D6.15346D5EEC,,,
+SAL_006,AABF2564,Rack 12,C4,1/21/20,Reptile Rapture - Yellow,Aquatic,Male,,WT,Breeding,Pleurodeles waltl,,3D6.15346D5EB5,,,
+SAL_009,AABF2564,Rack 12,A5,6/2/20,Jungle Bobs,Aquatic,Female,,WT,Breeding,Pleurodeles waltl,LHRH Injection March 2023,3D6.15346D5EEB,,,
+SAL_010,AABF2564,Rack 12,A5,6/2/20,Jungle Bobs,Aquatic,Female,,WT,Breeding,Pleurodeles waltl,LHRH Injection March 2023,3D6.15346D5EBB,,,
 SAL_011,AABF2564,Rack 12,B4,7/5/20,,Aquatic,Female,,WT,Breeding,Pleurodeles waltl,,,,,
 SAL_012,AABF2564,Rack 12,B4,7/5/20,,Aquatic,Female,,WT,Breeding,Pleurodeles waltl,,,,,
 SAL_013,AABF2564,Rack 12,B4,7/5/20,,Aquatic,Female,,WT,Breeding,Pleurodeles waltl,,,,,
-SAL_014,AABL1550,Rack 12,A4,7/9/20,,Aquatic,Unknown,,WT,,Pleurodeles waltl,Craniotomy,,,,
-SAL_015,AABL1550,Rack 12,A4,7/9/20,,Aquatic,Unknown,,WT,,Pleurodeles waltl,Flashtag,,,,
-SAL_016,AABL1550,Rack 12,A2,7/5/20,,Aquatic,Male,,WT,,Pleurodeles waltl,,,,,
-SAL_017,AABL1550,Rack 12,A2,7/5/20,,Aquatic,Male,,WT,,Pleurodeles waltl,,,,,
+SAL_014,AABL1550,Rack 12,A4,7/9/20,,Aquatic,Female,,WT,,Pleurodeles waltl,GRH injected April 2023,3D6.15346D5F08,,,
+SAL_015,AABL1550,Rack 12,A4,7/9/20,,Aquatic,Female,,WT,,Pleurodeles waltl,Flashtag,3D6.15346D5ED6,,,
+SAL_016,AABL1550,Rack 12,A2,7/5/20,,Aquatic,Male,,WT,,Pleurodeles waltl,,3D6.15346D5F15,,,
+SAL_017,AABL1550,Rack 12,A2,7/5/20,,Aquatic,Male,,WT,,Pleurodeles waltl,LHRH Injection February 2023,3D6.15346D5EEF,,,
 SAL_018,AABL1550,Rack 10,A1,9/20/20,Terra A,Terrestrial,Unknown,,WT,,Pleurodeles waltl,,,4/28/22,,Gummy Schedule
 SAL_019,AABL1550,Rack 10,A1,9/20/20,Terra A,Terrestrial,Unknown,,WT,,Pleurodeles waltl,,,4/28/22,,Gummy Schedule
 SAL_020,AABL1550,Rack 10,A1,9/20/20,Terra A,Terrestrial,Unknown,,WT,,Pleurodeles waltl,,,4/28/22,,Gummy Schedule
@@ -21,9 +21,9 @@ SAL_021,AABL1550,Rack 10,A1,9/20/20,Terra A,Terrestrial,Unknown,,WT,,Pleurodeles
 SAL_022,AABL1550,Rack 11,B4,9/24/20,Terra S,Terrestrial,Unknown,,WT,AMMM implant testing,Pleurodeles waltl,,,2/9/23,,Gummy Schedule
 SAL_023,AABL1550,Rack 11,B4,9/24/20,Terra S,Terrestrial,Unknown,,WT,AMMM implant testing,Pleurodeles waltl,,,2/9/23,,Gummy Schedule
 SAL_024,AABL1550,Rack 11,B4,9/24/20,Terra S,Terrestrial,Unknown,,WT,AMMM implant testing,Pleurodeles waltl,,,2/9/23,,Gummy Schedule
-SAL_025,AABF2564,Rack 12,D4,11/30/20,,Aquatic,Male,,WT,Breeding,Pleurodeles waltl,,,,,
-SAL_026,AABF2564,Rack 12,D4,11/30/20,,Aquatic,Male,,WT,Breeding,Pleurodeles waltl,,,,,
-SAL_027,AABF2564,Rack 12,D4,11/30/20,,Aquatic,Male,,WT,Breeding,Pleurodeles waltl,,,,,
+SAL_025,AABF2564,Rack 12,D4,11/30/20,,Aquatic,Male,,WT,Breeding,Pleurodeles waltl,LHRH injected April 2023,3D6.15346D5ECD,,,
+SAL_026,AABF2564,Rack 12,D4,11/30/20,,Aquatic,Male,,WT,Breeding,Pleurodeles waltl,,3D6.15346D5ECB,,,
+SAL_027,AABF2564,Rack 12,D4,11/30/20,,Aquatic,Male,,WT,Breeding,Pleurodeles waltl,,3D6.15346D5ECF,,,
 SAL_028,AABF2564,Rack 12,D4,11/30/20,,Aquatic,Male,,WT,Breeding,Pleurodeles waltl,,,,,
 SAL_029,AABF2564,Rack 12,D4,11/30/20,,Aquatic,Male,,WT,Breeding,Pleurodeles waltl,,,,,
 SAL_030,AABF2564,Rack 2,A1,3/23/21 0:00,F0,Aquatic,Unknown,,hsyn-Cre,,Pleurodeles waltl,,,,,
@@ -87,7 +87,7 @@ SAL_087,AABF2564,Rack 3,B1,2/23/22 0:00,,Aquatic,Male,,WT,Breeding,Pleurodeles w
 SAL_088,AABF2564,Rack 3,B1,2/23/22 0:00,,Aquatic,Male,,WT,Breeding,Pleurodeles waltl,,,,,
 SAL_094,AABF2564,Rack 2,D5,2/23/22 0:00,,Aquatic,Unknown,,WT,,Pleurodeles waltl,,,,,
 SAL_095,AABF2564,Rack 2,D5,2/23/22 0:00,,Aquatic,Unknown,,WT,,Pleurodeles waltl,,,,,
-SAL_096,AABF2564,Rack 12,A3,2/23/22 0:00,,Aquatic,Male,,WT,Breeding,Pleurodeles waltl,,EED,,,
+SAL_096,AABF2564,Rack 12,A3,2/23/22 0:00,,Aquatic,Male,,WT,Breeding,Pleurodeles waltl,LHRH Injection January 2023,3D6.15346D5EED,,,
 SAL_098,AABL1550,Rack 10,A3,2/23/22 0:00,Terra C,Terrestrial,Unknown,,WT,JW Histology - matched on R8,Pleurodeles waltl,,,6/20/23 0:00,,
 SAL_099,AABL1550,Rack 10,A3,2/23/22 0:00,Terra C,Terrestrial,Unknown,,WT,JW Histology - matched on R8,Pleurodeles waltl,,,6/20/23 0:00,,
 SAL_100,AABL1550,Rack 10,A3,2/23/22 0:00,Terra C,Terrestrial,Unknown,,WT,JW Histology - matched on R8,Pleurodeles waltl,,,6/20/23 0:00,,
