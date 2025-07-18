@@ -996,3 +996,18 @@
 2025-07-18 17:44:43.304195 - Edit by JW: SAL_010 - Sex: Female → Female; Experimental_History: nan → LHRH Injection March 2023; RFID: nan → 3D6.15346D5EBB
 2025-07-18 17:45:27.158406 - Edit by JW: SAL_096 - Sex: Male → Male; Experimental_Holds: Breeding → Breeding; Experimental_History: nan → LHRH Injection January 2023; RFID: EED → 3D6.15346D5EED
 2025-07-18 17:46:22.649097 - Pushing Changes by JW: Changes saved
+2025-07-18 18:35:55.939528 - Edit by JW: SAL_235 - RFID: nan → 3D6.15348BAF51
+2025-07-18 18:36:59.716906 - Edit by JW: SAL_236 - RFID: nan → 3D6.15348B9EC8
+2025-07-18 18:37:22.010320 - Edit by JW: SAL_237 - RFID: nan → 3D6.15348BC09E
+2025-07-18 18:38:21.949481 - Edit by JW: SAL_238 - RFID: nan → 3D6.15348BA9DE
+2025-07-18 18:38:51.098183 - Edit by JW: SAL_239 - RFID: nan → 3D6.15348BA9F3
+2025-07-18 18:39:18.269102 - Edit by JW: SAL_240 - RFID: nan → 3D6.15348BA237
+2025-07-18 19:14:25.724048 - Euthanized by AOG: SAL_899 on 07/18/2025
+2025-07-18 19:14:51.193622 - Euthanized by AOG: SAL_900 on 07/18/2025
+2025-07-18 19:15:07.201231 - Euthanized by AOG: SAL_901 on 07/18/2025
+2025-07-18 19:15:25.968090 - Euthanized by AOG: SAL_902 on 07/18/2025
+2025-07-18 19:15:40.854557 - Euthanized by AOG: SAL_903 on 07/18/2025
+2025-07-18 19:15:54.167230 - Euthanized by AOG: SAL_904 on 07/18/2025
+2025-07-18 19:16:09.666170 - Euthanized by AOG: SAL_905 on 07/18/2025
+2025-07-18 19:16:21.302179 - Euthanized by AOG: SAL_906 on 07/18/2025
+2025-07-18 19:16:25.625763 - Pushing Changes by AOG: Changes saved
