@@ -1017,3 +1017,10 @@
 2025-07-18 20:45:31.558184 - Euthanized by AOG: SAL_879 on 07/18/2025
 2025-07-18 20:46:34.186605 - Pushing Changes by AOG: Changes saved
 2025-07-21 14:47:08.452700 - Pushing Changes by JW: Changes saved
+2025-07-23 17:06:44.116345 - Euthanized by ECJ: SAL_411 on 07/23/2025
+2025-07-23 17:13:16.362051 - Euthanized by ECJ: SAL_301 on 05/22/2025
+2025-07-23 17:15:22.810499 - Euthanized by ECJ: SAL_299 on 05/22/2025
+2025-07-23 17:17:13.025789 - Euthanized by ECJ: SAL_194 on 05/29/2025
+2025-07-23 21:50:31.429075 - Added animals by JW: 7 animals added to Rack 9 in A4.
+2025-07-23 21:50:50.812687 - Added animals by JW: 7 animals added to Rack 9 in B4.
+2025-07-23 21:50:54.605051 - Pushing Changes by JW: Changes saved
