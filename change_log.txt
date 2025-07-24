@@ -1024,3 +1024,5 @@
 2025-07-23 21:50:31.429075 - Added animals by JW: 7 animals added to Rack 9 in A4.
 2025-07-23 21:50:50.812687 - Added animals by JW: 7 animals added to Rack 9 in B4.
 2025-07-23 21:50:54.605051 - Pushing Changes by JW: Changes saved
+2025-07-24 17:54:58.736487 - Euthanized by vs: SAL_556 on 07/24/2025
+2025-07-24 17:55:05.742612 - Pushing Changes by vs: Changes saved
