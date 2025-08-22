@@ -154,3 +154,6 @@ SAL_481,D1,Rack 4,07/17/2025,5/17/24 0:00,adult neurogenesis 84d,"AOG, MK",,Aqua
 SAL_102,A1,Rack 11,08/01/2025,2/23/22 0:00,found dead,,Terra L,Terrestrial,,WT,,Pleurodeles waltl,AABL1550,,,4/23/25 0:00,,,0.0,Unknown,
 SAL_585,C3,Rack 7,08/19/2025,7/1/22 0:00,Found Dead by Sean -- Brain kept ,,,Aquatic,Sweden,mDlx-GFP,,Pleurodeles waltl,AABF2564,,,,,,0.0,Unknown,Found Dead
 SAL_640,B1,Rack 9,08/20/2025,11/25/24 0:00,histology,,Viral,Aquatic,,WT,TS,Pleurodeles waltl,AABL1550,DREADD/PHPeB G6s TS,,,,,0.0,Unknown,
+SAL_451,B2,Rack 8,08/21/2025,11/24/23 0:00,OR aqua v terra v v reaqua HCR,JW,,Aquatic,,WT,JW AMMM histology,Pleurodeles waltl,AABL1550,,,,,,11.22,Male,
+SAL_285,A2,Rack 11,08/21/2025,11/24/23 0:00,OR aqua v terra v v reaqua HCR,JW,Terra M,Terrestrial,,WT,JW Histology,Pleurodeles waltl,AABL1550,,,4/3/25 0:00,,Gummy Schedule,10.64,Male,
+SAL_286,A2,Rack 11,08/21/2025,11/24/23 0:00,"OR aqua v terra v v reaqua HCR, Terra male 2",JW,Terra M,Terrestrial,,WT,JW Histology,Pleurodeles waltl,AABL1550,,,4/3/25 0:00,,Gummy Schedule,10.57,Male,

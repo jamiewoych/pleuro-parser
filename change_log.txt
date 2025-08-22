@@ -1056,3 +1056,9 @@
 2025-08-19 18:54:28.593786 - Pushing Changes by AM: Changes saved
 2025-08-20 17:26:08.388790 - Euthanized by ts: SAL_640 on 08/20/2025
 2025-08-20 17:26:14.552649 - Pushing Changes by ts: Changes saved
+2025-08-22 16:40:47.111037 - Euthanized by JW: SAL_451 on 08/21/2025
+2025-08-22 16:41:34.323270 - Euthanized by JW: SAL_285 on 08/21/2025
+2025-08-22 16:43:02.969264 - Euthanized by JW: SAL_286 on 08/21/2025
+2025-08-22 16:43:32.185754 - Animals moved by JW: SAL_774 to Rack 4
+2025-08-22 16:43:32.187843 - Animals moved by JW: SAL_775 to Rack 4
+2025-08-22 16:44:19.580406 - Pushing Changes by JW: Changes saved
