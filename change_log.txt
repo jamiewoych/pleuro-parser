@@ -1082,3 +1082,6 @@
 2025-08-22 20:39:37.522922 - Animals moved by JW: SAL_771 to Rack 13 - Off
 2025-08-22 20:39:37.524306 - Animals moved by JW: SAL_768 to Rack 13 - Off
 2025-08-22 20:41:12.361722 - Pushing Changes by JW: Changes saved
+2025-08-28 14:58:10.673720 - Euthanized by pa: SAL_215 on 08/27/2025
+2025-08-28 14:59:24.147946 - Euthanized by pa: SAL_216 on 08/27/2025
+2025-08-28 14:59:37.339090 - Pushing Changes by pa: Changes saved
