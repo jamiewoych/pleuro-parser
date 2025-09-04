@@ -1097,3 +1097,6 @@
 2025-09-04 13:32:35.888501 - Animals moved by ts: SAL_389 to Rack 11
 2025-09-04 13:32:35.889612 - Animals moved by ts: SAL_382 to Rack 11
 2025-09-04 13:32:44.263908 - Pushing Changes by ts: Changes saved
+2025-09-04 17:14:09.837288 - Edit by gg2900: SAL_034 - Protocol_Number: AABL1550 → AABF2564
+2025-09-04 17:14:56.396273 - Euthanized by gg2900: SAL_034 on 09/03/2025
+2025-09-04 17:15:01.277394 - Pushing Changes by gg2900: Changes saved
