@@ -1100,3 +1100,5 @@
 2025-09-04 17:14:09.837288 - Edit by gg2900: SAL_034 - Protocol_Number: AABL1550 → AABF2564
 2025-09-04 17:14:56.396273 - Euthanized by gg2900: SAL_034 on 09/03/2025
 2025-09-04 17:15:01.277394 - Pushing Changes by gg2900: Changes saved
+2025-09-04 17:43:10.056685 - Euthanized by MK: SAL_600 on 09/03/2025
+2025-09-04 17:43:24.122818 - Pushing Changes by MK: Changes saved
