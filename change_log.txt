@@ -1090,3 +1090,10 @@
 2025-09-02 20:32:31.187247 - Pushing Changes by JW: Changes saved
 2025-09-03 21:24:34.517126 - Euthanized by ts: SAL_641 on 09/03/2025
 2025-09-03 21:24:38.526973 - Pushing Changes by ts: Changes saved
+2025-09-04 13:32:35.882622 - Animals moved by ts: SAL_364 to Rack 11
+2025-09-04 13:32:35.883756 - Animals moved by ts: SAL_390 to Rack 11
+2025-09-04 13:32:35.884837 - Animals moved by ts: SAL_381 to Rack 11
+2025-09-04 13:32:35.886894 - Animals moved by ts: SAL_363 to Rack 11
+2025-09-04 13:32:35.888501 - Animals moved by ts: SAL_389 to Rack 11
+2025-09-04 13:32:35.889612 - Animals moved by ts: SAL_382 to Rack 11
+2025-09-04 13:32:44.263908 - Pushing Changes by ts: Changes saved
