@@ -165,3 +165,6 @@ SAL_641,B1,Rack 9,09/03/2025,11/25/24 0:00,histology,ts,Viral,Aquatic,,WT,TS,Ple
 SAL_034,A3,Rack 2,09/03/2025,3/7/21 0:00,Sickly,GG,,Aquatic,,mDlx-GFP,,Pleurodeles waltl,AABF2564,with signal,,,,,4.7,Unknown,
 SAL_600,A3,Rack 7,09/03/2025,8/8/24 0:00,"PTU control sibling, progenitor test ","MK, AOG",,Aquatic,,WT,Priority to use,Pleurodeles waltl,AABF2564,,,,,,7.4,Unknown,
 SAL_880,A1,Rack 13 - Off,09/03/2025,2024-10-25 00:00:00,"PTU, progenitor test ","MK, AOG",PTU,Aquatic,,WT,PTU AOG,Pleurodeles waltl,AABI2617,pallial injury 4/30/25,,,,,5.36,Unknown,
+SAL_305,C3,Rack 1,09/04/2025,3/12/25 0:00,perfusion - HCR,GG,,Aquatic,,WT,GG,Polypterus senegalus,AABY5655,,,,,,0.0,Unknown,
+SAL_306,C3,Rack 1,08/14/2025,3/12/25 0:00,perfusion - HCR,GG,,Aquatic,,WT,GG,Polypterus senegalus,AABY5655,,,,,,0.0,Unknown,
+SAL_730,C3,Rack 1,08/14/2025,3/12/25 0:00,perfusion - HCR,GG,,Aquatic,,WT,GG,Polypterus senegalus,AABY5655,,,,,,0.0,Unknown,

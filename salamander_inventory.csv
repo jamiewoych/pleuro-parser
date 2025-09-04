@@ -253,8 +253,6 @@ SAL_301,AABL1550,Rack 11,C1,11/24/23 0:00,Terra T,Terrestrial,Unknown,,WT,ECJ TS
 SAL_302,AABL1550,Rack 11,C1,11/24/23 0:00,Terra T,Terrestrial,Unknown,,WT,ECJ TS TY Rotation,Pleurodeles waltl,ECJ 1 day behavior,,12/11/24 0:00,,Gummy Schedule
 SAL_303,AABL1550,Rack 12,C1,2/8/23 0:00,,Aquatic,Male,F1,hsyn-GCaMP6s,Breeding,Pleurodeles waltl,True F1,,,,
 SAL_304,AABY5655,Rack 1,C3,3/12/25 0:00,,Aquatic,Unknown,,WT,GG,Polypterus senegalus,,,,,
-SAL_305,AABY5655,Rack 1,C3,3/12/25 0:00,,Aquatic,Unknown,,WT,GG,Polypterus senegalus,,,,,
-SAL_306,AABY5655,Rack 1,C3,3/12/25 0:00,,Aquatic,Unknown,,WT,GG,Polypterus senegalus,,,,,
 SAL_307,AABL1550,Rack 12,D1,11/24/24 0:00,,Aquatic,Female,F1,hsyn-GCaMP6s,Breeding,Pleurodeles waltl,,,,,
 SAL_308,AABL1550,Rack 12,D1,11/24/24 0:00,,Aquatic,Female,F1,hsyn-GCaMP6s,Breeding,Pleurodeles waltl,,,,,
 SAL_309,AABL1550,Rack 12,D1,11/24/24 0:00,,Aquatic,Female,F1,hsyn-GCaMP6s,Breeding,Pleurodeles waltl,,,,,
@@ -603,7 +601,6 @@ SAL_726,AABF2564,Rack 4,D3,12/10/24 0:00,,Aquatic,Unknown,,WT,,Pleurodeles waltl
 SAL_727,AABF2564,Rack 4,D3,12/10/24 0:00,,Aquatic,Unknown,,WT,,Pleurodeles waltl,,,,,
 SAL_728,AABF2564,Rack 4,D3,12/10/24 0:00,,Aquatic,Unknown,,WT,,Pleurodeles waltl,,,,,
 SAL_729,AABF2564,Rack 4,D3,12/10/24 0:00,,Aquatic,Unknown,,WT,,Pleurodeles waltl,,,,,
-SAL_730,AABY5655,Rack 1,C3,3/12/25 0:00,,Aquatic,Unknown,,WT,GG,Polypterus senegalus,,,,,
 SAL_731,AABY5655,Rack 1,C3,3/12/25 0:00,,Aquatic,Unknown,,WT,GG,Polypterus senegalus,,,,,
 SAL_732,AABF2564,Rack 13 - Off,A1,1/3/25 0:00,,Aquatic,Unknown,PxW,WT,,Pleurodeles waltl,fridged 1/6-1/27,,,,
 SAL_733,AABF2564,Rack 13 - Off,A1,1/3/25 0:00,,Aquatic,Unknown,PxW,WT,,Pleurodeles waltl,fridged 1/6-1/27,,,,
