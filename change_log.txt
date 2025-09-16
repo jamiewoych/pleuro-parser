@@ -1140,3 +1140,10 @@
 2025-09-16 21:42:49.639165 - Animals moved by JW: SAL_282 to Rack 12
 2025-09-16 21:42:49.640381 - Animals moved by JW: SAL_283 to Rack 12
 2025-09-16 21:42:52.223056 - Pushing Changes by JW: Changes saved
+2025-09-16 21:52:24.362638 - Animals moved by JW: SAL_749 to Rack 8
+2025-09-16 21:52:24.363754 - Animals moved by JW: SAL_750 to Rack 8
+2025-09-16 21:52:24.364898 - Animals moved by JW: SAL_754 to Rack 8
+2025-09-16 21:52:24.365924 - Animals moved by JW: SAL_752 to Rack 8
+2025-09-16 21:52:24.366935 - Animals moved by JW: SAL_753 to Rack 8
+2025-09-16 21:52:24.368837 - Animals moved by JW: SAL_742 to Rack 8
+2025-09-16 21:52:25.443864 - Pushing Changes by JW: Changes saved
