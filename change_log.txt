@@ -1119,3 +1119,13 @@
 2025-09-09 15:18:51.984793 - Pushing Changes by MK: Changes saved
 2025-09-12 18:48:01.812390 - Euthanized by NJC: SAL_471 on 09/12/2025
 2025-09-12 18:48:12.524440 - Pushing Changes by NJC: Changes saved
+2025-09-16 21:03:28.172433 - Animals moved by JW: SAL_414 to Rack 6
+2025-09-16 21:03:28.173513 - Animals moved by JW: SAL_417 to Rack 6
+2025-09-16 21:03:28.174520 - Animals moved by JW: SAL_355 to Rack 6
+2025-09-16 21:11:29.662647 - Animals moved by JW: SAL_343 to Rack 6
+2025-09-16 21:11:29.664037 - Animals moved by JW: SAL_344 to Rack 6
+2025-09-16 21:11:29.665082 - Animals moved by JW: SAL_334 to Rack 6
+2025-09-16 21:11:29.666103 - Animals moved by JW: SAL_335 to Rack 6
+2025-09-16 21:11:29.667106 - Animals moved by JW: SAL_327 to Rack 6
+2025-09-16 21:11:29.668087 - Animals moved by JW: SAL_328 to Rack 6
+2025-09-16 21:11:37.683890 - Pushing Changes by JW: Changes saved
