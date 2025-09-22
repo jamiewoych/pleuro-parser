@@ -1316,3 +1316,5 @@
 2025-09-22 20:49:20.247322 - Animals moved by JW: SAL_822 to Rack 9
 2025-09-22 20:49:20.248574 - Animals moved by JW: SAL_823 to Rack 9
 2025-09-22 20:49:22.546782 - Pushing Changes by JW: Changes saved
+2025-09-22 20:54:28.892241 - Euthanized by LDVA: SAL_122 on 09/13/2025
+2025-09-22 20:54:50.643273 - Pushing Changes by LDVA: Changes saved
