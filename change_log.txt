@@ -1274,3 +1274,5 @@
 2025-09-22 19:30:20.735813 - Euthanized by JW: SAL_690 on 09/22/2025
 2025-09-22 19:30:39.276566 - Euthanized by JW: SAL_691 on 09/22/2025
 2025-09-22 19:33:12.305658 - Pushing Changes by JW: Changes saved
+2025-09-22 20:19:54.040117 - Animals moved by JW: SAL_797 to Rack 5
+2025-09-22 20:26:23.506074 - Pushing Changes by JW: Changes saved
