@@ -1333,3 +1333,7 @@
 2025-09-22 21:25:56.245492 - Pushing Changes by JW: Changes saved
 2025-09-22 21:32:27.166267 - Added animals by JW: 4 animals added to Rack 9 in B4.
 2025-09-22 21:32:29.343032 - Pushing Changes by JW: Changes saved
+2025-09-29 21:59:24.896434 - Euthanized by MK: SAL_885 on 09/29/2025
+2025-09-29 21:59:46.610441 - Euthanized by MK: SAL_886 on 09/29/2025
+2025-09-29 21:59:59.640673 - Euthanized by MK: SAL_887 on 09/29/2025
+2025-09-29 22:01:34.207035 - Pushing Changes by MK: Changes saved
