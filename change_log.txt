@@ -1349,3 +1349,9 @@
 2025-10-01 22:02:10.672030 - Pushing Changes by JW: Changes saved
 2025-10-01 22:42:53.362008 - Euthanized by JW: SAL_131 on 09/16/2025
 2025-10-01 22:42:55.228549 - Pushing Changes by JW: Changes saved
+2025-10-01 23:04:25.559438 - Animals moved by JW: SAL_552 to Rack 1
+2025-10-01 23:04:25.562161 - Animals moved by JW: SAL_553 to Rack 1
+2025-10-01 23:04:25.565063 - Animals moved by JW: SAL_554 to Rack 1
+2025-10-01 23:04:25.566758 - Animals moved by JW: SAL_555 to Rack 1
+2025-10-01 23:04:44.820729 - Animals moved by JW: SAL_551 to Rack 1
+2025-10-01 23:04:51.306277 - Pushing Changes by JW: Changes saved
