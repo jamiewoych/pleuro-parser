@@ -1383,3 +1383,7 @@
 2025-10-03 17:38:11.064052 - Euthanized by NJC: SAL_510 on 05/27/2025
 2025-10-03 17:38:48.337973 - Euthanized by NJC: SAL_511 on 05/27/2025
 2025-10-03 17:57:13.563905 - Pushing Changes by JW: Changes saved
+2025-10-03 19:19:37.177630 - Euthanized by JW: SAL_454 on 10/03/2025
+2025-10-03 19:26:03.041201 - Euthanized by JW: SAL_001 on 10/03/2025
+2025-10-03 19:26:12.673511 - Undo by JW: Re-added SAL_001 and removed euthanasia log entry
+2025-10-03 19:27:04.554414 - Pushing Changes by JW: Changes saved
