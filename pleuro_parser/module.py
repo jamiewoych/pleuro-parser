@@ -449,6 +449,9 @@ class Rack:
             print(f"Error: Animal {animal_id} not found in inventory. Cannot euthanize.")
             return False
         
+        # Normalize DOD immediately
+        dod_clean = self.parse_date(dod)
+
         # Retrieve the full animal information from the inventory allowing merge with inventory info
         animal_data = animal.iloc[0].to_dict()
 
@@ -471,7 +474,7 @@ class Rack:
             "Date_of_Terra": animal_data["Date_of_Terra"],
             "Date_of_Reaqua": animal_data["Date_of_Reaqua"],
             "Diet": animal_data["Diet"],
-            "DOD": dod,
+            "DOD": dod_clean,
             "Weight_g": weight,
             "Sex": sex if sex and sex != "Unknown" else animal_data.get("Sex", "Unknown"),
             "Purpose": purpose,
@@ -715,6 +718,16 @@ class Rack:
         # Merge both summaries into one final summary
         summary = pd.merge(euth_summary, larval_summary, on=group_cols, how="outer")
         return summary
+
+
+    def parse_date(self, x):
+        """Helper to normalize dates to YYYY-MM-DD if possible, else keep original."""
+        for fmt in ("%Y-%m-%d", "%m/%d/%Y", "%m/%d/%y"):
+            try:
+                return pd.to_datetime(x, format=fmt).strftime("%Y-%m-%d")
+            except (ValueError, TypeError):
+                continue
+        return x  # keep original if unrecognized
 
     def search_salamanders(self, **criteria):
         """
