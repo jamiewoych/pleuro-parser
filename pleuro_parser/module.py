@@ -656,10 +656,12 @@ class Rack:
         #Adult euthanasia log to dataframe
         log_df = pd.DataFrame(self.euthanasia_log)
         log_df["DOD"] = pd.to_datetime(log_df["DOD"], errors="coerce")
-        
+        log_df["Complications_clean"] = log_df["Complications"].fillna("").str.strip().str.title()
+
         #Larval euthanasia log to dataframe
         larval_df = pd.DataFrame(self.larval_euth_log)
         larval_df["DOD"] = pd.to_datetime(larval_df["DOD"], errors="coerce")
+        larval_df["Complications_clean"] = larval_df["Complications"].fillna("").str.strip().str.title()
 
 
         # Apply date filtering if specified
@@ -696,24 +698,36 @@ class Rack:
             log_df
             .groupby(group_cols)
             .agg(
-                total_euthanized=("Animal_ID", "count"),
-                complications=("Complications", lambda x: x.fillna("").str.lower().isin(["found dead", "surgical complications"]).sum())
+                total_animals_euthanized=("Animal_ID",
+                    lambda x: (log_df.loc[x.index, "Complications_clean"]
+                           .isin(["", "Euthanized For Illness"])
+                    ).sum()
+                ),
+                total_animals_found_dead=(
+                    "Animal_ID",
+                    lambda x: (log_df.loc[x.index, "Complications_clean"]
+                               .eq("Found Dead")
+                    ).sum()
+                ),
+                total_animals_with_surgical_complications=(
+                    "Animal_ID",
+                    lambda x: (log_df.loc[x.index, "Complications_clean"]
+                           .eq("Surgical Complications")
+                    ).sum()
+                ),
             )
             .reset_index()
         )
 
 
         # Grouping and aggregation for larval euthanasia log
-        larval_summary = (
-            larval_df
-            .groupby(group_cols)
-            .agg(
-                total_larvae_euthanized=("Num_Larvae", "sum"),  # Summing up the number of larvae euthanized
-                larval_complications=("Complications", lambda x: x.fillna("").str.lower().isin(["found dead", "surgical complications"]).sum())
-            )
-            .reset_index()
-        )
-
+        larval_summary = larval_df.groupby(group_cols, dropna=False).apply(
+            lambda g: pd.Series({
+                "total_larvae_euthanized": g.loc[g["Complications_clean"]=="", "Num_Larvae"].sum(),
+                "total_larvae_found_dead": g.loc[g["Complications_clean"]=="Found Dead", "Num_Larvae"].sum(),
+                "larval_surgical_complications": g.loc[g["Complications_clean"]=="Surgical Complications", "Num_Larvae"].sum()
+            })
+        ).reset_index(drop=False)
 
         # Merge both summaries into one final summary
         summary = pd.merge(euth_summary, larval_summary, on=group_cols, how="outer")

@@ -325,7 +325,7 @@ with capture_stdout_to_sidebar():
         sex = st.selectbox("Sex (optional)", ["", "Unknown", "Male", "Female"])
         purpose = st.text_input("Purpose of Euthanasia")
         experimenter = st.text_input("Experimenter (Initials - separate by comma if multiple - found dead = NA)")
-        complications = st.selectbox("Complications if applicable", ["", "Found Dead", "Surgical Complications"])
+        complications = st.selectbox("Complications if applicable", ["", "Found Dead", "Surgical Complications", "Euthanized for Illness"])
 
         if st.button("Euthanize"):
             success = R.euthanize_animal(animal_id, dod_str, weight, sex, purpose, experimenter, complications)
