@@ -1389,3 +1389,21 @@
 2025-10-03 19:27:04.554414 - Pushing Changes by JW: Changes saved
 2025-10-06 15:41:19.184267 - Euthanized by JW: SAL_261 on 10/06/2025
 2025-10-06 15:41:22.682032 - Pushing Changes by JW: Changes saved
+2025-10-06 21:25:19.695870 - Edit by JW: SAL_251 - Environmental_Condition: Terrestrial → Reaqua; Date_of_Reaqua: nan → 2025-06-02
+2025-10-06 21:25:19.753910 - Edit by JW: SAL_252 - Environmental_Condition: Terrestrial → Reaqua; Date_of_Reaqua: nan → 2025-06-02
+2025-10-06 21:25:19.823342 - Edit by JW: SAL_253 - Environmental_Condition: Terrestrial → Reaqua; Date_of_Reaqua: nan → 2025-06-02
+2025-10-06 21:25:19.910290 - Edit by JW: SAL_254 - Environmental_Condition: Terrestrial → Reaqua; Date_of_Reaqua: nan → 2025-06-02
+2025-10-06 21:25:20.025295 - Edit by JW: SAL_255 - Environmental_Condition: Terrestrial → Reaqua; Date_of_Reaqua: nan → 2025-06-02
+2025-10-06 21:25:23.911961 - Euthanized by AOG: SAL_399 on 09/10/2025
+2025-10-06 21:25:37.614712 - Edit by JW: SAL_251 - Environmental_Condition: Reaqua → Reaqua; Cohort: Terra I → Reaqua I; Date_of_Reaqua: 2025-06-02 → 2025-06-02
+2025-10-06 21:25:37.730039 - Edit by JW: SAL_252 - Environmental_Condition: Reaqua → Reaqua; Cohort: Terra I → Reaqua I; Date_of_Reaqua: 2025-06-02 → 2025-06-02
+2025-10-06 21:25:37.891094 - Edit by JW: SAL_253 - Environmental_Condition: Reaqua → Reaqua; Cohort: Terra I → Reaqua I; Date_of_Reaqua: 2025-06-02 → 2025-06-02
+2025-10-06 21:25:38.076423 - Edit by JW: SAL_254 - Environmental_Condition: Reaqua → Reaqua; Cohort: Terra I → Reaqua I; Date_of_Reaqua: 2025-06-02 → 2025-06-02
+2025-10-06 21:25:38.236048 - Edit by JW: SAL_255 - Environmental_Condition: Reaqua → Reaqua; Cohort: Terra I → Reaqua I; Date_of_Reaqua: 2025-06-02 → 2025-06-02
+2025-10-06 21:25:51.526137 - Euthanized by AOG: SAL_400 on 09/10/2025
+2025-10-06 21:26:20.781200 - Animals moved by JW: SAL_251 to Rack 8
+2025-10-06 21:26:20.782397 - Animals moved by JW: SAL_252 to Rack 8
+2025-10-06 21:26:20.783591 - Animals moved by JW: SAL_253 to Rack 8
+2025-10-06 21:26:20.784669 - Animals moved by JW: SAL_254 to Rack 8
+2025-10-06 21:26:20.785800 - Animals moved by JW: SAL_255 to Rack 8
+2025-10-06 21:26:25.133778 - Pushing Changes by JW: Changes saved
