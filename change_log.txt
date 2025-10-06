@@ -1387,3 +1387,5 @@
 2025-10-03 19:26:03.041201 - Euthanized by JW: SAL_001 on 10/03/2025
 2025-10-03 19:26:12.673511 - Undo by JW: Re-added SAL_001 and removed euthanasia log entry
 2025-10-03 19:27:04.554414 - Pushing Changes by JW: Changes saved
+2025-10-06 15:41:19.184267 - Euthanized by JW: SAL_261 on 10/06/2025
+2025-10-06 15:41:22.682032 - Pushing Changes by JW: Changes saved
