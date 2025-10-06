@@ -1440,3 +1440,5 @@
 2025-10-06 22:20:51.637390 - Edit by JW: SAL_409 - Environmental_Condition: Terrestrial → Terrestrial; Diet: nan → Gummy Schedule; Cohort: Terra O → Terra O
 2025-10-06 22:20:51.756473 - Edit by JW: SAL_410 - Environmental_Condition: Terrestrial → Terrestrial; Diet: nan → Gummy Schedule; Cohort: Terra O → Terra O
 2025-10-06 22:20:55.271906 - Pushing Changes by JW: Changes saved
+2025-10-06 22:24:39.885059 - Euthanized by AOG: SAL_473 on 09/11/2025
+2025-10-06 22:27:14.066130 - Pushing Changes by AOG: Changes saved
