@@ -77,7 +77,7 @@ SAL_647,C2,Rack 9,6/9/25,12/10/24 0:00,larval regeneration,"AOG, MK",,Aquatic,,W
 SAL_648,C2,Rack 9,6/9/25,12/10/24 0:00,larval regeneration,"AOG, MK",,Aquatic,,WT,AOG,Pleurodeles waltl,AABI2617,AOG Electroporation,,,,,2.9,Unknown,
 SAL_649,C2,Rack 9,6/9/25,12/10/24 0:00,larval regeneration,"AOG, MK",,Aquatic,,WT,AOG,Pleurodeles waltl,AABI2617,AOG Electroporation,,,,,2.9,Unknown,
 SAL_605,A3,Rack 7,6/10/25,8/8/24 0:00,,"AOG, MK",,Aquatic,,WT,Priority to use,Pleurodeles waltl,AABI2617,,,,,,0,Unknown,
-SAL_472,C1,Rack 4,9/11/25,5/17/24 0:00,,"AOG, MK",,Aquatic,,WT,,Pleurodeles waltl,AABI2617,,,,,,0,Unknown,Surgical Complications
+SAL_472,C1,Rack 4,9/11/25,5/17/24 0:00,,"AOG, MK",,Aquatic,,WT,,Pleurodeles waltl,AABI2617,10 dpi surgery,,,,,0,Unknown,Surgical Complications
 SAL_462,C3,Rack 11,6/16/25,5/17/24 0:00,perfused for perk and edu with TGZ,"AMMM, TS",Terra V,Terrestrial,,WT,AMMM TGZ Edu,Pleurodeles waltl,AABF2564,Edu,,5/4/25,,Gummy Schedule,0,Unknown,
 SAL_463,C3,Rack 11,6/16/25,5/17/24 0:00,perfused for perk and edu with TGZ,"AMMM, TS",Terra V,Terrestrial,,WT,AMMM TGZ Edu,Pleurodeles waltl,AABF2564,Edu,,5/4/25,,Gummy Schedule,0,Unknown,
 SAL_465,C1,Rack 8,6/16/25,5/17/24 0:00,perfused for perk and edu with TGZ,"AMMM, TS",EdU,Aquatic,,WT,AMMM TGZ Edu,Pleurodeles waltl,AABF2564,Edu,,,,Gummy Schedule,0,Unknown,
