@@ -1418,3 +1418,10 @@
 2025-10-06 21:29:42.936519 - Animals moved by JW: SAL_249 to Rack 8
 2025-10-06 21:29:42.938124 - Animals moved by JW: SAL_250 to Rack 8
 2025-10-06 21:29:48.902782 - Pushing Changes by JW: Changes saved
+2025-10-06 21:31:02.099663 - Added animals by JW: 2 animals added to Rack 8 in A3.
+2025-10-06 21:33:33.800185 - Euthanized by AOG: SAL_474 on 10/01/2025
+2025-10-06 21:33:49.923668 - Euthanized by AOG: SAL_475 on 10/01/2025
+2025-10-06 21:34:01.411160 - Euthanized by AOG: SAL_476 on 10/01/2025
+2025-10-06 21:37:24.391039 - Added Clutch by JW: 02/02/2023 from Yellow x Black
+2025-10-06 21:38:10.187610 - Added animals by JW: 1 animals added to Rack 8 in B4.
+2025-10-06 21:40:32.232741 - Pushing Changes by JW: Changes saved
