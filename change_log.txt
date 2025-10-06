@@ -1426,3 +1426,9 @@
 2025-10-06 21:38:10.187610 - Added animals by JW: 1 animals added to Rack 8 in B4.
 2025-10-06 21:40:32.232741 - Pushing Changes by JW: Changes saved
 2025-10-06 22:11:17.695762 - Pushing Changes by AOG: Changes saved
+2025-10-06 22:12:59.572781 - Animals moved by JW: SAL_025 to Rack 12
+2025-10-06 22:12:59.573918 - Animals moved by JW: SAL_026 to Rack 12
+2025-10-06 22:12:59.575028 - Animals moved by JW: SAL_027 to Rack 12
+2025-10-06 22:12:59.576142 - Animals moved by JW: SAL_028 to Rack 12
+2025-10-06 22:12:59.577161 - Animals moved by JW: SAL_029 to Rack 12
+2025-10-06 22:13:02.461475 - Pushing Changes by JW: Changes saved
