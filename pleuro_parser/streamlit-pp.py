@@ -438,7 +438,7 @@ with capture_stdout_to_sidebar():
 
                     # Display Larval summary
                     if larval_summary is not None and not larval_summary.empty:
-                        st.subheader("Larval Euthanasia Summary")
+                        st.write("Larval Euthanasia Summary")
                         st.dataframe(larval_summary, use_container_width=True)
                     else:
                         st.info("No larval euthanasia data matched the selected filters.")
