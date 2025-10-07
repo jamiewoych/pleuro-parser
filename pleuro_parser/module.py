@@ -975,6 +975,11 @@ class Rack:
             repo = self.clone_or_pull_repo()
             repo_root = repo.working_tree_dir  # e.g. /tmp/pleuro-parser
 
+            # 🟢 NEW: Always pull latest from GitHub before saving anything
+            st.info("Pulling latest changes from GitHub before pushing...")
+            repo.remotes.origin.fetch()
+            repo.git.pull('origin', 'main')
+
             # Paths inside the repo
             files_to_push = {
                 "inventory": {
@@ -1020,12 +1025,15 @@ class Rack:
                     save_func()
                     repo.git.add(dst)
 
-            # Commit and push
-            commit_msg = "📦 Update salamander inventory & logs"
-            repo.index.commit(commit_msg)
-            repo.remotes.origin.push()
-            #st.success("All updated files pushed to GitHub successfully!")
-
+            # 🟢 NEW: Check if there are any staged changes before committing
+            if repo.is_dirty(untracked_files=True):
+                commit_msg = "📦 Update salamander inventory & logs"
+                repo.index.commit(commit_msg)
+                repo.remotes.origin.push()
+                st.success("All updated files pushed to GitHub successfully!")
+            else:
+                st.info("No new changes to push — repo already up to date.")
+                
         except Exception as e:
             st.error(f"Error pushing changes to GitHub: {e}")
 
