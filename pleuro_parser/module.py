@@ -931,7 +931,7 @@ class Rack:
             "Rack 3": ["A2", "A4", "B2", "C2"], #Large breeding tanks
             "Rack 10": ["C1"], #Bucket lives here
             "Rack 12": ["B2", "B3", "B5", "C2", "C3", "C5", "D2", "D3", "D5"], #Breeding tanks
-            "Rack 13 - Off": ["A2", "A3", "A4","B1", "B2", "B3", "B4", "C1", "C2", "C3"] # This rack doesnt really exist - for noting which animals are off rack
+            "Rack 13 - Off": ["A3", "A4","B1", "B2", "B3", "B4", "C1", "C2", "C3", "C4"] # This rack doesnt really exist - for noting which animals are off rack
         }
         #Remove blocked tanks
         if rack in blocked_tanks:
