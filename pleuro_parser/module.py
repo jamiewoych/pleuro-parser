@@ -703,18 +703,19 @@ class Rack:
                            .isin(["", "Euthanized For Illness"])
                     ).sum()
                 ),
+                total_animals_with_surgical_complications=(
+                    "Animal_ID",
+                    lambda x: (log_df.loc[x.index, "Complications_clean"]
+                           .eq("Surgical Complications")
+                    ).sum()
+                ),                
                 total_animals_found_dead=(
                     "Animal_ID",
                     lambda x: (log_df.loc[x.index, "Complications_clean"]
                                .eq("Found Dead")
                     ).sum()
                 ),
-                total_animals_with_surgical_complications=(
-                    "Animal_ID",
-                    lambda x: (log_df.loc[x.index, "Complications_clean"]
-                           .eq("Surgical Complications")
-                    ).sum()
-                ),
+
             )
             .reset_index()
         )
@@ -724,8 +725,8 @@ class Rack:
         larval_summary = larval_df.groupby(group_cols, dropna=False).apply(
             lambda g: pd.Series({
                 "total_larvae_euthanized": g.loc[g["Complications_clean"]=="", "Num_Larvae"].sum(),
-                "total_larvae_found_dead": g.loc[g["Complications_clean"]=="Found Dead", "Num_Larvae"].sum(),
-                "larval_surgical_complications": g.loc[g["Complications_clean"]=="Surgical Complications", "Num_Larvae"].sum()
+                "larval_surgical_complications": g.loc[g["Complications_clean"]=="Surgical Complications", "Num_Larvae"].sum(),
+                "total_larvae_found_dead": g.loc[g["Complications_clean"]=="Found Dead", "Num_Larvae"].sum()
             })
         ).reset_index(drop=False)
 
