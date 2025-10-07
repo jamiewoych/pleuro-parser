@@ -1543,3 +1543,5 @@
 2025-10-07 19:09:22.115374 - Pushing Changes by JW: Changes saved
 2025-10-07 19:43:23.765586 - Edit by JW: SAL_005 - Sex: Male → Male; Experimental_Holds: Breeding → Breeding Male
 2025-10-07 19:43:27.831841 - Pushing Changes by JW: Changes saved
+2025-10-07 19:50:21.419565 - Edit by JW: SAL_001 - Experimental_Holds: Breeding → Breeding Female
+2025-10-07 19:50:29.506576 - Pushing Changes by JW: Changes saved
