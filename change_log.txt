@@ -1516,3 +1516,14 @@
 2025-10-07 17:27:17.647924 - Animals moved by JW: SAL_254 to Rack 8
 2025-10-07 17:27:17.648714 - Animals moved by JW: SAL_255 to Rack 8
 2025-10-07 17:27:25.370682 - Pushing Changes by JW: Changes saved
+2025-10-07 17:29:09.787262 - Edit by JW: SAL_246 - Environmental_Condition: Terrestrial → Reaqua; Cohort: Terra K → Reaqua K; Date_of_Reaqua: nan → 2025-06-02
+2025-10-07 17:29:09.915822 - Edit by JW: SAL_247 - Environmental_Condition: Terrestrial → Reaqua; Cohort: Terra K → Reaqua K; Date_of_Reaqua: nan → 2025-06-02
+2025-10-07 17:29:10.045306 - Edit by JW: SAL_248 - Environmental_Condition: Terrestrial → Reaqua; Cohort: Terra K → Reaqua K; Date_of_Reaqua: nan → 2025-06-02
+2025-10-07 17:29:10.185972 - Edit by JW: SAL_249 - Environmental_Condition: Terrestrial → Reaqua; Cohort: Terra K → Reaqua K; Date_of_Reaqua: nan → 2025-06-02
+2025-10-07 17:29:10.340211 - Edit by JW: SAL_250 - Environmental_Condition: Terrestrial → Reaqua; Cohort: Terra K → Reaqua K; Date_of_Reaqua: nan → 2025-06-02
+2025-10-07 17:29:20.460522 - Animals moved by JW: SAL_246 to Rack 8
+2025-10-07 17:29:20.461771 - Animals moved by JW: SAL_247 to Rack 8
+2025-10-07 17:29:20.462967 - Animals moved by JW: SAL_248 to Rack 8
+2025-10-07 17:29:20.464058 - Animals moved by JW: SAL_249 to Rack 8
+2025-10-07 17:29:20.465039 - Animals moved by JW: SAL_250 to Rack 8
+2025-10-07 17:29:22.978003 - Pushing Changes by JW: Changes saved
