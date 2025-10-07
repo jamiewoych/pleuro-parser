@@ -406,7 +406,7 @@ with capture_stdout_to_sidebar():
         st.subheader("Analyze Euthanasia Log")
 
         # Date filters
-        st.markdown("All entries analyzed unless date range specified")
+        st.markdown("All entries analyzed unless date range specified - no overlap between animals counted in each columns when analyzing by protocol")
         col1, col2 = st.columns(2)
         with col1:
             start_date = st.date_input("Start Date", value=None)
