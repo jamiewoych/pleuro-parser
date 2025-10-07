@@ -209,3 +209,5 @@ SAL_494,B2,Rack 4,9/24/25,5/17/24 0:00,early response 21 dpi post-meta,AOG,,Aqua
 SAL_495,B2,Rack 4,9/22/25,5/17/24 0:00,early response 10 dpi post-meta,AOG,,Aquatic,,WT,,Pleurodeles waltl,AABF2564,,,,,,0.0,Unknown,
 SAL_401,C3,Rack 6,9/10/25,11/24/23 0:00,early response 5 dpi post-meta,AOG,,Aquatic,,WT,AOG,Pleurodeles waltl,AABI2617,,,,,,0.0,Unknown,
 SAL_639,B1,Rack 9,2025-10-07,11/25/24 0:00,,,Viral,Aquatic,,WT,TS,Pleurodeles waltl,AABL1550,DREADD/PHPeB G6s TS,,,,,0.0,Unknown,
+SAL_014,A2,Rack 13 - Off,2025-10-07,7/9/20,"Not correct date, not logged on day of death",,,Aquatic,,WT,,Pleurodeles waltl,AABL1550,Craniotomy,,,,,0.0,Unknown,Found Dead
+SAL_561,A2,Rack 13 - Off,2025-10-07,9/1/23 0:00,"Not correct date, not logged on day of death",,,Aquatic,Sweden,hsyn-GCaMP6s,,Pleurodeles waltl,AABL1550,DOB 11/2021-Sept/2023,,,,,0.0,Unknown,Found Dead
