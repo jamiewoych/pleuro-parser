@@ -1,5 +1,5 @@
 Animal_ID,Protocol_Number,Rack,Tank,DOB,Cohort,Environmental_Condition,Sex,Lineage,Transgenic_Line,Experimental_Holds,Species,Experimental_History,RFID,Date_of_Terra,Date_of_Reaqua,Diet
-SAL_001,AABF2564,Rack 12,C4,,Reptile Rapture - Yellow,Aquatic,Female,,WT,Breeding,Pleurodeles waltl,,,,,
+SAL_001,AABF2564,Rack 12,C4,,Reptile Rapture - Yellow,Aquatic,Female,,WT,Breeding Female,Pleurodeles waltl,,,,,
 SAL_002,AABF2564,Rack 12,C4,,Reptile Rapture - Yellow,Aquatic,Female,,WT,Breeding,Pleurodeles waltl,,,,,
 SAL_003,AABF2564,Rack 12,C4,,Reptile Rapture - Yellow,Aquatic,Female,,WT,Breeding,Pleurodeles waltl,,,,,
 SAL_004,AABF2564,Rack 3,C1,1/21/20,Reptile Rapture - Yellow,Aquatic,Male,,WT,Breeding,Pleurodeles waltl,,3D6.1546D5EE1,,,
