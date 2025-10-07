@@ -423,18 +423,25 @@ with capture_stdout_to_sidebar():
 
         if st.button("Run Analysis"):
             try:
-                    summary_df = R.analyze_euthanasia_log(
+                    adult_summary, larval_summary = R.analyze_euthanasia_log(
                             start_date=start_date,
                             end_date=end_date,
                             group_by_experimenter=group_by_exp
                     )
 
-                    if summary_df is not None and not summary_df.empty:
+                    if adult_summary is not None and not adult_summary.empty:
                         st.write("Animals Euthanized for Date Range")
                         st.dataframe(summary_df, use_container_width=True)
 
                     else:
                             st.info("No euthanasia data matched the selected filters.")
+                            
+                    # Display Larval summary
+                    if larval_summary is not None and not larval_summary.empty:
+                        st.subheader("Larval Euthanasia Summary")
+                        st.dataframe(larval_summary, use_container_width=True)
+                    else:
+                        st.info("No larval euthanasia data matched the selected filters.")
 
 
             except Exception as e:

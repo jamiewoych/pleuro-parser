@@ -730,8 +730,8 @@ class Rack:
         ).reset_index(drop=False)
 
         # Merge both summaries into one final summary
-        summary = pd.merge(euth_summary, larval_summary, on=group_cols, how="outer")
-        return summary
+        # summary = pd.merge(euth_summary, larval_summary, on=group_cols, how="outer")
+        return euth_summary, larval_summary
 
 
     def parse_date(self, x):
