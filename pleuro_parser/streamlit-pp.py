@@ -431,11 +431,11 @@ with capture_stdout_to_sidebar():
 
                     if adult_summary is not None and not adult_summary.empty:
                         st.write("Animals Euthanized for Date Range")
-                        st.dataframe(summary_df, use_container_width=True)
+                        st.dataframe(adult_summary, use_container_width=True)
 
                     else:
                             st.info("No euthanasia data matched the selected filters.")
-                            
+
                     # Display Larval summary
                     if larval_summary is not None and not larval_summary.empty:
                         st.subheader("Larval Euthanasia Summary")
