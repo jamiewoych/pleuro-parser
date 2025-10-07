@@ -1527,3 +1527,8 @@
 2025-10-07 17:29:20.464058 - Animals moved by JW: SAL_249 to Rack 8
 2025-10-07 17:29:20.465039 - Animals moved by JW: SAL_250 to Rack 8
 2025-10-07 17:29:22.978003 - Pushing Changes by JW: Changes saved
+2025-10-07 17:32:30.272338 - Edit by AM: SAL_604 - Environmental_Condition: Aquatic → Terrestrial; Experimental_Holds: Priority to use → AMMM/TGZ EDU EXPS; Diet: nan → Gummy Schedule; Cohort: nan → Terra T; Date_of_Terra: nan → 2025-10-07
+2025-10-07 17:32:30.319486 - Edit by AM: SAL_603 - Environmental_Condition: Aquatic → Terrestrial; Experimental_Holds: Priority to use → AMMM/TGZ EDU EXPS; Diet: nan → Gummy Schedule; Cohort: nan → Terra T; Date_of_Terra: nan → 2025-10-07
+2025-10-07 17:34:24.843619 - Animals moved by AM: SAL_604 to Rack 11
+2025-10-07 17:34:24.845102 - Animals moved by AM: SAL_603 to Rack 11
+2025-10-07 17:34:40.796850 - Pushing Changes by AM: Changes saved
