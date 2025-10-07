@@ -235,7 +235,7 @@ SAL_283,AABF2564,Rack 12,D4,12/9/23 0:00,,Aquatic,Unknown,,WT,Breeding,Pleurodel
 SAL_284,AABF2564,Rack 4,C2,12/9/23 0:00,,Aquatic,Unknown,,WT,Breeding,Pleurodeles waltl,,,,,
 SAL_287,AABL1550,Rack 11,A2,11/24/23 0:00,Terra M,Terrestrial,Unknown,,WT,JW Histology,Pleurodeles waltl,,,4/3/25 0:00,,Gummy Schedule
 SAL_288,AABL1550,Rack 11,A2,11/24/23 0:00,Terra M,Terrestrial,Unknown,,WT,JW Histology,Pleurodeles waltl,,,4/3/25 0:00,,Gummy Schedule
-SAL_290,AABL1550,Rack 13 - Off,A1,12/9/23 0:00,Terra O,Terrestrial,Unknown,F1,hsyn-GCaMP6s,ECJ TS Imaging,Pleurodeles waltl,,,7/15/24 0:00,,Gummy Schedule
+SAL_290,AABL1550,Rack 11,A4,12/9/23 0:00,Terra O,Terrestrial,Unknown,F1,hsyn-GCaMP6s,ECJ TS Imaging,Pleurodeles waltl,,,7/15/24 0:00,,Gummy Schedule
 SAL_299,AABL1550,Rack 11,C1,11/24/23 0:00,Terra T,Terrestrial,Unknown,,WT,ECJ TS TY Rotation,Pleurodeles waltl,ECJ 1 day behavior,,12/11/24 0:00,,Gummy Schedule
 SAL_300,AABL1550,Rack 11,C1,11/24/23 0:00,Terra T,Terrestrial,Unknown,,WT,ECJ TS TY Rotation,Pleurodeles waltl,ECJ 1 day behavior,,12/11/24 0:00,,Gummy Schedule
 SAL_301,AABL1550,Rack 11,C1,11/24/23 0:00,Terra T,Terrestrial,Unknown,,WT,ECJ TS TY Rotation,Pleurodeles waltl,ECJ 1 day behavior,,12/11/24 0:00,,Gummy Schedule
@@ -334,11 +334,11 @@ SAL_402,AABI2617,Rack 6,C3,11/24/23 0:00,,Aquatic,Unknown,,WT,AOG,Pleurodeles wa
 SAL_403,AABI2617,Rack 6,C3,11/24/23 0:00,,Aquatic,Unknown,,WT,AOG,Pleurodeles waltl,,,,,
 SAL_405,AABF2564,Rack 6,C4,4/15/24 0:00,,Aquatic,Unknown,,WT,AD,Pleurodeles waltl,Ad pbase ,,,,
 SAL_406,AABL1550,Rack 6,D1,11/24/23 0:00,,Aquatic,Unknown,F1,hsyn-GCaMP6s,,Pleurodeles waltl,,,,,
-SAL_407,AABL1550,Rack 6,D1,11/24/23 0:00,,Aquatic,Unknown,F1,hsyn-GCaMP6s,,Pleurodeles waltl,,,,,
-SAL_408,AABL1550,Rack 6,D1,11/24/23 0:00,,Aquatic,Unknown,F1,hsyn-GCaMP6s,,Pleurodeles waltl,,,,,
-SAL_409,AABL1550,Rack 6,D1,11/24/23 0:00,,Aquatic,Unknown,F1,hsyn-GCaMP6s,,Pleurodeles waltl,,,,,
-SAL_410,AABL1550,Rack 6,D1,11/24/23 0:00,,Aquatic,Unknown,F1,hsyn-GCaMP6s,,Pleurodeles waltl,,,,,
-SAL_411,AABL1550,Rack 6,D1,11/24/23 0:00,,Aquatic,Unknown,F1,hsyn-GCaMP6s,,Pleurodeles waltl,,,,,
+SAL_407,AABL1550,Rack 11,A4,11/24/23 0:00,,Terrestrial,Unknown,F1,hsyn-GCaMP6s,,Pleurodeles waltl,,,2025-06-10,,Gummy Schedule
+SAL_408,AABL1550,Rack 11,A4,11/24/23 0:00,,Terrestrial,Unknown,F1,hsyn-GCaMP6s,,Pleurodeles waltl,,,2025-06-10,,Gummy Schedule
+SAL_409,AABL1550,Rack 6,D1,11/24/23 0:00,,Terrestrial,Unknown,F1,hsyn-GCaMP6s,,Pleurodeles waltl,,,2025-06-10,,Gummy Schedule
+SAL_410,AABL1550,Rack 11,A4,11/24/23 0:00,,Terrestrial,Unknown,F1,hsyn-GCaMP6s,,Pleurodeles waltl,,,2025-06-10,,Gummy Schedule
+SAL_411,AABL1550,Rack 6,D1,11/24/23 0:00,,Terrestrial,Unknown,F1,hsyn-GCaMP6s,,Pleurodeles waltl,,,2025-06-10,,Gummy Schedule
 SAL_412,AABL1550,Rack 6,D1,11/24/23 0:00,,Aquatic,Unknown,F1,hsyn-GCaMP6s,,Pleurodeles waltl,,,,,
 SAL_413,AABL1550,Rack 6,D1,11/24/23 0:00,,Aquatic,Unknown,F1,hsyn-GCaMP6s,,Pleurodeles waltl,,,,,
 SAL_414,AABL1550,Rack 6,D1,11/24/23 0:00,,Aquatic,Unknown,F1,hsyn-GCaMP6s,,Pleurodeles waltl,,,,,
