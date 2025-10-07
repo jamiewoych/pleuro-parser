@@ -1541,3 +1541,5 @@
 2025-10-07 19:09:10.027259 - Edit by JW: SAL_937 - Experimental_Holds:  → AOG; Experimental_History:  → PTU Controls
 2025-10-07 19:09:10.117501 - Edit by JW: SAL_938 - Experimental_Holds:  → AOG; Experimental_History:  → PTU Controls
 2025-10-07 19:09:22.115374 - Pushing Changes by JW: Changes saved
+2025-10-07 19:43:23.765586 - Edit by JW: SAL_005 - Sex: Male → Male; Experimental_Holds: Breeding → Breeding Male
+2025-10-07 19:43:27.831841 - Pushing Changes by JW: Changes saved
