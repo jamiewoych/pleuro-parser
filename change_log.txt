@@ -1545,3 +1545,15 @@
 2025-10-07 19:43:27.831841 - Pushing Changes by JW: Changes saved
 2025-10-07 19:50:21.419565 - Edit by JW: SAL_001 - Experimental_Holds: Breeding → Breeding Female
 2025-10-07 19:50:29.506576 - Pushing Changes by JW: Changes saved
+2025-10-08 15:05:26.556137 - Euthanized by ECJ: SAL_409 on 10/08/2025
+2025-10-08 15:06:22.984207 - Undo by ECJ: Re-added SAL_409 and removed euthanasia log entry
+2025-10-08 15:06:39.579401 - Euthanized by ECJ: SAL_409 on 07/14/2025
+2025-10-08 15:07:22.278967 - Euthanized by ECJ: SAL_411 on 07/14/2025
+2025-10-08 15:08:34.469455 - Euthanized by ECJ: SAL_302 on 05/14/2025
+2025-10-08 15:09:01.488052 - Euthanized by ECJ: SAL_301 on 05/14/2025
+2025-10-08 15:09:48.191501 - Euthanized by ECJ: SAL_299 on 05/14/2025
+2025-10-08 15:10:17.749400 - Euthanized by ECJ: SAL_300 on 05/14/2025
+2025-10-08 15:11:01.721636 - Euthanized by ECJ: SAL_194 on 05/28/2025
+2025-10-08 15:11:29.765178 - Euthanized by ECJ: SAL_195 on 05/28/2025
+2025-10-08 15:12:10.966754 - Euthanized by ECJ: SAL_314 on 07/17/2025
+2025-10-08 15:12:19.153379 - Pushing Changes by ECJ: Changes saved
