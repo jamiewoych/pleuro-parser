@@ -1560,3 +1560,12 @@
 2025-10-08 15:16:41.286305 - Euthanized by ECJ: SAL_233 on 07/24/2025
 2025-10-08 15:17:15.503630 - Euthanized by ECJ: SAL_234 on 07/22/2025
 2025-10-08 15:17:17.859953 - Pushing Changes by ECJ: Changes saved
+2025-10-08 20:23:49.549987 - Animals moved by ECJ: SAL_844 to Rack 13 - Off
+2025-10-08 20:25:07.771597 - Edit by ECJ: SAL_844 - Experimental_Holds: nan → ECJ; Experimental_History: fridged 1/6-1/27 → 100 nL AAV PHP.eB-mDlx-NLS-mRuby injection, R DP on 10/8/25
+2025-10-08 20:38:08.150192 - Animals moved by ECJ: SAL_358 to Rack 13 - Off
+2025-10-08 20:38:08.151822 - Animals moved by ECJ: SAL_359 to Rack 13 - Off
+2025-10-08 20:38:08.153025 - Animals moved by ECJ: SAL_360 to Rack 13 - Off
+2025-10-08 20:39:19.644054 - Edit by ECJ: SAL_358 - Experimental_History: nan → 150 nL AAVrg-CAG-tdTomato R OB injection on 10/7; Date_of_Terra: nan → 2025-10-07
+2025-10-08 20:39:19.740476 - Edit by ECJ: SAL_359 - Experimental_History: nan → 150 nL AAVrg-CAG-tdTomato R OB injection on 10/7; Date_of_Terra: nan → 2025-10-07
+2025-10-08 20:39:19.841186 - Edit by ECJ: SAL_360 - Experimental_History: nan → 150 nL AAVrg-CAG-tdTomato R OB injection on 10/7; Date_of_Terra: nan → 2025-10-07
+2025-10-08 20:39:30.260839 - Pushing Changes by ECJ: Changes saved
