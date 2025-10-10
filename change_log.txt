@@ -1577,3 +1577,7 @@
 2025-10-10 15:01:39.809933 - Animals moved by ts: SAL_259 to Rack 11
 2025-10-10 15:01:39.811667 - Animals moved by ts: SAL_260 to Rack 11
 2025-10-10 15:01:43.150471 - Pushing Changes by ts: Changes saved
+2025-10-10 15:34:02.280454 - Euthanized by NJC: SAL_273 on 05/01/2025
+2025-10-10 15:35:02.880143 - Euthanized by NJC: SAL_274 on 05/01/2025
+2025-10-10 15:35:48.067074 - Euthanized by NJC: SAL_275 on 05/01/2025
+2025-10-10 15:36:25.554969 - Pushing Changes by NJC: Changes saved
