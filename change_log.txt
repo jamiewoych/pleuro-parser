@@ -1569,3 +1569,7 @@
 2025-10-08 20:39:19.740476 - Edit by ECJ: SAL_359 - Experimental_History: nan → 150 nL AAVrg-CAG-tdTomato R OB injection on 10/7; Date_of_Terra: nan → 2025-10-07
 2025-10-08 20:39:19.841186 - Edit by ECJ: SAL_360 - Experimental_History: nan → 150 nL AAVrg-CAG-tdTomato R OB injection on 10/7; Date_of_Terra: nan → 2025-10-07
 2025-10-08 20:39:30.260839 - Pushing Changes by ECJ: Changes saved
+2025-10-10 15:00:22.578439 - Animals moved by ts: SAL_258 to Rack 11
+2025-10-10 15:00:22.579772 - Animals moved by ts: SAL_259 to Rack 11
+2025-10-10 15:00:22.581068 - Animals moved by ts: SAL_260 to Rack 11
+2025-10-10 15:00:26.811815 - Pushing Changes by ts: Changes saved
