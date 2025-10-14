@@ -1597,3 +1597,5 @@
 2025-10-10 21:40:09.635161 - Added animals by JW: 4 animals added to Rack 9 in C2.
 2025-10-10 21:40:16.968997 - Added animals by JW: 4 animals added to Rack 9 in C3.
 2025-10-10 21:40:23.332615 - Pushing Changes by JW: Changes saved
+2025-10-14 22:33:34.856284 - Euthanized by am: SAL_828 on 10/14/2025
+2025-10-14 22:33:45.933987 - Pushing Changes by am: Changes saved
