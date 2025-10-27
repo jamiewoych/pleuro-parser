@@ -229,4 +229,5 @@ SAL_828,C3,Rack 5,10/14/25,12/10/24 0:00,Found Dead by Sean,,,Aquatic,,WT,,Pleur
 SAL_515,A2,Rack 1,10/16/25,7/1/22 0:00,Sean Found - sickly tank,,,Aquatic,Sweden,hsyn-GFP,,Pleurodeles waltl,AABF2564,,,,,,0.0,Unknown,Found Dead
 SAL_044,A3,Rack 7,10/16/25,11/11/21 0:00,"Sean Found, sickly tank",,,Aquatic,,WT,LX ,Pleurodeles waltl,AABL1550,LX viral injections,,,,,0.0,Unknown,Found Dead
 SAL_570,B2,Rack 7,2025-10-19,9/1/22 0:00,Found Dead,,,Aquatic,Sweden,hsyn-GCaMP6s,,Pleurodeles waltl,AABL1550,DOB 2021/07 - 2023/09,,,,,0.0,Unknown,Found Dead
-SAL_061,A2,Rack 10,2025-10-24,11/11/21 0:00,Found dead,NA,Terra B,Terrestrial,,WT,AMMM,Pleurodeles waltl,AABL1550,"Odor conditioning, other tests, olfnav",,10/7/22 0:00,,,0.0,Unknown,Found Dead
+SAL_061,A2,Rack 10,2025-10-24,11/11/21 0:00,Found dead,,Terra B,Terrestrial,,WT,AMMM,Pleurodeles waltl,AABL1550,"Odor conditioning, other tests, olfnav",,10/7/22 0:00,,,0.0,Unknown,Found Dead
+SAL_480,D1,Rack 4,2025-10-27,5/17/24 0:00,adult neurogenesis 6mo,"MK, AOG",,Aquatic,,WT,AOG Adult neuro,Pleurodeles waltl,AABI2617,,,,,,10.17,Unknown,
