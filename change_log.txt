@@ -1613,3 +1613,12 @@
 2025-10-27 22:11:05.779898 - Pushing Changes by MK: Changes saved
 2025-10-27 22:11:19.651314 - Euthanized by MK: SAL_484 on 10/27/2025
 2025-10-27 22:11:21.640468 - Pushing Changes by MK: Changes saved
+2025-10-28 20:55:35.069812 - Animals moved by JW: SAL_538 to Rack 7
+2025-10-28 20:55:50.390535 - Animals moved by JW: SAL_513 to Rack 1
+2025-10-28 20:55:50.392687 - Animals moved by JW: SAL_514 to Rack 1
+2025-10-28 20:56:19.212178 - Animals moved by JW: SAL_533 to Rack 1
+2025-10-28 20:56:19.214358 - Animals moved by JW: SAL_534 to Rack 1
+2025-10-28 20:56:19.215764 - Animals moved by JW: SAL_535 to Rack 1
+2025-10-28 20:56:19.216981 - Animals moved by JW: SAL_536 to Rack 1
+2025-10-28 20:56:19.218352 - Animals moved by JW: SAL_537 to Rack 1
+2025-10-28 20:56:28.874340 - Pushing Changes by JW: Changes saved
