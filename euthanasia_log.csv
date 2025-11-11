@@ -243,3 +243,5 @@ SAL_098,A3,Rack 10,2025-11-10,2/23/22 0:00,,,Terra C,Terrestrial,,WT,JW Histolog
 SAL_744,C1,Rack 5,2025-11-11,12/10/24 0:00,"missing, likely cannibalized",,,Aquatic,PxW,WT,,Pleurodeles waltl,AABF2564,fridged > St 37,,,,,0.0,Unknown,
 SAL_743,C1,Rack 5,2025-11-11,12/10/24 0:00,"missing, likely cannibalized",,,Aquatic,PxW,WT,,Pleurodeles waltl,AABF2564,fridged > St 37,,,,,0.0,Unknown,
 SAL_203,B4,Rack 8,2025-11-09,2/2/23 0:00,looked healthy - bloody skin on belly,,,Aquatic,,WT,,Pleurodeles waltl,AABL1550,,,,,,0.0,Female,Found Dead
+SAL_456,D3,Rack 8,2025-11-11,11/24/23 0:00,organ sampling - healthy wt,JW,,Aquatic,,WT,JW AMMM histology,Pleurodeles waltl,AABL1550,,,,,Gummy Schedule,14.6,Female,
+SAL_513,A2,Rack 1,2025-11-11,7/1/22 0:00,organ sampling - sickly hsyn gfp; very thin,JW,,Aquatic,Sweden,hsyn-GFP,,Pleurodeles waltl,AABF2564,,,,,,5.65,Male,Euthanized for Illness
