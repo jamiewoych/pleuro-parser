@@ -1652,3 +1652,13 @@
 2025-11-11 22:24:46.829339 - Pushing Changes by JW: Changes saved
 2025-11-11 22:31:03.117974 - Euthanized by JW: SAL_457 on 11/03/2025
 2025-11-11 22:31:10.854693 - Pushing Changes by JW: Changes saved
+2025-11-11 22:39:54.632756 - Euthanized by JW: SAL_104 on 11/10/2025
+2025-11-11 22:40:36.286146 - Undo by JW: Re-added SAL_104 and removed euthanasia log entry
+2025-11-11 22:40:57.301996 - Euthanized by JW: SAL_104 on 11/10/2025
+2025-11-11 22:41:19.326571 - Euthanized by JW: SAL_105 on 11/10/2025
+2025-11-11 22:41:51.251640 - Euthanized by JW: SAL_114 on 11/10/2025
+2025-11-11 22:43:06.492796 - Undo by JW: Re-added SAL_114 and removed euthanasia log entry
+2025-11-11 22:43:22.201578 - Euthanized by JW: SAL_114 on 11/10/2025
+2025-11-11 22:43:40.047347 - Euthanized by JW: SAL_115 on 11/10/2025
+2025-11-11 22:44:54.011991 - Edit by JW: SAL_064 - Experimental_History: Mother of 12/10/23 → Mother of 12/10/23
+2025-11-11 22:44:56.186245 - Pushing Changes by JW: Changes saved
