@@ -240,3 +240,6 @@ SAL_196,B1,Rack 11,2025-10-14,1/13/23 0:00,Perfusion - Tissue collection,"NJC,JW
 SAL_603,C1,Rack 11,2025-11-07,8/8/24 0:00,Edu 6-10 days post terrestrialization,"TZ, JW",Terra T,Terrestrial,,WT,AMMM/TGZ EDU EXPS,Pleurodeles waltl,AABL1550,,,2025-10-07,,Gummy Schedule,4.52,Male,
 SAL_604,C1,Rack 11,2025-11-07,8/8/24 0:00,Edu 6-10 days post terrestrialization,"TZ, JW",Terra T,Terrestrial,,WT,AMMM/TGZ EDU EXPS,Pleurodeles waltl,AABL1550,,,2025-10-07,,Gummy Schedule,6.68,Female,
 SAL_098,A3,Rack 10,2025-11-10,2/23/22 0:00,,,Terra C,Terrestrial,,WT,JW Histology - matched on R8,Pleurodeles waltl,AABL1550,,,6/20/23 0:00,,,0.0,Unknown,Found Dead
+SAL_744,C1,Rack 5,2025-11-11,12/10/24 0:00,"missing, likely cannibalized",,,Aquatic,PxW,WT,,Pleurodeles waltl,AABF2564,fridged > St 37,,,,,0.0,Unknown,
+SAL_743,C1,Rack 5,2025-11-11,12/10/24 0:00,"missing, likely cannibalized",,,Aquatic,PxW,WT,,Pleurodeles waltl,AABF2564,fridged > St 37,,,,,0.0,Unknown,
+SAL_203,B4,Rack 8,2025-11-09,2/2/23 0:00,looked healthy - bloody skin on belly,,,Aquatic,,WT,,Pleurodeles waltl,AABL1550,,,,,,0.0,Female,Found Dead
