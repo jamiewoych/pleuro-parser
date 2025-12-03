@@ -253,3 +253,6 @@ SAL_115,C2,Rack 8,2025-11-10,2/23/22 0:00,"EM, 56.1mm SV",JW,Aqua H/K,Aquatic,,W
 SAL_525,A4,Rack 1,2025-10-19,7/1/22 0:00,RB initials on death card,,,Aquatic,Sweden,hsyn-GFP,,Pleurodeles waltl,AABF2564,,,,,,0.0,Unknown,Found Dead
 SAL_784,B3,Rack 8,2025-10-23,1/3/25 0:00,SN,,,Aquatic,,WT,,Pleurodeles waltl,AABF2564,,,,,,0.0,Unknown,Found Dead
 SAL_537,A1,Rack 1,2025-11-21,9/1/23 0:00,,,,Aquatic,Sweden,hsyn-GCaMP6s,LX St Jude,Pleurodeles waltl,AABL1550,,,,,,0.0,Unknown,Found Dead
+SAL_844,C1,Rack 9,2025-11-06,1/3/25 0:00,imaging test,ECJ,,Aquatic,,WT,ECJ,Pleurodeles waltl,AABF2564,"100 nL AAV PHP.eB-mDlx-NLS-mRuby injection, R DP on 10/8/25",,,,,7.53,Unknown,
+SAL_358,A1,Rack 13 - Off,2025-11-14,11/24/23 0:00,imaging,ECJ,,Aquatic,F1,hsyn-GCaMP6s,,Pleurodeles waltl,AABL1550,150 nL AAVrg-CAG-tdTomato R OB injection on 10/7,,10/7/25,,,10.73,Unknown,
+SAL_359,A1,Rack 13 - Off,2025-11-18,11/24/23 0:00,imaging,ECJ,,Aquatic,F1,hsyn-GCaMP6s,,Pleurodeles waltl,AABL1550,150 nL AAVrg-CAG-tdTomato R OB injection on 10/7,,10/7/25,,,0.0,Unknown,
