@@ -1732,3 +1732,5 @@
 2025-12-22 21:56:48.961831 - Edit by JW: SAL_210 - Experimental_Holds: nan → LX St Jude
 2025-12-22 21:56:49.107191 - Edit by JW: SAL_209 - Experimental_Holds: nan → LX St Jude
 2025-12-22 21:59:10.072549 - Pushing Changes by JW: Changes saved
+2025-12-22 23:36:26.323028 - Euthanized by JW: SAL_530 on 11/08/2025
+2025-12-22 23:36:28.914000 - Pushing Changes by JW: Changes saved
