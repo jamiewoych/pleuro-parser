@@ -1725,3 +1725,10 @@
 2025-12-22 21:51:18.325442 - Pushing Changes by JW: Changes saved
 2025-12-22 21:52:21.818513 - Added animals by JW: 5 animals added to Rack 9 in C4.
 2025-12-22 21:53:45.813674 - Pushing Changes by JW: Changes saved
+2025-12-22 21:56:01.421322 - Edit by JW: SAL_204 - Experimental_Holds: LX St Jude → Breeding
+2025-12-22 21:56:01.515675 - Edit by JW: SAL_205 - Experimental_Holds: LX St Jude → Breeding
+2025-12-22 21:56:01.616575 - Edit by JW: SAL_206 - Experimental_Holds: LX St Jude → Breeding
+2025-12-22 21:56:48.832325 - Edit by JW: SAL_211 - Experimental_Holds: nan → LX St Jude
+2025-12-22 21:56:48.961831 - Edit by JW: SAL_210 - Experimental_Holds: nan → LX St Jude
+2025-12-22 21:56:49.107191 - Edit by JW: SAL_209 - Experimental_Holds: nan → LX St Jude
+2025-12-22 21:59:10.072549 - Pushing Changes by JW: Changes saved
