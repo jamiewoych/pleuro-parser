@@ -1748,3 +1748,6 @@
 2025-12-29 19:14:54.708806 - Euthanized by ts: SAL_111 on 12/29/2025
 2025-12-29 19:15:04.481465 - Euthanized by ts: SAL_112 on 12/29/2025
 2025-12-29 19:15:07.644240 - Pushing Changes by ts: Changes saved
+2025-12-29 20:01:44.859622 - Animals moved by jw: SAL_584 to Rack 7
+2025-12-29 20:01:44.860586 - Animals moved by jw: SAL_583 to Rack 7
+2025-12-29 20:01:47.135647 - Pushing Changes by jw: Changes saved
