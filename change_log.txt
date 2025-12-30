@@ -1759,3 +1759,5 @@
 2025-12-29 20:14:01.730026 - Animals moved by jw: SAL_568 to Rack 1
 2025-12-29 20:14:01.731357 - Animals moved by jw: SAL_569 to Rack 1
 2025-12-29 20:14:03.675222 - Pushing Changes by jw: Changes saved
+2025-12-30 19:09:48.108515 - Edit by jw: SAL_596 - Experimental_History: nan → GG sacc'd november 2025
+2025-12-30 19:11:11.421284 - Pushing Changes by JW: Changes saved
