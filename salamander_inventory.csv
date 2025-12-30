@@ -112,10 +112,10 @@ SAL_148,AABL1550,Rack 11,B2,3/21/22 0:00,Terra Q,Terrestrial,Unknown,,WT,,Pleuro
 SAL_151,AABF2564,Rack 8,A3,3/16/22 0:00,,Aquatic,Unknown,,WT,,Pleurodeles waltl,,,,,Gummy Schedule
 SAL_152,AABF2564,Rack 8,A3,3/16/22 0:00,,Aquatic,Unknown,,WT,,Pleurodeles waltl,,,,,Gummy Schedule
 SAL_154,AABL1550,Rack 8,A4,3/16/22 0:00,,Aquatic,Unknown,,WT,,Pleurodeles waltl,Viral G8s Flex ECJ,,,,Gummy Schedule
-SAL_155,AABL1550,Rack 8,C4,3/21/22 0:00,,Aquatic,Male,,WT,LX - St Jude,Pleurodeles waltl,,,,,Gummy Schedule
-SAL_156,AABL1550,Rack 8,C4,3/21/22 0:00,,Aquatic,Male,,WT,LX - St Jude,Pleurodeles waltl,,3D6.1543AFBBD9,,,Gummy Schedule
-SAL_157,AABL1550,Rack 8,C4,3/21/22 0:00,,Aquatic,Male,,WT,LX - St Jude,Pleurodeles waltl,,3D6.1543AFBBF8,,,Gummy Schedule
-SAL_158,AABL1550,Rack 8,C4,3/21/22 0:00,,Aquatic,Male,,WT,LX - St Jude,Pleurodeles waltl,,,,,Gummy Schedule
+SAL_155,AABL1550,Rack 8,C2,3/21/22 0:00,,Aquatic,Male,,WT,LX - St Jude,Pleurodeles waltl,,,,,Gummy Schedule
+SAL_156,AABL1550,Rack 8,C2,3/21/22 0:00,,Aquatic,Male,,WT,LX - St Jude,Pleurodeles waltl,,3D6.1543AFBBD9,,,Gummy Schedule
+SAL_157,AABL1550,Rack 8,C2,3/21/22 0:00,,Aquatic,Male,,WT,LX - St Jude,Pleurodeles waltl,,3D6.1543AFBBF8,,,Gummy Schedule
+SAL_158,AABL1550,Rack 8,C2,3/21/22 0:00,,Aquatic,Male,,WT,LX - St Jude,Pleurodeles waltl,,,,,Gummy Schedule
 SAL_161,AABL1550,Rack 13 - Off,A2,5/4/22 0:00,,Aquatic,Unknown,,WT,,Pleurodeles waltl,,,,,Gummy Schedule
 SAL_162,AABL1550,Rack 8,D2,5/4/22 0:00,,Aquatic,Unknown,,WT,,Pleurodeles waltl,,,,,Gummy Schedule
 SAL_163,AABL1550,Rack 8,D2,5/4/22 0:00,,Aquatic,Unknown,,WT,,Pleurodeles waltl,,,,,Gummy Schedule
@@ -145,9 +145,9 @@ SAL_205,AABL1550,Rack 4,A1,8/5/23 0:00,,Aquatic,Female,,WT,Breeding,Pleurodeles 
 SAL_206,AABL1550,Rack 4,A1,8/5/23 0:00,,Aquatic,Female,,WT,Breeding,Pleurodeles waltl,,,,,
 SAL_207,AABF2564,Rack 4,A2,7/30/23 0:00,,Aquatic,Unknown,,WT,,Pleurodeles waltl,,,,,
 SAL_208,AABF2564,Rack 4,A2,7/30/23 0:00,,Aquatic,Unknown,,WT,,Pleurodeles waltl,,,,,
-SAL_209,AABF2564,Rack 4,A2,7/30/23 0:00,,Aquatic,Unknown,,WT,LX St Jude,Pleurodeles waltl,,,,,
-SAL_210,AABF2564,Rack 4,A2,7/30/23 0:00,,Aquatic,Unknown,,WT,LX St Jude,Pleurodeles waltl,,,,,
-SAL_211,AABL1550,Rack 4,A2,7/30/23 0:00,,Aquatic,Unknown,,WT,LX St Jude,Pleurodeles waltl,,,,,
+SAL_209,AABF2564,Rack 4,C3,7/30/23 0:00,,Aquatic,Unknown,,WT,LX St Jude,Pleurodeles waltl,,,,,
+SAL_210,AABF2564,Rack 4,C3,7/30/23 0:00,,Aquatic,Unknown,,WT,LX St Jude,Pleurodeles waltl,,,,,
+SAL_211,AABL1550,Rack 4,C3,7/30/23 0:00,,Aquatic,Unknown,,WT,LX St Jude,Pleurodeles waltl,,,,,
 SAL_212,AABL1550,Rack 4,C3,8/7/23 0:00,Viral,Aquatic,Unknown,,WT,ECJ,Pleurodeles waltl,ECJ Viral PHPeB CAG G8s,,,,
 SAL_213,AABL1550,Rack 4,C3,8/7/23 0:00,Viral,Aquatic,Unknown,,WT,ECJ,Pleurodeles waltl,ECJ Viral PHPeB CAG G8s,,,,
 SAL_214,AABL1550,Rack 4,C3,8/7/23 0:00,Viral,Aquatic,Unknown,,WT,PA,Pleurodeles waltl,ECJ Viral PHPeB CAG G8s,,,,
@@ -433,8 +433,8 @@ SAL_625,AABL1550,Rack 2,C2,10/25/24 0:00,Viral,Aquatic,Unknown,,WT,TS,Pleurodele
 SAL_626,AABL1550,Rack 2,C2,10/25/24 0:00,Viral,Aquatic,Unknown,,WT,TS,Pleurodeles waltl,TS PHPeB GCaMP,,,,
 SAL_627,AABL1550,Rack 2,C2,10/25/24 0:00,Viral,Aquatic,Unknown,,WT,TS,Pleurodeles waltl,TS PHPeB GCaMP,,,,
 SAL_628,AABL1550,Rack 2,C2,10/25/24 0:00,Viral,Aquatic,Unknown,,WT,TS,Pleurodeles waltl,TS PHPeB GCaMP,,,,
-SAL_642,AABL1550,Rack 9,B1,11/25/24 0:00,Viral,Aquatic,Unknown,,WT,TS,Pleurodeles waltl,DREADD/PHPeB G6s TS,,,,
-SAL_643,AABL1550,Rack 9,B1,11/25/24 0:00,Viral,Aquatic,Unknown,,WT,TS,Pleurodeles waltl,DREADD/PHPeB G6s TS,,,,
+SAL_642,AABL1550,Rack 4,D1,11/25/24 0:00,Viral,Aquatic,Unknown,,WT,TS,Pleurodeles waltl,DREADD/PHPeB G6s TS,,,,
+SAL_643,AABL1550,Rack 4,D1,11/25/24 0:00,Viral,Aquatic,Unknown,,WT,TS,Pleurodeles waltl,DREADD/PHPeB G6s TS,,,,
 SAL_655,AABF2564,Rack 2,C4,12/10/24 0:00,,Aquatic,Unknown,,WT,,Pleurodeles waltl,,,,,
 SAL_656,AABF2564,Rack 2,C4,12/10/24 0:00,,Aquatic,Unknown,,WT,,Pleurodeles waltl,,,,,
 SAL_657,AABF2564,Rack 2,C4,12/10/24 0:00,,Aquatic,Unknown,,WT,,Pleurodeles waltl,,,,,
@@ -612,11 +612,11 @@ SAL_856,AABL1550,Rack 5,A1,1/3/25 0:00,,Aquatic,Unknown,,WT,,Pleurodeles waltl,f
 SAL_857,AABL1550,Rack 5,A1,1/3/25 0:00,,Aquatic,Unknown,,WT,,Pleurodeles waltl,fridged 1/6-1/27,,,,
 SAL_858,AABL1550,Rack 13 - Off,A2,1/3/25 0:00,,Aquatic,Unknown,,WT,,Pleurodeles waltl,fridged 1/6-1/27,,,,
 SAL_859,AABL1550,Rack 13 - Off,A2,1/3/25 0:00,,Aquatic,Unknown,,WT,,Pleurodeles waltl,fridged 1/6-1/27,,,,
-SAL_861,AABL1550,Rack 9,A4,1/3/25 0:00,,Aquatic,Unknown,,WT,,Pleurodeles waltl,fridged 1/6-1/27,,,,
-SAL_862,AABL1550,Rack 9,A4,1/3/25 0:00,,Aquatic,Unknown,,WT,,Pleurodeles waltl,fridged 1/6-1/27,,,,
-SAL_863,AABL1550,Rack 9,A4,1/3/25 0:00,,Aquatic,Unknown,,WT,,Pleurodeles waltl,fridged 1/6-1/27,,,,
-SAL_864,AABL1550,Rack 9,A4,1/3/25 0:00,,Aquatic,Unknown,,WT,,Pleurodeles waltl,fridged 1/6-1/27,,,,
-SAL_865,AABL1550,Rack 9,A4,1/3/25 0:00,,Aquatic,Unknown,,WT,,Pleurodeles waltl,fridged 1/6-1/27,,,,
+SAL_861,AABL1550,Rack 8,C4,1/3/25 0:00,,Aquatic,Unknown,,WT,,Pleurodeles waltl,fridged 1/6-1/27,,,,
+SAL_862,AABL1550,Rack 8,C4,1/3/25 0:00,,Aquatic,Unknown,,WT,,Pleurodeles waltl,fridged 1/6-1/27,,,,
+SAL_863,AABL1550,Rack 8,C4,1/3/25 0:00,,Aquatic,Unknown,,WT,,Pleurodeles waltl,fridged 1/6-1/27,,,,
+SAL_864,AABL1550,Rack 8,C4,1/3/25 0:00,,Aquatic,Unknown,,WT,,Pleurodeles waltl,fridged 1/6-1/27,,,,
+SAL_865,AABL1550,Rack 8,C4,1/3/25 0:00,,Aquatic,Unknown,,WT,,Pleurodeles waltl,fridged 1/6-1/27,,,,
 SAL_866,AABL1550,Rack 9,A1,1/3/25 0:00,,Aquatic,Unknown,,WT,,Pleurodeles waltl,fridged 1/6-1/27,,,,
 SAL_867,AABL1550,Rack 9,A1,1/3/25 0:00,,Aquatic,Unknown,,WT,,Pleurodeles waltl,fridged 1/6-1/27,,,,
 SAL_881,AABI2617,Rack 13 - Off,A1,10/25/24 0:00,PTU,Aquatic,Unknown,,WT,PTU AOG,Pleurodeles waltl,pallial injury 4/30/25,,,,
