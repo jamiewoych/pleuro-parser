@@ -1793,3 +1793,5 @@
 2025-12-30 20:00:54.572091 - Animals moved by jw: SAL_864 to Rack 8
 2025-12-30 20:00:54.573344 - Animals moved by jw: SAL_865 to Rack 8
 2025-12-30 20:01:18.745373 - Pushing Changes by jw: Changes saved
+2026-01-05 20:37:31.448431 - Euthanized by ts: SAL_410 on 01/05/2026
+2026-01-05 20:37:37.068303 - Pushing Changes by ts: Changes saved
