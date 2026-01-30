@@ -1842,3 +1842,32 @@
 2026-01-30 20:41:38.510283 - Euthanized by JW: SAL_100 on 12/24/2025
 2026-01-30 20:43:53.336562 - Euthanized by JW: SAL_088 on 01/05/2026
 2026-01-30 20:44:52.817535 - Pushing Changes by JW: Changes saved
+2026-01-30 20:50:23.316672 - Edit by JW: SAL_539 - Experimental_History: nan → Metro treatment 12/8/25-12/29/25
+2026-01-30 20:50:23.371827 - Edit by JW: SAL_540 - Experimental_History: nan → Metro treatment 12/8/25-12/29/25
+2026-01-30 20:50:23.437398 - Edit by JW: SAL_541 - Experimental_History: nan → Metro treatment 12/8/25-12/29/25
+2026-01-30 20:50:23.514638 - Edit by JW: SAL_542 - Experimental_History: nan → Metro treatment 12/8/25-12/29/25
+2026-01-30 20:50:23.604494 - Edit by JW: SAL_543 - Experimental_History: nan → Metro treatment 12/8/25-12/29/25
+2026-01-30 20:51:28.512640 - Edit by JW: SAL_545 - Experimental_History: nan → Metro treatment 12/8/25-12/29/25
+2026-01-30 20:51:28.675505 - Edit by JW: SAL_546 - Experimental_History: nan → Metro treatment 12/8/25-12/29/25
+2026-01-30 20:51:28.823939 - Edit by JW: SAL_547 - Experimental_History: nan → Metro treatment 12/8/25-12/29/25
+2026-01-30 20:51:28.982435 - Edit by JW: SAL_548 - Experimental_History: nan → Metro treatment 12/8/25-12/29/25
+2026-01-30 20:51:29.151438 - Edit by JW: SAL_549 - Experimental_History: nan → Metro treatment 12/8/25-12/29/25
+2026-01-30 20:51:29.340451 - Edit by JW: SAL_550 - Experimental_History: nan → Metro treatment 12/8/25-12/29/25
+2026-01-30 20:55:54.385891 - Edit by JW: SAL_551 - Experimental_History: nan → Metro treatment 1/16/26-2/6/26
+2026-01-30 20:55:54.655487 - Edit by JW: SAL_553 - Experimental_History: nan → Metro treatment 1/16/26-2/6/26
+2026-01-30 20:55:54.903488 - Edit by JW: SAL_554 - Experimental_History: nan → Metro treatment 1/16/26-2/6/26
+2026-01-30 20:55:55.175600 - Edit by JW: SAL_555 - Experimental_History: nan → Metro treatment 1/16/26-2/6/26
+2026-01-30 20:58:29.561515 - Edit by JW: SAL_566 - Experimental_History: DOB 2021/07 - 2023/09 → Metro treatment 12/8/25-12/29/25
+2026-01-30 20:58:29.841226 - Edit by JW: SAL_567 - Experimental_History: DOB 2021/07 - 2023/09 → Metro treatment 12/8/25-12/29/25
+2026-01-30 20:58:30.157956 - Edit by JW: SAL_568 - Experimental_History: DOB 2021/07 - 2023/09 → Metro treatment 12/8/25-12/29/25
+2026-01-30 21:00:40.305694 - Animals moved by JW: SAL_579 to Rack 13 - Off
+2026-01-30 21:00:40.312885 - Animals moved by JW: SAL_580 to Rack 13 - Off
+2026-01-30 21:00:40.314234 - Animals moved by JW: SAL_581 to Rack 13 - Off
+2026-01-30 21:01:13.702173 - Edit by JW: SAL_579 - Experimental_Holds: nan → Missing as of 01/2026
+2026-01-30 21:01:14.033218 - Edit by JW: SAL_580 - Experimental_Holds: nan → Missing as of 01/2026
+2026-01-30 21:01:14.371588 - Edit by JW: SAL_581 - Experimental_Holds: nan → Missing as of 01/2026
+2026-01-30 21:02:24.094164 - Edit by JW: SAL_099 - Experimental_Holds: JW Histology - matched on R8 → Missing as of 01/2026
+2026-01-30 21:02:24.466922 - Edit by JW: SAL_101 - Experimental_Holds: JW Histology - matched on R8 → Missing as of 01/2026
+2026-01-30 21:02:34.932218 - Animals moved by JW: SAL_099 to Rack 13 - Off
+2026-01-30 21:02:34.933599 - Animals moved by JW: SAL_101 to Rack 13 - Off
+2026-01-30 21:03:20.881059 - Pushing Changes by JW: Changes saved
