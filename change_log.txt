@@ -2012,3 +2012,35 @@
 2026-01-30 22:46:29.129402 - Euthanized by JW: SAL_766 on 01/01/2026
 2026-01-30 22:46:51.813987 - Euthanized by JW: SAL_767 on 01/01/2026
 2026-01-30 22:46:55.099346 - Pushing Changes by JW: Changes saved
+2026-01-30 22:47:52.997339 - Euthanized by JW: SAL_834 on 01/01/2026
+2026-01-30 22:52:57.591954 - Animals moved by JW: SAL_858 to Rack 5
+2026-01-30 22:54:29.712785 - Animals moved by JW: SAL_436 to Rack 12
+2026-01-30 22:54:29.714472 - Animals moved by JW: SAL_437 to Rack 12
+2026-01-30 22:54:29.716100 - Animals moved by JW: SAL_438 to Rack 12
+2026-01-30 23:02:52.162023 - Edit by JW: SAL_009 - Experimental_History: nan → Metro Treatment 1/16/26-2/6/26
+2026-01-30 23:02:52.457413 - Edit by JW: SAL_010 - Experimental_History: nan → Metro Treatment 1/16/26-2/6/26
+2026-01-30 23:02:52.789285 - Edit by JW: SAL_043 - Experimental_History: LX viral injections → Metro Treatment 1/16/26-2/6/26
+2026-01-30 23:02:53.188072 - Edit by JW: SAL_124 - Experimental_History: genotyped + → Metro Treatment 1/16/26-2/6/26
+2026-01-30 23:02:53.549675 - Edit by JW: SAL_125 - Experimental_History: genotyped + → Metro Treatment 1/16/26-2/6/26
+2026-01-30 23:02:53.913465 - Edit by JW: SAL_126 - Experimental_History: genotyped + → Metro Treatment 1/16/26-2/6/26
+2026-01-30 23:02:54.279210 - Edit by JW: SAL_127 - Experimental_History: genotyped + → Metro Treatment 1/16/26-2/6/26
+2026-01-30 23:02:54.675788 - Edit by JW: SAL_128 - Experimental_History: genotyped + → Metro Treatment 1/16/26-2/6/26
+2026-01-30 23:02:55.097508 - Edit by JW: SAL_133 - Experimental_History: genotyped + → Metro Treatment 1/16/26-2/6/26
+2026-01-30 23:02:55.520791 - Edit by JW: SAL_134 - Experimental_History: genotyped + → Metro Treatment 1/16/26-2/6/26
+2026-01-30 23:02:55.912696 - Edit by JW: SAL_135 - Experimental_History: genotyped + → Metro Treatment 1/16/26-2/6/26
+2026-01-30 23:02:56.323666 - Edit by JW: SAL_136 - Experimental_History: genotyped + → Metro Treatment 1/16/26-2/6/26
+2026-01-30 23:02:56.751563 - Edit by JW: SAL_137 - Experimental_History: genotyped + → Metro Treatment 1/16/26-2/6/26
+2026-01-30 23:04:46.349507 - Edit by JW: SAL_045 - Experimental_Holds: LX  → Missing as of 01/2026 - card gone
+2026-01-30 23:07:18.037696 - Euthanized by JW: SAL_592 on 12/09/2025
+2026-01-30 23:07:56.891419 - Euthanized by JW: SAL_016 on 01/26/2026
+2026-01-30 23:12:31.683622 - Edit by JW: SAL_538 - Experimental_History: nan → Metro treatment 12/8/25-12/29-25
+2026-01-30 23:12:32.301439 - Edit by JW: SAL_562 - Experimental_History: DOB 11/2021-Sept/2023 → Metro treatment 12/8/25-12/29-25
+2026-01-30 23:12:33.021807 - Edit by JW: SAL_563 - Experimental_History: DOB 11/2021-Sept/2023 → Metro treatment 12/8/25-12/29-25
+2026-01-30 23:12:33.722432 - Edit by JW: SAL_564 - Experimental_History: DOB 11/2021-Sept/2023 → Metro treatment 12/8/25-12/29-25
+2026-01-30 23:13:13.380253 - Edit by JW: SAL_577 - Experimental_History: DOB 2021/11 - 2023/09 → "WT" fecal samples as healthy animals to ICM
+2026-01-30 23:13:13.947042 - Edit by JW: SAL_578 - Experimental_History: DOB 2021/11 - 2023/09 → "WT" fecal samples as healthy animals to ICM
+2026-01-30 23:14:31.882419 - Edit by JW: SAL_583 - Experimental_History: Metro treatment Jan 2025 → Metro treatment 12/8/25-12/29/25
+2026-01-30 23:14:32.462491 - Edit by JW: SAL_584 - Experimental_History: Metro treatment Jan 2025 → Metro treatment 12/8/25-12/29/25
+2026-01-30 23:16:22.621545 - Edit by JW: SAL_594 - Experimental_History: nan → Metro treatment 11/19/25-12/8/25
+2026-01-30 23:16:23.307151 - Edit by JW: SAL_595 - Experimental_History: nan → Metro treatment 11/19/25-12/8/25
+2026-01-30 23:16:23.709293 - Pushing Changes by JW: Changes saved
