@@ -1,7 +1,7 @@
 Animal_ID,Protocol_Number,Rack,Tank,DOB,Cohort,Environmental_Condition,Sex,Lineage,Transgenic_Line,Experimental_Holds,Species,Experimental_History,RFID,Date_of_Terra,Date_of_Reaqua,Diet
-SAL_001,AABF2564,Rack 12,C4,,Reptile Rapture - Yellow,Aquatic,Female,,WT,Breeding Female,Pleurodeles waltl,,,,,
-SAL_002,AABF2564,Rack 12,C4,,Reptile Rapture - Yellow,Aquatic,Female,,WT,Breeding,Pleurodeles waltl,,,,,
-SAL_003,AABF2564,Rack 12,C4,,Reptile Rapture - Yellow,Aquatic,Female,,WT,Breeding,Pleurodeles waltl,,,,,
+SAL_001,AABF2564,Rack 4,C4,,Reptile Rapture - Yellow,Aquatic,Female,,WT,Breeding Female,Pleurodeles waltl,Metro treated 12/22/25-1/12/26,,,,
+SAL_002,AABF2564,Rack 4,C4,,Reptile Rapture - Yellow,Aquatic,Female,,WT,Breeding,Pleurodeles waltl,Metro treated 12/22/25-1/12/26,,,,
+SAL_003,AABF2564,Rack 4,C4,,Reptile Rapture - Yellow,Aquatic,Female,,WT,Breeding,Pleurodeles waltl,Metro treated 12/22/25-1/12/26,,,,
 SAL_004,AABF2564,Rack 3,C1,1/21/20,Reptile Rapture - Yellow,Aquatic,Male,,WT,Breeding,Pleurodeles waltl,,3D6.1546D5EE1,,,
 SAL_005,AABF2564,Rack 3,C1,1/21/20,Reptile Rapture - Yellow,Aquatic,Male,,WT,Breeding Male,Pleurodeles waltl,,,,,
 SAL_009,AABF2564,Rack 7,A4,6/2/20,Jungle Bobs,Aquatic,Female,,WT,Breeding,Pleurodeles waltl,,,,,
@@ -166,7 +166,7 @@ SAL_252,AABL1550,Rack 8,A2,12/9/23 0:00,Reaqua I,Reaqua,Unknown,,WT,AMMM JW ,Ple
 SAL_253,AABL1550,Rack 8,A2,12/9/23 0:00,Reaqua I,Reaqua,Unknown,,WT,AMMM JW ,Pleurodeles waltl,,,7/30/24 0:00,6/2/25,Gummy Schedule
 SAL_254,AABL1550,Rack 8,A2,12/9/23 0:00,Reaqua I,Reaqua,Unknown,,WT,AMMM JW ,Pleurodeles waltl,,,7/30/24 0:00,6/2/25,Gummy Schedule
 SAL_255,AABL1550,Rack 8,A2,12/9/23 0:00,Reaqua I,Reaqua,Unknown,,WT,AMMM JW ,Pleurodeles waltl,,,7/30/24 0:00,6/2/25,Gummy Schedule
-SAL_256,AABL1550,Rack 10,C4,11/24/23 0:00,Terra J,Terrestrial,Unknown,F1,hsyn-GCaMP6s,ECJ TS Imaging,Pleurodeles waltl,,,,,Gummy Schedule
+SAL_256,AABL1550,Rack 10,C2,11/24/23 0:00,Terra J,Terrestrial,Unknown,F1,hsyn-GCaMP6s,ECJ TS Imaging,Pleurodeles waltl,,,,,Gummy Schedule
 SAL_258,AABL1550,Rack 10,C2,11/24/23 0:00,Terra J,Terrestrial,Unknown,F1,hsyn-GCaMP6s,ECJ TS Imaging,Pleurodeles waltl,,,,,Gummy Schedule
 SAL_259,AABL1550,Rack 13 - Off,A2,11/24/23 0:00,Terra J,Terrestrial,Unknown,F1,hsyn-GCaMP6s,ECJ TS Imaging,Pleurodeles waltl,,,,,Gummy Schedule
 SAL_260,AABL1550,Rack 10,C2,11/24/23 0:00,Terra J,Terrestrial,Unknown,F1,hsyn-GCaMP6s,ECJ TS Imaging,Pleurodeles waltl,,,,,Gummy Schedule
@@ -280,7 +280,7 @@ SAL_402,AABI2617,Rack 13 - Off,A2,11/24/23 0:00,,Aquatic,Unknown,,WT,AOG,Pleurod
 SAL_403,AABI2617,Rack 13 - Off,A2,11/24/23 0:00,,Aquatic,Unknown,,WT,AOG,Pleurodeles waltl,,,,,
 SAL_405,AABF2564,Rack 6,C4,4/15/24 0:00,,Aquatic,Unknown,,WT,AD,Pleurodeles waltl,Ad pbase ,,,,
 SAL_406,AABL1550,Rack 6,D1,11/24/23 0:00,,Aquatic,Unknown,F1,hsyn-GCaMP6s,,Pleurodeles waltl,,,,,
-SAL_407,AABL1550,Rack 11,A4,11/24/23 0:00,Terra O,Terrestrial,Unknown,F1,hsyn-GCaMP6s,,Pleurodeles waltl,,,6/10/25,,Gummy Schedule
+SAL_407,AABL1550,Rack 13 - Off,A2,11/24/23 0:00,Terra O,Terrestrial,Unknown,F1,hsyn-GCaMP6s,Missing as of 01/2026;  card also gone,Pleurodeles waltl,,,6/10/25,,Gummy Schedule
 SAL_412,AABL1550,Rack 6,D1,11/24/23 0:00,,Aquatic,Unknown,F1,hsyn-GCaMP6s,,Pleurodeles waltl,,,,,
 SAL_413,AABL1550,Rack 6,D1,11/24/23 0:00,,Aquatic,Unknown,F1,hsyn-GCaMP6s,,Pleurodeles waltl,,,,,
 SAL_414,AABL1550,Rack 6,D1,11/24/23 0:00,,Aquatic,Unknown,F1,hsyn-GCaMP6s,,Pleurodeles waltl,,,,,
@@ -526,13 +526,13 @@ SAL_786,AABF2564,Rack 8,B3,1/3/25 0:00,,Aquatic,Unknown,,WT,,Pleurodeles waltl,,
 SAL_787,AABF2564,Rack 8,B3,1/3/25 0:00,,Aquatic,Unknown,,WT,,Pleurodeles waltl,,,,,
 SAL_788,AABF2564,Rack 8,B3,1/3/25 0:00,,Aquatic,Unknown,,WT,,Pleurodeles waltl,,,,,
 SAL_789,AABF2564,Rack 8,B3,1/3/25 0:00,,Aquatic,Unknown,,WT,,Pleurodeles waltl,,,,,
-SAL_790,AABF2564,Rack 5,C4,1/3/25 0:00,,Aquatic,Unknown,,WT,,Pleurodeles waltl,,,,,
-SAL_791,AABF2564,Rack 5,C4,1/3/25 0:00,,Aquatic,Unknown,,WT,,Pleurodeles waltl,,,,,
-SAL_792,AABF2564,Rack 5,C4,1/3/25 0:00,,Aquatic,Unknown,,WT,,Pleurodeles waltl,,,,,
-SAL_793,AABF2564,Rack 5,C4,1/3/25 0:00,,Aquatic,Unknown,,WT,,Pleurodeles waltl,,,,,
-SAL_794,AABF2564,Rack 5,C4,1/3/25 0:00,,Aquatic,Unknown,,WT,,Pleurodeles waltl,,,,,
+SAL_790,AABF2564,Rack 11,C1,1/3/25 0:00,Terra T,Terrestrial,Unknown,,WT,,Pleurodeles waltl,,,2025-12-18,,Gummy Schedule
+SAL_791,AABF2564,Rack 11,C1,1/3/25 0:00,Terra T,Terrestrial,Unknown,,WT,,Pleurodeles waltl,,,2025-12-18,,Gummy Schedule
+SAL_792,AABF2564,Rack 11,C1,1/3/25 0:00,Terra T,Terrestrial,Unknown,,WT,,Pleurodeles waltl,,,2025-12-18,,Gummy Schedule
+SAL_793,AABF2564,Rack 11,C1,1/3/25 0:00,Terra T,Terrestrial,Unknown,,WT,,Pleurodeles waltl,,,2025-12-18,,Gummy Schedule
+SAL_794,AABF2564,Rack 11,C1,1/3/25 0:00,Terra T,Terrestrial,Unknown,,WT,,Pleurodeles waltl,,,2025-12-18,,Gummy Schedule
 SAL_795,AABF2564,Rack 13 - Off,A2,1/3/25 0:00,,Aquatic,Unknown,,WT,,Pleurodeles waltl,,,,,
-SAL_796,AABF2564,Rack 5,C4,1/3/25 0:00,,Aquatic,Unknown,,WT,,Pleurodeles waltl,,,,,
+SAL_796,AABF2564,Rack 11,C1,1/3/25 0:00,Terra T,Terrestrial,Unknown,,WT,,Pleurodeles waltl,,,2025-12-18,,Gummy Schedule
 SAL_797,AABF2564,Rack 5,C2,1/3/25 0:00,,Aquatic,Unknown,,WT,,Pleurodeles waltl,,,,,
 SAL_798,AABF2564,Rack 6,B3,1/3/25 0:00,,Aquatic,Unknown,,WT,,Pleurodeles waltl,,,,,
 SAL_799,AABF2564,Rack 6,B3,1/3/25 0:00,,Aquatic,Unknown,,WT,,Pleurodeles waltl,,,,,
