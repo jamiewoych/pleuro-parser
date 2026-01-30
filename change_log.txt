@@ -1956,3 +1956,8 @@
 2026-01-30 21:56:42.113055 - Animals moved by JW: SAL_015 to Rack 12
 2026-01-30 21:57:05.550245 - Animals moved by JW: SAL_064 to Rack 12
 2026-01-30 21:57:09.760243 - Pushing Changes by JW: Changes saved
+2026-01-30 21:57:45.791460 - Edit by JW: SAL_067 - RFID: nan → DFEB6
+2026-01-30 21:58:24.299808 - Edit by JW: SAL_068 - RFID: nan → D5E80
+2026-01-30 21:59:22.926969 - Edit by JW: SAL_069 - RFID: nan → D5EC2
+2026-01-30 21:59:53.376527 - Edit by JW: SAL_070 - RFID: nan → 8BB129
+2026-01-30 21:59:55.061056 - Pushing Changes by JW: Changes saved
