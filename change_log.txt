@@ -2044,3 +2044,11 @@
 2026-01-30 23:16:22.621545 - Edit by JW: SAL_594 - Experimental_History: nan → Metro treatment 11/19/25-12/8/25
 2026-01-30 23:16:23.307151 - Edit by JW: SAL_595 - Experimental_History: nan → Metro treatment 11/19/25-12/8/25
 2026-01-30 23:16:23.709293 - Pushing Changes by JW: Changes saved
+2026-01-30 23:17:01.542983 - Animals moved by JW: SAL_596 to Rack 13 - Off
+2026-01-30 23:17:23.932886 - Edit by JW: SAL_596 - Experimental_Holds: nan → Missing as of 01/2026; card also gone
+2026-01-30 23:17:56.400422 - Edit by JW: SAL_119 - Experimental_Holds: JW Multiome → Priority to use
+2026-01-30 23:19:04.145075 - Edit by JW: SAL_151 - Experimental_Holds: nan → Missing as of 01/2026
+2026-01-30 23:19:04.911070 - Edit by JW: SAL_154 - Experimental_Holds: nan → Missing as of 01/2026
+2026-01-30 23:19:12.530873 - Animals moved by JW: SAL_151 to Rack 13 - Off
+2026-01-30 23:19:12.532489 - Animals moved by JW: SAL_154 to Rack 13 - Off
+2026-01-30 23:19:15.168959 - Pushing Changes by JW: Changes saved
