@@ -1937,3 +1937,22 @@
 2026-01-30 21:45:19.673925 - Edit by JW: SAL_002 - Experimental_History: nan → Metro treated 12/22/25-1/12/26
 2026-01-30 21:45:19.985136 - Edit by JW: SAL_003 - Experimental_History: nan → Metro treated 12/22/25-1/12/26
 2026-01-30 21:45:22.019290 - Pushing Changes by JW: Changes saved
+2026-01-30 21:45:52.452607 - Edit by JW: SAL_013 - RFID: nan → BF4
+2026-01-30 21:53:54.637381 - Animals moved by JW: SAL_025 to Rack 3
+2026-01-30 21:53:54.638846 - Animals moved by JW: SAL_026 to Rack 3
+2026-01-30 21:53:54.641114 - Animals moved by JW: SAL_027 to Rack 3
+2026-01-30 21:53:54.642897 - Animals moved by JW: SAL_028 to Rack 3
+2026-01-30 21:53:54.644759 - Animals moved by JW: SAL_029 to Rack 3
+2026-01-30 21:54:39.393254 - Edit by JW: SAL_025 - Experimental_History: nan → Metro treated 12/22/25-1/12/26
+2026-01-30 21:54:39.776184 - Edit by JW: SAL_026 - Experimental_History: nan → Metro treated 12/22/25-1/12/26
+2026-01-30 21:54:40.196366 - Edit by JW: SAL_027 - Experimental_History: nan → Metro treated 12/22/25-1/12/26
+2026-01-30 21:54:40.606355 - Edit by JW: SAL_028 - Experimental_History: nan → Metro treated 12/22/25-1/12/26
+2026-01-30 21:54:41.023765 - Edit by JW: SAL_029 - Experimental_History: nan → Metro treated 12/22/25-1/12/26
+2026-01-30 21:54:58.938063 - Edit by JW: SAL_025 - RFID: nan → ECD
+2026-01-30 21:55:21.699877 - Edit by JW: SAL_026 - RFID: nan → ECB
+2026-01-30 21:55:38.525386 - Edit by JW: SAL_027 - RFID: nan → BCA
+2026-01-30 21:56:01.265960 - Edit by JW: SAL_028 - RFID: nan → BF5
+2026-01-30 21:56:18.654509 - Edit by JW: SAL_029 - RFID: nan → BED
+2026-01-30 21:56:42.113055 - Animals moved by JW: SAL_015 to Rack 12
+2026-01-30 21:57:05.550245 - Animals moved by JW: SAL_064 to Rack 12
+2026-01-30 21:57:09.760243 - Pushing Changes by JW: Changes saved

@@ -8,8 +8,8 @@ SAL_009,AABF2564,Rack 7,A4,6/2/20,Jungle Bobs,Aquatic,Female,,WT,Breeding,Pleuro
 SAL_010,AABF2564,Rack 7,A4,6/2/20,Jungle Bobs,Aquatic,Female,,WT,Breeding,Pleurodeles waltl,,,,,
 SAL_011,AABF2564,Rack 12,B4,7/5/20,,Aquatic,Female,,WT,Breeding,Pleurodeles waltl,,,,,
 SAL_012,AABF2564,Rack 12,B4,7/5/20,,Aquatic,Female,,WT,Breeding,Pleurodeles waltl,,,,,
-SAL_013,AABF2564,Rack 12,B4,7/5/20,,Aquatic,Female,,WT,Breeding,Pleurodeles waltl,,,,,
-SAL_015,AABL1550,Rack 12,A4,7/9/20,,Aquatic,Unknown,,WT,,Pleurodeles waltl,Flashtag,,,,
+SAL_013,AABF2564,Rack 12,B4,7/5/20,,Aquatic,Female,,WT,Breeding,Pleurodeles waltl,,BF4,,,
+SAL_015,AABL1550,Rack 12,A3,7/9/20,,Aquatic,Unknown,,WT,,Pleurodeles waltl,Flashtag,,,,
 SAL_016,AABL1550,Rack 8,C5,7/5/20,,Aquatic,Male,,WT,,Pleurodeles waltl,,,,,
 SAL_017,AABL1550,Rack 8,C5,7/5/20,,Aquatic,Male,,WT,,Pleurodeles waltl,,,,,
 SAL_018,AABL1550,Rack 10,A1,9/20/20,Terra A,Terrestrial,Unknown,,WT,,Pleurodeles waltl,,,4/28/22,,Gummy Schedule
@@ -19,11 +19,11 @@ SAL_021,AABL1550,Rack 10,A1,9/20/20,Terra A,Terrestrial,Unknown,,WT,,Pleurodeles
 SAL_022,AABL1550,Rack 11,B4,9/24/20,Terra S,Terrestrial,Unknown,,WT,AMMM implant testing,Pleurodeles waltl,,,2/9/23,,Gummy Schedule
 SAL_023,AABL1550,Rack 11,B4,9/24/20,Terra S,Terrestrial,Unknown,,WT,AMMM implant testing,Pleurodeles waltl,,,2/9/23,,Gummy Schedule
 SAL_024,AABL1550,Rack 11,B4,9/24/20,Terra S,Terrestrial,Unknown,,WT,AMMM implant testing,Pleurodeles waltl,,,2/9/23,,Gummy Schedule
-SAL_025,AABF2564,Rack 12,D4,11/30/20,,Aquatic,Male,,WT,Breeding,Pleurodeles waltl,,,,,
-SAL_026,AABF2564,Rack 12,D4,11/30/20,,Aquatic,Male,,WT,Breeding,Pleurodeles waltl,,,,,
-SAL_027,AABF2564,Rack 12,D4,11/30/20,,Aquatic,Male,,WT,Breeding,Pleurodeles waltl,,,,,
-SAL_028,AABF2564,Rack 12,D4,11/30/20,,Aquatic,Male,,WT,Breeding,Pleurodeles waltl,,,,,
-SAL_029,AABF2564,Rack 12,D4,11/30/20,,Aquatic,Male,,WT,Breeding,Pleurodeles waltl,,,,,
+SAL_025,AABF2564,Rack 3,C1,11/30/20,,Aquatic,Male,,WT,Breeding,Pleurodeles waltl,Metro treated 12/22/25-1/12/26,ECD,,,
+SAL_026,AABF2564,Rack 3,C1,11/30/20,,Aquatic,Male,,WT,Breeding,Pleurodeles waltl,Metro treated 12/22/25-1/12/26,ECB,,,
+SAL_027,AABF2564,Rack 3,C1,11/30/20,,Aquatic,Male,,WT,Breeding,Pleurodeles waltl,Metro treated 12/22/25-1/12/26,BCA,,,
+SAL_028,AABF2564,Rack 3,C1,11/30/20,,Aquatic,Male,,WT,Breeding,Pleurodeles waltl,Metro treated 12/22/25-1/12/26,BF5,,,
+SAL_029,AABF2564,Rack 3,C1,11/30/20,,Aquatic,Male,,WT,Breeding,Pleurodeles waltl,Metro treated 12/22/25-1/12/26,BED,,,
 SAL_030,AABF2564,Rack 2,A1,3/23/21 0:00,F0,Aquatic,Unknown,,hsyn-Cre,,Pleurodeles waltl,,,,,
 SAL_031,AABF2564,Rack 2,A1,3/23/21 0:00,F0,Aquatic,Unknown,,hsyn-Cre,,Pleurodeles waltl,,,,,
 SAL_032,AABF2564,Rack 2,A2,11/28/20 0:00,F0,Aquatic,Unknown,,hsyn-Cre,,Pleurodeles waltl,,,,,
@@ -51,7 +51,7 @@ SAL_059,AABF2564,Rack 13 - Off,A2,12/10/24,,Aquatic,Unknown,,WT,,Pleurodeles wal
 SAL_060,AABF2564,Rack 2,D2,11/10/21 0:00,,Aquatic,Unknown,,WT,AD,Pleurodeles waltl,AD - EdU @ St 50,,,,
 SAL_062,AABL1550,Rack 10,A2,11/11/21 0:00,Terra B,Terrestrial,Unknown,,WT,AMMM,Pleurodeles waltl,"Odor conditioning, other tests, olfnav",,10/7/22 0:00,,
 SAL_063,AABL1550,Rack 10,A2,11/11/21 0:00,Terra B,Terrestrial,Unknown,,WT,AMMM,Pleurodeles waltl,"Odor conditioning, other tests, olfnav",,10/7/22 0:00,,
-SAL_064,AABF2564,Rack 12,A1,11/11/21 0:00,,Aquatic,Female,,WT,Breeding,Pleurodeles waltl,Mother of 12/10/23,,,,
+SAL_064,AABF2564,Rack 12,B1,11/11/21 0:00,,Aquatic,Female,,WT,Breeding,Pleurodeles waltl,Mother of 12/10/23,,,,
 SAL_065,AABF2564,Rack 12,B1,11/11/21 0:00,,Aquatic,Female,,WT,Breeding,Pleurodeles waltl,,,,,
 SAL_066,AABF2564,Rack 12,B1,11/11/21 0:00,,Aquatic,Female,,WT,Breeding,Pleurodeles waltl,,,,,
 SAL_067,AABL1550,Rack 12,C1,3/8/21 0:00,F0,Aquatic,Male,,hsyn-GCaMP6s,,Pleurodeles waltl,,,,,
