@@ -1985,3 +1985,30 @@
 2026-01-30 22:29:24.277950 - Animals moved by JW: SAL_103 to Rack 11
 2026-01-30 22:31:23.858891 - Euthanized by JW: SAL_106 on 01/21/2026
 2026-01-30 22:31:30.337205 - Pushing Changes by JW: Changes saved
+2026-01-30 22:32:46.233460 - Animals moved by JW: SAL_074 to Rack 3
+2026-01-30 22:32:46.234906 - Animals moved by JW: SAL_075 to Rack 3
+2026-01-30 22:33:23.815330 - Edit by JW: SAL_078 - RFID: nan → D5EEF
+2026-01-30 22:36:08.120552 - Animals moved by JW: SAL_209 to Rack 13 - Off
+2026-01-30 22:36:08.122247 - Animals moved by JW: SAL_210 to Rack 13 - Off
+2026-01-30 22:36:08.123161 - Animals moved by JW: SAL_211 to Rack 13 - Off
+2026-01-30 22:37:45.609018 - Animals moved by JW: SAL_155 to Rack 13 - Off
+2026-01-30 22:37:45.610783 - Animals moved by JW: SAL_156 to Rack 13 - Off
+2026-01-30 22:37:45.612381 - Animals moved by JW: SAL_157 to Rack 13 - Off
+2026-01-30 22:37:45.614105 - Animals moved by JW: SAL_158 to Rack 13 - Off
+2026-01-30 22:43:08.375504 - Animals moved by JW: SAL_214 to Rack 4
+2026-01-30 22:43:08.376528 - Animals moved by JW: SAL_218 to Rack 4
+2026-01-30 22:43:08.377372 - Animals moved by JW: SAL_219 to Rack 4
+2026-01-30 22:43:08.379204 - Animals moved by JW: SAL_220 to Rack 4
+2026-01-30 22:43:08.380614 - Animals moved by JW: SAL_221 to Rack 4
+2026-01-30 22:43:23.763586 - Animals moved by JW: SAL_214 to Rack 12
+2026-01-30 22:43:23.765122 - Animals moved by JW: SAL_218 to Rack 12
+2026-01-30 22:43:23.766336 - Animals moved by JW: SAL_219 to Rack 12
+2026-01-30 22:43:23.767569 - Animals moved by JW: SAL_220 to Rack 12
+2026-01-30 22:43:23.769419 - Animals moved by JW: SAL_221 to Rack 12
+2026-01-30 22:43:42.422490 - Edit by JW: SAL_279 - RFID: 3D6.1543AFBBE1 → BBE2
+2026-01-30 22:43:54.624744 - Edit by JW: SAL_280 - RFID: 3D6.1543AFBBE2 → BBE1
+2026-01-30 22:44:18.625906 - Animals moved by JW: SAL_496 to Rack 13 - Off
+2026-01-30 22:44:46.499474 - Edit by JW: SAL_496 - Experimental_Holds: nan → Missing as of 01/2026; no animal missing card
+2026-01-30 22:46:29.129402 - Euthanized by JW: SAL_766 on 01/01/2026
+2026-01-30 22:46:51.813987 - Euthanized by JW: SAL_767 on 01/01/2026
+2026-01-30 22:46:55.099346 - Pushing Changes by JW: Changes saved
