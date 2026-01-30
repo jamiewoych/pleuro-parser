@@ -1835,3 +1835,10 @@
 2026-01-30 20:11:40.680120 - Pushing Changes by JW: Changes saved
 2026-01-30 20:13:07.211867 - Euthanized by JW: SAL_143 on 12/29/2025
 2026-01-30 20:13:10.130596 - Pushing Changes by JW: Changes saved
+2026-01-30 20:13:38.404618 - Undo by JW: Re-added SAL_143 and removed euthanasia log entry
+2026-01-30 20:13:40.321579 - Undo by JW: Re-added SAL_132 and removed euthanasia log entry
+2026-01-30 20:14:20.638956 - Euthanized by JW: SAL_132 on 01/21/2026
+2026-01-30 20:15:09.044762 - Euthanized by JW: SAL_143 on 12/29/2025
+2026-01-30 20:41:38.510283 - Euthanized by JW: SAL_100 on 12/24/2025
+2026-01-30 20:43:53.336562 - Euthanized by JW: SAL_088 on 01/05/2026
+2026-01-30 20:44:52.817535 - Pushing Changes by JW: Changes saved
