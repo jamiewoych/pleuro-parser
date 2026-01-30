@@ -1982,3 +1982,6 @@
 2026-01-30 22:18:24.680611 - Pushing Changes by JW: Changes saved
 2026-01-30 22:28:06.243300 - Edit by JW: SAL_103 - Experimental_Holds: Missing as of 01/2026 →  
 2026-01-30 22:28:20.379957 - Pushing Changes by JW: Changes saved
+2026-01-30 22:29:24.277950 - Animals moved by JW: SAL_103 to Rack 11
+2026-01-30 22:31:23.858891 - Euthanized by JW: SAL_106 on 01/21/2026
+2026-01-30 22:31:30.337205 - Pushing Changes by JW: Changes saved
