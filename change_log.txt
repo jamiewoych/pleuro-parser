@@ -1831,3 +1831,5 @@
 2026-01-30 20:09:21.452414 - Edit by JW: SAL_536 - Experimental_History: nan → Metro treated 11/14/25-12/5/25
 2026-01-30 20:09:24.320670 - Pushing Changes by JW: Changes saved
 2026-01-30 20:10:31.140368 - Pushing Changes by JW: Changes saved
+2026-01-30 20:11:35.863674 - Euthanized by JW: SAL_132 on 01/21/2026
+2026-01-30 20:11:40.680120 - Pushing Changes by JW: Changes saved
