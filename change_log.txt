@@ -2052,3 +2052,17 @@
 2026-01-30 23:19:12.530873 - Animals moved by JW: SAL_151 to Rack 13 - Off
 2026-01-30 23:19:12.532489 - Animals moved by JW: SAL_154 to Rack 13 - Off
 2026-01-30 23:19:15.168959 - Pushing Changes by JW: Changes saved
+2026-01-30 23:21:00.262714 - Animals moved by JW: SAL_452 to Rack 13 - Off
+2026-01-30 23:21:19.344702 - Edit by JW: SAL_452 - Experimental_Holds: JW AMMM histology → Missing as of 01/2026; card also gone
+2026-01-30 23:21:55.752474 - Animals moved by JW: SAL_499 to Rack 13 - Off
+2026-01-30 23:23:52.201343 - Edit by JW: SAL_503 - Experimental_Holds: nan → Priority
+2026-01-30 23:23:53.059406 - Edit by JW: SAL_504 - Experimental_Holds: nan → Priority
+2026-01-30 23:23:53.902356 - Edit by JW: SAL_505 - Experimental_Holds: nan → Priority
+2026-01-30 23:23:54.807288 - Edit by JW: SAL_506 - Experimental_Holds: nan → Priority
+2026-01-30 23:23:55.666224 - Edit by JW: SAL_507 - Experimental_Holds: nan → Priority
+2026-01-30 23:25:38.230232 - Added animals by JW: 2 animals added to Rack 8 in D1.
+2026-01-30 23:28:44.908694 - Added animals by JW: 5 animals added to Rack 9 in A3.
+2026-01-30 23:29:15.868130 - Added animals by JW: 5 animals added to Rack 9 in B1.
+2026-01-30 23:29:47.105918 - Added animals by JW: 6 animals added to Rack 9 in C1.
+2026-01-30 23:30:02.325591 - Added animals by JW: 6 animals added to Rack 9 in A4.
+2026-01-30 23:44:49.190221 - Pushing Changes by JW: Changes saved
