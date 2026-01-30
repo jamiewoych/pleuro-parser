@@ -1961,3 +1961,16 @@
 2026-01-30 21:59:22.926969 - Edit by JW: SAL_069 - RFID: nan → D5EC2
 2026-01-30 21:59:53.376527 - Edit by JW: SAL_070 - RFID: nan → 8BB129
 2026-01-30 21:59:55.061056 - Pushing Changes by JW: Changes saved
+2026-01-30 22:07:30.833290 - Animals moved by JW: SAL_082 to Rack 13 - Off
+2026-01-30 22:07:30.835588 - Animals moved by JW: SAL_083 to Rack 13 - Off
+2026-01-30 22:07:53.789754 - Edit by JW: SAL_082 - Experimental_Holds: Breeding → Missing as of 01/2026
+2026-01-30 22:07:54.445235 - Edit by JW: SAL_083 - Experimental_Holds: Breeding → Missing as of 01/2026
+2026-01-30 22:08:26.940847 - Edit by JW: SAL_085 - RFID: 3D6.1543AFBBEA → BBEA
+2026-01-30 22:08:47.306145 - Edit by JW: SAL_086 - RFID: 3D6.1543AFBBCF → BBCF
+2026-01-30 22:08:53.608950 - Edit by JW: SAL_086 - RFID: BBCF → BBCF
+2026-01-30 22:09:15.529660 - Animals moved by JW: SAL_096 to Rack 12
+2026-01-30 22:09:44.248054 - Edit by JW: SAL_096 - RFID: EED → 3D6.15346D5EED
+2026-01-30 22:10:11.648074 - Animals moved by JW: SAL_281 to Rack 7
+2026-01-30 22:10:11.649208 - Animals moved by JW: SAL_282 to Rack 7
+2026-01-30 22:10:11.650249 - Animals moved by JW: SAL_283 to Rack 7
+2026-01-30 22:11:31.728824 - Pushing Changes by JW: Changes saved
