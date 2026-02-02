@@ -2066,3 +2066,5 @@
 2026-01-30 23:29:47.105918 - Added animals by JW: 6 animals added to Rack 9 in C1.
 2026-01-30 23:30:02.325591 - Added animals by JW: 6 animals added to Rack 9 in A4.
 2026-01-30 23:44:49.190221 - Pushing Changes by JW: Changes saved
+2026-02-02 18:54:30.925768 - Euthanized by JW: SAL_288 on 02/02/2026
+2026-02-02 18:54:35.027231 - Pushing Changes by JW: Changes saved
