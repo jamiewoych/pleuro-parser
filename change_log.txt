@@ -2072,3 +2072,6 @@
 2026-02-03 22:19:20.889455 - Edit by JW: SAL_095 - Protocol_Number: AABF2564 → AABL1550
 2026-02-03 22:19:43.815456 - Euthanized by JW: SAL_095 on 02/02/2026
 2026-02-03 22:19:47.897693 - Pushing Changes by JW: Changes saved
+2026-02-03 22:21:36.221040 - Animals moved by JW: SAL_287 to Rack 13 - Off
+2026-02-03 22:21:55.399414 - Edit by JW: SAL_287 - Experimental_Holds: JW Histology → missing as of 01/2026
+2026-02-03 22:22:50.293675 - Pushing Changes by JW: Changes saved
