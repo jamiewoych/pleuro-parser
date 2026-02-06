@@ -2075,3 +2075,5 @@
 2026-02-03 22:21:36.221040 - Animals moved by JW: SAL_287 to Rack 13 - Off
 2026-02-03 22:21:55.399414 - Edit by JW: SAL_287 - Experimental_Holds: JW Histology → missing as of 01/2026
 2026-02-03 22:22:50.293675 - Pushing Changes by JW: Changes saved
+2026-02-06 21:21:09.827020 - Animals moved by JW: SAL_017 to Rack 3
+2026-02-06 21:21:15.072295 - Pushing Changes by JW: Changes saved
