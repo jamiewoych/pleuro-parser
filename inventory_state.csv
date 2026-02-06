@@ -64,8 +64,8 @@ SAL_077,AABF2564,Rack 3,A3,2/3/22 0:00,,Aquatic,Female,,WT,Breeding,Pleurodeles 
 SAL_078,AABF2564,Rack 3,A3,7/5/20 0:00,,Aquatic,Male,,WT,Breeding,Pleurodeles waltl,,D5EEF,,,
 SAL_079,AABF2564,Rack 3,A3,7/5/20 0:00,,Aquatic,Male,,WT,Breeding,Pleurodeles waltl,,,,,
 SAL_081,AABF2564,Rack 3,B1,2/23/22 0:00,,Aquatic,Male,,WT,Breeding,Pleurodeles waltl,,,,,
-SAL_082,AABF2564,Rack 13 - Off,A2,2/23/22 0:00,,Aquatic,Male,,WT,Missing as of 01/2026,Pleurodeles waltl,,,,,
-SAL_083,AABF2564,Rack 13 - Off,A2,2/23/22 0:00,,Aquatic,Male,,WT,Missing as of 01/2026,Pleurodeles waltl,,,,,
+SAL_082,AABF2564,Rack 12,A2,2/23/22 0:00,,Aquatic,Male,,WT,Breeding,Pleurodeles waltl,,,,,
+SAL_083,AABF2564,Rack 13 - Off,A2,2/23/22 0:00,,Aquatic,Male,,WT,Breeding,Pleurodeles waltl,,,,,
 SAL_085,AABF2564,Rack 12,B4,2/23/22 0:00,,Aquatic,Male,,WT,Breeding,Pleurodeles waltl,,BBEA,,,
 SAL_086,AABF2564,Rack 12,B4,2/23/22 0:00,,Aquatic,Male,,WT,Breeding,Pleurodeles waltl,,BBCF,,,
 SAL_087,AABF2564,Rack 3,B1,2/23/22 0:00,,Aquatic,Male,,WT,Breeding,Pleurodeles waltl,,,,,
@@ -181,9 +181,9 @@ SAL_278,AABL1550,Rack 13 - Off,A2,12/10/23 0:00,Viral,Aquatic,Unknown,,WT,,Pleur
 SAL_279,AABF2564,Rack 4,C2,12/9/23 0:00,,Aquatic,Unknown,,WT,Breeding,Pleurodeles waltl,LHRH injection June 2025,BBE2,,,
 SAL_280,AABF2564,Rack 4,C2,12/9/23 0:00,,Aquatic,Unknown,,WT,Breeding,Pleurodeles waltl,"LHRH Injection June 2025
 ",BBE1,,,
-SAL_281,AABF2564,Rack 7,C1,12/9/23 0:00,,Aquatic,Unknown,,WT,Breeding,Pleurodeles waltl,LHRH injection June 2025,3D6.1534AFBBE1,,,
-SAL_282,AABF2564,Rack 7,C1,12/9/23 0:00,,Aquatic,Unknown,,WT,Breeding,Pleurodeles waltl,,3D6.1534AFBBB9,,,
-SAL_283,AABF2564,Rack 7,C1,12/9/23 0:00,,Aquatic,Unknown,,WT,Breeding,Pleurodeles waltl,,,,,
+SAL_281,AABF2564,Rack 12,A3,12/9/23 0:00,,Aquatic,Unknown,,WT,Breeding,Pleurodeles waltl,LHRH injection June 2025,3D6.1534AFBBE1,,,
+SAL_282,AABF2564,Rack 12,A3,12/9/23 0:00,,Aquatic,Unknown,,WT,Breeding,Pleurodeles waltl,,3D6.1534AFBBB9,,,
+SAL_283,AABF2564,Rack 12,A3,12/9/23 0:00,,Aquatic,Unknown,,WT,Breeding,Pleurodeles waltl,,,,,
 SAL_284,AABF2564,Rack 4,C2,12/9/23 0:00,,Aquatic,Unknown,,WT,Breeding,Pleurodeles waltl,,,,,
 SAL_287,AABL1550,Rack 13 - Off,A2,11/24/23 0:00,Terra M,Terrestrial,Unknown,,WT,missing as of 01/2026,Pleurodeles waltl,,,4/3/25 0:00,,Gummy Schedule
 SAL_290,AABL1550,Rack 11,A4,12/9/23 0:00,Terra O,Terrestrial,Unknown,F1,hsyn-GCaMP6s,ECJ TS Imaging,Pleurodeles waltl,,,7/15/24 0:00,,Gummy Schedule
