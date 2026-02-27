@@ -2124,3 +2124,7 @@
 2026-02-27 21:50:12.322911 - Animals moved by jw: SAL_580 to Rack 7
 2026-02-27 21:50:12.323915 - Animals moved by jw: SAL_581 to Rack 7
 2026-02-27 21:50:15.217362 - Pushing Changes by jw: Changes saved
+2026-02-27 21:50:52.332122 - Animals moved by jw: SAL_582 to Rack 1
+2026-02-27 21:50:52.333660 - Animals moved by jw: SAL_590 to Rack 1
+2026-02-27 21:50:52.334979 - Animals moved by jw: SAL_593 to Rack 1
+2026-02-27 21:53:08.884753 - Pushing Changes by jw: Changes saved
