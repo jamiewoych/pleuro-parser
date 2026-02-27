@@ -2117,3 +2117,10 @@
 2026-02-25 23:23:13.357388 - Pushing Changes by pa: Changes saved
 2026-02-27 21:28:46.033945 - Animals moved by jw: SAL_096 to Rack 3
 2026-02-27 21:29:13.646420 - Pushing Changes by jw: Changes saved
+2026-02-27 21:49:57.145746 - Edit by jw: SAL_579 - Experimental_Holds: Missing as of 01/2026 →  
+2026-02-27 21:49:57.221683 - Edit by jw: SAL_580 - Experimental_Holds: Missing as of 01/2026 →  
+2026-02-27 21:49:57.305525 - Edit by jw: SAL_581 - Experimental_Holds: Missing as of 01/2026 →  
+2026-02-27 21:50:12.321857 - Animals moved by jw: SAL_579 to Rack 7
+2026-02-27 21:50:12.322911 - Animals moved by jw: SAL_580 to Rack 7
+2026-02-27 21:50:12.323915 - Animals moved by jw: SAL_581 to Rack 7
+2026-02-27 21:50:15.217362 - Pushing Changes by jw: Changes saved
