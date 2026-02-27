@@ -2115,3 +2115,5 @@
 2026-02-25 23:22:02.734664 - Euthanized by pa: SAL_910 on 02/25/2026
 2026-02-25 23:22:30.610734 - Euthanized by pa: SAL_911 on 02/25/2026
 2026-02-25 23:23:13.357388 - Pushing Changes by pa: Changes saved
+2026-02-27 21:28:46.033945 - Animals moved by jw: SAL_096 to Rack 3
+2026-02-27 21:29:13.646420 - Pushing Changes by jw: Changes saved
