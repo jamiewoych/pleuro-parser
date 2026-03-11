@@ -2142,3 +2142,16 @@
 2026-03-10 22:27:01.629081 - Animals moved by jw: SAL_068 to Rack 8
 2026-03-10 22:27:01.630939 - Animals moved by jw: SAL_303 to Rack 8
 2026-03-10 22:27:04.109891 - Pushing Changes by jw: Changes saved
+2026-03-11 19:18:45.061384 - Edit by JW: SAL_664 - Experimental_Holds: nan → AOG; Experimental_History: nan → 34dpi edu/brdu
+2026-03-11 19:18:45.116757 - Edit by JW: SAL_698 - Experimental_Holds: nan → AOG; Experimental_History: nan → 34dpi edu/brdu
+2026-03-11 19:18:45.184236 - Edit by JW: SAL_666 - Experimental_Holds: nan → AOG; Experimental_History: nan → 34dpi edu/brdu
+2026-03-11 19:18:45.264678 - Edit by JW: SAL_665 - Experimental_Holds: nan → AOG; Experimental_History: nan → 34dpi edu/brdu
+2026-03-11 19:18:59.570148 - Animals moved by JW: SAL_664 to Rack 2
+2026-03-11 19:18:59.571406 - Animals moved by JW: SAL_698 to Rack 2
+2026-03-11 19:18:59.572536 - Animals moved by JW: SAL_666 to Rack 2
+2026-03-11 19:18:59.573944 - Animals moved by JW: SAL_665 to Rack 2
+2026-03-11 19:20:01.553389 - Edit by JW: SAL_664 - Experimental_Holds: AOG → AOG; Protocol_Number: AABF2564 → AABF2564; Experimental_History: 34dpi edu/brdu → 34dpi edu/brdu
+2026-03-11 19:20:01.684556 - Edit by JW: SAL_698 - Experimental_Holds: AOG → AOG; Protocol_Number: AABF2564 → AABF2564; Experimental_History: 34dpi edu/brdu → 34dpi edu/brdu
+2026-03-11 19:20:01.834043 - Edit by JW: SAL_666 - Experimental_Holds: AOG → AOG; Protocol_Number: AABF2564 → AABF2564; Experimental_History: 34dpi edu/brdu → 34dpi edu/brdu
+2026-03-11 19:20:01.981377 - Edit by JW: SAL_665 - Experimental_Holds: AOG → AOG; Protocol_Number: AABF2564 → AABF2564; Experimental_History: 34dpi edu/brdu → 34dpi edu/brdu
+2026-03-11 19:20:11.082646 - Pushing Changes by JW: Changes saved
