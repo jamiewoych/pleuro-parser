@@ -2155,3 +2155,6 @@
 2026-03-11 19:20:01.834043 - Edit by JW: SAL_666 - Experimental_Holds: AOG → AOG; Protocol_Number: AABF2564 → AABF2564; Experimental_History: 34dpi edu/brdu → 34dpi edu/brdu
 2026-03-11 19:20:01.981377 - Edit by JW: SAL_665 - Experimental_Holds: AOG → AOG; Protocol_Number: AABF2564 → AABF2564; Experimental_History: 34dpi edu/brdu → 34dpi edu/brdu
 2026-03-11 19:20:11.082646 - Pushing Changes by JW: Changes saved
+2026-03-11 19:24:25.828788 - Animals moved by JW: SAL_004 to Rack 3
+2026-03-11 19:24:25.831137 - Animals moved by JW: SAL_005 to Rack 3
+2026-03-11 19:24:27.687853 - Pushing Changes by JW: Changes saved
