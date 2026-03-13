@@ -2175,3 +2175,6 @@
 2026-03-12 17:10:04.493723 - Pushing Changes by NJC: Changes saved
 2026-03-12 17:10:37.108827 - Euthanized by NJC: SAL_033 on 03/03/2026
 2026-03-12 17:10:43.730572 - Pushing Changes by NJC: Changes saved
+2026-03-13 16:54:20.832185 - Added Clutch by jw: 09/25/2025 from F1 G6s Breeders
+2026-03-13 16:55:01.725090 - Added animals by jw: 5 animals added to Rack 4 in B3.
+2026-03-13 17:07:49.113798 - Pushing Changes by JW: Changes saved
