@@ -2182,3 +2182,11 @@
 2026-03-13 17:09:37.322284 - Added Clutch by JW: 09/07/2025 from G6s Breeders
 2026-03-13 17:10:29.877921 - Added animals by jw: 5 animals added to Rack 8 in C2.
 2026-03-13 17:21:01.663165 - Pushing Changes by jw: Changes saved
+2026-03-13 18:40:16.478030 - Animals moved by jw: SAL_776 to Rack 2
+2026-03-13 18:40:16.479115 - Animals moved by jw: SAL_778 to Rack 2
+2026-03-13 18:40:16.481583 - Animals moved by jw: SAL_777 to Rack 2
+2026-03-13 18:40:16.482674 - Animals moved by jw: SAL_779 to Rack 2
+2026-03-13 18:40:16.483845 - Animals moved by jw: SAL_781 to Rack 2
+2026-03-13 18:40:16.485019 - Animals moved by jw: SAL_815 to Rack 2
+2026-03-13 18:42:23.568373 - Added animals by jw: 4 animals added to Rack 5 in C4.
+2026-03-13 20:11:30.631646 - Pushing Changes by jw: Changes saved
