@@ -2216,3 +2216,28 @@
 2026-03-16 16:33:18.521381 - Edit by JW: SAL_848 - Experimental_Holds: nan → JW - terra match; Protocol_Number: AABF2564 → AABL1550; Cohort: nan → Aqua T
 2026-03-16 16:33:18.682553 - Edit by JW: SAL_847 - Experimental_Holds: nan → JW - terra match; Protocol_Number: AABF2564 → AABL1550; Cohort: nan → Aqua T
 2026-03-16 16:33:27.736161 - Pushing Changes by JW: Changes saved
+2026-03-16 16:34:34.682921 - Animals moved by JW: SAL_204 to Rack 12
+2026-03-16 16:34:34.684258 - Animals moved by JW: SAL_205 to Rack 12
+2026-03-16 16:34:34.685557 - Animals moved by JW: SAL_206 to Rack 12
+2026-03-16 16:34:58.619559 - Edit by JW: SAL_204 - Sex: Female → Female; Experimental_Holds: Breeding → breeding
+2026-03-16 16:34:58.847984 - Edit by JW: SAL_205 - Sex: Female → Female; Experimental_Holds: Breeding → breeding
+2026-03-16 16:34:59.104542 - Edit by JW: SAL_206 - Sex: Female → Female; Experimental_Holds: Breeding → breeding
+2026-03-16 16:35:18.591061 - Animals moved by JW: SAL_207 to Rack 12
+2026-03-16 16:35:18.592528 - Animals moved by JW: SAL_208 to Rack 12
+2026-03-16 16:35:40.879178 - Edit by JW: SAL_207 - Sex: Unknown → Female; Experimental_Holds: nan → Breeding
+2026-03-16 16:35:41.166835 - Edit by JW: SAL_208 - Sex: Unknown → Female; Experimental_Holds: nan → Breeding
+2026-03-16 16:39:48.912844 - Animals moved by JW: SAL_945 to Rack 4
+2026-03-16 16:39:48.915744 - Animals moved by JW: SAL_944 to Rack 4
+2026-03-16 16:39:48.918022 - Animals moved by JW: SAL_947 to Rack 4
+2026-03-16 16:39:48.919488 - Animals moved by JW: SAL_946 to Rack 4
+2026-03-16 16:40:52.869961 - Animals moved by JW: SAL_345 to Rack 4
+2026-03-16 16:40:52.871705 - Animals moved by JW: SAL_349 to Rack 4
+2026-03-16 16:40:52.873226 - Animals moved by JW: SAL_350 to Rack 4
+2026-03-16 16:40:52.875159 - Animals moved by JW: SAL_918 to Rack 4
+2026-03-16 16:40:52.876474 - Animals moved by JW: SAL_919 to Rack 4
+2026-03-16 16:40:52.877928 - Animals moved by JW: SAL_917 to Rack 4
+2026-03-16 16:40:52.879283 - Animals moved by JW: SAL_920 to Rack 4
+2026-03-16 16:44:26.835132 - Added animals by JW: 7 animals added to Rack 5 in C2.
+2026-03-16 16:47:11.201412 - Added animals by JW: 9 animals added to Rack 5 in B3.
+2026-03-16 16:49:08.635973 - Added animals by JW: 9 animals added to Rack 5 in B4.
+2026-03-16 17:23:40.761364 - Pushing Changes by JW: Changes saved
