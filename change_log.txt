@@ -2249,3 +2249,11 @@
 2026-03-16 20:13:38.235257 - Added animals by JW: 1 animals added to Rack 1 in C3.
 2026-03-16 20:13:50.155122 - Added animals by JW: 4 animals added to Rack 1 in C3.
 2026-03-16 20:14:06.127270 - Pushing Changes by JW: Changes saved
+2026-03-16 20:35:12.019008 - Added animals by JW: 2 animals added to Rack 5 in B2.
+2026-03-16 20:37:23.258388 - Edit by JW: SAL_797 - Experimental_Holds: nan → Breeding
+2026-03-16 20:37:23.320093 - Edit by JW: SAL_807 - Experimental_Holds: nan → Breeding
+2026-03-16 20:37:23.390743 - Edit by JW: SAL_803 - Experimental_Holds: nan → Breeding
+2026-03-16 20:37:23.477055 - Edit by JW: SAL_804 - Experimental_Holds: nan → Breeding
+2026-03-16 20:37:23.574400 - Edit by JW: SAL_806 - Experimental_Holds: nan → Breeding
+2026-03-16 20:37:23.681715 - Edit by JW: SAL_805 - Experimental_Holds: nan → Breeding
+2026-03-16 20:37:25.602605 - Pushing Changes by JW: Changes saved
