@@ -2257,3 +2257,11 @@
 2026-03-16 20:37:23.574400 - Edit by JW: SAL_806 - Experimental_Holds: nan → Breeding
 2026-03-16 20:37:23.681715 - Edit by JW: SAL_805 - Experimental_Holds: nan → Breeding
 2026-03-16 20:37:25.602605 - Pushing Changes by JW: Changes saved
+2026-03-18 18:43:10.864366 - Euthanized by gg2900: SAL_1039 on 03/18/2026
+2026-03-18 18:46:44.955760 - Euthanized by gg2900: SAL_1040 on 03/12/2026
+2026-03-18 18:46:56.280156 - Euthanized by gg2900: SAL_1038 on 03/12/2026
+2026-03-18 19:51:59.616438 - Euthanized by pa: SAL_782 on 03/03/2026
+2026-03-18 19:52:38.764230 - Euthanized by pa: SAL_783 on 03/03/2026
+2026-03-18 19:53:22.101586 - Euthanized by pa: SAL_785 on 03/03/2026
+2026-03-18 19:54:09.691140 - Euthanized by pa: SAL_786 on 03/03/2026
+2026-03-18 19:54:26.764102 - Pushing Changes by pa: Changes saved
