@@ -2066,3 +2066,202 @@
 2026-01-30 23:29:47.105918 - Added animals by JW: 6 animals added to Rack 9 in C1.
 2026-01-30 23:30:02.325591 - Added animals by JW: 6 animals added to Rack 9 in A4.
 2026-01-30 23:44:49.190221 - Pushing Changes by JW: Changes saved
+2026-02-02 18:54:30.925768 - Euthanized by JW: SAL_288 on 02/02/2026
+2026-02-02 18:54:35.027231 - Pushing Changes by JW: Changes saved
+2026-02-03 22:18:51.712674 - Euthanized by JW: SAL_107 on 02/02/2026
+2026-02-03 22:19:20.889455 - Edit by JW: SAL_095 - Protocol_Number: AABF2564 → AABL1550
+2026-02-03 22:19:43.815456 - Euthanized by JW: SAL_095 on 02/02/2026
+2026-02-03 22:19:47.897693 - Pushing Changes by JW: Changes saved
+2026-02-03 22:21:36.221040 - Animals moved by JW: SAL_287 to Rack 13 - Off
+2026-02-03 22:21:55.399414 - Edit by JW: SAL_287 - Experimental_Holds: JW Histology → missing as of 01/2026
+2026-02-03 22:22:50.293675 - Pushing Changes by JW: Changes saved
+2026-02-06 21:21:09.827020 - Animals moved by JW: SAL_017 to Rack 3
+2026-02-06 21:21:15.072295 - Pushing Changes by JW: Changes saved
+2026-02-06 21:21:17.183306 - Pushing Changes by JW: Changes saved
+2026-02-06 21:39:04.038747 - Edit by JW: SAL_082 - Experimental_Holds: Missing as of 01/2026 → Breeding
+2026-02-06 21:39:04.109025 - Edit by JW: SAL_083 - Experimental_Holds: Missing as of 01/2026 → Breeding
+2026-02-06 21:39:21.163528 - Animals moved by JW: SAL_082 to Rack 12
+2026-02-06 21:39:45.611243 - Animals moved by JW: SAL_281 to Rack 12
+2026-02-06 21:39:45.612655 - Animals moved by JW: SAL_282 to Rack 12
+2026-02-06 21:39:45.613784 - Animals moved by JW: SAL_283 to Rack 12
+2026-02-06 21:39:52.947925 - Pushing Changes by JW: Changes saved
+2026-02-06 21:43:22.843753 - Added Clutch by JW: 01/26/2026 from F0 G6s females 067, 069, 070 x F1 male 303 & F0 male 068
+2026-02-06 21:43:49.690154 - Pushing Changes by JW: Changes saved
+2026-02-06 21:44:39.208583 - Animals moved by JW: SAL_083 to Rack 12
+2026-02-06 21:44:41.471140 - Pushing Changes by JW: Changes saved
+2026-02-22 20:19:11.457419 - Euthanized by LDVA: SAL_692 on 02/13/2026
+2026-02-22 20:19:23.293134 - Pushing Changes by LDVA: Changes saved
+2026-02-22 20:20:02.302480 - Euthanized by LDVA: SAL_693 on 02/13/2026
+2026-02-22 20:20:09.769213 - Pushing Changes by LDVA: Changes saved
+2026-02-22 20:20:56.904629 - Euthanized by LDVA: SAL_694 on 02/13/2026
+2026-02-22 20:20:58.718124 - Pushing Changes by LDVA: Changes saved
+2026-02-23 21:07:02.238542 - Euthanized by LDVA: SAL_503 on 02/13/2026
+2026-02-23 21:07:04.132993 - Pushing Changes by LDVA: Changes saved
+2026-02-23 23:24:48.377078 - Euthanized by JW: SAL_838 on 02/09/2026
+2026-02-23 23:24:59.213681 - Euthanized by JW: SAL_679 on 02/09/2026
+2026-02-23 23:25:10.204145 - Euthanized by JW: SAL_680 on 02/09/2026
+2026-02-23 23:25:40.590907 - Euthanized by JW: SAL_836 on 02/16/2026
+2026-02-23 23:25:57.289953 - Euthanized by JW: SAL_748 on 02/16/2026
+2026-02-23 23:26:10.972375 - Euthanized by JW: SAL_837 on 02/16/2026
+2026-02-23 23:26:13.500067 - Pushing Changes by JW: Changes saved
+2026-02-23 23:28:46.771498 - Edit by JW: SAL_452 - Experimental_Holds: Missing as of 01/2026; card also gone → JW
+2026-02-23 23:28:46.937854 - Edit by JW: SAL_287 - Experimental_Holds: missing as of 01/2026 → JW
+2026-02-23 23:31:04.407995 - Euthanized by JW: SAL_452 on 11/04/2025
+2026-02-23 23:31:16.973340 - Euthanized by JW: SAL_287 on 11/04/2025
+2026-02-23 23:31:59.785012 - Pushing Changes by JW: Changes saved
+2026-02-23 23:52:01.744128 - Pushing Changes by JW: Changes saved
+2026-02-25 23:20:37.527894 - Euthanized by pa: SAL_907 on 02/25/2026
+2026-02-25 23:21:09.643611 - Euthanized by pa: SAL_908 on 02/25/2026
+2026-02-25 23:22:02.734664 - Euthanized by pa: SAL_910 on 02/25/2026
+2026-02-25 23:22:30.610734 - Euthanized by pa: SAL_911 on 02/25/2026
+2026-02-25 23:23:13.357388 - Pushing Changes by pa: Changes saved
+2026-02-27 21:28:46.033945 - Animals moved by jw: SAL_096 to Rack 3
+2026-02-27 21:29:13.646420 - Pushing Changes by jw: Changes saved
+2026-02-27 21:49:57.145746 - Edit by jw: SAL_579 - Experimental_Holds: Missing as of 01/2026 →  
+2026-02-27 21:49:57.221683 - Edit by jw: SAL_580 - Experimental_Holds: Missing as of 01/2026 →  
+2026-02-27 21:49:57.305525 - Edit by jw: SAL_581 - Experimental_Holds: Missing as of 01/2026 →  
+2026-02-27 21:50:12.321857 - Animals moved by jw: SAL_579 to Rack 7
+2026-02-27 21:50:12.322911 - Animals moved by jw: SAL_580 to Rack 7
+2026-02-27 21:50:12.323915 - Animals moved by jw: SAL_581 to Rack 7
+2026-02-27 21:50:15.217362 - Pushing Changes by jw: Changes saved
+2026-02-27 21:50:52.332122 - Animals moved by jw: SAL_582 to Rack 1
+2026-02-27 21:50:52.333660 - Animals moved by jw: SAL_590 to Rack 1
+2026-02-27 21:50:52.334979 - Animals moved by jw: SAL_593 to Rack 1
+2026-02-27 21:53:08.884753 - Pushing Changes by jw: Changes saved
+2026-03-10 18:23:33.584889 - Animals moved by ts: SAL_415 to Rack 11
+2026-03-10 18:23:33.587861 - Animals moved by ts: SAL_416 to Rack 11
+2026-03-10 18:23:33.589971 - Animals moved by ts: SAL_418 to Rack 11
+2026-03-10 18:23:33.591465 - Animals moved by ts: SAL_419 to Rack 11
+2026-03-10 18:23:40.643874 - Pushing Changes by ts: Changes saved
+2026-03-10 18:23:45.392385 - Pushing Changes by ts: Changes saved
+2026-03-10 22:18:59.705523 - Animals moved by jw: SAL_065 to Rack 3
+2026-03-10 22:19:16.767730 - Animals moved by jw: SAL_015 to Rack 7
+2026-03-10 22:19:58.598912 - Animals moved by jw: SAL_069 to Rack 12
+2026-03-10 22:20:01.649583 - Pushing Changes by jw: Changes saved
+2026-03-10 22:26:44.939684 - Animals moved by jw: SAL_070 to Rack 12
+2026-03-10 22:27:01.629081 - Animals moved by jw: SAL_068 to Rack 8
+2026-03-10 22:27:01.630939 - Animals moved by jw: SAL_303 to Rack 8
+2026-03-10 22:27:04.109891 - Pushing Changes by jw: Changes saved
+2026-03-11 19:18:45.061384 - Edit by JW: SAL_664 - Experimental_Holds: nan → AOG; Experimental_History: nan → 34dpi edu/brdu
+2026-03-11 19:18:45.116757 - Edit by JW: SAL_698 - Experimental_Holds: nan → AOG; Experimental_History: nan → 34dpi edu/brdu
+2026-03-11 19:18:45.184236 - Edit by JW: SAL_666 - Experimental_Holds: nan → AOG; Experimental_History: nan → 34dpi edu/brdu
+2026-03-11 19:18:45.264678 - Edit by JW: SAL_665 - Experimental_Holds: nan → AOG; Experimental_History: nan → 34dpi edu/brdu
+2026-03-11 19:18:59.570148 - Animals moved by JW: SAL_664 to Rack 2
+2026-03-11 19:18:59.571406 - Animals moved by JW: SAL_698 to Rack 2
+2026-03-11 19:18:59.572536 - Animals moved by JW: SAL_666 to Rack 2
+2026-03-11 19:18:59.573944 - Animals moved by JW: SAL_665 to Rack 2
+2026-03-11 19:20:01.553389 - Edit by JW: SAL_664 - Experimental_Holds: AOG → AOG; Protocol_Number: AABF2564 → AABF2564; Experimental_History: 34dpi edu/brdu → 34dpi edu/brdu
+2026-03-11 19:20:01.684556 - Edit by JW: SAL_698 - Experimental_Holds: AOG → AOG; Protocol_Number: AABF2564 → AABF2564; Experimental_History: 34dpi edu/brdu → 34dpi edu/brdu
+2026-03-11 19:20:01.834043 - Edit by JW: SAL_666 - Experimental_Holds: AOG → AOG; Protocol_Number: AABF2564 → AABF2564; Experimental_History: 34dpi edu/brdu → 34dpi edu/brdu
+2026-03-11 19:20:01.981377 - Edit by JW: SAL_665 - Experimental_Holds: AOG → AOG; Protocol_Number: AABF2564 → AABF2564; Experimental_History: 34dpi edu/brdu → 34dpi edu/brdu
+2026-03-11 19:20:11.082646 - Pushing Changes by JW: Changes saved
+2026-03-11 19:24:25.828788 - Animals moved by JW: SAL_004 to Rack 3
+2026-03-11 19:24:25.831137 - Animals moved by JW: SAL_005 to Rack 3
+2026-03-11 19:24:27.687853 - Pushing Changes by JW: Changes saved
+2026-03-11 19:36:13.494274 - Euthanized by gg2900: SAL_304 on 02/02/2026
+2026-03-11 19:36:31.170850 - Euthanized by pa: SAL_783 on 03/11/2026
+2026-03-11 19:36:59.485971 - Euthanized by gg2900: SAL_731 on 12/22/2025
+2026-03-11 19:38:17.164483 - Euthanized by pa: SAL_786 on 03/03/2026
+2026-03-11 19:38:28.797166 - Pushing Changes by pa: Changes saved
+2026-03-11 19:40:14.529726 - Euthanized by gg2900: SAL_589 on 03/02/2026
+2026-03-11 21:34:45.809961 - Euthanized by jw: SAL_447 on 03/08/2026
+2026-03-11 21:35:14.987745 - Euthanized by jw: SAL_954 on 03/11/2026
+2026-03-11 21:35:18.403668 - Pushing Changes by jw: Changes saved
+2026-03-12 17:08:14.762865 - Euthanized by NJC: SAL_030 on 03/02/2026
+2026-03-12 17:08:21.022236 - Pushing Changes by NJC: Changes saved
+2026-03-12 17:09:16.263993 - Euthanized by NJC: SAL_031 on 03/02/2026
+2026-03-12 17:09:19.573621 - Pushing Changes by NJC: Changes saved
+2026-03-12 17:09:53.786596 - Euthanized by NJC: SAL_032 on 03/03/2026
+2026-03-12 17:10:04.493723 - Pushing Changes by NJC: Changes saved
+2026-03-12 17:10:37.108827 - Euthanized by NJC: SAL_033 on 03/03/2026
+2026-03-12 17:10:43.730572 - Pushing Changes by NJC: Changes saved
+2026-03-13 16:54:20.832185 - Added Clutch by jw: 09/25/2025 from F1 G6s Breeders
+2026-03-13 16:55:01.725090 - Added animals by jw: 5 animals added to Rack 4 in B3.
+2026-03-13 17:07:49.113798 - Pushing Changes by JW: Changes saved
+2026-03-13 17:09:01.877912 - Added Clutch by JW: 09/05/2025 from G6s Breeders
+2026-03-13 17:09:37.322284 - Added Clutch by JW: 09/07/2025 from G6s Breeders
+2026-03-13 17:10:29.877921 - Added animals by jw: 5 animals added to Rack 8 in C2.
+2026-03-13 17:21:01.663165 - Pushing Changes by jw: Changes saved
+2026-03-13 18:40:16.478030 - Animals moved by jw: SAL_776 to Rack 2
+2026-03-13 18:40:16.479115 - Animals moved by jw: SAL_778 to Rack 2
+2026-03-13 18:40:16.481583 - Animals moved by jw: SAL_777 to Rack 2
+2026-03-13 18:40:16.482674 - Animals moved by jw: SAL_779 to Rack 2
+2026-03-13 18:40:16.483845 - Animals moved by jw: SAL_781 to Rack 2
+2026-03-13 18:40:16.485019 - Animals moved by jw: SAL_815 to Rack 2
+2026-03-13 18:42:23.568373 - Added animals by jw: 4 animals added to Rack 5 in C4.
+2026-03-13 20:11:30.631646 - Pushing Changes by jw: Changes saved
+2026-03-13 20:11:33.994816 - Pushing Changes by jw: Changes saved
+2026-03-13 22:07:25.497903 - Added Clutch by Jw: 10/31/2025 from G6s
+2026-03-13 22:08:55.321503 - Added Clutch by JW: 11/20/2025 from range 11/20-11/21 G6s
+2026-03-13 22:29:51.581746 - Pushing Changes by JW: Changes saved
+2026-03-16 16:22:34.636426 - Animals moved by JW: SAL_805 to Rack 4
+2026-03-16 16:22:34.637852 - Animals moved by JW: SAL_806 to Rack 4
+2026-03-16 16:22:34.639267 - Animals moved by JW: SAL_804 to Rack 4
+2026-03-16 16:22:34.641757 - Animals moved by JW: SAL_803 to Rack 4
+2026-03-16 16:22:34.643059 - Animals moved by JW: SAL_807 to Rack 4
+2026-03-16 16:22:34.644257 - Animals moved by JW: SAL_797 to Rack 4
+2026-03-16 16:24:06.100857 - Animals moved by JW: SAL_933 to Rack 6
+2026-03-16 16:24:06.102123 - Animals moved by JW: SAL_934 to Rack 6
+2026-03-16 16:24:06.103237 - Animals moved by JW: SAL_935 to Rack 6
+2026-03-16 16:24:06.104318 - Animals moved by JW: SAL_936 to Rack 6
+2026-03-16 16:24:14.364906 - Pushing Changes by JW: Changes saved
+2026-03-16 16:32:23.365253 - Animals moved by JW: SAL_845 to Rack 8
+2026-03-16 16:32:23.366556 - Animals moved by JW: SAL_849 to Rack 8
+2026-03-16 16:32:23.367824 - Animals moved by JW: SAL_846 to Rack 8
+2026-03-16 16:32:23.369085 - Animals moved by JW: SAL_848 to Rack 8
+2026-03-16 16:32:23.370357 - Animals moved by JW: SAL_847 to Rack 8
+2026-03-16 16:33:18.118434 - Edit by JW: SAL_845 - Experimental_Holds: nan → JW - terra match; Protocol_Number: AABF2564 → AABL1550; Cohort: nan → Aqua T
+2026-03-16 16:33:18.254914 - Edit by JW: SAL_849 - Experimental_Holds: nan → JW - terra match; Protocol_Number: AABF2564 → AABL1550; Cohort: nan → Aqua T
+2026-03-16 16:33:18.392158 - Edit by JW: SAL_846 - Experimental_Holds: nan → JW - terra match; Protocol_Number: AABF2564 → AABL1550; Cohort: nan → Aqua T
+2026-03-16 16:33:18.521381 - Edit by JW: SAL_848 - Experimental_Holds: nan → JW - terra match; Protocol_Number: AABF2564 → AABL1550; Cohort: nan → Aqua T
+2026-03-16 16:33:18.682553 - Edit by JW: SAL_847 - Experimental_Holds: nan → JW - terra match; Protocol_Number: AABF2564 → AABL1550; Cohort: nan → Aqua T
+2026-03-16 16:33:27.736161 - Pushing Changes by JW: Changes saved
+2026-03-16 16:34:34.682921 - Animals moved by JW: SAL_204 to Rack 12
+2026-03-16 16:34:34.684258 - Animals moved by JW: SAL_205 to Rack 12
+2026-03-16 16:34:34.685557 - Animals moved by JW: SAL_206 to Rack 12
+2026-03-16 16:34:58.619559 - Edit by JW: SAL_204 - Sex: Female → Female; Experimental_Holds: Breeding → breeding
+2026-03-16 16:34:58.847984 - Edit by JW: SAL_205 - Sex: Female → Female; Experimental_Holds: Breeding → breeding
+2026-03-16 16:34:59.104542 - Edit by JW: SAL_206 - Sex: Female → Female; Experimental_Holds: Breeding → breeding
+2026-03-16 16:35:18.591061 - Animals moved by JW: SAL_207 to Rack 12
+2026-03-16 16:35:18.592528 - Animals moved by JW: SAL_208 to Rack 12
+2026-03-16 16:35:40.879178 - Edit by JW: SAL_207 - Sex: Unknown → Female; Experimental_Holds: nan → Breeding
+2026-03-16 16:35:41.166835 - Edit by JW: SAL_208 - Sex: Unknown → Female; Experimental_Holds: nan → Breeding
+2026-03-16 16:39:48.912844 - Animals moved by JW: SAL_945 to Rack 4
+2026-03-16 16:39:48.915744 - Animals moved by JW: SAL_944 to Rack 4
+2026-03-16 16:39:48.918022 - Animals moved by JW: SAL_947 to Rack 4
+2026-03-16 16:39:48.919488 - Animals moved by JW: SAL_946 to Rack 4
+2026-03-16 16:40:52.869961 - Animals moved by JW: SAL_345 to Rack 4
+2026-03-16 16:40:52.871705 - Animals moved by JW: SAL_349 to Rack 4
+2026-03-16 16:40:52.873226 - Animals moved by JW: SAL_350 to Rack 4
+2026-03-16 16:40:52.875159 - Animals moved by JW: SAL_918 to Rack 4
+2026-03-16 16:40:52.876474 - Animals moved by JW: SAL_919 to Rack 4
+2026-03-16 16:40:52.877928 - Animals moved by JW: SAL_917 to Rack 4
+2026-03-16 16:40:52.879283 - Animals moved by JW: SAL_920 to Rack 4
+2026-03-16 16:44:26.835132 - Added animals by JW: 7 animals added to Rack 5 in C2.
+2026-03-16 16:47:11.201412 - Added animals by JW: 9 animals added to Rack 5 in B3.
+2026-03-16 16:49:08.635973 - Added animals by JW: 9 animals added to Rack 5 in B4.
+2026-03-16 17:23:40.761364 - Pushing Changes by JW: Changes saved
+2026-03-16 19:36:29.756471 - Added animals by JW: 8 animals added to Rack 9 in C3.
+2026-03-16 19:36:59.850952 - Added animals by JW: 6 animals added to Rack 9 in B4.
+2026-03-16 19:37:45.693393 - Added animals by JW: 6 animals added to Rack 5 in A2.
+2026-03-16 19:37:52.465039 - Pushing Changes by JW: Changes saved
+2026-03-16 20:12:49.569409 - Added Clutch by JW: 02/10/2026 from Date of Arrival - The Wet Spot Tropical
+2026-03-16 20:13:38.235257 - Added animals by JW: 1 animals added to Rack 1 in C3.
+2026-03-16 20:13:50.155122 - Added animals by JW: 4 animals added to Rack 1 in C3.
+2026-03-16 20:14:06.127270 - Pushing Changes by JW: Changes saved
+2026-03-16 20:35:12.019008 - Added animals by JW: 2 animals added to Rack 5 in B2.
+2026-03-16 20:37:23.258388 - Edit by JW: SAL_797 - Experimental_Holds: nan → Breeding
+2026-03-16 20:37:23.320093 - Edit by JW: SAL_807 - Experimental_Holds: nan → Breeding
+2026-03-16 20:37:23.390743 - Edit by JW: SAL_803 - Experimental_Holds: nan → Breeding
+2026-03-16 20:37:23.477055 - Edit by JW: SAL_804 - Experimental_Holds: nan → Breeding
+2026-03-16 20:37:23.574400 - Edit by JW: SAL_806 - Experimental_Holds: nan → Breeding
+2026-03-16 20:37:23.681715 - Edit by JW: SAL_805 - Experimental_Holds: nan → Breeding
+2026-03-16 20:37:25.602605 - Pushing Changes by JW: Changes saved
+2026-03-18 18:43:10.864366 - Euthanized by gg2900: SAL_1039 on 03/18/2026
+2026-03-18 18:46:44.955760 - Euthanized by gg2900: SAL_1040 on 03/12/2026
+2026-03-18 18:46:56.280156 - Euthanized by gg2900: SAL_1038 on 03/12/2026
+2026-03-18 19:51:59.616438 - Euthanized by pa: SAL_782 on 03/03/2026
+2026-03-18 19:52:38.764230 - Euthanized by pa: SAL_783 on 03/03/2026
+2026-03-18 19:53:22.101586 - Euthanized by pa: SAL_785 on 03/03/2026
+2026-03-18 19:54:09.691140 - Euthanized by pa: SAL_786 on 03/03/2026
+2026-03-18 19:54:26.764102 - Pushing Changes by pa: Changes saved
