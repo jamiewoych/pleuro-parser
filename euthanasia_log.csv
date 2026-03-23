@@ -320,3 +320,38 @@ SAL_767,C1,Rack 5,2026-01-01,12/10/24 0:00,likely cannibal in tank - missing,,,A
 SAL_834,C3,Rack 5,2026-01-01,12/10/24 0:00,likely cannibal in tank - missing,,,Aquatic,,WT,,Pleurodeles waltl,AABF2564,fridged > St 37,,,,,0.0,Unknown,Found Dead
 SAL_592,C4,Rack 7,2025-12-09,7/1/22 0:00,Died following metro treatment; exact date unknown,,,Aquatic,Sweden,mDlx-GFP,,Pleurodeles waltl,AABF2564,,,,,,0.0,Unknown,Found Dead
 SAL_016,C5,Rack 8,2026-01-26,7/5/20,Died during metro treatment,,,Aquatic,,WT,,Pleurodeles waltl,AABL1550,,,,,,0.0,Male,Found Dead
+SAL_288,A2,Rack 11,2026-02-02,11/24/23 0:00,"found dead by Shayla, small/skinny",,Terra M,Terrestrial,,WT,JW Histology,Pleurodeles waltl,AABL1550,,,4/3/25 0:00,,Gummy Schedule,0.0,Unknown,Found Dead
+SAL_107,A1,Rack 11,2026-02-02,2/23/22 0:00,K channel HCR matched terra/aqua; 69.5mm SV,JW,Terra L,Terrestrial,,WT,,Pleurodeles waltl,AABL1550,,,4/23/25 0:00,,,11.02,Male,
+SAL_095,D5,Rack 2,2026-02-02,2/23/22 0:00,K channel HCR matched terra/aqua; 69.5mm SV,JW,,Aquatic,,WT,,Pleurodeles waltl,AABL1550,,,,,,17.16,Female,
+SAL_692,A3,Rack 2,2026-02-13,11/25/24 0:00,Multiome 15dpi experiment,"LDVA, JW",,Aquatic,,WT,,Pleurodeles waltl,AABF2564,,,,,,11.68,Female,
+SAL_693,A3,Rack 2,2026-02-13,11/25/24 0:00,Multiome 15dpi experiment,"LDVA, JW",,Aquatic,,WT,,Pleurodeles waltl,AABF2564,,,,,,14.23,Female,
+SAL_694,A3,Rack 2,2026-02-13,11/25/24 0:00,Multiome 15dpi experiment,"LDVA, JW",,Aquatic,,WT,,Pleurodeles waltl,AABF2564,,,,,,18.29,Male,
+SAL_503,D1,Rack 8,2026-02-13,5/17/24 0:00,Multiome 15dpi experiment,"LDVA, JW",,Aquatic,,WT,Priority,Pleurodeles waltl,AABF2564,,,,,,6.5,Female,
+SAL_838,A5,Rack 2,2026-02-09,12/10/24 0:00,VP Iontophoresis,"JW, PA",,Aquatic,,WT,,Pleurodeles waltl,AABF2564,fridged > St 37,,,,,5.0,Unknown,
+SAL_679,A5,Rack 2,2026-02-09,12/10/24 0:00,VP Iontophoresis,"JW, PA",,Aquatic,,WT,,Pleurodeles waltl,AABF2564,,,,,,5.0,Unknown,
+SAL_680,A5,Rack 2,2026-02-09,12/10/24 0:00,VP Iontophoresis,"JW, PA",,Aquatic,,WT,,Pleurodeles waltl,AABF2564,,,,,,5.0,Unknown,
+SAL_836,A5,Rack 2,2026-02-16,12/10/24 0:00,Thalamus Iontophoresis,"JW, PA",,Aquatic,,WT,,Pleurodeles waltl,AABF2564,fridged > St 37,,,,,5.94,Female,
+SAL_748,A5,Rack 2,2026-02-16,12/10/24 0:00,Thalamus Iontophoresis,"JW, PA",,Aquatic,PxW,WT,,Pleurodeles waltl,AABF2564,fridged > St 37,,,,,7.77,Female,
+SAL_837,A5,Rack 2,2026-02-16,12/10/24 0:00,Thalamus Iontophoresis,"JW, PA",,Aquatic,,WT,,Pleurodeles waltl,AABF2564,fridged > St 37,,,,,4.06,Female,
+SAL_452,A2,Rack 13 - Off,2025-11-04,11/24/23 0:00,cfos trial snouts/brains,"JW, AMMM",,Aquatic,,WT,JW,Pleurodeles waltl,AABL1550,,,,,,0.0,Unknown,
+SAL_287,A2,Rack 13 - Off,2025-11-04,11/24/23 0:00,cfos trial snouts/brains,"JW, AMMM",Terra M,Terrestrial,,WT,JW,Pleurodeles waltl,AABL1550,,,4/3/25 0:00,,Gummy Schedule,0.0,Unknown,
+SAL_907,A2,Rack 9,2026-02-25,1/3/25 0:00,CellREADR AAV slc17a7 B3,PA,,Aquatic,,WT,,Pleurodeles waltl,AABL1550,,,,,,4.0,Male,
+SAL_908,A2,Rack 9,2026-02-25,1/3/25 0:00,CellREADR AAV slc17a7 B3,PA,,Aquatic,,WT,,Pleurodeles waltl,AABL1550,,,,,,6.0,Female,
+SAL_910,A2,Rack 9,2026-02-25,1/3/25 0:00,CellREADR AAV slc17a7 B6,JW,,Aquatic,,WT,,Pleurodeles waltl,AABL1550,,,,,,5.6,Male,
+SAL_911,A2,Rack 9,2026-02-25,1/3/25 0:00,CellREADR AAV slc17a7 B6,JW,,Aquatic,,WT,,Pleurodeles waltl,AABL1550,,,,,,5.9,Female,
+SAL_304,C3,Rack 1,2026-02-02,3/12/25 0:00,HCR,GG,,Aquatic,,WT,GG,Polypterus senegalus,AABY5655,,,,,,0.0,Male,
+SAL_731,A2,Rack 13 - Off,2025-12-22,3/12/25 0:00,HCR,GG,,Aquatic,,WT,GG,Polypterus senegalus,AABY5655,,,,,,0.0,Female,
+SAL_589,C3,Rack 7,2026-03-02,7/1/22 0:00,Sickly,GG,,Aquatic,Sweden,mDlx-GFP,,Pleurodeles waltl,AABF2564,,,,,,4.0,Unknown,
+SAL_447,B1,Rack 8,2026-03-08,12/9/23 0:00,,,,Aquatic,,WT,JW AMMM histology,Pleurodeles waltl,AABL1550,,,,,,0.0,Unknown,Found Dead
+SAL_954,D1,Rack 8,2026-03-11,2024-10-25 00:00:00,found by JW,,,Aquatic,,WT,,Pleurodeles waltl,AABF2564,,,,,,0.0,Unknown,Found Dead
+SAL_030,A1,Rack 2,2026-03-02,3/23/21 0:00,Tissue collection,NJC,F0,Aquatic,,hsyn-Cre,,Pleurodeles waltl,AABF2564,,,,,,10.9,Female,
+SAL_031,A1,Rack 2,2026-03-02,3/23/21 0:00,Tissue collection,NJC,F0,Aquatic,,hsyn-Cre,,Pleurodeles waltl,AABF2564,,,,,,12.0,Female,
+SAL_032,A2,Rack 2,2026-03-03,11/28/20 0:00,Tissue collection,NJC,F0,Aquatic,,hsyn-Cre,,Pleurodeles waltl,AABF2564,,,,,,7.9,Female,
+SAL_033,A2,Rack 2,2026-03-03,11/28/20 0:00,Tissue collection,NJC,F0,Aquatic,,hsyn-Cre,,Pleurodeles waltl,AABF2564,,,,,,12.8,Female,
+SAL_1039,C3,Rack 1,2026-03-18,2026-02-10 00:00:00,HCR,GG,,Aquatic,,WT,GG,Polypterus senegalus,AABY5655,,,,,,0.0,Unknown,
+SAL_1040,C3,Rack 1,2026-03-12,2026-02-10 00:00:00,HCR,GG,,Aquatic,,WT,GG,Polypterus senegalus,AABY5655,,,,,,0.0,Unknown,
+SAL_1038,C3,Rack 1,2026-03-12,2026-02-10 00:00:00,HCR,GG,,Aquatic,,WT,GG,Polypterus senegalus,AABY5655,,,,,,0.0,Unknown,
+SAL_782,B3,Rack 8,2026-03-03,1/3/25 0:00,AAV CellREADR,PA,,Aquatic,,WT,,Pleurodeles waltl,AABF2564,,,,,,3.0,Male,
+SAL_783,B3,Rack 8,2026-03-03,1/3/25 0:00,AAV CellREADR,PA,,Aquatic,,WT,,Pleurodeles waltl,AABF2564,,,,,,3.1,Female,
+SAL_785,B3,Rack 8,2026-03-03,1/3/25 0:00,AAV CellREADR,PA,,Aquatic,,WT,,Pleurodeles waltl,AABF2564,,,,,,3.9,Female,
+SAL_786,B3,Rack 8,2026-03-03,1/3/25 0:00,AAV CellREADR,PA,,Aquatic,,WT,,Pleurodeles waltl,AABF2564,,,,,,3.8,Female,
