@@ -719,7 +719,7 @@ class Rack:
 
 
         # Grouping and aggregation for larval euthanasia log
-        larval_summary = larval_df.groupby(group_cols, as_index=False dropna=False).apply(
+        larval_summary = larval_df.groupby(group_cols, as_index=False, dropna=False).apply(
             lambda g: pd.Series({
                 "total_larvae_euthanized": g.loc[g["Complications_clean"]=="", "Num_Larvae"].sum(),
                 "larval_surgical_complications": g.loc[g["Complications_clean"]=="Surgical Complications", "Num_Larvae"].sum(),
