@@ -2279,3 +2279,8 @@
 2026-03-24 17:07:43.198277 - Added Clutch by gg2900: 03/20/2026 from DOA from WetSpot
 2026-03-24 17:08:38.233518 - Added animals by gg2900: 5 animals added to Rack 1 in C3.
 2026-03-24 17:09:06.562481 - Pushing Changes by gg2900: Changes saved
+2026-04-01 18:33:32.396912 - Animals moved by JW: SAL_064 to Rack 1
+2026-04-01 18:33:32.398271 - Animals moved by JW: SAL_066 to Rack 1
+2026-04-01 18:33:49.590417 - Animals moved by JW: SAL_064 to Rack 2
+2026-04-01 18:33:49.591738 - Animals moved by JW: SAL_066 to Rack 2
+2026-04-01 18:33:54.618259 - Pushing Changes by JW: Changes saved
