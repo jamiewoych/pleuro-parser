@@ -2327,3 +2327,5 @@
 2026-04-06 15:59:54.534610 - Edit by JW: SAL_393 - Environmental_Condition: Aquatic → Terrestrial; Cohort: nan → Terra N
 2026-04-06 15:59:54.668347 - Edit by JW: SAL_394 - Environmental_Condition: Aquatic → Terrestrial; Cohort: nan → Terra N
 2026-04-06 16:00:23.098778 - Pushing Changes by JW: Changes saved
+2026-04-06 16:21:26.620773 - Edit by ts: SAL_557 - Environmental_Condition: Terrestrial → Terrestrial; Experimental_History: nan → biggest animal in tank; Cohort: Terra U → Terra N; Date_of_Terra: 10/29/24 0:00 → 2025-07-15
+2026-04-06 16:21:35.245523 - Pushing Changes by ts: Changes saved
