@@ -2335,3 +2335,5 @@
 2026-04-06 16:23:42.974737 - Pushing Changes by ts: Changes saved
 2026-04-06 16:25:36.957607 - Edit by ts: SAL_557 - Experimental_History: swedish gcamp → swedish gcamp; Cohort: Terra N → Terra N; Date_of_Terra: 2025-07-15 → 2024-10-29
 2026-04-06 16:25:40.897064 - Pushing Changes by ts: Changes saved
+2026-04-06 16:27:41.229897 - Animals moved by ts: SAL_290 to Rack 11
+2026-04-06 16:27:45.563910 - Pushing Changes by ts: Changes saved
