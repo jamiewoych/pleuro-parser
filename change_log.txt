@@ -2375,3 +2375,14 @@
 2026-04-10 21:28:44.890412 - Edit by JW: SAL_723 - Environmental_Condition: Aquatic → Terrestrial; Cohort: nan → Terra U; Date_of_Terra: nan → 2026-04-10
 2026-04-10 21:28:45.039480 - Edit by JW: SAL_724 - Environmental_Condition: Aquatic → Terrestrial; Cohort: nan → Terra U; Date_of_Terra: nan → 2026-04-10
 2026-04-10 21:28:49.060565 - Pushing Changes by JW: Changes saved
+2026-04-10 21:30:23.666248 - Animals moved by JW: SAL_960 to Rack 2
+2026-04-10 21:30:23.667747 - Animals moved by JW: SAL_961 to Rack 2
+2026-04-10 21:30:23.668871 - Animals moved by JW: SAL_962 to Rack 2
+2026-04-10 21:30:23.669991 - Animals moved by JW: SAL_963 to Rack 2
+2026-04-10 21:30:23.671058 - Animals moved by JW: SAL_964 to Rack 2
+2026-04-10 21:31:14.198477 - Animals moved by JW: SAL_952 to Rack 4
+2026-04-10 21:31:14.199726 - Animals moved by JW: SAL_951 to Rack 4
+2026-04-10 21:31:14.200851 - Animals moved by JW: SAL_950 to Rack 4
+2026-04-10 21:31:14.201937 - Animals moved by JW: SAL_949 to Rack 4
+2026-04-10 21:31:14.203213 - Animals moved by JW: SAL_948 to Rack 4
+2026-04-10 21:31:15.977939 - Pushing Changes by JW: Changes saved
