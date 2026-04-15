@@ -2425,3 +2425,5 @@
 2026-04-15 20:02:52.091565 - Edit by jw: SAL_840 - Environmental_Condition: Aquatic → Terrestrial; Cohort: nan → Terra C; Date_of_Terra: nan → 2026-04-15
 2026-04-15 20:02:52.484246 - Edit by jw: SAL_839 - Environmental_Condition: Aquatic → Terrestrial; Cohort: nan → Terra C; Date_of_Terra: nan → 2026-04-15
 2026-04-15 20:02:55.591519 - Pushing Changes by jw: Changes saved
+2026-04-15 20:07:09.428176 - Animals moved by jw: SAL_701 to Rack 4
+2026-04-15 20:22:23.390245 - Pushing Changes by jw: Changes saved
