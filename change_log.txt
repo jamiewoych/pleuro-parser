@@ -2434,3 +2434,8 @@
 2026-04-15 21:43:24.366561 - Edit by JW: SAL_825 - Experimental_Holds: nan → Terra C matched april 2026; Cohort: nan → Aqua C
 2026-04-15 21:43:24.483106 - Edit by JW: SAL_700 - Experimental_Holds: nan → Terra C matched april 2026; Cohort: nan → Aqua C
 2026-04-15 21:44:08.739599 - Pushing Changes by JW: Changes saved
+2026-04-15 22:06:25.306790 - Euthanized by gg2900: SAL_1043 on 04/08/2026
+2026-04-15 22:07:00.538731 - Euthanized by gg2900: SAL_1044 on 04/08/2026
+2026-04-15 22:07:19.003760 - Euthanized by gg2900: SAL_1037 on 04/08/2026
+2026-04-15 22:07:45.637751 - Euthanized by gg2900: SAL_1036 on 04/08/2026
+2026-04-15 22:07:48.810058 - Pushing Changes by gg2900: Changes saved
