@@ -2439,3 +2439,22 @@
 2026-04-15 22:07:19.003760 - Euthanized by gg2900: SAL_1037 on 04/08/2026
 2026-04-15 22:07:45.637751 - Euthanized by gg2900: SAL_1036 on 04/08/2026
 2026-04-15 22:07:48.810058 - Pushing Changes by gg2900: Changes saved
+2026-04-22 20:51:01.822599 - Animals moved by ts: SAL_370 to Rack 11
+2026-04-22 20:51:01.823679 - Animals moved by ts: SAL_369 to Rack 11
+2026-04-22 20:51:01.824626 - Animals moved by ts: SAL_367 to Rack 11
+2026-04-22 20:51:01.825524 - Animals moved by ts: SAL_366 to Rack 11
+2026-04-22 20:51:01.827071 - Animals moved by ts: SAL_368 to Rack 11
+2026-04-22 20:51:07.940603 - Animals moved by ts: SAL_370 to Rack 11
+2026-04-22 20:51:07.942190 - Animals moved by ts: SAL_369 to Rack 11
+2026-04-22 20:51:07.943376 - Animals moved by ts: SAL_367 to Rack 11
+2026-04-22 20:51:07.944599 - Animals moved by ts: SAL_366 to Rack 11
+2026-04-22 20:51:07.945870 - Animals moved by ts: SAL_368 to Rack 11
+2026-04-22 20:52:24.897796 - Edit by ts: SAL_370 - Environmental_Condition: Aquatic → Terrestrial; Experimental_Holds: nan → ts; Experimental_History: nan → Terrestrialized 4/22/26; Cohort: nan → Terra R; Date_of_Terra: nan → 2026-04-22
+2026-04-22 20:52:25.034416 - Edit by ts: SAL_368 - Environmental_Condition: Aquatic → Terrestrial; Experimental_Holds: nan → ts; Experimental_History: nan → Terrestrialized 4/22/26; Cohort: nan → Terra R; Date_of_Terra: nan → 2026-04-22
+2026-04-22 20:52:25.170175 - Edit by ts: SAL_367 - Environmental_Condition: Aquatic → Terrestrial; Experimental_Holds: nan → ts; Experimental_History: nan → Terrestrialized 4/22/26; Cohort: nan → Terra R; Date_of_Terra: nan → 2026-04-22
+2026-04-22 20:52:25.295602 - Edit by ts: SAL_369 - Environmental_Condition: Aquatic → Terrestrial; Experimental_Holds: nan → ts; Experimental_History: nan → Terrestrialized 4/22/26; Cohort: nan → Terra R; Date_of_Terra: nan → 2026-04-22
+2026-04-22 20:52:25.430202 - Edit by ts: SAL_366 - Environmental_Condition: Aquatic → Terrestrial; Experimental_Holds: nan → ts; Experimental_History: nan → Terrestrialized 4/22/26; Cohort: nan → Terra R; Date_of_Terra: nan → 2026-04-22
+2026-04-22 20:55:24.867037 - Animals moved by ts: SAL_022 to Rack 11
+2026-04-22 20:55:24.868996 - Animals moved by ts: SAL_023 to Rack 11
+2026-04-22 20:55:24.870485 - Animals moved by ts: SAL_024 to Rack 11
+2026-04-22 20:55:30.218270 - Pushing Changes by ts: Changes saved

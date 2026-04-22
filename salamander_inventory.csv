@@ -15,9 +15,9 @@ SAL_018,AABL1550,Rack 10,A1,9/20/20,Terra A,Terrestrial,Unknown,,WT,,Pleurodeles
 SAL_019,AABL1550,Rack 10,A1,9/20/20,Terra A,Terrestrial,Unknown,,WT,,Pleurodeles waltl,,,4/28/22,,Gummy Schedule
 SAL_020,AABL1550,Rack 10,A1,9/20/20,Terra A,Terrestrial,Unknown,,WT,,Pleurodeles waltl,,,4/28/22,,Gummy Schedule
 SAL_021,AABL1550,Rack 10,A1,9/20/20,Terra A,Terrestrial,Unknown,,WT,,Pleurodeles waltl,,,4/28/22,,Gummy Schedule
-SAL_022,AABL1550,Rack 11,B4,9/24/20,Terra S,Terrestrial,Unknown,,WT,AMMM implant testing,Pleurodeles waltl,,,2/9/23,,Gummy Schedule
-SAL_023,AABL1550,Rack 11,B4,9/24/20,Terra S,Terrestrial,Unknown,,WT,AMMM implant testing,Pleurodeles waltl,,,2/9/23,,Gummy Schedule
-SAL_024,AABL1550,Rack 11,B4,9/24/20,Terra S,Terrestrial,Unknown,,WT,AMMM implant testing,Pleurodeles waltl,,,2/9/23,,Gummy Schedule
+SAL_022,AABL1550,Rack 11,B3,9/24/20,Terra S,Terrestrial,Unknown,,WT,AMMM implant testing,Pleurodeles waltl,,,2/9/23,,Gummy Schedule
+SAL_023,AABL1550,Rack 11,B3,9/24/20,Terra S,Terrestrial,Unknown,,WT,AMMM implant testing,Pleurodeles waltl,,,2/9/23,,Gummy Schedule
+SAL_024,AABL1550,Rack 11,B3,9/24/20,Terra S,Terrestrial,Unknown,,WT,AMMM implant testing,Pleurodeles waltl,,,2/9/23,,Gummy Schedule
 SAL_025,AABF2564,Rack 3,C1,11/30/20,,Aquatic,Male,,WT,Breeding,Pleurodeles waltl,Metro treated 12/22/25-1/12/26,ECD,,,
 SAL_026,AABF2564,Rack 3,C1,11/30/20,,Aquatic,Male,,WT,Breeding,Pleurodeles waltl,Metro treated 12/22/25-1/12/26,ECB,,,
 SAL_027,AABF2564,Rack 3,C1,11/30/20,,Aquatic,Male,,WT,Breeding,Pleurodeles waltl,Metro treated 12/22/25-1/12/26,BCA,,,
@@ -229,11 +229,11 @@ SAL_361,AABL1550,Rack 6,B1,11/24/23 0:00,,Aquatic,Unknown,F1,hsyn-GCaMP6s,,Pleur
 SAL_363,AABL1550,Rack 11,C3,11/24/23 0:00,,Aquatic,Unknown,F1,hsyn-GCaMP6s,,Pleurodeles waltl,,,,,
 SAL_364,AABL1550,Rack 11,C3,11/24/23 0:00,,Aquatic,Unknown,F1,hsyn-GCaMP6s,,Pleurodeles waltl,,,,,
 SAL_365,AABL1550,Rack 6,B2,11/24/23 0:00,,Aquatic,Unknown,F1,hsyn-GCaMP6s,,Pleurodeles waltl,,,,,
-SAL_366,AABL1550,Rack 6,B2,11/24/23 0:00,,Aquatic,Unknown,F1,hsyn-GCaMP6s,,Pleurodeles waltl,,,,,
-SAL_367,AABL1550,Rack 6,B2,11/24/23 0:00,,Aquatic,Unknown,F1,hsyn-GCaMP6s,,Pleurodeles waltl,,,,,
-SAL_368,AABL1550,Rack 6,B2,11/24/23 0:00,,Aquatic,Unknown,F1,hsyn-GCaMP6s,,Pleurodeles waltl,,,,,
-SAL_369,AABL1550,Rack 6,B2,11/24/23 0:00,,Aquatic,Unknown,F1,hsyn-GCaMP6s,,Pleurodeles waltl,,,,,
-SAL_370,AABL1550,Rack 6,B2,11/24/23 0:00,,Aquatic,Unknown,F1,hsyn-GCaMP6s,,Pleurodeles waltl,,,,,
+SAL_366,AABL1550,Rack 11,B4,11/24/23 0:00,Terra R,Terrestrial,Unknown,F1,hsyn-GCaMP6s,ts,Pleurodeles waltl,Terrestrialized 4/22/26,,2026-04-22,,
+SAL_367,AABL1550,Rack 11,B4,11/24/23 0:00,Terra R,Terrestrial,Unknown,F1,hsyn-GCaMP6s,ts,Pleurodeles waltl,Terrestrialized 4/22/26,,2026-04-22,,
+SAL_368,AABL1550,Rack 11,B4,11/24/23 0:00,Terra R,Terrestrial,Unknown,F1,hsyn-GCaMP6s,ts,Pleurodeles waltl,Terrestrialized 4/22/26,,2026-04-22,,
+SAL_369,AABL1550,Rack 11,B4,11/24/23 0:00,Terra R,Terrestrial,Unknown,F1,hsyn-GCaMP6s,ts,Pleurodeles waltl,Terrestrialized 4/22/26,,2026-04-22,,
+SAL_370,AABL1550,Rack 11,B4,11/24/23 0:00,Terra R,Terrestrial,Unknown,F1,hsyn-GCaMP6s,ts,Pleurodeles waltl,Terrestrialized 4/22/26,,2026-04-22,,
 SAL_371,AABL1550,Rack 6,B4,11/24/23 0:00,,Aquatic,Unknown,F1,hsyn-GCaMP6s,,Pleurodeles waltl,,,,,
 SAL_372,AABL1550,Rack 6,B4,11/24/23 0:00,,Aquatic,Unknown,F1,hsyn-GCaMP6s,,Pleurodeles waltl,,,,,
 SAL_373,AABL1550,Rack 6,B4,11/24/23 0:00,,Aquatic,Unknown,F1,hsyn-GCaMP6s,,Pleurodeles waltl,,,,,
