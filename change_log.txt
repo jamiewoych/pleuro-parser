@@ -2458,3 +2458,5 @@
 2026-04-22 20:55:24.868996 - Animals moved by ts: SAL_023 to Rack 11
 2026-04-22 20:55:24.870485 - Animals moved by ts: SAL_024 to Rack 11
 2026-04-22 20:55:30.218270 - Pushing Changes by ts: Changes saved
+2026-04-23 20:16:49.602145 - Euthanized by MK: SAL_518 on 04/23/2026
+2026-04-23 20:16:59.184923 - Pushing Changes by MK: Changes saved
