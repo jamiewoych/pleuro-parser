@@ -2460,3 +2460,23 @@
 2026-04-22 20:55:30.218270 - Pushing Changes by ts: Changes saved
 2026-04-23 20:16:49.602145 - Euthanized by MK: SAL_518 on 04/23/2026
 2026-04-23 20:16:59.184923 - Pushing Changes by MK: Changes saved
+2026-04-24 22:43:45.715552 - Animals moved by JW: SAL_1027 to Rack 2
+2026-04-24 22:43:45.717176 - Animals moved by JW: SAL_1028 to Rack 2
+2026-04-24 22:43:45.718455 - Animals moved by JW: SAL_1029 to Rack 2
+2026-04-24 22:43:45.719652 - Animals moved by JW: SAL_1026 to Rack 2
+2026-04-24 22:43:45.720962 - Animals moved by JW: SAL_1025 to Rack 2
+2026-04-24 22:43:45.722154 - Animals moved by JW: SAL_1024 to Rack 2
+2026-04-24 22:44:30.418476 - Animals moved by JW: SAL_670 to Rack 2
+2026-04-24 22:44:30.420285 - Animals moved by JW: SAL_671 to Rack 2
+2026-04-24 22:44:30.421766 - Animals moved by JW: SAL_669 to Rack 2
+2026-04-24 22:44:30.423040 - Animals moved by JW: SAL_668 to Rack 2
+2026-04-24 22:44:30.424307 - Animals moved by JW: SAL_667 to Rack 2
+2026-04-24 22:45:30.380412 - Animals moved by JW: SAL_852 to Rack 2
+2026-04-24 22:45:30.381687 - Animals moved by JW: SAL_853 to Rack 2
+2026-04-24 22:45:30.382724 - Animals moved by JW: SAL_854 to Rack 2
+2026-04-24 22:45:30.383738 - Animals moved by JW: SAL_855 to Rack 2
+2026-04-24 22:45:30.384751 - Animals moved by JW: SAL_856 to Rack 2
+2026-04-24 22:45:30.385750 - Animals moved by JW: SAL_857 to Rack 2
+2026-04-24 22:45:30.386582 - Animals moved by JW: SAL_858 to Rack 2
+2026-04-24 22:45:53.119551 - Euthanized by JW: SAL_732 on 04/24/2026
+2026-04-24 22:45:56.582535 - Pushing Changes by JW: Changes saved
