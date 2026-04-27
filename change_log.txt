@@ -2486,3 +2486,21 @@
 2026-04-24 22:56:52.137399 - Added Clutch by JW: 01/07/2026 from G6s F1
 2026-04-24 22:57:24.605367 - Added animals by JW: 5 animals added to Rack 9 in B4.
 2026-04-24 23:12:08.129959 - Pushing Changes by JW: Changes saved
+2026-04-27 16:26:49.972077 - Animals moved by jw: SAL_1050 to Rack 6
+2026-04-27 16:26:49.973144 - Animals moved by jw: SAL_1051 to Rack 6
+2026-04-27 16:26:49.974077 - Animals moved by jw: SAL_1052 to Rack 6
+2026-04-27 16:26:49.974920 - Animals moved by jw: SAL_1049 to Rack 6
+2026-04-27 16:26:49.975866 - Animals moved by jw: SAL_1053 to Rack 6
+2026-04-27 16:26:49.976844 - Animals moved by jw: SAL_1048 to Rack 6
+2026-04-27 16:30:04.823799 - Animals moved by jw: SAL_955 to Rack 2
+2026-04-27 16:30:04.824991 - Animals moved by jw: SAL_959 to Rack 2
+2026-04-27 16:30:04.826100 - Animals moved by jw: SAL_956 to Rack 2
+2026-04-27 16:30:04.827136 - Animals moved by jw: SAL_957 to Rack 2
+2026-04-27 16:30:04.828156 - Animals moved by jw: SAL_958 to Rack 2
+2026-04-27 16:33:10.032225 - Animals moved by jw: SAL_974 to Rack 4
+2026-04-27 16:33:10.033161 - Animals moved by jw: SAL_975 to Rack 4
+2026-04-27 16:33:10.033991 - Animals moved by jw: SAL_976 to Rack 4
+2026-04-27 16:33:10.034820 - Animals moved by jw: SAL_971 to Rack 4
+2026-04-27 16:33:10.035630 - Animals moved by jw: SAL_972 to Rack 4
+2026-04-27 16:33:10.036500 - Animals moved by jw: SAL_973 to Rack 4
+2026-04-27 16:33:13.028630 - Pushing Changes by jw: Changes saved
