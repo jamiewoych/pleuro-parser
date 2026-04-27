@@ -2514,3 +2514,5 @@
 2026-04-27 20:35:31.943794 - Edit by ts: SAL_1027 - Experimental_Holds: nan → ts, viral injections for 2P
 2026-04-27 20:35:32.053822 - Edit by ts: SAL_1028 - Experimental_Holds: nan → ts, viral injections for 2P
 2026-04-27 20:35:39.438930 - Pushing Changes by ts: Changes saved
+2026-04-27 22:06:42.356295 - Euthanized by LDVA: SAL_819 on 04/24/2026
+2026-04-27 22:06:46.003628 - Pushing Changes by LDVA: Changes saved
