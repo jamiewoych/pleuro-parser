@@ -2504,3 +2504,5 @@
 2026-04-27 16:33:10.035630 - Animals moved by jw: SAL_972 to Rack 4
 2026-04-27 16:33:10.036500 - Animals moved by jw: SAL_973 to Rack 4
 2026-04-27 16:33:13.028630 - Pushing Changes by jw: Changes saved
+2026-04-27 20:21:36.743527 - Euthanized by ts: SAL_363 on 04/27/2026
+2026-04-27 20:22:04.604699 - Pushing Changes by ts: Changes saved
