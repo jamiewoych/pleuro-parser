@@ -2526,3 +2526,6 @@
 2026-04-28 14:21:58.928776 - Euthanized by pa: SAL_709 on 04/28/2026
 2026-04-28 14:22:27.477432 - Euthanized by pa: SAL_710 on 04/28/2026
 2026-04-28 14:22:31.891466 - Pushing Changes by pa: Changes saved
+2026-04-29 15:10:35.737281 - Animals moved by AM: SAL_508 to Rack 11
+2026-04-29 15:11:18.290394 - Edit by AM: SAL_508 - Environmental_Condition: Aquatic → Terrestrial; Experimental_Holds: nan → Andrew and Gabe; Cohort: nan → TerraO; Date_of_Terra: nan → 2026-04-29
+2026-04-29 15:11:29.566217 - Pushing Changes by AM: Changes saved
