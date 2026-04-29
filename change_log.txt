@@ -2529,3 +2529,7 @@
 2026-04-29 15:10:35.737281 - Animals moved by AM: SAL_508 to Rack 11
 2026-04-29 15:11:18.290394 - Edit by AM: SAL_508 - Environmental_Condition: Aquatic → Terrestrial; Experimental_Holds: nan → Andrew and Gabe; Cohort: nan → TerraO; Date_of_Terra: nan → 2026-04-29
 2026-04-29 15:11:29.566217 - Pushing Changes by AM: Changes saved
+2026-04-29 18:06:07.079574 - Animals moved by ts: SAL_364 to Rack 11
+2026-04-29 18:06:07.080608 - Animals moved by ts: SAL_389 to Rack 11
+2026-04-29 18:08:37.156817 - Edit by ts: SAL_290 - Cohort: Terra O → Terra N
+2026-04-29 18:08:48.131068 - Pushing Changes by ts: Changes saved
