@@ -2558,3 +2558,8 @@
 2026-04-29 18:11:48.563084 - Edit by ts: SAL_958 - Environmental_Condition: Terrestrial → Terrestrial; Experimental_History: nan → injected with AAVrg-tdt on 4/28/26-4/29/26; Cohort: Terra V → Terra V; Date_of_Terra: 2026-04-29 → 2026-04-29
 2026-04-29 18:11:48.817404 - Edit by ts: SAL_959 - Environmental_Condition: Terrestrial → Terrestrial; Experimental_History: nan → injected with AAVrg-tdt on 4/28/26-4/29/26; Cohort: Terra V → Terra V; Date_of_Terra: 2026-04-29 → 2026-04-29
 2026-04-29 18:11:51.698506 - Pushing Changes by ts: Changes saved
+2026-05-01 16:07:22.432691 - Added animals by NC: 8 animals added to Rack 9 in A3.
+2026-05-01 16:16:09.684972 - Added animals by NC: 8 animals added to Rack 9 in A4.
+2026-05-01 16:21:05.887937 - Added animals by NC: 8 animals added to Rack 9 in B3.
+2026-05-01 16:24:38.208462 - Added Clutch by NC: 11/22/2025 from 
+2026-05-01 16:59:24.847104 - Pushing Changes by NC: Changes saved
