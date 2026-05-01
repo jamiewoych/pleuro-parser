@@ -2579,3 +2579,8 @@
 2026-05-01 17:13:20.894239 - Edit by NC: SAL_989 - Protocol_Number: AABL1550 → AABF2564
 2026-05-01 17:13:21.114012 - Edit by NC: SAL_990 - Protocol_Number: AABL1550 → AABF2564
 2026-05-01 17:13:29.803152 - Pushing Changes by NC: Changes saved
+2026-05-01 18:08:15.163933 - Animals moved by NC: SAL_755 to Rack 2
+2026-05-01 18:08:15.166398 - Animals moved by NC: SAL_756 to Rack 2
+2026-05-01 18:08:15.167955 - Animals moved by NC: SAL_757 to Rack 2
+2026-05-01 18:08:15.168875 - Animals moved by NC: SAL_758 to Rack 2
+2026-05-01 18:08:37.433964 - Pushing Changes by NC: Changes saved
