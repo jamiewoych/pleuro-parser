@@ -2589,3 +2589,7 @@
 2026-05-01 18:40:39.489176 - Edit by NC: SAL_666 - Protocol_Number: AABF2564 → AABI2617
 2026-05-01 18:40:39.567242 - Edit by NC: SAL_698 - Protocol_Number: AABF2564 → AABI2617
 2026-05-01 18:40:42.637638 - Pushing Changes by NC: Changes saved
+2026-05-04 20:28:25.525546 - Euthanized by GJG: SAL_507 on 05/04/2026
+2026-05-04 20:28:41.216036 - Euthanized by GJG: SAL_506 on 05/04/2026
+2026-05-04 20:29:00.348676 - Euthanized by GJG: SAL_508 on 05/04/2026
+2026-05-04 20:29:41.718061 - Pushing Changes by GJG: Changes saved

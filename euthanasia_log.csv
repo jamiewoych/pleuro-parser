@@ -386,3 +386,6 @@ SAL_799,B3,Rack 6,2026-04-24,1/3/25 0:00,Multiome experiment,"LDVA, JW",,Aquatic
 SAL_708,B3,Rack 2,2026-04-28,12/10/24 0:00,MP iontophoresis,PA,,Aquatic,,WT,,Pleurodeles waltl,AABF2564,,,,,,6.0,Female,
 SAL_709,B3,Rack 2,2026-04-28,12/10/24 0:00,MP iontophoresis,PA,,Aquatic,,WT,,Pleurodeles waltl,AABF2564,,,,,,6.5,Male,
 SAL_710,B3,Rack 2,2026-04-28,12/10/24 0:00,MP iontophoresis,PA,,Aquatic,,WT,,Pleurodeles waltl,AABF2564,,,,,,4.3,Female,
+SAL_507,D1,Rack 8,2026-05-04,5/17/24 0:00,EdU analysis,GJG,,Aquatic,,WT,Priority,Pleurodeles waltl,AABF2564,,,,,,4.5,Unknown,
+SAL_506,D1,Rack 8,2026-05-04,5/17/24 0:00,EdU analysis,GJG,,Aquatic,,WT,Priority,Pleurodeles waltl,AABF2564,,,,,,4.5,Unknown,
+SAL_508,A4,Rack 11,2026-05-04,5/17/24 0:00,EdU analysis,GJG,TerraO,Terrestrial,,WT,Andrew and Gabe,Pleurodeles waltl,AABF2564,,,2026-04-29,,,4.5,Unknown,
