@@ -2593,3 +2593,22 @@
 2026-05-04 20:28:41.216036 - Euthanized by GJG: SAL_506 on 05/04/2026
 2026-05-04 20:29:00.348676 - Euthanized by GJG: SAL_508 on 05/04/2026
 2026-05-04 20:29:41.718061 - Pushing Changes by GJG: Changes saved
+2026-05-05 19:38:51.572703 - Animals moved by ts: SAL_391 to Rack 10
+2026-05-05 19:38:51.574109 - Animals moved by ts: SAL_396 to Rack 10
+2026-05-05 19:38:51.575498 - Animals moved by ts: SAL_395 to Rack 10
+2026-05-05 19:38:51.576744 - Animals moved by ts: SAL_417 to Rack 10
+2026-05-05 19:38:51.578550 - Animals moved by ts: SAL_412 to Rack 10
+2026-05-05 19:38:51.579788 - Animals moved by ts: SAL_355 to Rack 10
+2026-05-05 19:38:51.580796 - Animals moved by ts: SAL_406 to Rack 10
+2026-05-05 19:38:51.582134 - Animals moved by ts: SAL_413 to Rack 10
+2026-05-05 19:38:51.583592 - Animals moved by ts: SAL_414 to Rack 10
+2026-05-05 19:39:50.511783 - Edit by ts: SAL_391 - Environmental_Condition: Aquatic → Terrestrial; Experimental_Holds: nan → ts; Cohort: nan → Terra K; Date_of_Terra: nan → 2026-05-05
+2026-05-05 19:39:50.583726 - Edit by ts: SAL_396 - Environmental_Condition: Aquatic → Terrestrial; Experimental_Holds: nan → ts; Cohort: nan → Terra K; Date_of_Terra: nan → 2026-05-05
+2026-05-05 19:39:50.699278 - Edit by ts: SAL_395 - Environmental_Condition: Aquatic → Terrestrial; Experimental_Holds: nan → ts; Cohort: nan → Terra K; Date_of_Terra: nan → 2026-05-05
+2026-05-05 19:39:50.826743 - Edit by ts: SAL_417 - Environmental_Condition: Aquatic → Terrestrial; Experimental_Holds: nan → ts; Cohort: nan → Terra K; Date_of_Terra: nan → 2026-05-05
+2026-05-05 19:39:50.943169 - Edit by ts: SAL_412 - Environmental_Condition: Aquatic → Terrestrial; Experimental_Holds: nan → ts; Cohort: nan → Terra K; Date_of_Terra: nan → 2026-05-05
+2026-05-05 19:39:51.058227 - Edit by ts: SAL_355 - Environmental_Condition: Aquatic → Terrestrial; Experimental_Holds: nan → ts; Cohort: nan → Terra K; Date_of_Terra: nan → 2026-05-05
+2026-05-05 19:39:51.201416 - Edit by ts: SAL_406 - Environmental_Condition: Aquatic → Terrestrial; Experimental_Holds: nan → ts; Cohort: nan → Terra K; Date_of_Terra: nan → 2026-05-05
+2026-05-05 19:39:51.380936 - Edit by ts: SAL_413 - Environmental_Condition: Aquatic → Terrestrial; Experimental_Holds: nan → ts; Cohort: nan → Terra K; Date_of_Terra: nan → 2026-05-05
+2026-05-05 19:39:51.545581 - Edit by ts: SAL_414 - Environmental_Condition: Aquatic → Terrestrial; Experimental_Holds: nan → ts; Cohort: nan → Terra K; Date_of_Terra: nan → 2026-05-05
+2026-05-05 21:35:05.092585 - Pushing Changes by ts: Changes saved
