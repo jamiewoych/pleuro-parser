@@ -2624,3 +2624,8 @@
 2026-05-11 14:59:41.958665 - Pushing Changes by LDVA: Changes saved
 2026-05-12 20:18:55.842853 - Euthanized by ts: SAL_369 on 05/12/2026
 2026-05-12 20:19:00.867686 - Pushing Changes by ts: Changes saved
+2026-05-18 20:29:57.935684 - Animals moved by JW: SAL_563 to Rack 1
+2026-05-18 20:29:57.937573 - Animals moved by JW: SAL_564 to Rack 1
+2026-05-18 20:29:57.939064 - Animals moved by JW: SAL_538 to Rack 1
+2026-05-18 20:29:57.940779 - Animals moved by JW: SAL_562 to Rack 1
+2026-05-18 20:30:00.752193 - Pushing Changes by JW: Changes saved
