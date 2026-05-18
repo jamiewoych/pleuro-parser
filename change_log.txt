@@ -2629,3 +2629,34 @@
 2026-05-18 20:29:57.939064 - Animals moved by JW: SAL_538 to Rack 1
 2026-05-18 20:29:57.940779 - Animals moved by JW: SAL_562 to Rack 1
 2026-05-18 20:30:00.752193 - Pushing Changes by JW: Changes saved
+2026-05-18 20:37:10.777157 - Added animals by JW: 9 animals added to Rack 4 in A1.
+2026-05-18 20:43:05.943909 - Animals moved by JW: SAL_1061 to Rack 6
+2026-05-18 20:43:05.947576 - Animals moved by JW: SAL_1060 to Rack 6
+2026-05-18 20:43:05.949650 - Animals moved by JW: SAL_1059 to Rack 6
+2026-05-18 20:43:05.951527 - Animals moved by JW: SAL_1058 to Rack 6
+2026-05-18 20:43:05.953383 - Animals moved by JW: SAL_1057 to Rack 6
+2026-05-18 20:43:05.955326 - Animals moved by JW: SAL_1055 to Rack 6
+2026-05-18 20:43:05.958586 - Animals moved by JW: SAL_1056 to Rack 6
+2026-05-18 20:43:05.961422 - Animals moved by JW: SAL_1054 to Rack 6
+2026-05-18 20:44:17.749914 - Animals moved by JW: SAL_1139 to Rack 6
+2026-05-18 20:44:17.752503 - Animals moved by JW: SAL_1140 to Rack 6
+2026-05-18 20:44:17.754098 - Animals moved by JW: SAL_1141 to Rack 6
+2026-05-18 20:44:17.755580 - Animals moved by JW: SAL_1142 to Rack 6
+2026-05-18 20:44:17.757197 - Animals moved by JW: SAL_1143 to Rack 6
+2026-05-18 20:44:17.758715 - Animals moved by JW: SAL_1144 to Rack 6
+2026-05-18 20:44:17.760139 - Animals moved by JW: SAL_1145 to Rack 6
+2026-05-18 20:44:17.761471 - Animals moved by JW: SAL_1146 to Rack 6
+2026-05-18 20:44:17.762816 - Animals moved by JW: SAL_1147 to Rack 6
+2026-05-18 20:47:20.596295 - Animals moved by JW: SAL_1023 to Rack 6
+2026-05-18 20:47:20.599429 - Animals moved by JW: SAL_1022 to Rack 6
+2026-05-18 20:47:20.602168 - Animals moved by JW: SAL_1021 to Rack 6
+2026-05-18 20:47:20.604332 - Animals moved by JW: SAL_1020 to Rack 6
+2026-05-18 20:47:20.606019 - Animals moved by JW: SAL_1019 to Rack 6
+2026-05-18 20:47:20.608582 - Animals moved by JW: SAL_1016 to Rack 6
+2026-05-18 20:47:20.611300 - Animals moved by JW: SAL_1017 to Rack 6
+2026-05-18 20:47:20.613395 - Animals moved by JW: SAL_1018 to Rack 6
+2026-05-18 21:05:39.690820 - Added animals by JW: 9 animals added to Rack 4 in A1.
+2026-05-18 21:05:47.570736 - Undo by JW: Inventory reverted
+2026-05-18 21:05:56.442233 - Added animals by JW: 9 animals added to Rack 6 in A4.
+2026-05-18 21:06:11.853386 - Added animals by JW: 8 animals added to Rack 6 in A5.
+2026-05-18 21:06:18.533514 - Pushing Changes by JW: Changes saved
