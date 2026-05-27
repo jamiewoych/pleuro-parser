@@ -2663,3 +2663,5 @@
 2026-05-19 20:52:32.418321 - Added animals by JW: 9 animals added to Rack 6 in C2.
 2026-05-19 20:52:45.181697 - Added animals by JW: 9 animals added to Rack 6 in D1.
 2026-05-19 20:57:58.218986 - Pushing Changes by JW: Changes saved
+2026-05-27 20:00:20.398583 - Euthanized by GJG: SAL_498 on 05/27/2026
+2026-05-27 20:01:26.329690 - Pushing Changes by GJG: Changes saved
