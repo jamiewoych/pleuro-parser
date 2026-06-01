@@ -2674,3 +2674,5 @@
 2026-05-27 23:06:44.130677 - Euthanized by MK: SAL_756 on 05/27/2026
 2026-05-27 23:07:27.532372 - Euthanized by MK: SAL_755 on 05/27/2026
 2026-05-27 23:08:02.825515 - Pushing Changes by MK: Changes saved
+2026-06-01 14:55:55.919274 - Animals moved by GJG: SAL_848 to Rack 10
+2026-06-01 14:56:07.362186 - Pushing Changes by GJG: Changes saved
