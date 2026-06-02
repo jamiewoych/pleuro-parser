@@ -2676,3 +2676,6 @@
 2026-05-27 23:08:02.825515 - Pushing Changes by MK: Changes saved
 2026-06-01 14:55:55.919274 - Animals moved by GJG: SAL_848 to Rack 10
 2026-06-01 14:56:07.362186 - Pushing Changes by GJG: Changes saved
+2026-06-02 15:41:58.051747 - Euthanized by GJG: SAL_848 on 06/02/2026
+2026-06-02 15:42:18.221305 - Animals moved by GJG: SAL_847 to Rack 8
+2026-06-02 15:42:22.339838 - Pushing Changes by GJG: Changes saved
