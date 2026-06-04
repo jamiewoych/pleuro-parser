@@ -2753,3 +2753,8 @@
 2026-06-04 19:49:11.886023 - Added animals by jw: 2 animals added to Rack 4 in D1.
 2026-06-04 20:15:08.315719 - Animals moved by jw: SAL_332 to Rack 6
 2026-06-04 20:15:10.913622 - Pushing Changes by jw: Changes saved
+2026-06-04 20:17:37.720798 - Animals moved by jw: SAL_830 to Rack 5
+2026-06-04 20:17:37.721870 - Animals moved by jw: SAL_831 to Rack 5
+2026-06-04 20:18:07.110792 - Euthanized by jw: SAL_832 on 06/04/2026
+2026-06-04 20:18:23.294429 - Euthanized by jw: SAL_833 on 06/04/2026
+2026-06-04 20:22:11.761627 - Pushing Changes by jw: Changes saved
