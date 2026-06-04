@@ -2750,3 +2750,6 @@
 2026-06-04 19:41:18.291482 - Animals moved by jw: SAL_580 to Rack 1
 2026-06-04 19:41:18.292408 - Animals moved by jw: SAL_581 to Rack 1
 2026-06-04 19:48:21.437376 - Pushing Changes by jw: Changes saved
+2026-06-04 19:49:11.886023 - Added animals by jw: 2 animals added to Rack 4 in D1.
+2026-06-04 20:15:08.315719 - Animals moved by jw: SAL_332 to Rack 6
+2026-06-04 20:15:10.913622 - Pushing Changes by jw: Changes saved
