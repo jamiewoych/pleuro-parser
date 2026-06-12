@@ -2807,3 +2807,8 @@
 2026-06-10 16:47:09.383274 - Pushing Changes by JW: Changes saved
 2026-06-10 16:54:26.229674 - Edit by JW: SAL_332 - Experimental_Holds: LX St Jude →  
 2026-06-10 16:54:31.309610 - Pushing Changes by JW: Changes saved
+2026-06-12 20:05:31.677625 - Animals moved by jw: SAL_453 to Rack 8
+2026-06-12 20:09:42.198030 - Animals moved by jw: SAL_500 to Rack 4
+2026-06-12 20:15:44.405208 - Animals moved by jw: SAL_960 to Rack 2
+2026-06-12 20:15:44.407007 - Animals moved by jw: SAL_961 to Rack 2
+2026-06-12 20:15:49.210339 - Pushing Changes by jw: Changes saved
