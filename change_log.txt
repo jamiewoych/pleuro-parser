@@ -2884,3 +2884,9 @@
 2026-06-29 20:57:18.229776 - Edit by jw: SAL_170 - RFID: nan → 3D6.1534AFBBB5
 2026-06-29 20:57:36.487227 - Animals moved by jw: SAL_170 to Rack 4
 2026-06-29 20:57:38.323072 - Pushing Changes by jw: Changes saved
+2026-06-29 20:58:37.139646 - Animals moved by jw: SAL_1114 to Rack 2
+2026-06-29 20:58:37.141797 - Animals moved by jw: SAL_1113 to Rack 2
+2026-06-29 20:58:37.143154 - Animals moved by jw: SAL_1112 to Rack 2
+2026-06-29 20:58:37.144470 - Animals moved by jw: SAL_1111 to Rack 2
+2026-06-29 20:58:37.145831 - Animals moved by jw: SAL_1110 to Rack 2
+2026-06-29 20:58:38.834326 - Pushing Changes by jw: Changes saved
