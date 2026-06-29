@@ -2909,3 +2909,5 @@
 2026-06-29 22:03:59.527286 - Added animals by jw: 7 animals added to Rack 5 in B2.
 2026-06-29 22:04:29.024067 - Edit by jw: SAL_175 - RFID: nan → 3D6.1534AFBBC2
 2026-06-29 22:04:32.191971 - Pushing Changes by jw: Changes saved
+2026-06-29 22:05:38.247078 - Euthanized by jw: SAL_1042 on 06/29/2026
+2026-06-29 22:05:40.388182 - Pushing Changes by jw: Changes saved
