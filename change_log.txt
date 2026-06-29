@@ -2899,3 +2899,7 @@
 2026-06-29 21:15:18.041327 - Animals moved by jw: SAL_1132 to Rack 2
 2026-06-29 21:15:18.042278 - Animals moved by jw: SAL_1131 to Rack 2
 2026-06-29 21:27:56.872053 - Pushing Changes by jw: Changes saved
+2026-06-29 21:28:33.075401 - Added animals by jw: 6 animals added to Rack 9 in B3.
+2026-06-29 21:28:46.893315 - Added animals by jw: 6 animals added to Rack 9 in B4.
+2026-06-29 21:36:57.783835 - Edit by jw: SAL_039 - RFID: FP0404 → 3D6.1534AFBBD1
+2026-06-29 21:36:59.791151 - Pushing Changes by jw: Changes saved
