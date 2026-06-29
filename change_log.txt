@@ -2905,3 +2905,7 @@
 2026-06-29 21:36:59.791151 - Pushing Changes by jw: Changes saved
 2026-06-29 22:02:38.679736 - Added Clutch by JW: 02/06/2026 from ? likely 85, 86 x 11, 12, 13
 2026-06-29 22:02:43.186171 - Pushing Changes by JW: Changes saved
+2026-06-29 22:03:30.068329 - Added animals by jw: 7 animals added to Rack 9 in B3.
+2026-06-29 22:03:59.527286 - Added animals by jw: 7 animals added to Rack 5 in B2.
+2026-06-29 22:04:29.024067 - Edit by jw: SAL_175 - RFID: nan → 3D6.1534AFBBC2
+2026-06-29 22:04:32.191971 - Pushing Changes by jw: Changes saved
