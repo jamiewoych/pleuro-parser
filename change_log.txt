@@ -2911,3 +2911,16 @@
 2026-06-29 22:04:32.191971 - Pushing Changes by jw: Changes saved
 2026-06-29 22:05:38.247078 - Euthanized by jw: SAL_1042 on 06/29/2026
 2026-06-29 22:05:40.388182 - Pushing Changes by jw: Changes saved
+2026-07-01 16:48:32.579630 - Edit by MK: SAL_800 - Experimental_Holds: nan → MK
+2026-07-01 16:48:32.629648 - Edit by MK: SAL_852 - Experimental_Holds: nan → MK
+2026-07-01 16:48:32.695093 - Edit by MK: SAL_853 - Experimental_Holds: nan → MK
+2026-07-01 16:48:32.781185 - Edit by MK: SAL_854 - Experimental_Holds: nan → MK
+2026-07-01 16:48:32.887325 - Edit by MK: SAL_855 - Experimental_Holds: nan → MK
+2026-07-01 16:48:33.024143 - Edit by MK: SAL_856 - Experimental_Holds: nan → MK
+2026-07-01 16:48:33.156080 - Edit by MK: SAL_857 - Experimental_Holds: nan → MK
+2026-07-01 16:48:33.304616 - Edit by MK: SAL_858 - Experimental_Holds: nan → MK
+2026-07-01 18:24:25.657770 - Edit by EG: SAL_466 - Protocol_Number: AABL1550 → AABF2564
+2026-07-01 18:25:27.182049 - Edit by EG: SAL_500 - Protocol_Number: AABF2564 → AABF2564
+2026-07-01 18:25:50.691390 - Euthanized by EG: SAL_466 on 07/01/2026
+2026-07-01 18:26:46.376661 - Euthanized by EG: SAL_500 on 07/01/2026
+2026-07-01 18:29:19.257715 - Pushing Changes by EG: Changes saved

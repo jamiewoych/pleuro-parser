@@ -422,3 +422,5 @@ SAL_849,A3,Rack 8,2026-04-20,1/3/25 0:00,"Matched ctip2 OE Aqua v Terra, SV 56.2
 SAL_792,C1,Rack 11,2026-04-20,1/3/25 0:00,"Matched ctip2 OE Aqua v Terra, SV 66.6",JW,Terra T,Terrestrial,,WT,,Pleurodeles waltl,AABL1550,,,12/18/25,,Gummy Schedule,10.62,Female,
 SAL_793,C1,Rack 11,2026-04-20,1/3/25 0:00,"Matched ctip2 OE Aqua v Terra, SV 69.7",JW,Terra T,Terrestrial,,WT,,Pleurodeles waltl,AABL1550,,,12/18/25,,Gummy Schedule,10.62,Female,
 SAL_1042,B2,Rack 5,2026-06-29,12/10/24 0:00,"MISSING from sickly tank- cannibal in tank, ",,,Aquatic,,WT,,Pleurodeles waltl,AABF2564,,,,,,0.0,Unknown,Found Dead
+SAL_466,B2,Rack 4,2026-07-01,5/17/24 0:00,"Perfusion, Bank Brain",EG,EdU,Aquatic,,WT,AMMM TGZ Edu,Pleurodeles waltl,AABF2564,Edu,,,,Gummy Schedule,0.0,Unknown,
+SAL_500,B2,Rack 4,2026-07-01,5/17/24 0:00,"Perfusion, Bank Brain",EG,,Aquatic,,WT,Priority to use ,Pleurodeles waltl,AABF2564,Slow growers,,,,,0.0,Unknown,
