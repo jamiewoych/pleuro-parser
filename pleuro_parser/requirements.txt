@@ -1,11 +1,6 @@
-setuptools>=65.0.0
-wheel
-streamlit==1.44.1  # 1.46.0 is Newest version of Streamlit 2025-06
-seaborn==0.13.2    # Adjust if necessary, adjusted july 2026 due to dependency issues
-pandas==2.2.0      # Ensure you're using a compatible pandas version
-numpy<2
-matplotlib==3.9.2  # Adjust if needed, this should work with Streamlit was using 3.5.2 but then failed july 2026
-rich==14.0.0       # This version is mentioned in your logs
-pygments==2.19.1   # Matches the version in your log
-markdown-it-py==3.0.0
-mdurl==0.1.2
+streamlit==1.46.0  # 1.46.0 is Newest version of Streamlit 2025-06
+pandas==2.2.3      # Can adjust
+numpy==2.1.3       
+matplotlib==3.9.2  # was using 3.5.2 but then failed july 2026
+seaborn==0.13.2    # was using 0.11.2 failed july 2026
+GitPython==3.1.43
