@@ -1,7 +1,7 @@
 setuptools>=65.0.0
 wheel
 streamlit==1.44.1  # 1.46.0 is Newest version of Streamlit 2025-06
-seaborn==0.11.2    # Adjust if necessary, this is a stable version
+seaborn==0.13.2    # Adjust if necessary, adjusted july 2026 due to dependency issues
 pandas==2.2.0      # Ensure you're using a compatible pandas version
 numpy<2
 matplotlib==3.9.2  # Adjust if needed, this should work with Streamlit was using 3.5.2 but then failed july 2026
