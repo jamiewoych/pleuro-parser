@@ -2977,3 +2977,25 @@
 2026-07-08 16:20:09.754992 - Undo by LDVA: Removed entry from larval euthanasia log
 2026-07-08 16:21:30.562520 - Larval Euthanasia by LDVA: 3 on AABI2617
 2026-07-08 16:21:34.158622 - Pushing Changes by LDVA: Changes saved
+2026-07-14 15:49:09.256223 - Animals moved by JW: SAL_913 to Rack 8
+2026-07-14 15:49:50.446940 - Animals moved by JW: SAL_1121 to Rack 8
+2026-07-14 15:49:50.449000 - Animals moved by JW: SAL_1122 to Rack 8
+2026-07-14 15:49:50.450381 - Animals moved by JW: SAL_1123 to Rack 8
+2026-07-14 15:49:50.451638 - Animals moved by JW: SAL_1124 to Rack 8
+2026-07-14 15:49:50.453011 - Animals moved by JW: SAL_1125 to Rack 8
+2026-07-14 15:49:50.454511 - Animals moved by JW: SAL_1126 to Rack 8
+2026-07-14 15:49:50.456322 - Animals moved by JW: SAL_1127 to Rack 8
+2026-07-14 15:49:50.457570 - Animals moved by JW: SAL_1128 to Rack 8
+2026-07-14 15:49:50.458767 - Animals moved by JW: SAL_1129 to Rack 8
+2026-07-14 15:50:59.729713 - Animals moved by JW: SAL_1199 to Rack 4
+2026-07-14 15:50:59.730729 - Animals moved by JW: SAL_1200 to Rack 4
+2026-07-14 15:50:59.731665 - Animals moved by JW: SAL_1201 to Rack 4
+2026-07-14 15:50:59.732715 - Animals moved by JW: SAL_1202 to Rack 4
+2026-07-14 15:50:59.733570 - Animals moved by JW: SAL_1203 to Rack 4
+2026-07-14 15:50:59.734395 - Animals moved by JW: SAL_1204 to Rack 4
+2026-07-14 15:50:59.735463 - Animals moved by JW: SAL_1205 to Rack 4
+2026-07-14 15:50:59.736669 - Animals moved by JW: SAL_1206 to Rack 4
+2026-07-14 15:51:15.252380 - Animals moved by JW: SAL_678 to Rack 5
+2026-07-14 15:51:15.253857 - Animals moved by JW: SAL_830 to Rack 5
+2026-07-14 15:51:54.842055 - Added animals by JW: 1 animals added to Rack 5 in A2.
+2026-07-14 16:04:45.488917 - Pushing Changes by JW: Changes saved
