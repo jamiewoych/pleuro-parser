@@ -3005,3 +3005,17 @@
 2026-07-14 16:11:32.956744 - Added animals by JW: 3 animals added to Rack 5 in B3.
 2026-07-14 16:11:41.154836 - Added animals by JW: 6 animals added to Rack 5 in B3.
 2026-07-14 16:11:52.133605 - Pushing Changes by JW: Changes saved
+2026-07-15 15:40:01.690690 - Euthanized by JW: SAL_764 on 07/02/2026
+2026-07-15 15:41:17.996141 - Euthanized by JW: SAL_763 on 07/02/2026
+2026-07-15 15:42:30.542731 - Euthanized by JW: SAL_1197 on 07/02/2026
+2026-07-15 15:52:16.618141 - Euthanized by JW: SAL_745 on 07/02/2026
+2026-07-15 15:52:33.184695 - Euthanized by JW: SAL_1217 on 07/02/2026
+2026-07-15 15:52:56.627309 - Euthanized by JW: SAL_1198 on 07/02/2026
+2026-07-15 15:53:09.830966 - Undo by JW: Re-added SAL_1198 and removed euthanasia log entry
+2026-07-15 15:53:12.675132 - Undo by JW: Re-added SAL_1217 and removed euthanasia log entry
+2026-07-15 15:53:44.599686 - Euthanized by JW: SAL_1217 on 07/02/2026
+2026-07-15 15:53:50.293841 - Undo by JW: Re-added SAL_1217 and removed euthanasia log entry
+2026-07-15 15:53:57.418280 - Euthanized by JW: SAL_1217 on 07/02/2026
+2026-07-15 15:54:27.619231 - Euthanized by JW: SAL_1198 on 07/02/2026
+2026-07-15 15:54:47.509211 - Euthanized by JW: SAL_831 on 07/02/2026
+2026-07-15 15:54:55.188578 - Pushing Changes by JW: Changes saved
