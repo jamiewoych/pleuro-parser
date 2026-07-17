@@ -3030,3 +3030,11 @@
 2026-07-17 16:39:47.898609 - Euthanized by kc: SAL_720 on 07/16/2026
 2026-07-17 16:40:15.954969 - Euthanized by kc: SAL_721 on 07/16/2026
 2026-07-17 16:40:17.844078 - Pushing Changes by kc: Changes saved
+2026-07-17 19:59:12.767300 - Animals moved by jw: SAL_573 to Rack 7
+2026-07-17 19:59:12.768651 - Animals moved by jw: SAL_574 to Rack 7
+2026-07-17 19:59:12.769855 - Animals moved by jw: SAL_577 to Rack 7
+2026-07-17 19:59:12.770908 - Animals moved by jw: SAL_578 to Rack 7
+2026-07-17 20:00:02.000337 - Animals moved by jw: SAL_579 to Rack 7
+2026-07-17 20:00:02.002102 - Animals moved by jw: SAL_580 to Rack 7
+2026-07-17 20:00:02.003925 - Animals moved by jw: SAL_581 to Rack 7
+2026-07-17 20:00:06.728046 - Pushing Changes by jw: Changes saved
