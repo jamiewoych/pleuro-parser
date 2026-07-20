@@ -3038,3 +3038,6 @@
 2026-07-17 20:00:02.002102 - Animals moved by jw: SAL_580 to Rack 7
 2026-07-17 20:00:02.003925 - Animals moved by jw: SAL_581 to Rack 7
 2026-07-17 20:00:06.728046 - Pushing Changes by jw: Changes saved
+2026-07-20 19:23:18.152958 - Euthanized by MK: SAL_678 on 07/17/2026
+2026-07-20 19:23:41.114849 - Euthanized by MK: SAL_830 on 07/17/2026
+2026-07-20 19:23:59.206625 - Pushing Changes by MK: Changes saved
