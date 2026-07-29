@@ -3049,3 +3049,6 @@
 2026-07-20 22:55:56.255454 - Pushing Changes by LDVA: Changes saved
 2026-07-29 17:38:05.027037 - Euthanized by JW: SAL_020 on 07/24/2026
 2026-07-29 17:38:06.990706 - Pushing Changes by JW: Changes saved
+2026-07-29 20:52:58.234433 - Animals moved by jw: SAL_222 to Rack 3
+2026-07-29 20:52:58.235889 - Animals moved by jw: SAL_223 to Rack 3
+2026-07-29 20:53:21.382214 - Pushing Changes by jw: Changes saved
