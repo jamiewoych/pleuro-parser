@@ -3056,3 +3056,9 @@
 2026-07-29 20:54:34.191687 - Pushing Changes by jw: Changes saved
 2026-07-29 20:55:11.850223 - Added animals by jw: 8 animals added to Rack 1 in C2.
 2026-07-29 20:55:28.793552 - Pushing Changes by jw: Changes saved
+2026-07-29 21:03:41.272965 - Added animals by jw: 2 animals added to Rack 5 in A2.
+2026-07-29 21:06:34.120139 - Animals moved by jw: SAL_765 to Rack 6
+2026-07-29 21:06:34.122573 - Animals moved by jw: SAL_812 to Rack 6
+2026-07-29 21:06:34.124212 - Animals moved by jw: SAL_811 to Rack 6
+2026-07-29 21:06:34.125626 - Animals moved by jw: SAL_810 to Rack 6
+2026-07-29 21:06:43.711641 - Pushing Changes by jw: Changes saved
