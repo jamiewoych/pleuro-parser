@@ -3071,3 +3071,8 @@
 2026-07-29 22:18:31.008602 - Added animals by jw: 9 animals added to Rack 5 in B1.
 2026-07-29 22:18:45.555222 - Added animals by jw: 8 animals added to Rack 5 in C1.
 2026-07-29 22:18:47.803506 - Pushing Changes by jw: Changes saved
+2026-08-04 14:00:29.630310 - Euthanized by kc: SAL_913 on 08/03/2026
+2026-08-04 14:06:33.487412 - Euthanized by kc: SAL_865 on 08/03/2026
+2026-08-04 14:07:16.305818 - Euthanized by kc: SAL_791 on 08/03/2026
+2026-08-04 14:07:50.346888 - Euthanized by kc: SAL_794 on 08/03/2026
+2026-08-04 14:07:54.141285 - Pushing Changes by kc: Changes saved
