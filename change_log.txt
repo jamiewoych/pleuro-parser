@@ -3093,3 +3093,8 @@
 2026-08-10 13:21:58.604120 - Edit by ts: SAL_415 - Environmental_Condition: Aquatic → Terrestrial; Cohort: nan → Terra M
 2026-08-10 13:21:58.686872 - Edit by ts: SAL_418 - Environmental_Condition: Aquatic → Terrestrial; Cohort: nan → Terra M
 2026-08-10 13:22:29.796556 - Pushing Changes by ts: Changes saved
+2026-08-10 13:23:23.390923 - Animals moved by ts: SAL_363 to Rack 11
+2026-08-10 13:23:40.100523 - Edit by ts: SAL_363 - Environmental_Condition: Aquatic → Terrestrial; Cohort: nan → Terra N
+2026-08-10 13:24:37.909489 - Edit by ts: SAL_364 - Environmental_Condition: Aquatic → Terrestrial; Cohort: nan → Terra N
+2026-08-10 13:24:52.434104 - Animals moved by ts: SAL_364 to Rack 11
+2026-08-10 13:25:09.009371 - Pushing Changes by ts: Changes saved
