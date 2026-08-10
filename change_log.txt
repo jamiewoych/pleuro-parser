@@ -3098,3 +3098,12 @@
 2026-08-10 13:24:37.909489 - Edit by ts: SAL_364 - Environmental_Condition: Aquatic → Terrestrial; Cohort: nan → Terra N
 2026-08-10 13:24:52.434104 - Animals moved by ts: SAL_364 to Rack 11
 2026-08-10 13:25:09.009371 - Pushing Changes by ts: Changes saved
+2026-08-10 13:27:36.573449 - Animals moved by ts: SAL_557 to Rack 11
+2026-08-10 13:36:23.343447 - Euthanized by ts: SAL_406 on 08/10/2026
+2026-08-10 13:36:43.227170 - Euthanized by ts: SAL_413 on 08/10/2026
+2026-08-10 13:37:11.300025 - Euthanized by ts: SAL_414 on 08/10/2026
+2026-08-10 13:37:49.250597 - Euthanized by ts: SAL_417 on 08/10/2026
+2026-08-10 23:17:14.022766 - Euthanized by gg2900: SAL_1325 on 08/10/2026
+2026-08-10 23:17:32.715296 - Euthanized by gg2900: SAL_1326 on 08/10/2026
+2026-08-10 23:17:47.019910 - Euthanized by gg2900: SAL_1327 on 08/10/2026
+2026-08-10 23:17:57.190818 - Pushing Changes by gg2900: Changes saved
