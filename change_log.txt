@@ -3118,3 +3118,6 @@
 2026-08-12 22:14:17.544101 - Euthanized by ts: SAL_958 on 08/12/2026
 2026-08-12 22:14:35.996164 - Euthanized by ts: SAL_962 on 08/12/2026
 2026-08-12 22:14:40.414438 - Pushing Changes by ts: Changes saved
+2026-08-17 20:27:19.531124 - Animals moved by jw: SAL_420 to Rack 6
+2026-08-17 20:27:19.532545 - Animals moved by jw: SAL_421 to Rack 6
+2026-08-17 20:27:20.507248 - Pushing Changes by jw: Changes saved
