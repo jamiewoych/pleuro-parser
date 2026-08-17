@@ -3138,3 +3138,11 @@
 2026-08-17 20:47:37.471378 - Pushing Changes by jw: Changes saved
 2026-08-17 20:49:14.488706 - Euthanized by jw: SAL_1067 on 08/17/2026
 2026-08-17 20:49:21.631949 - Pushing Changes by jw: Changes saved
+2026-08-17 20:52:00.675882 - Animals moved by jw: SAL_1239 to Rack 2
+2026-08-17 20:52:00.678097 - Animals moved by jw: SAL_1240 to Rack 2
+2026-08-17 20:52:00.679765 - Animals moved by jw: SAL_1241 to Rack 2
+2026-08-17 20:52:00.681681 - Animals moved by jw: SAL_1242 to Rack 2
+2026-08-17 20:52:00.683279 - Animals moved by jw: SAL_1243 to Rack 2
+2026-08-17 20:52:00.684613 - Animals moved by jw: SAL_1244 to Rack 2
+2026-08-17 20:52:00.686102 - Animals moved by jw: SAL_1245 to Rack 2
+2026-08-17 20:52:05.221459 - Pushing Changes by jw: Changes saved
