@@ -3155,3 +3155,5 @@
 2026-08-17 21:42:42.897310 - Added animals by jw: 6 animals added to Rack 9 in C2.
 2026-08-17 21:42:51.955103 - Added animals by jw: 6 animals added to Rack 9 in C3.
 2026-08-17 22:02:19.347334 - Pushing Changes by jw: Changes saved
+2026-08-27 14:55:04.979759 - Euthanized by NJC: SAL_222 on 08/13/2026
+2026-08-27 14:55:08.755237 - Pushing Changes by NJC: Changes saved
