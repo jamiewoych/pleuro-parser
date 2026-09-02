@@ -3239,3 +3239,9 @@
 2026-09-02 19:58:12.517791 - Edit by jw: SAL_1041 - Experimental_Holds: JW/AMMM terraf/reaqua matched → JW/AMMM terraf/reaqua matched; Protocol_Number: AABF2564 → AABL1550; Diet: Gummy Schedule → Gummy Schedule; Cohort: Aqua F → Aqua F
 2026-09-02 19:58:12.841177 - Edit by jw: SAL_753 - Experimental_Holds: JW/AMMM terraf/reaqua matched → JW/AMMM terraf/reaqua matched; Protocol_Number: AABF2564 → AABL1550; Diet: Gummy Schedule → Gummy Schedule; Cohort: Aqua F → Aqua F
 2026-09-02 19:58:17.820216 - Pushing Changes by jw: Changes saved
+2026-09-02 20:32:17.980892 - Edit by kc: SAL_345 - Experimental_Holds: nan → katharine - electroporation, regeneration; Protocol_Number: AABL1550 → AABI2617
+2026-09-02 20:32:18.052397 - Edit by kc: SAL_349 - Experimental_Holds: nan → katharine - electroporation, regeneration; Protocol_Number: AABL1550 → AABI2617
+2026-09-02 20:32:18.133391 - Edit by kc: SAL_350 - Experimental_Holds: nan → katharine - electroporation, regeneration; Protocol_Number: AABL1550 → AABI2617
+2026-09-02 20:32:18.221601 - Edit by kc: SAL_917 - Experimental_Holds: nan → katharine - electroporation, regeneration; Protocol_Number: AABL1550 → AABI2617
+2026-09-02 20:32:18.331382 - Edit by kc: SAL_918 - Experimental_Holds: nan → katharine - electroporation, regeneration; Protocol_Number: AABL1550 → AABI2617
+2026-09-02 20:32:29.969463 - Pushing Changes by kc: Changes saved

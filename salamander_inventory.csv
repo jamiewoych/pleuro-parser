@@ -166,12 +166,12 @@ SAL_310,AABL1550,Rack 3,C1,11/24/23 0:00,,Aquatic,Male,F1,hsyn-GCaMP6s,Breeding,
 SAL_311,AABL1550,Rack 3,C1,11/24/23 0:00,,Aquatic,Male,F1,hsyn-GCaMP6s,Breeding,Pleurodeles waltl,,,,,
 SAL_312,AABL1550,Rack 3,C1,11/24/23 0:00,,Aquatic,Male,F1,hsyn-GCaMP6s,Breeding,Pleurodeles waltl,,,,,
 SAL_332,AABL1550,Rack 6,C1,11/24/23 0:00,,Aquatic,Unknown,F1,hsyn-GCaMP6s, ,Pleurodeles waltl,,,,,
-SAL_345,AABL1550,Rack 4,A2,12/10/24,,Aquatic,Unknown,,WT,,Pleurodeles waltl,,,,,
+SAL_345,AABI2617,Rack 4,A2,12/10/24,,Aquatic,Unknown,,WT,"katharine - electroporation, regeneration",Pleurodeles waltl,,,,,
 SAL_346,AABF2564,Rack 13 - Off,A2,12/10/24,,Aquatic,Unknown,,WT,,Pleurodeles waltl,,,,,
 SAL_347,AABF2564,Rack 13 - Off,A2,12/10/24,,Aquatic,Unknown,,WT,,Pleurodeles waltl,,,,,
 SAL_348,AABF2564,Rack 13 - Off,A2,12/10/24,,Aquatic,Unknown,,WT,,Pleurodeles waltl,,,,,
-SAL_349,AABL1550,Rack 4,A2,12/10/24,,Aquatic,Unknown,,WT,,Pleurodeles waltl,,,,,
-SAL_350,AABL1550,Rack 4,A2,12/10/24,,Aquatic,Unknown,,WT,,Pleurodeles waltl,,,,,
+SAL_349,AABI2617,Rack 4,A2,12/10/24,,Aquatic,Unknown,,WT,"katharine - electroporation, regeneration",Pleurodeles waltl,,,,,
+SAL_350,AABI2617,Rack 4,A2,12/10/24,,Aquatic,Unknown,,WT,"katharine - electroporation, regeneration",Pleurodeles waltl,,,,,
 SAL_351,AABL1550,Rack 8,C4,1/3/25 0:00,Aqua T,Aquatic,Unknown,,WT,JW/AMMM Aqua T matched to terra,Pleurodeles waltl,,,,,Gummy Schedule
 SAL_352,AABL1550,Rack 8,C4,1/3/25 0:00,Aqua T,Aquatic,Unknown,,WT,JW/AMMM Aqua T matched to terra,Pleurodeles waltl,,,,,Gummy Schedule
 SAL_356,AABL1550,Rack 6,B1,11/24/23 0:00,,Aquatic,Unknown,F1,hsyn-GCaMP6s,,Pleurodeles waltl,,,,,
@@ -434,8 +434,8 @@ SAL_884,AABI2617,Rack 13 - Off,A1,10/25/24 0:00,PTU,Aquatic,Unknown,,WT,PTU AOG,
 SAL_914,AABL1550,Rack 5,B2,12/10/24 0:00,Aqua F,Aquatic,Unknown,,WT,JW/AMMM terraf/reaqua matched,Pleurodeles waltl,,,,,Gummy Schedule
 SAL_915,AABL1550,Rack 5,B2,12/10/24 0:00,Aqua F,Aquatic,Unknown,,WT,JW/AMMM terraf/reaqua matched,Pleurodeles waltl,,,,,Gummy Schedule
 SAL_916,AABL1550,Rack 5,B2,12/10/24 0:00,Aqua F,Aquatic,Unknown,,WT,JW/AMMM terraf/reaqua matched,Pleurodeles waltl,,,,,Gummy Schedule
-SAL_917,AABL1550,Rack 4,A2,12/10/24 0:00,,Aquatic,Unknown,,WT,,Pleurodeles waltl,,,,,
-SAL_918,AABL1550,Rack 4,A2,12/10/24 0:00,,Aquatic,Unknown,,WT,,Pleurodeles waltl,,,,,
+SAL_917,AABI2617,Rack 4,A2,12/10/24 0:00,,Aquatic,Unknown,,WT,"katharine - electroporation, regeneration",Pleurodeles waltl,,,,,
+SAL_918,AABI2617,Rack 4,A2,12/10/24 0:00,,Aquatic,Unknown,,WT,"katharine - electroporation, regeneration",Pleurodeles waltl,,,,,
 SAL_919,AABL1550,Rack 4,A2,12/10/24 0:00,,Aquatic,Unknown,,WT,,Pleurodeles waltl,,,,,
 SAL_920,AABL1550,Rack 4,A2,12/10/24 0:00,,Aquatic,Unknown,,WT,,Pleurodeles waltl,,,,,
 SAL_921,AABL1550,Rack 8,B5,5/20/25 0:00,F2,Aquatic,Unknown,,hsyn-GCaMP6s,,Pleurodeles waltl,,,,,
