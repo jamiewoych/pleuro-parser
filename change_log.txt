@@ -3185,3 +3185,8 @@
 2026-09-02 19:04:22.557992 - Edit by kc: SAL_656 - Experimental_Holds: nan → katharine - electroporation, regeneration; Protocol_Number: AABF2564 → AABI2617
 2026-09-02 19:04:22.675512 - Edit by kc: SAL_657 - Experimental_Holds: nan → katharine - electroporation, regeneration; Protocol_Number: AABF2564 → AABI2617
 2026-09-02 19:04:32.109315 - Pushing Changes by kc: Changes saved
+2026-09-02 19:04:37.255927 - Edit by jw: SAL_737 - Environmental_Condition: Aquatic → Terrestrial; Experimental_Holds: nan → matched to aqua T; Protocol_Number: AABF2564 → AABL1550; Diet: nan → Gummy Schedule; Date_of_Terra: nan → 2026-09-02
+2026-09-02 19:04:37.345872 - Edit by jw: SAL_736 - Environmental_Condition: Aquatic → Terrestrial; Experimental_Holds: nan → matched to aqua T; Protocol_Number: AABF2564 → AABL1550; Diet: nan → Gummy Schedule; Date_of_Terra: nan → 2026-09-02
+2026-09-02 19:04:37.441938 - Edit by jw: SAL_735 - Environmental_Condition: Aquatic → Terrestrial; Experimental_Holds: nan → matched to aqua T; Protocol_Number: AABF2564 → AABL1550; Diet: nan → Gummy Schedule; Date_of_Terra: nan → 2026-09-02
+2026-09-02 19:04:37.551591 - Edit by jw: SAL_809 - Environmental_Condition: Aquatic → Terrestrial; Experimental_Holds: nan → matched to aqua T; Protocol_Number: AABF2564 → AABL1550; Diet: nan → Gummy Schedule; Date_of_Terra: nan → 2026-09-02
+2026-09-02 19:04:39.357312 - Pushing Changes by jw: Changes saved
