@@ -3160,3 +3160,28 @@
 2026-08-28 19:44:44.149611 - Euthanized by ts: SAL_355 on 08/28/2026
 2026-08-28 19:44:49.607245 - Pushing Changes by ts: Changes saved
 2026-08-28 19:47:21.938124 - Pushing Changes by ts: Changes saved
+2026-09-02 18:53:36.938829 - Animals moved by JW: SAL_737 to Rack 8
+2026-09-02 18:53:36.940755 - Animals moved by JW: SAL_736 to Rack 8
+2026-09-02 18:53:36.941902 - Animals moved by JW: SAL_735 to Rack 8
+2026-09-02 18:53:36.942985 - Animals moved by JW: SAL_809 to Rack 8
+2026-09-02 18:53:36.943976 - Animals moved by JW: SAL_808 to Rack 8
+2026-09-02 18:53:36.945736 - Animals moved by JW: SAL_738 to Rack 8
+2026-09-02 18:53:36.946918 - Animals moved by JW: SAL_138 to Rack 8
+2026-09-02 18:53:36.947909 - Animals moved by JW: SAL_351 to Rack 8
+2026-09-02 18:53:54.172773 - Animals moved by JW: SAL_352 to Rack 8
+2026-09-02 18:56:05.838871 - Edit by JW: SAL_352 - Experimental_Holds: nan → JW/AMMM Aqua T matched to terra; Protocol_Number: AABF2564 → AABL1550; Diet: nan → Gummy Schedule; Cohort: nan → Aqua T
+2026-09-02 18:56:05.940622 - Edit by JW: SAL_351 - Experimental_Holds: nan → JW/AMMM Aqua T matched to terra; Protocol_Number: AABF2564 → AABL1550; Diet: nan → Gummy Schedule; Cohort: nan → Aqua T
+2026-09-02 18:56:06.061621 - Edit by JW: SAL_138 - Experimental_Holds: nan → JW/AMMM Aqua T matched to terra; Protocol_Number: AABF2564 → AABL1550; Diet: nan → Gummy Schedule; Cohort: nan → Aqua T
+2026-09-02 18:56:06.199289 - Edit by JW: SAL_738 - Experimental_Holds: nan → JW/AMMM Aqua T matched to terra; Protocol_Number: AABF2564 → AABL1550; Diet: nan → Gummy Schedule; Cohort: nan → Aqua T
+2026-09-02 18:56:06.342127 - Edit by JW: SAL_808 - Experimental_Holds: nan → JW/AMMM Aqua T matched to terra; Protocol_Number: AABF2564 → AABL1550; Diet: nan → Gummy Schedule; Cohort: nan → Aqua T
+2026-09-02 18:57:10.170975 - Euthanized by JW: SAL_138 on 09/02/2026
+2026-09-02 19:03:39.012939 - Animals moved by jw: SAL_809 to Rack 10
+2026-09-02 19:03:39.015279 - Animals moved by jw: SAL_735 to Rack 10
+2026-09-02 19:03:39.017077 - Animals moved by jw: SAL_736 to Rack 10
+2026-09-02 19:03:39.019262 - Animals moved by jw: SAL_737 to Rack 10
+2026-09-02 19:04:22.332448 - Edit by kc: SAL_349 - Experimental_Holds: nan → katharine - electroporation, regeneration; Protocol_Number: AABL1550 → AABI2617
+2026-09-02 19:04:22.384074 - Edit by kc: SAL_350 - Experimental_Holds: nan → katharine - electroporation, regeneration; Protocol_Number: AABL1550 → AABI2617
+2026-09-02 19:04:22.459871 - Edit by kc: SAL_655 - Experimental_Holds: nan → katharine - electroporation, regeneration; Protocol_Number: AABF2564 → AABI2617
+2026-09-02 19:04:22.557992 - Edit by kc: SAL_656 - Experimental_Holds: nan → katharine - electroporation, regeneration; Protocol_Number: AABF2564 → AABI2617
+2026-09-02 19:04:22.675512 - Edit by kc: SAL_657 - Experimental_Holds: nan → katharine - electroporation, regeneration; Protocol_Number: AABF2564 → AABI2617
+2026-09-02 19:04:32.109315 - Pushing Changes by kc: Changes saved
