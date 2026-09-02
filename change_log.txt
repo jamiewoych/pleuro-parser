@@ -3218,3 +3218,24 @@
 2026-09-02 19:45:09.942397 - Pushing Changes by jw: Changes saved
 2026-09-02 19:45:11.177775 - Pushing Changes by jw: Changes saved
 2026-09-02 19:46:29.795071 - Pushing Changes by jw: Changes saved
+2026-09-02 19:51:03.791485 - Animals moved by jw: SAL_753 to Rack 8
+2026-09-02 19:56:38.854601 - Animals moved by jw: SAL_674 to Rack 8
+2026-09-02 19:57:37.734274 - Edit by jw: SAL_674 - Experimental_Holds: nan → JW/AMMM terraf/reaqua matched; Cohort: nan → Aqua F
+2026-09-02 19:57:37.808852 - Edit by jw: SAL_914 - Experimental_Holds: nan → JW/AMMM terraf/reaqua matched; Cohort: nan → Aqua F
+2026-09-02 19:57:37.884223 - Edit by jw: SAL_915 - Experimental_Holds: nan → JW/AMMM terraf/reaqua matched; Cohort: nan → Aqua F
+2026-09-02 19:57:37.979186 - Edit by jw: SAL_916 - Experimental_Holds: nan → JW/AMMM terraf/reaqua matched; Cohort: nan → Aqua F
+2026-09-02 19:57:38.094882 - Edit by jw: SAL_1041 - Experimental_Holds: nan → JW/AMMM terraf/reaqua matched; Cohort: nan → Aqua F
+2026-09-02 19:57:38.220114 - Edit by jw: SAL_753 - Experimental_Holds: nan → JW/AMMM terraf/reaqua matched; Cohort: nan → Aqua F
+2026-09-02 19:57:41.413954 - Edit by jw: SAL_674 - Experimental_Holds: JW/AMMM terraf/reaqua matched → JW/AMMM terraf/reaqua matched; Diet: nan → Gummy Schedule; Cohort: Aqua F → Aqua F
+2026-09-02 19:57:41.580928 - Edit by jw: SAL_914 - Experimental_Holds: JW/AMMM terraf/reaqua matched → JW/AMMM terraf/reaqua matched; Diet: nan → Gummy Schedule; Cohort: Aqua F → Aqua F
+2026-09-02 19:57:41.751894 - Edit by jw: SAL_915 - Experimental_Holds: JW/AMMM terraf/reaqua matched → JW/AMMM terraf/reaqua matched; Diet: nan → Gummy Schedule; Cohort: Aqua F → Aqua F
+2026-09-02 19:57:41.927158 - Edit by jw: SAL_916 - Experimental_Holds: JW/AMMM terraf/reaqua matched → JW/AMMM terraf/reaqua matched; Diet: nan → Gummy Schedule; Cohort: Aqua F → Aqua F
+2026-09-02 19:57:42.114894 - Edit by jw: SAL_1041 - Experimental_Holds: JW/AMMM terraf/reaqua matched → JW/AMMM terraf/reaqua matched; Diet: nan → Gummy Schedule; Cohort: Aqua F → Aqua F
+2026-09-02 19:57:42.345151 - Edit by jw: SAL_753 - Experimental_Holds: JW/AMMM terraf/reaqua matched → JW/AMMM terraf/reaqua matched; Diet: nan → Gummy Schedule; Cohort: Aqua F → Aqua F
+2026-09-02 19:58:11.444974 - Edit by jw: SAL_674 - Experimental_Holds: JW/AMMM terraf/reaqua matched → JW/AMMM terraf/reaqua matched; Protocol_Number: AABF2564 → AABL1550; Diet: Gummy Schedule → Gummy Schedule; Cohort: Aqua F → Aqua F
+2026-09-02 19:58:11.698607 - Edit by jw: SAL_914 - Experimental_Holds: JW/AMMM terraf/reaqua matched → JW/AMMM terraf/reaqua matched; Protocol_Number: AABF2564 → AABL1550; Diet: Gummy Schedule → Gummy Schedule; Cohort: Aqua F → Aqua F
+2026-09-02 19:58:11.953835 - Edit by jw: SAL_915 - Experimental_Holds: JW/AMMM terraf/reaqua matched → JW/AMMM terraf/reaqua matched; Protocol_Number: AABF2564 → AABL1550; Diet: Gummy Schedule → Gummy Schedule; Cohort: Aqua F → Aqua F
+2026-09-02 19:58:12.222608 - Edit by jw: SAL_916 - Experimental_Holds: JW/AMMM terraf/reaqua matched → JW/AMMM terraf/reaqua matched; Protocol_Number: AABF2564 → AABL1550; Diet: Gummy Schedule → Gummy Schedule; Cohort: Aqua F → Aqua F
+2026-09-02 19:58:12.517791 - Edit by jw: SAL_1041 - Experimental_Holds: JW/AMMM terraf/reaqua matched → JW/AMMM terraf/reaqua matched; Protocol_Number: AABF2564 → AABL1550; Diet: Gummy Schedule → Gummy Schedule; Cohort: Aqua F → Aqua F
+2026-09-02 19:58:12.841177 - Edit by jw: SAL_753 - Experimental_Holds: JW/AMMM terraf/reaqua matched → JW/AMMM terraf/reaqua matched; Protocol_Number: AABF2564 → AABL1550; Diet: Gummy Schedule → Gummy Schedule; Cohort: Aqua F → Aqua F
+2026-09-02 19:58:17.820216 - Pushing Changes by jw: Changes saved
