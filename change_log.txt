@@ -3272,3 +3272,16 @@
 2026-09-02 21:57:45.611053 - Added animals by JW: 6 animals added to Rack 9 in B2.
 2026-09-02 21:57:54.642707 - Added animals by JW: 6 animals added to Rack 9 in A4.
 2026-09-02 21:57:57.802839 - Pushing Changes by JW: Changes saved
+2026-09-02 22:03:17.345736 - Animals moved by jw: SAL_1207 to Rack 4
+2026-09-02 22:03:17.347316 - Animals moved by jw: SAL_1208 to Rack 4
+2026-09-02 22:03:17.348981 - Animals moved by jw: SAL_1209 to Rack 4
+2026-09-02 22:03:17.350035 - Animals moved by jw: SAL_1210 to Rack 4
+2026-09-02 22:03:17.351520 - Animals moved by jw: SAL_1211 to Rack 4
+2026-09-02 22:03:17.352901 - Animals moved by jw: SAL_1212 to Rack 4
+2026-09-02 22:03:17.354448 - Animals moved by jw: SAL_1213 to Rack 4
+2026-09-02 22:06:46.152958 - Animals moved by JW: SAL_1275 to Rack 4
+2026-09-02 22:06:46.154141 - Animals moved by JW: SAL_1276 to Rack 4
+2026-09-02 22:06:46.155411 - Animals moved by JW: SAL_1277 to Rack 4
+2026-09-02 22:06:46.156474 - Animals moved by JW: SAL_1278 to Rack 4
+2026-09-02 22:06:46.157612 - Animals moved by JW: SAL_1279 to Rack 4
+2026-09-02 22:07:07.499652 - Pushing Changes by JW: Changes saved
