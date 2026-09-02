@@ -3245,3 +3245,5 @@
 2026-09-02 20:32:18.221601 - Edit by kc: SAL_917 - Experimental_Holds: nan → katharine - electroporation, regeneration; Protocol_Number: AABL1550 → AABI2617
 2026-09-02 20:32:18.331382 - Edit by kc: SAL_918 - Experimental_Holds: nan → katharine - electroporation, regeneration; Protocol_Number: AABL1550 → AABI2617
 2026-09-02 20:32:29.969463 - Pushing Changes by kc: Changes saved
+2026-09-02 21:10:12.431079 - Animals moved by jw: SAL_043 to Rack 4
+2026-09-02 21:10:18.563924 - Pushing Changes by jw: Changes saved
