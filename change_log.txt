@@ -3247,3 +3247,17 @@
 2026-09-02 20:32:29.969463 - Pushing Changes by kc: Changes saved
 2026-09-02 21:10:12.431079 - Animals moved by jw: SAL_043 to Rack 4
 2026-09-02 21:10:18.563924 - Pushing Changes by jw: Changes saved
+2026-09-02 21:29:34.841581 - Animals moved by jw: SAL_1280 to Rack 7
+2026-09-02 21:29:34.843182 - Animals moved by jw: SAL_1281 to Rack 7
+2026-09-02 21:29:34.844283 - Animals moved by jw: SAL_1282 to Rack 7
+2026-09-02 21:29:34.845338 - Animals moved by jw: SAL_1283 to Rack 7
+2026-09-02 21:29:34.846381 - Animals moved by jw: SAL_1284 to Rack 7
+2026-09-02 21:40:35.662904 - Animals moved by jw: SAL_1235 to Rack 8
+2026-09-02 21:40:35.664579 - Animals moved by jw: SAL_1236 to Rack 8
+2026-09-02 21:40:35.665864 - Animals moved by jw: SAL_1237 to Rack 8
+2026-09-02 21:40:35.666891 - Animals moved by jw: SAL_1231 to Rack 8
+2026-09-02 21:40:35.667825 - Animals moved by jw: SAL_1232 to Rack 8
+2026-09-02 21:40:35.668859 - Animals moved by jw: SAL_1233 to Rack 8
+2026-09-02 21:40:35.669819 - Animals moved by jw: SAL_1234 to Rack 8
+2026-09-02 21:40:35.670873 - Animals moved by jw: SAL_1238 to Rack 8
+2026-09-02 21:40:57.444516 - Pushing Changes by jw: Changes saved
