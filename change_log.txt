@@ -3292,3 +3292,7 @@
 2026-09-02 22:12:57.532155 - Pushing Changes by jw: Changes saved
 2026-09-03 18:53:41.942459 - Animals moved by JW: SAL_036 to Rack 3
 2026-09-03 18:54:00.462304 - Pushing Changes by JW: Changes saved
+2026-09-03 19:00:16.843223 - Animals moved by jw: SAL_307 to Rack 3
+2026-09-03 19:00:16.845760 - Animals moved by jw: SAL_308 to Rack 3
+2026-09-03 19:00:16.848175 - Animals moved by jw: SAL_309 to Rack 3
+2026-09-03 19:00:20.863799 - Pushing Changes by jw: Changes saved
