@@ -3324,3 +3324,5 @@
 2026-09-03 20:57:34.981579 - Animals moved by jw: SAL_002 to Rack 12
 2026-09-03 20:57:34.982528 - Animals moved by jw: SAL_003 to Rack 12
 2026-09-03 21:16:43.648234 - Pushing Changes by jw: Changes saved
+2026-09-08 21:25:37.353635 - Euthanized by JW: SAL_939 on 07/03/2026
+2026-09-08 21:25:38.620268 - Pushing Changes by JW: Changes saved
