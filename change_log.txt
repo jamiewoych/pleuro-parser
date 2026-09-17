@@ -3331,3 +3331,13 @@
 2026-09-11 16:47:10.158874 - Euthanized by NJC: SAL_607 on 08/27/2026
 2026-09-11 16:49:29.595418 - Euthanized by NJC: SAL_1190 on 08/27/2026
 2026-09-11 17:09:13.090193 - Pushing Changes by NJC: Changes saved
+2026-09-17 18:56:35.847230 - Animals moved by JW: SAL_1285 to Rack 6
+2026-09-17 18:56:35.849249 - Animals moved by JW: SAL_1286 to Rack 6
+2026-09-17 18:56:35.850847 - Animals moved by JW: SAL_1287 to Rack 6
+2026-09-17 18:56:35.852331 - Animals moved by JW: SAL_1288 to Rack 6
+2026-09-17 18:56:35.853781 - Animals moved by JW: SAL_1289 to Rack 6
+2026-09-17 18:56:35.855686 - Animals moved by JW: SAL_1290 to Rack 6
+2026-09-17 18:56:35.857314 - Animals moved by JW: SAL_1371 to Rack 6
+2026-09-17 18:56:35.859187 - Animals moved by JW: SAL_1372 to Rack 6
+2026-09-17 18:56:35.860903 - Animals moved by JW: SAL_1373 to Rack 6
+2026-09-17 18:56:39.966496 - Pushing Changes by JW: Changes saved
