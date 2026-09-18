@@ -3401,3 +3401,6 @@
 2026-09-17 20:00:41.046639 - Pushing Changes by JW: Changes saved
 2026-09-18 16:07:34.153764 - Added Clutch by jw: 08/31/2026 from tbd
 2026-09-18 16:08:10.627064 - Pushing Changes by jw: Changes saved
+2026-09-18 16:12:23.369859 - Euthanized by kc: SAL_918 on 09/17/2026
+2026-09-18 16:13:17.926002 - Larval Euthanasia by kc: 1 on AABI2617
+2026-09-18 16:13:21.696547 - Pushing Changes by kc: Changes saved
