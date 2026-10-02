@@ -3406,3 +3406,9 @@
 2026-09-18 16:13:21.696547 - Pushing Changes by kc: Changes saved
 2026-09-21 18:05:23.002409 - Edit by MK: SAL_332 - Experimental_History: nan → headfixed for aqua wfci - MK; RFID: nan → D60711
 2026-09-21 18:08:55.110524 - Pushing Changes by MK: Changes saved
+2026-10-02 19:31:26.242274 - Animals moved by JW: SAL_773 to Rack 4
+2026-10-02 19:32:03.669793 - Animals moved by JW: SAL_659 to Rack 8
+2026-10-02 19:32:03.672004 - Animals moved by JW: SAL_660 to Rack 8
+2026-10-02 19:32:03.673482 - Animals moved by JW: SAL_661 to Rack 8
+2026-10-02 19:32:03.674821 - Animals moved by JW: SAL_662 to Rack 8
+2026-10-02 19:32:04.928256 - Pushing Changes by JW: Changes saved
