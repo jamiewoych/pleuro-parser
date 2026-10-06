@@ -3466,3 +3466,20 @@
 2026-10-02 21:13:21.367638 - Added animals by JW: 5 animals added to Rack 5 in C4.
 2026-10-02 21:15:05.536440 - Added animals by JW: 6 animals added to Rack 9 in B4.
 2026-10-02 21:15:57.649429 - Pushing Changes by JW: Changes saved
+2026-10-06 21:20:01.949269 - Animals moved by ts: SAL_1089 to Rack 10
+2026-10-06 21:20:01.951174 - Animals moved by ts: SAL_1086 to Rack 10
+2026-10-06 21:20:01.952703 - Animals moved by ts: SAL_1087 to Rack 10
+2026-10-06 21:20:01.954076 - Animals moved by ts: SAL_1088 to Rack 10
+2026-10-06 21:20:01.955337 - Animals moved by ts: SAL_1090 to Rack 10
+2026-10-06 21:20:01.957173 - Animals moved by ts: SAL_1091 to Rack 10
+2026-10-06 21:20:01.958547 - Animals moved by ts: SAL_1092 to Rack 10
+2026-10-06 21:20:01.959897 - Animals moved by ts: SAL_1093 to Rack 10
+2026-10-06 21:21:02.911925 - Edit by ts: SAL_1086 - Environmental_Condition: Aquatic → Terrestrial; Date_of_Terra: nan → 2026-10-06
+2026-10-06 21:21:02.977496 - Edit by ts: SAL_1087 - Environmental_Condition: Aquatic → Terrestrial; Date_of_Terra: nan → 2026-10-06
+2026-10-06 21:21:03.052548 - Edit by ts: SAL_1088 - Environmental_Condition: Aquatic → Terrestrial; Date_of_Terra: nan → 2026-10-06
+2026-10-06 21:21:03.148433 - Edit by ts: SAL_1089 - Environmental_Condition: Aquatic → Terrestrial; Date_of_Terra: nan → 2026-10-06
+2026-10-06 21:21:03.260896 - Edit by ts: SAL_1090 - Environmental_Condition: Aquatic → Terrestrial; Date_of_Terra: nan → 2026-10-06
+2026-10-06 21:21:03.377348 - Edit by ts: SAL_1091 - Environmental_Condition: Aquatic → Terrestrial; Date_of_Terra: nan → 2026-10-06
+2026-10-06 21:21:03.520238 - Edit by ts: SAL_1092 - Environmental_Condition: Aquatic → Terrestrial; Date_of_Terra: nan → 2026-10-06
+2026-10-06 21:21:03.676727 - Edit by ts: SAL_1093 - Environmental_Condition: Aquatic → Terrestrial; Date_of_Terra: nan → 2026-10-06
+2026-10-06 21:21:05.902096 - Pushing Changes by ts: Changes saved
