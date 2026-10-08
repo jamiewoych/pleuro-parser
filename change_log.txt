@@ -3483,3 +3483,12 @@
 2026-10-06 21:21:03.520238 - Edit by ts: SAL_1092 - Environmental_Condition: Aquatic → Terrestrial; Date_of_Terra: nan → 2026-10-06
 2026-10-06 21:21:03.676727 - Edit by ts: SAL_1093 - Environmental_Condition: Aquatic → Terrestrial; Date_of_Terra: nan → 2026-10-06
 2026-10-06 21:21:05.902096 - Pushing Changes by ts: Changes saved
+2026-10-08 20:25:54.441034 - Edit by ts: SAL_1086 - Environmental_Condition: Terrestrial → Terrestrial; Cohort: nan → Terra D
+2026-10-08 20:25:54.490809 - Edit by ts: SAL_1087 - Environmental_Condition: Terrestrial → Terrestrial; Cohort: nan → Terra D
+2026-10-08 20:25:54.556799 - Edit by ts: SAL_1088 - Environmental_Condition: Terrestrial → Terrestrial; Cohort: nan → Terra D
+2026-10-08 20:25:54.631790 - Edit by ts: SAL_1089 - Environmental_Condition: Terrestrial → Terrestrial; Cohort: nan → Terra D
+2026-10-08 20:25:54.720351 - Edit by ts: SAL_1090 - Environmental_Condition: Terrestrial → Terrestrial; Cohort: nan → Terra D
+2026-10-08 20:25:54.825448 - Edit by ts: SAL_1091 - Environmental_Condition: Terrestrial → Terrestrial; Cohort: nan → Terra D
+2026-10-08 20:25:54.944439 - Edit by ts: SAL_1092 - Environmental_Condition: Terrestrial → Terrestrial; Cohort: nan → Terra D
+2026-10-08 20:25:55.092589 - Edit by ts: SAL_1093 - Environmental_Condition: Terrestrial → Terrestrial; Cohort: nan → Terra D
+2026-10-08 20:25:58.025589 - Pushing Changes by ts: Changes saved
