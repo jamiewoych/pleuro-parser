@@ -3492,3 +3492,5 @@
 2026-10-08 20:25:54.944439 - Edit by ts: SAL_1092 - Environmental_Condition: Terrestrial → Terrestrial; Cohort: nan → Terra D
 2026-10-08 20:25:55.092589 - Edit by ts: SAL_1093 - Environmental_Condition: Terrestrial → Terrestrial; Cohort: nan → Terra D
 2026-10-08 20:25:58.025589 - Pushing Changes by ts: Changes saved
+2026-10-13 23:03:29.208288 - Euthanized by am: SAL_168 on 10/13/2026
+2026-10-13 23:03:32.947454 - Pushing Changes by am: Changes saved
