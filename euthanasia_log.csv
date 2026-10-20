@@ -473,12 +473,15 @@ SAL_607,D2,Rack 4,2026-08-27,10/25/24 0:00,Tissue collection - brain atlas 38A,N
 SAL_1190,C4,Rack 9,2026-08-27,2/2/26 0:00,Tissue collection - brain atlas 38B,NJC,,Aquatic,,WT,,Pleurodeles waltl,AABF2564,,,,,,4.1,Unknown,
 SAL_918,A2,Rack 4,2026-09-17,12/10/24 0:00,live imaging,kc,,Aquatic,,WT,"katharine - electroporation, regeneration",Pleurodeles waltl,AABI2617,,,,,,7.96,Unknown,
 SAL_168,D5,Rack 8,2026-10-13,3/21/22 0:00,Sickly - testing ex vivo imaging prep,AM,,Reaqua,,WT,,Pleurodeles waltl,AABL1550,,,1/10/23,2/10/25,Gummy Schedule,0.0,Unknown,
-SAL_103,A1,Rack 11,2026-10-20,2/23/22 0:00,"tank was often drying out, potentially not enough water. Added cling wrap and new misters to tank for future",NA,Terra L,Terrestrial,,WT, ,Pleurodeles waltl,AABL1550,,,4/23/25 0:00,,,0.0,Unknown,Found Dead
-SAL_1018,A3,Rack 6,2026-10-20,10/31/25 0:00,chin looked bloody? Shayla did water testing and nitrates were a bit high but within range,NA,,Aquatic,,hsyn-GCaMP6s,,Pleurodeles waltl,AABL1550,,,,,,0.0,Unknown,Found Dead
-SAL_754,A4,Rack 8,2026-07-17,12/10/24 0:00,R8A4 - found by Sean,NA,,Aquatic,PxW,WT,,Pleurodeles waltl,AABF2564,fridged > St 37,,,,,0.0,Unknown,Found Dead
-SAL_701,A5,Rack 4,2026-07-02,12/10/24 0:00,R8A4 - found by Sean R4,NA,,Aquatic,,WT,,Pleurodeles waltl,AABF2564,,,,,,0.0,Unknown,Found Dead
-SAL_734,A1,Rack 9,2026-06-03,1/3/25 0:00,found by JW,NA,,Aquatic,PxW,WT,,Pleurodeles waltl,AABF2564,fridged 1/6-1/27,,,,,0.0,Unknown,Found Dead
-SAL_624,C2,Rack 2,2026-04-13,10/25/24 0:00,found by PT,NA,Viral,Aquatic,,WT,TS,Pleurodeles waltl,AABL1550,TS PHPeB GCaMP,,,,,0.0,Unknown,Found Dead
-SAL_263,C3,Rack 2,2026-04-13,4/15/24 0:00,found by PT - during metro treatment,NA,Trackerseq,Aquatic,,WT,AD High Signal ,Pleurodeles waltl,AABF2564,AD Trackerseq high signal,,,,,0.0,Unknown,Found Dead
-SAL_931,C3,Rack 8,2026-10-02,5/20/25 0:00,missing - likely cannibalized,NA,F2 - High Expression,Aquatic,,hsyn-GCaMP6s,,Pleurodeles waltl,AABL1550,,,,,,0.0,Unknown,Found Dead
-SAL_867,A1,Rack 9,2026-10-02,1/3/25 0:00,missing - likely cannibalized,NA,,Aquatic,,WT,,Pleurodeles waltl,AABL1550,fridged 1/6-1/27,,,,,0.0,Unknown,Found Dead
+SAL_103,A1,Rack 11,2026-10-20,2/23/22 0:00,"tank was often drying out, potentially not enough water. Added cling wrap and new misters to tank for future",,Terra L,Terrestrial,,WT, ,Pleurodeles waltl,AABL1550,,,4/23/25 0:00,,,0.0,Unknown,Found Dead
+SAL_1018,A3,Rack 6,2026-10-20,10/31/25 0:00,chin looked bloody? Shayla did water testing and nitrates were a bit high but within range,,,Aquatic,,hsyn-GCaMP6s,,Pleurodeles waltl,AABL1550,,,,,,0.0,Unknown,Found Dead
+SAL_754,A4,Rack 8,2026-07-17,12/10/24 0:00,R8A4 - found by Sean,,,Aquatic,PxW,WT,,Pleurodeles waltl,AABF2564,fridged > St 37,,,,,0.0,Unknown,Found Dead
+SAL_701,A5,Rack 4,2026-07-02,12/10/24 0:00,R8A4 - found by Sean R4,,,Aquatic,,WT,,Pleurodeles waltl,AABF2564,,,,,,0.0,Unknown,Found Dead
+SAL_734,A1,Rack 9,2026-06-03,1/3/25 0:00,found by JW,,,Aquatic,PxW,WT,,Pleurodeles waltl,AABF2564,fridged 1/6-1/27,,,,,0.0,Unknown,Found Dead
+SAL_624,C2,Rack 2,2026-04-13,10/25/24 0:00,found by PT,,Viral,Aquatic,,WT,TS,Pleurodeles waltl,AABL1550,TS PHPeB GCaMP,,,,,0.0,Unknown,Found Dead
+SAL_263,C3,Rack 2,2026-04-13,4/15/24 0:00,found by PT - during metro treatment,,Trackerseq,Aquatic,,WT,AD High Signal ,Pleurodeles waltl,AABF2564,AD Trackerseq high signal,,,,,0.0,Unknown,Found Dead
+SAL_931,C3,Rack 8,2026-10-02,5/20/25 0:00,missing - likely cannibalized,,F2 - High Expression,Aquatic,,hsyn-GCaMP6s,,Pleurodeles waltl,AABL1550,,,,,,0.0,Unknown,Found Dead
+SAL_867,A1,Rack 9,2026-10-02,1/3/25 0:00,missing - likely cannibalized,,,Aquatic,,WT,,Pleurodeles waltl,AABL1550,fridged 1/6-1/27,,,,,0.0,Unknown,Found Dead
+SAL_022,B3,Rack 11,2026-03-08,9/24/20,found by KarenC,NA,Terra S,Terrestrial,,WT,AMMM implant testing,Pleurodeles waltl,AABL1550,,,2/9/23,,Gummy Schedule,0.0,Unknown,Found Dead
+SAL_023,B3,Rack 11,2026-05-02,9/24/20,found by ? signature not recognized by josh or shayla,NA,Terra S,Terrestrial,,WT,AMMM implant testing,Pleurodeles waltl,AABL1550,,,2/9/23,,Gummy Schedule,0.0,Unknown,Found Dead
+SAL_504,D1,Rack 8,2026-04-18,5/17/24 0:00,found by Karen C,NA,,Aquatic,,WT,Priority,Pleurodeles waltl,AABF2564,,,,,,0.0,Unknown,Found Dead
