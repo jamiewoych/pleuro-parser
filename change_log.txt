@@ -3539,3 +3539,8 @@
 2026-10-20 22:00:49.827021 - Pushing Changes by jw: Changes saved
 2026-10-21 14:38:24.124580 - Euthanized by JW: SAL_787 on 05/05/2026
 2026-10-21 14:39:43.312133 - Pushing Changes by JW: Changes saved
+2026-10-21 15:31:59.693574 - Animals moved by jw: SAL_214 to Rack 4
+2026-10-21 15:36:50.629769 - Edit by jw: SAL_526 - Experimental_Holds: nan → priority to use, sickly
+2026-10-21 15:38:56.520636 - Edit by jw: SAL_919 - Experimental_Holds: nan → priority to use, slow growing
+2026-10-21 15:38:56.607318 - Edit by jw: SAL_920 - Experimental_Holds: nan → priority to use, slow growing
+2026-10-21 15:39:10.072788 - Pushing Changes by jw: Changes saved
