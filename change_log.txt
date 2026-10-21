@@ -3545,3 +3545,7 @@
 2026-10-21 15:38:56.607318 - Edit by jw: SAL_920 - Experimental_Holds: nan → priority to use, slow growing
 2026-10-21 15:39:10.072788 - Pushing Changes by jw: Changes saved
 2026-10-21 15:40:33.312636 - Pushing Changes by jw: Changes saved
+2026-10-21 16:43:29.889974 - Animals moved by jw: SAL_723 to Rack 11
+2026-10-21 16:43:29.891520 - Animals moved by jw: SAL_722 to Rack 11
+2026-10-21 16:43:29.893491 - Animals moved by jw: SAL_724 to Rack 11
+2026-10-21 16:43:31.970009 - Pushing Changes by jw: Changes saved
