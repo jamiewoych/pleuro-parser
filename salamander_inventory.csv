@@ -105,7 +105,6 @@ SAL_219,AABL1550,Rack 12,D4,7/21/23 0:00,Viral,Aquatic,Unknown,,WT,ECJ,Pleurodel
 SAL_220,AABL1550,Rack 12,D4,7/21/23 0:00,Viral,Aquatic,Unknown,,WT,ECJ,Pleurodeles waltl,ECJ Viral PHPeB CAG G8s,,,,
 SAL_221,AABL1550,Rack 12,D4,7/21/23 0:00,Viral,Aquatic,Unknown,,WT,ECJ,Pleurodeles waltl,ECJ Viral PHPeB CAG G8s,,,,
 SAL_223,AABF2564,Rack 12,D1,7/21/23 0:00,,Aquatic,Unknown,,WT,,Pleurodeles waltl,,,,,
-SAL_225,AABL1550,Rack 10,B1,11/24/23 0:00,Terra E ,Terrestrial,Unknown,F1,hsyn-GCaMP6s,TS ECJ Imaging,Pleurodeles waltl,,,11/12/24 0:00,,Gummy Schedule
 SAL_226,AABL1550,Rack 10,B1,11/24/23 0:00,Terra E ,Terrestrial,Unknown,F1,hsyn-GCaMP6s,TS ECJ Imaging,Pleurodeles waltl,,,11/12/24 0:00,,Gummy Schedule
 SAL_227,AABL1550,Rack 10,B1,11/24/23 0:00,Terra E ,Terrestrial,Unknown,F1,hsyn-GCaMP6s,TS ECJ Imaging,Pleurodeles waltl,,,11/12/24 0:00,,Gummy Schedule
 SAL_231,AABL1550,Rack 10,B1,11/24/23 0:00,Terra E ,Terrestrial,Unknown,F1,hsyn-GCaMP6s,TS ECJ Imaging,Pleurodeles waltl,,,11/12/24 0:00,,Gummy Schedule
@@ -132,7 +131,6 @@ SAL_255,AABL1550,Rack 8,A2,12/9/23 0:00,Reaqua I,Reaqua,Unknown,,WT,AMMM JW ,Ple
 SAL_256,AABL1550,Rack 10,C2,11/24/23 0:00,Terra J,Terrestrial,Unknown,F1,hsyn-GCaMP6s,ECJ TS Imaging,Pleurodeles waltl,,,,,Gummy Schedule
 SAL_258,AABL1550,Rack 10,C2,11/24/23 0:00,Terra J,Terrestrial,Unknown,F1,hsyn-GCaMP6s,ECJ TS Imaging,Pleurodeles waltl,,,,,Gummy Schedule
 SAL_259,AABL1550,Rack 13 - Off,A2,11/24/23 0:00,Terra J,Terrestrial,Unknown,F1,hsyn-GCaMP6s,ECJ TS Imaging,Pleurodeles waltl,,,,,Gummy Schedule
-SAL_260,AABL1550,Rack 10,C2,11/24/23 0:00,Terra J,Terrestrial,Unknown,F1,hsyn-GCaMP6s,ECJ TS Imaging,Pleurodeles waltl,,,,,Gummy Schedule
 SAL_262,AABF2564,Rack 2,C3,4/15/24 0:00,Trackerseq,Aquatic,Unknown,,WT,AD High Signal ,Pleurodeles waltl,AD Trackerseq high signal,,,,
 SAL_264,AABF2564,Rack 2,C3,4/15/24 0:00,Trackerseq,Aquatic,Unknown,,WT,AD High Signal ,Pleurodeles waltl,AD Trackerseq high signal,,,,
 SAL_265,AABF2564,Rack 2,C3,4/15/24 0:00,Trackerseq,Aquatic,Unknown,,WT,AD High Signal ,Pleurodeles waltl,AD Trackerseq high signal,,,,
@@ -178,7 +176,6 @@ SAL_365,AABL1550,Rack 6,B2,11/24/23 0:00,,Aquatic,Unknown,F1,hsyn-GCaMP6s,,Pleur
 SAL_366,AABL1550,Rack 11,B4,11/24/23 0:00,Terra R,Terrestrial,Unknown,F1,hsyn-GCaMP6s,ts,Pleurodeles waltl,Terrestrialized 4/22/26,,4/22/26,,
 SAL_367,AABL1550,Rack 11,B4,11/24/23 0:00,Terra R,Terrestrial,Unknown,F1,hsyn-GCaMP6s,ts,Pleurodeles waltl,Terrestrialized 4/22/26,,4/22/26,,
 SAL_368,AABL1550,Rack 11,B4,11/24/23 0:00,Terra R,Terrestrial,Unknown,F1,hsyn-GCaMP6s,ts,Pleurodeles waltl,Terrestrialized 4/22/26,,4/22/26,,
-SAL_370,AABL1550,Rack 11,B4,11/24/23 0:00,Terra R,Terrestrial,Unknown,F1,hsyn-GCaMP6s,ts,Pleurodeles waltl,Terrestrialized 4/22/26,,4/22/26,,
 SAL_371,AABL1550,Rack 6,B4,11/24/23 0:00,,Aquatic,Unknown,F1,hsyn-GCaMP6s,,Pleurodeles waltl,,,,,
 SAL_372,AABL1550,Rack 6,B4,11/24/23 0:00,,Aquatic,Unknown,F1,hsyn-GCaMP6s,,Pleurodeles waltl,,,,,
 SAL_373,AABL1550,Rack 6,B4,11/24/23 0:00,,Aquatic,Unknown,F1,hsyn-GCaMP6s,,Pleurodeles waltl,,,,,
