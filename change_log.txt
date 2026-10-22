@@ -3574,3 +3574,13 @@
 2026-10-21 19:12:27.776905 - Pushing Changes by mk: Changes saved
 2026-10-21 20:06:02.145301 - Euthanized by ts: SAL_557 on 10/21/2026
 2026-10-21 20:06:07.641821 - Pushing Changes by ts: Changes saved
+2026-10-22 16:11:48.805832 - Animals moved by jw: SAL_1221 to Rack 8
+2026-10-22 16:11:48.807313 - Animals moved by jw: SAL_1222 to Rack 8
+2026-10-22 16:11:48.813562 - Animals moved by jw: SAL_1223 to Rack 8
+2026-10-22 16:11:48.820130 - Animals moved by jw: SAL_1224 to Rack 8
+2026-10-22 16:11:48.825166 - Animals moved by jw: SAL_1225 to Rack 8
+2026-10-22 16:11:48.827717 - Animals moved by jw: SAL_1226 to Rack 8
+2026-10-22 16:11:48.829620 - Animals moved by jw: SAL_1227 to Rack 8
+2026-10-22 16:11:48.831478 - Animals moved by jw: SAL_1228 to Rack 8
+2026-10-22 16:11:48.832876 - Animals moved by jw: SAL_1229 to Rack 8
+2026-10-22 16:16:52.668462 - Pushing Changes by jw: Changes saved
