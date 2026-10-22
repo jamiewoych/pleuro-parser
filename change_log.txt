@@ -3584,3 +3584,5 @@
 2026-10-22 16:11:48.831478 - Animals moved by jw: SAL_1228 to Rack 8
 2026-10-22 16:11:48.832876 - Animals moved by jw: SAL_1229 to Rack 8
 2026-10-22 16:16:52.668462 - Pushing Changes by jw: Changes saved
+2026-10-22 20:26:49.195637 - Edit by JW: SAL_674 - Environmental_Condition: Aquatic → Terrestrial; Experimental_History: nan → 24 hr Terra ; Date_of_Terra: nan → 2026-09-14
+2026-10-22 20:27:07.383196 - Pushing Changes by JW: Changes saved
