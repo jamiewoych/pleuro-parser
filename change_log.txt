@@ -3588,3 +3588,9 @@
 2026-10-22 20:27:07.383196 - Pushing Changes by JW: Changes saved
 2026-10-22 20:27:24.579181 - Edit by JW: SAL_674 - Environmental_Condition: Terrestrial → Terrestrial; Experimental_History: 24 hr Terra  → 24 hr Terra ; Cohort: Aqua F → Terra; Date_of_Terra: 2026-09-14 → 2026-09-14
 2026-10-22 20:27:28.365802 - Pushing Changes by JW: Changes saved
+2026-10-22 20:59:43.974592 - Euthanized by JW: SAL_674 on 10/22/2026
+2026-10-22 21:00:07.667743 - Undo by JW: Re-added SAL_674 and removed euthanasia log entry
+2026-10-22 21:00:25.432176 - Euthanized by JW: SAL_674 on 09/15/2026
+2026-10-22 21:01:00.257729 - Euthanized by JW: SAL_839 on 09/15/2026
+2026-10-22 21:01:37.961517 - Euthanized by JW: SAL_753 on 09/15/2026
+2026-10-22 21:01:49.986886 - Pushing Changes by JW: Changes saved
