@@ -3586,3 +3586,5 @@
 2026-10-22 16:16:52.668462 - Pushing Changes by jw: Changes saved
 2026-10-22 20:26:49.195637 - Edit by JW: SAL_674 - Environmental_Condition: Aquatic → Terrestrial; Experimental_History: nan → 24 hr Terra ; Date_of_Terra: nan → 2026-09-14
 2026-10-22 20:27:07.383196 - Pushing Changes by JW: Changes saved
+2026-10-22 20:27:24.579181 - Edit by JW: SAL_674 - Environmental_Condition: Terrestrial → Terrestrial; Experimental_History: 24 hr Terra  → 24 hr Terra ; Cohort: Aqua F → Terra; Date_of_Terra: 2026-09-14 → 2026-09-14
+2026-10-22 20:27:28.365802 - Pushing Changes by JW: Changes saved
