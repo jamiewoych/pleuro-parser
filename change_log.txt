@@ -3594,3 +3594,18 @@
 2026-10-22 21:01:00.257729 - Euthanized by JW: SAL_839 on 09/15/2026
 2026-10-22 21:01:37.961517 - Euthanized by JW: SAL_753 on 09/15/2026
 2026-10-22 21:01:49.986886 - Pushing Changes by JW: Changes saved
+2026-10-27 16:53:58.665984 - Animals moved by ts: SAL_1024 to Rack 10
+2026-10-27 16:53:58.667549 - Animals moved by ts: SAL_1025 to Rack 10
+2026-10-27 16:53:58.668941 - Animals moved by ts: SAL_1026 to Rack 10
+2026-10-27 16:53:58.670361 - Animals moved by ts: SAL_1027 to Rack 10
+2026-10-27 16:53:58.671300 - Animals moved by ts: SAL_1028 to Rack 10
+2026-10-27 16:53:58.672338 - Animals moved by ts: SAL_1029 to Rack 10
+2026-10-27 16:53:58.673344 - Animals moved by ts: SAL_1051 to Rack 10
+2026-10-27 16:55:24.828578 - Edit by ts: SAL_1024 - Environmental_Condition: Aquatic → Terrestrial; Experimental_History: nan → terrestrialized 8/11/26; Cohort: nan → Terra I; Date_of_Terra: nan → 2026-08-11
+2026-10-27 16:55:24.910190 - Edit by ts: SAL_1025 - Environmental_Condition: Aquatic → Terrestrial; Experimental_History: nan → terrestrialized 8/11/26; Cohort: nan → Terra I; Date_of_Terra: nan → 2026-08-11
+2026-10-27 16:55:24.991391 - Edit by ts: SAL_1026 - Environmental_Condition: Aquatic → Terrestrial; Experimental_History: nan → terrestrialized 8/11/26; Cohort: nan → Terra I; Date_of_Terra: nan → 2026-08-11
+2026-10-27 16:55:25.092464 - Edit by ts: SAL_1027 - Environmental_Condition: Aquatic → Terrestrial; Experimental_History: nan → terrestrialized 8/11/26; Cohort: nan → Terra I; Date_of_Terra: nan → 2026-08-11
+2026-10-27 16:55:25.204840 - Edit by ts: SAL_1028 - Environmental_Condition: Aquatic → Terrestrial; Experimental_History: nan → terrestrialized 8/11/26; Cohort: nan → Terra I; Date_of_Terra: nan → 2026-08-11
+2026-10-27 16:55:25.333374 - Edit by ts: SAL_1029 - Environmental_Condition: Aquatic → Terrestrial; Experimental_History: nan → terrestrialized 8/11/26; Cohort: nan → Terra I; Date_of_Terra: nan → 2026-08-11
+2026-10-27 16:55:25.469446 - Edit by ts: SAL_1051 - Environmental_Condition: Aquatic → Terrestrial; Experimental_History: nan → terrestrialized 8/11/26; Cohort: F2 → Terra I; Date_of_Terra: nan → 2026-08-11
+2026-10-27 16:55:45.726518 - Pushing Changes by ts: Changes saved
