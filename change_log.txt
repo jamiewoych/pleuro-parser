@@ -3609,3 +3609,7 @@
 2026-10-27 16:55:25.333374 - Edit by ts: SAL_1029 - Environmental_Condition: Aquatic → Terrestrial; Experimental_History: nan → terrestrialized 8/11/26; Cohort: nan → Terra I; Date_of_Terra: nan → 2026-08-11
 2026-10-27 16:55:25.469446 - Edit by ts: SAL_1051 - Environmental_Condition: Aquatic → Terrestrial; Experimental_History: nan → terrestrialized 8/11/26; Cohort: F2 → Terra I; Date_of_Terra: nan → 2026-08-11
 2026-10-27 16:55:45.726518 - Pushing Changes by ts: Changes saved
+2026-10-28 15:06:07.193119 - Animals moved by jw: SAL_915 to Rack 8
+2026-10-28 15:06:07.194957 - Animals moved by jw: SAL_916 to Rack 8
+2026-10-28 15:06:07.196985 - Animals moved by jw: SAL_1041 to Rack 8
+2026-10-28 15:06:16.616612 - Pushing Changes by jw: Changes saved
