@@ -3638,3 +3638,6 @@
 2026-10-28 15:48:36.173187 - Pushing Changes by jw: Changes saved
 2026-10-28 15:58:51.017205 - Euthanized by jw: SAL_1191 on 10/28/2026
 2026-10-28 15:58:52.488209 - Pushing Changes by jw: Changes saved
+2026-10-28 15:59:07.657952 - Undo by jw: Re-added SAL_1191 and removed euthanasia log entry
+2026-10-28 16:00:29.415851 - Euthanized by jw: SAL_1191 on 10/28/2026
+2026-10-28 16:00:36.276002 - Pushing Changes by jw: Changes saved
