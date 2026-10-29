@@ -3645,3 +3645,9 @@
 2026-10-28 19:11:36.315451 - Euthanized by MK: SAL_789 on 09/24/2026
 2026-10-28 19:12:11.801876 - Euthanized by MK: SAL_863 on 09/24/2026
 2026-10-28 19:12:14.450402 - Pushing Changes by MK: Changes saved
+2026-10-29 18:14:36.627044 - Animals moved by jw: SAL_025 to Rack 12
+2026-10-29 18:14:36.629323 - Animals moved by jw: SAL_026 to Rack 12
+2026-10-29 18:14:36.630877 - Animals moved by jw: SAL_029 to Rack 12
+2026-10-29 18:16:07.725149 - Animals moved by jw: SAL_027 to Rack 12
+2026-10-29 18:16:07.727807 - Animals moved by jw: SAL_028 to Rack 12
+2026-10-29 18:17:44.085822 - Pushing Changes by jw: Changes saved
