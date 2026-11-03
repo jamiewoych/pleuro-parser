@@ -3686,3 +3686,10 @@
 2026-10-29 20:56:32.541512 - Euthanized by pa: SAL_1487 on 08/17/2026
 2026-10-29 20:57:00.371688 - Euthanized by pa: SAL_1488 on 08/17/2026
 2026-10-29 20:57:24.882867 - Pushing Changes by pa: Changes saved
+2026-11-03 16:20:57.567226 - Edit by mk: SAL_718 - Experimental_Holds: nan → MK, EG ; Protocol_Number: AABF2564 → AABI2617; Experimental_History: nan → E11 construct EP + 10 dpi pallial injury 
+2026-11-03 16:20:57.639969 - Edit by mk: SAL_725 - Experimental_Holds: nan → MK, EG ; Protocol_Number: AABF2564 → AABI2617; Experimental_History: nan → E11 construct EP + 10 dpi pallial injury 
+2026-11-03 16:20:57.736260 - Edit by mk: SAL_726 - Experimental_Holds: nan → MK, EG ; Protocol_Number: AABF2564 → AABI2617; Experimental_History: nan → E11 construct EP + 10 dpi pallial injury 
+2026-11-03 16:20:57.831914 - Edit by mk: SAL_727 - Experimental_Holds: nan → MK, EG ; Protocol_Number: AABF2564 → AABI2617; Experimental_History: nan → E11 construct EP + 10 dpi pallial injury 
+2026-11-03 16:20:57.921165 - Edit by mk: SAL_728 - Experimental_Holds: nan → MK, EG ; Protocol_Number: AABF2564 → AABI2617; Experimental_History: nan → E11 construct EP + 10 dpi pallial injury 
+2026-11-03 16:20:58.034593 - Edit by mk: SAL_729 - Experimental_Holds: nan → MK, EG ; Protocol_Number: AABF2564 → AABI2617; Experimental_History: nan → E11 construct EP + 10 dpi pallial injury 
+2026-11-03 16:21:12.281952 - Pushing Changes by mk: Changes saved
