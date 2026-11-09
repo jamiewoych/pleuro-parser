@@ -3693,3 +3693,7 @@
 2026-11-03 16:20:57.921165 - Edit by mk: SAL_728 - Experimental_Holds: nan → MK, EG ; Protocol_Number: AABF2564 → AABI2617; Experimental_History: nan → E11 construct EP + 10 dpi pallial injury 
 2026-11-03 16:20:58.034593 - Edit by mk: SAL_729 - Experimental_Holds: nan → MK, EG ; Protocol_Number: AABF2564 → AABI2617; Experimental_History: nan → E11 construct EP + 10 dpi pallial injury 
 2026-11-03 16:21:12.281952 - Pushing Changes by mk: Changes saved
+2026-11-09 16:22:14.668527 - Euthanized by pa: SAL_1074 on 08/13/2026
+2026-11-09 16:22:39.766246 - Euthanized by pa: SAL_1075 on 08/13/2026
+2026-11-09 16:23:02.326084 - Euthanized by pa: SAL_1077 on 08/13/2026
+2026-11-09 16:23:08.788390 - Pushing Changes by pa: Changes saved
