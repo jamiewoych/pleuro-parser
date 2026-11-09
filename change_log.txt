@@ -3762,3 +3762,13 @@
 2026-11-09 22:04:40.672547 - Added animals by jw: 5 animals added to Rack 5 in A2.
 2026-11-09 22:04:46.883812 - Added animals by jw: 6 animals added to Rack 5 in A2.
 2026-11-09 22:13:10.806903 - Pushing Changes by jw: Changes saved
+2026-11-09 22:15:01.701268 - Euthanized by jw: SAL_993 on 11/09/2026
+2026-11-09 22:17:03.548543 - Euthanized by jw: SAL_991 on 11/09/2026
+2026-11-09 22:17:34.849575 - Animals moved by jw: SAL_992 to Rack 8
+2026-11-09 22:18:33.572880 - Animals moved by jw: SAL_1504 to Rack 5
+2026-11-09 22:18:33.574628 - Animals moved by jw: SAL_1505 to Rack 5
+2026-11-09 22:18:33.575995 - Animals moved by jw: SAL_1506 to Rack 5
+2026-11-09 22:18:33.577396 - Animals moved by jw: SAL_1507 to Rack 5
+2026-11-09 22:18:33.578730 - Animals moved by jw: SAL_1508 to Rack 5
+2026-11-09 22:18:33.580286 - Animals moved by jw: SAL_1509 to Rack 5
+2026-11-09 22:20:07.139889 - Pushing Changes by jw: Changes saved
