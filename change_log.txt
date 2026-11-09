@@ -3699,3 +3699,13 @@
 2026-11-09 16:23:08.788390 - Pushing Changes by pa: Changes saved
 2026-11-09 16:24:39.374968 - Larval Euthanasia by pa: 4 on AABF2564
 2026-11-09 16:24:44.304821 - Pushing Changes by pa: Changes saved
+2026-11-09 20:20:29.126040 - Animals moved by jw: SAL_1374 to Rack 6
+2026-11-09 20:20:29.127191 - Animals moved by jw: SAL_1375 to Rack 6
+2026-11-09 20:20:29.128860 - Animals moved by jw: SAL_1376 to Rack 6
+2026-11-09 20:20:29.130213 - Animals moved by jw: SAL_1377 to Rack 6
+2026-11-09 20:20:29.132734 - Animals moved by jw: SAL_1378 to Rack 6
+2026-11-09 20:20:29.134264 - Animals moved by jw: SAL_1379 to Rack 6
+2026-11-09 20:20:29.135618 - Animals moved by jw: SAL_1380 to Rack 6
+2026-11-09 20:20:29.137047 - Animals moved by jw: SAL_1381 to Rack 6
+2026-11-09 20:20:29.138755 - Animals moved by jw: SAL_1382 to Rack 6
+2026-11-09 20:20:31.176042 - Pushing Changes by jw: Changes saved
