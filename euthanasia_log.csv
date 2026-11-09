@@ -507,3 +507,5 @@ SAL_1488,A1,Rack 13 - Off,2026-08-17,2026-03-23 00:00:00,AAV tracing,PA,,Aquatic
 SAL_1074,A1,Rack 2,2026-08-13,11/18/25 0:00,AAV,PA,clutch 3,Aquatic,,WT,PA AAV hold,Pleurodeles waltl,AABF2564,,,,,,3.21,Male,
 SAL_1075,A1,Rack 2,2026-08-13,11/18/25 0:00,AAV,PA,clutch 3,Aquatic,,WT,PA AAV hold,Pleurodeles waltl,AABF2564,,,,,,6.08,Male,
 SAL_1077,A1,Rack 2,2026-08-13,11/18/25 0:00,AAV,PA,clutch 3,Aquatic,,WT,PA AAV hold,Pleurodeles waltl,AABF2564,,,,,,3.04,Male,
+SAL_992,C2,Rack 5,2026-11-09,10/31/25 0:00,missing - cannibal sibling,,,Aquatic,,hsyn-GCaMP6s,,Pleurodeles waltl,AABL1550,,,,,,0.0,Unknown,Found Dead
+SAL_993,C2,Rack 5,2026-11-09,10/31/25 0:00,missing - cannibal sibling jw,,,Aquatic,,hsyn-GCaMP6s,,Pleurodeles waltl,AABL1550,,,,,,0.0,Unknown,Found Dead
