@@ -3697,3 +3697,5 @@
 2026-11-09 16:22:39.766246 - Euthanized by pa: SAL_1075 on 08/13/2026
 2026-11-09 16:23:02.326084 - Euthanized by pa: SAL_1077 on 08/13/2026
 2026-11-09 16:23:08.788390 - Pushing Changes by pa: Changes saved
+2026-11-09 16:24:39.374968 - Larval Euthanasia by pa: 4 on AABF2564
+2026-11-09 16:24:44.304821 - Pushing Changes by pa: Changes saved
