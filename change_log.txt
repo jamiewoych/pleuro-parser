@@ -3746,3 +3746,9 @@
 2026-11-09 21:49:17.717505 - Euthanized by jw: SAL_992 on 11/09/2026
 2026-11-09 21:49:41.253523 - Euthanized by jw: SAL_993 on 11/09/2026
 2026-11-09 21:49:43.481019 - Pushing Changes by jw: Changes saved
+2026-11-09 21:50:06.372774 - Animals moved by jw: SAL_994 to Rack 13 - Off
+2026-11-09 21:52:10.925989 - Undo by jw: Inventory reverted
+2026-11-09 21:52:14.599466 - Undo by jw: Inventory reverted
+2026-11-09 21:52:15.959281 - Undo by jw: Inventory reverted
+2026-11-09 21:52:59.163022 - Animals moved by jw: SAL_994 to Rack 13 - Off
+2026-11-09 21:53:02.482183 - Pushing Changes by jw: Changes saved
