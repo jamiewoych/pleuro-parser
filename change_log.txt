@@ -3779,3 +3779,8 @@
 2026-11-10 20:24:00.344256 - Euthanized by ts: SAL_1028 on 11/10/2026
 2026-11-10 20:24:11.491432 - Euthanized by ts: SAL_1029 on 11/10/2026
 2026-11-10 20:24:14.651057 - Pushing Changes by ts: Changes saved
+2026-11-13 20:49:28.436806 - Animals moved by jw: SAL_366 to Rack 11
+2026-11-13 20:49:28.439477 - Animals moved by jw: SAL_368 to Rack 11
+2026-11-13 20:49:28.441109 - Animals moved by jw: SAL_367 to Rack 11
+2026-11-13 20:49:53.453423 - Animals moved by jw: SAL_024 to Rack 11
+2026-11-13 20:50:24.245264 - Pushing Changes by jw: Changes saved
