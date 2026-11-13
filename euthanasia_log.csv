@@ -517,3 +517,5 @@ SAL_1026,C2,Rack 10,2026-11-10,11/18/25 0:00,2P,ts,Terra I,Terrestrial,,hsyn-GCa
 SAL_1027,C2,Rack 10,2026-11-10,11/18/25 0:00,2P,ts,Terra I,Terrestrial,,hsyn-GCaMP6s,"ts, viral injections for 2P",Pleurodeles waltl,AABL1550,terrestrialized 8/11/26,,2026-08-11,,,0.0,Unknown,
 SAL_1028,C2,Rack 10,2026-11-10,11/18/25 0:00,2P,ts,Terra I,Terrestrial,,hsyn-GCaMP6s,"ts, viral injections for 2P",Pleurodeles waltl,AABL1550,terrestrialized 8/11/26,,2026-08-11,,,0.0,Unknown,
 SAL_1029,C2,Rack 10,2026-11-10,11/18/25 0:00,2P,ts,Terra I,Terrestrial,,hsyn-GCaMP6s,"ts, viral injections for 2P",Pleurodeles waltl,AABL1550,terrestrialized 8/11/26,,2026-08-11,,,0.0,Unknown,
+SAL_861,C4,Rack 8,2026-06-16,1/3/25 0:00,gabe rotation,GJG,,Aquatic,,WT,kc,Pleurodeles waltl,AABL1550,fridged 1/6-1/27,,,,,6.3,Unknown,
+SAL_790,C1,Rack 11,2026-06-16,1/3/25 0:00,gabe rotation,GJG,Terra T,Terrestrial,,WT,MK/KC terra/aqua early response test,Pleurodeles waltl,AABF2564,,,12/18/25,,Gummy Schedule,7.5,Unknown,
