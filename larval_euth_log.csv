@@ -26,3 +26,5 @@ DOB,DOD,Experimenter,Num_Larvae,Stage,Purpose,Protocol_Number,Complications
 11/20/2025,07/07/2026,LDVA,3,Post-metamorphic,HCR,AABI2617,
 08/31/2026,09/17/2026,kc,1,39,,AABI2617,Surgical Complications
 09/25/2025,10/20/2026,PA,4,55,CellREADR,AABF2564,
+08/28/2026,09/15/2026,kc,4,44,electroporation/slice image optimization,AABI2617,
+09/01/2026,10/15/2026,kc,16,50-54,electroporation/slice image optimization,AABI2617,
