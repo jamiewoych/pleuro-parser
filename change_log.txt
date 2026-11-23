@@ -3806,3 +3806,7 @@
 2026-11-22 22:42:39.177459 - Pushing Changes by pa: Changes saved
 2026-11-22 22:46:36.637162 - Larval Euthanasia by pa: 22 on AABF2564
 2026-11-22 22:46:39.706764 - Pushing Changes by pa: Changes saved
+2026-11-23 16:10:55.634510 - Euthanized by ts: SAL_1091 on 11/23/2026
+2026-11-23 16:11:17.426867 - Euthanized by ts: SAL_1173 on 11/23/2026
+2026-11-23 18:43:31.653840 - Euthanized by ts: SAL_1051 on 11/23/2026
+2026-11-23 18:43:41.397320 - Pushing Changes by ts: Changes saved
