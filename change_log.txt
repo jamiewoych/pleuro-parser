@@ -3810,3 +3810,8 @@
 2026-11-23 16:11:17.426867 - Euthanized by ts: SAL_1173 on 11/23/2026
 2026-11-23 18:43:31.653840 - Euthanized by ts: SAL_1051 on 11/23/2026
 2026-11-23 18:43:41.397320 - Pushing Changes by ts: Changes saved
+2026-11-23 19:35:09.797967 - Animals moved by kc: SAL_345 to Rack 8
+2026-11-23 19:35:09.799831 - Animals moved by kc: SAL_349 to Rack 8
+2026-11-23 19:35:09.801325 - Animals moved by kc: SAL_350 to Rack 8
+2026-11-23 19:35:09.802776 - Animals moved by kc: SAL_917 to Rack 8
+2026-11-23 19:35:29.562783 - Pushing Changes by kc: Changes saved
