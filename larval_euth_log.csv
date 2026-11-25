@@ -34,3 +34,6 @@ DOB,DOD,Experimenter,Num_Larvae,Stage,Purpose,Protocol_Number,Complications
 09/26/2026,10/20/2026,"PA, EG",4,50,CellREADR,AABF2564,
 02/19/2026,04/28/2026,"PA, EG",22,48,CellREADR,AABF2564,
 06/01/2026,07/27/2026,JW,13,43,cellreadr; EPs by PA/EG; tbx21 & slc1a3 16dpi,AABF2564,
+07/06/2026,09/23/2026,JW,2,55a,"OE single cell: 1.55g/31mmSV, 1.61g/34mmSV",AABF2564,
+07/06/2026,09/28/2026,JW,6,55a,OE bulkseq: 1.08/1.05/1.49/1.60/1.60/1.49g. all ~27mmSV,AABF2564,
+07/06/2026,10/01/2026,JW,5,55a,OE banking for histology: 1.40/1.61/1.49/1.39/1.43g,AABF2564,

@@ -3819,3 +3819,8 @@
 2026-11-23 23:28:24.659210 - Pushing Changes by am: Changes saved
 2026-11-25 19:23:32.074142 - Larval Euthanasia by JW: 13 on AABF2564
 2026-11-25 19:23:45.469904 - Pushing Changes by JW: Changes saved
+2026-11-25 19:28:17.619097 - Larval Euthanasia by JW: 2 on AABF2564
+2026-11-25 19:29:32.142809 - Larval Euthanasia by JW: 6 on AABF2564
+2026-11-25 19:30:43.196402 - Larval Euthanasia by JW: 5 on AABF2564
+2026-11-25 19:38:49.848443 - Euthanized by gg2900: SAL_596 on 11/15/2025
+2026-11-25 19:39:15.971640 - Pushing Changes by JW: Changes saved
